@@ -7,7 +7,7 @@ import "./assets/style/style.scss";
 import reportWebVitals from "./reportWebVitals";
 import { registerIcons } from "./config/fa.config";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
-
+import React from "react";
 registerIcons();
 
 const appElement = (

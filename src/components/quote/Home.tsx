@@ -14,9 +14,8 @@ const QuoteHome: FunctionComponent = () => (
       />
       <p className="text-center text-[25px] mt-2 tracking-[.1px]  max-sm:text-[18px] leading-[150%] max-sm:mt-[2px]">
         «Мы обязаны помнить об исконных российских традициях справедливости{" "}
-        <br className="max-lg:hidden" />
-        и законности, помнить о том, что диктатура закона — это единственная{" "}
-        <br className="max-lg:hidden" />
+        <br className="max-lg:hidden" />и законности, помнить о том, что
+        диктатура закона — это единственная <br className="max-lg:hidden" />
         разновидность диктатуры, которой мы обязаны подчиняться».
       </p>
       <PersonCard />

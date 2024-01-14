@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import React from "react";
 import oneSvg from "../assets/img/cusir-code-telegram.svg";
 import ButtonSocialK from "../ButtonSocialK";
 

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import type { FunctionComponent } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import type { SizeProp, IconProp } from "@fortawesome/fontawesome-svg-core";
+import React from "react";
 
 type AlertProps = Readonly<{
   title: string;

@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import React from "react";
 import { Alert, MetaInfo } from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 

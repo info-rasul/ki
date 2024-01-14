@@ -2,6 +2,7 @@ import type { FunctionComponent } from "react";
 import oneSvg from "../assets/img/img/Vector3.svg";
 import twoSvg from "../assets/img/img/cusir-code-telegram.svg";
 import ButtonSocialK from "../ButtonSocialK";
+import React from "react";
 
 const QRCodeServices: FunctionComponent = () => (
   <div className="relative flex flex-col gap-[25px] bg-[#097990] w-[300px] px-[25px] pt-5 pb-[25px]">

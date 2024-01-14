@@ -5,6 +5,7 @@ import { MetaInfo, NotFound404 } from "./components";
 import { useScrollToTop } from "./hooks";
 import { useLocation, Route, Routes } from "react-router-dom";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
+import React from "react";
 
 const App: FunctionComponent = () => {
   useScrollToTop();

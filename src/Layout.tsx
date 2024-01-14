@@ -1,14 +1,14 @@
-import { Footer, Navbar, BackToTop, Header } from "./components";
+import { Footer, BackToTop, Header } from "./components";
 import {
   Fragment,
   type FunctionComponent,
   type PropsWithChildren,
 } from "react";
+import React from "react";
 
 const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => (
   <Fragment>
     <Header />
-    <Navbar />
     {children}
     <BackToTop />
     <Footer />

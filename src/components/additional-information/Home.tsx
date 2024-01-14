@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import React from "react";
 import oneSvg from "../assets/img/ServAddInformation1.svg";
 import ButtonsK from "../ButtonsK";
 

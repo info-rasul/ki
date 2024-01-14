@@ -2,6 +2,7 @@ import type { FunctionComponent } from "react";
 import { Fragment } from "react";
 import oneSvg from "../assets/img/logo.svg";
 import twoSvg from "../assets/img/footer-icon.png";
+import React from "react";
 const Footer: FunctionComponent = () => (
   <Fragment>
     <footer className="footer flex flex-col px-20 pt-20 pb-10 bg-custom-gradient max-lg:hidden">

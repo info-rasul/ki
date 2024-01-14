@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { useLatestRef } from "../hooks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState, type FunctionComponent } from "react";
+import React from "react";
 
 const AngleDoubleUpIcon = styled(FontAwesomeIcon).attrs({
   icon: "angle-double-up",

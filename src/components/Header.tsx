@@ -7,6 +7,7 @@ import twoSvg from "../assets/img/header__menu_line.svg";
 import fourSvg from "../assets/img/Subtract-menu.svg";
 
 import useScrollNavbar from "../hooks/useScrollNavbar";
+import React from "react";
 
 const Header: FunctionComponent = () => {
   useScrollNavbar();

@@ -1,6 +1,7 @@
 import Alert from "./Alert";
 import MetaInfo from "./MetaInfo";
 import type { FunctionComponent } from "react";
+import React from "react";
 
 const NOT_FOUND_TITLE = "404: Not Found";
 const NOT_FOUND_DESCRIPTION = "The requested page could not be found.";

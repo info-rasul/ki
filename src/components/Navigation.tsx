@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import React from "react";
 
 import twoSvg from "../assets/img/icon.png";
 const Navigation: FunctionComponent = () => (

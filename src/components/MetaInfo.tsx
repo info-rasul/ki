@@ -8,6 +8,7 @@ import {
   DEFAULT_LANG,
   DEFAULT_LOCALE,
 } from "../config/env.config";
+import React from "react";
 
 const { title: DEFAULT_TITLE, description: DEFAULT_DESCRIPTION } =
   getRouteMetaInfo("Home");

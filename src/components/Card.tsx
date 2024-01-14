@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import React from "react";
 import oneSvg from "../assets/img/card-img.jpg";
 
 const Card: FunctionComponent = () => (
