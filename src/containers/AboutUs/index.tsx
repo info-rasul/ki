@@ -1,10 +1,13 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
-import { Navigation, SubTitle, Card } from "../../components";
+import {Navigation, SubTitle, Card, MetaInfo} from "../../components";
 import QuoteHome from "../../components/quote/Home";
+import InformationCard from "../../components/information-card/About";
+import {getRouteMetaInfo} from "../../config/routes.config";
 
 const AboutUs: FunctionComponent = () => (
   <Fragment>
+    <MetaInfo {...getRouteMetaInfo("AboutUs")} />
     <div className="px-20 pt-[120px]">
       <Navigation />
       <div className="flex justify-between">
@@ -16,7 +19,7 @@ const AboutUs: FunctionComponent = () => (
           от которых отказываются другие юридические компании.
         </p>
       </div>
-      <div className="flex gap-10 mb-20 mt-[74px]">
+      <div className="flex gap-10 mb-20 mt-[74px] ">
         <Card />
         <Card />
         <Card />
@@ -24,9 +27,9 @@ const AboutUs: FunctionComponent = () => (
       <div className="mt-[120px]">
         <SubTitle />
         <div className="flex gap-10 mt-[60px]">
-          <Card />
-          <Card />
-          <Card />
+          <InformationCard />
+          <InformationCard />
+          <InformationCard />
         </div>
       </div>
       <div className="my-[160px]">
