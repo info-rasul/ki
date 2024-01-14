@@ -1,4 +1,4 @@
-import { StrictMode } from "react";
+import React, { StrictMode } from "react";
 import { BrowserRouter } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { hydrateRoot, createRoot } from "react-dom/client";
@@ -7,7 +7,6 @@ import "./assets/style/style.scss";
 import reportWebVitals from "./reportWebVitals";
 import { registerIcons } from "./config/fa.config";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
-import React from "react";
 registerIcons();
 
 const appElement = (

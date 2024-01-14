@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import { ReactComponent as LogoSvg } from "../assets/img/logotip.svg";
 import { ReactComponent as LogoMobileSvg } from "../assets/img/logotip-mobile.svg";
 import oneSvg from "../assets/img/Frame1820.svg";
@@ -7,7 +7,6 @@ import twoSvg from "../assets/img/header__menu_line.svg";
 import fourSvg from "../assets/img/Subtract-menu.svg";
 
 import useScrollNavbar from "../hooks/useScrollNavbar";
-import React from "react";
 
 const Header: FunctionComponent = () => {
   useScrollNavbar();

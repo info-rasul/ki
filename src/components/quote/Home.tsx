@@ -1,8 +1,7 @@
 import type { FunctionComponent } from "react";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import oneSvg from "../assets/img/gobbler.png";
 import PersonCard from "../PersonCard";
-import React from "react";
 
 const QuoteHome: FunctionComponent = () => (
   <Fragment>

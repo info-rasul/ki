@@ -1,9 +1,8 @@
 import type { FunctionComponent } from "react";
-import { Fragment } from "react";
+import React, { Fragment } from "react";
 import oneSvg from "../assets/img/gobbler.png";
 import twoSvg from "../assets/img/Ellipse10.png";
 import PersonCard from "../PersonCard";
-import React from "react";
 const QuoteArticle: FunctionComponent = () => (
   <Fragment>
     <div className="flex flex-col gap-y-10 items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] py-10 my-20 max-md:my-10 max-md:pt-[35px] max-md:pb-[33px] max-md:gap-y-[23px]">
