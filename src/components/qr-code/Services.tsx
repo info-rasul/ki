@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
-import oneSvg from "../assets/img/img/Vector3.svg";
-import twoSvg from "../assets/img/img/cusir-code-telegram.svg";
-import ButtonSocialK from "../ButtonSocialK";
+import oneSvg from "../../assets/img/img/Vector3.svg";
+import twoSvg from "../../assets/img/img/cusir-code-telegram.svg";
+import ButtonSocialK from "../../components/ButtonSocialK";
 import React from "react";
 
 const QRCodeServices: FunctionComponent = () => (
