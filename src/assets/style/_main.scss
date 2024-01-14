@@ -2,6 +2,37 @@ body {
   font-family: "Helvetica Neue", sans-serif;
 }
 
+:root {
+  --main-fs: 1;
+  --base-font-size: 1;
+  --zoom-container: 1;
+}
+
+@media all and (max-width: 1450px)
+{
+  :root {
+    --zoom-container: 0.9;
+  }
+}
+
+@media all and (max-width: 1278px) {
+  :root {
+    --zoom-container: 0.8;
+  }
+}
+
+
+@media all and (max-width: 1122px) {
+  :root {
+    --zoom-container: 0.7;
+  }
+}
+
+
+.container-zoom {
+  zoom: var(--zoom-container);
+}
+
 .header__menu {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(7.5px);
@@ -18,4 +49,24 @@ body {
 
 .bg-cover{
   background-size: cover;
+}
+
+#myVideo {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+
+#myVideo2 {
+  position: absolute;
+  height: 308px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-back {
+  background: linear-gradient(4deg, rgb(9 59 69) 0%, rgb(8 108 128 / 79%) 35%);
+  min-height: 308px;
 }
