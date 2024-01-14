@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import { Home, About } from "../containers";
+import { Home, About, Services } from "../containers";
 
 const DESC_SUFFIX = "description - length <= 160 chars.";
 
@@ -38,6 +38,15 @@ export const routes: Route[] = [
     metaInfo: {
       title: "About",
       description: `About ${DESC_SUFFIX}`,
+    },
+  },
+  {
+    path: "/services",
+    name: "Services",
+    Component: Services,
+    metaInfo: {
+      title: "Services",
+      description: `Services ${DESC_SUFFIX}`,
     },
   },
 ];
