@@ -1,4 +1,5 @@
 export { default as Alert } from './Alert';
+export { default as Header } from './Header';
 export { default as Footer } from './Footer';
 export { default as Navbar } from './NavBar';
 export { default as MetaInfo } from './MetaInfo';
