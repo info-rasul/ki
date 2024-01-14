@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81da2978.css",
+    "main.js": "/static/js/main.54368630.js",
+    "static/js/496.e4c929b0.chunk.js": "/static/js/496.e4c929b0.chunk.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/ReactSeoLogo.svg": "/static/media/ReactSeoLogo.5a4a418a259d95f8a8d9ebfe05d2c141.svg",
+    "index.html": "/index.html",
+    "main.81da2978.css.map": "/static/css/main.81da2978.css.map",
+    "main.54368630.js.map": "/static/js/main.54368630.js.map",
+    "496.e4c929b0.chunk.js.map": "/static/js/496.e4c929b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81da2978.css",
+    "static/js/main.54368630.js"
+  ]
+}

@@ -14,7 +14,7 @@
 # production
 lib
 dist
-/build
+#/build
 
 # Log files
 logs
