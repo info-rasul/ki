@@ -1,7 +1,7 @@
-import styled from 'styled-components';
-import type { FunctionComponent } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import type { SizeProp, IconProp } from '@fortawesome/fontawesome-svg-core';
+import styled from "styled-components";
+import type { FunctionComponent } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { SizeProp, IconProp } from "@fortawesome/fontawesome-svg-core";
 
 type AlertProps = Readonly<{
   title: string;
@@ -23,8 +23,8 @@ const TileContainer = styled.div`
 
 const Notification = styled.div<NotificationProps>`
   text-align: center;
-  padding: 1.75rem .25rem;
-  box-shadow: 0 2px 15px 0 rgba(18,16,19,.2);
+  padding: 1.75rem 0.25rem;
+  box-shadow: 0 2px 15px 0 rgba(18, 16, 19, 0.2);
   color: ${({ alertColor }) => alertColor};
   animation: ${({ alertAnimation }) => alertAnimation};
   background-color: ${({ alertBackgroundColor }) => alertBackgroundColor};
@@ -58,11 +58,11 @@ const Alert: FunctionComponent<AlertProps> = ({
   title,
   subTitle,
   show = true,
-  iconSize = '2x',
-  alertColor = '#fff',
-  alertAnimation = 'none',
-  iconName = 'info-circle',
-  alertBackgroundColor = '#4dc6e7'
+  iconSize = "2x",
+  alertColor = "#fff",
+  alertAnimation = "none",
+  iconName = "info-circle",
+  alertBackgroundColor = "#4dc6e7",
 }) => (
   <TileContainer className="flex mt-3  tile is-parent is-vertical is-8">
     {show && (
@@ -73,17 +73,10 @@ const Alert: FunctionComponent<AlertProps> = ({
         className="notification tile is-child"
       >
         <div>
-          <FontAwesomeIcon
-            icon={iconName}
-            size={iconSize}
-          />
-          <span className="title">
-            {title}
-          </span>
+          <FontAwesomeIcon icon={iconName} size={iconSize} />
+          <span className="title">{title}</span>
         </div>
-        <p className="subtitle">
-          {subTitle}
-        </p>
+        <p className="subtitle">{subTitle}</p>
       </Notification>
     )}
   </TileContainer>

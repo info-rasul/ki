@@ -1,13 +1,13 @@
-import { useEffect, type RefObject } from 'react';
-import useCallbackRef, { type CallbackFn } from './useCallbackRef';
+import { useEffect, type RefObject } from "react";
+import useCallbackRef, { type CallbackFn } from "./useCallbackRef";
 
 // Events to call addEventListener/removeEventListener for if not specified
-const DEFAULT_EVENTS = ['mousedown', 'touchstart'];
+const DEFAULT_EVENTS = ["mousedown", "touchstart"];
 
 const useOnClickOutside = (
   ref: RefObject<HTMLElement | null>,
   callback: CallbackFn,
-  events: string[] = DEFAULT_EVENTS
+  events: string[] = DEFAULT_EVENTS,
 ): void => {
   const callbackFn = useCallbackRef(callback);
 

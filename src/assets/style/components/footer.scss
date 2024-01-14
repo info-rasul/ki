@@ -1,4 +1,4 @@
-@use '../base/variables' as *;
+@use "../base/variables" as *;
 
 .footer {
   color: #fff;
@@ -22,7 +22,7 @@
       font-size: 1.4rem;
       background-color: transparent;
       border-color: transparent;
-      padding: 0 .5em;
+      padding: 0 0.5em;
       transition: color 0.2s ease-out;
 
       &:hover {

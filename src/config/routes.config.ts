@@ -1,7 +1,7 @@
-import type { ComponentType } from 'react';
-import { Home, About } from '../containers';
+import type { ComponentType } from "react";
+import { Home, About } from "../containers";
 
-const DESC_SUFFIX = 'description - length <= 160 chars.';
+const DESC_SUFFIX = "description - length <= 160 chars.";
 
 export type MetaInfoProps = Partial<
   Readonly<{
@@ -23,23 +23,23 @@ export type Route = Readonly<{
 
 export const routes: Route[] = [
   {
-    path: '/',
-    name: 'Home',
+    path: "/",
+    name: "Home",
     Component: Home,
     metaInfo: {
-      title: 'Home',
-      description: `Home ${DESC_SUFFIX}`
-    }
+      title: "Home",
+      description: `Home ${DESC_SUFFIX}`,
+    },
   },
   {
-    path: '/about',
-    name: 'About',
+    path: "/about",
+    name: "About",
     Component: About,
     metaInfo: {
-      title: 'About',
-      description: `About ${DESC_SUFFIX}`
-    }
-  }
+      title: "About",
+      description: `About ${DESC_SUFFIX}`,
+    },
+  },
 ];
 
 export const getRouteMetaInfo = (name: string): MetaInfoProps => {

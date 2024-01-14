@@ -1,4 +1,4 @@
-import { useRef, type MutableRefObject } from "react"
+import { useRef, type MutableRefObject } from "react";
 
 /**
  * Hook to persist value between renders - keeps it up-to-date on changes.

@@ -1,16 +1,12 @@
-import ToggleTheme from './ToggleTheme';
-import { NavLink } from 'react-router-dom';
-import type { FunctionComponent } from 'react';
-import { routes } from '../config/routes.config';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ReactComponent as ReactSeoLogoSvg } from '../assets/img/ReactSeoLogo.svg';
+import ToggleTheme from "./ToggleTheme";
+import { NavLink } from "react-router-dom";
+import type { FunctionComponent } from "react";
+import { routes } from "../config/routes.config";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ReactComponent as ReactSeoLogoSvg } from "../assets/img/ReactSeoLogo.svg";
 
 const Navbar: FunctionComponent = () => (
-  <nav
-    role="navigation"
-    className="navbar"
-    aria-label="Main navigation"
-  >
+  <nav role="navigation" className="navbar" aria-label="Main navigation">
     <div className="navbar-wrapper">
       <div className="brand-wrapper">
         <ReactSeoLogoSvg
@@ -27,7 +23,9 @@ const Navbar: FunctionComponent = () => (
             end
             to={path}
             key={path}
-            className={({ isActive }) => 'navbar-item' + (isActive ? ' is-active' : '')}
+            className={({ isActive }) =>
+              "navbar-item" + (isActive ? " is-active" : "")
+            }
           >
             <span>{name}</span>
           </NavLink>

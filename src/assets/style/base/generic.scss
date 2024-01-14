@@ -1,4 +1,4 @@
-﻿@use 'variables' as *;
+﻿@use "variables" as *;
 
 body {
   background-color: $theme-primary-body-bg-color;
@@ -16,7 +16,7 @@ body {
 
       code {
         background-color: $theme-secondary-code-bg-color;
-        color: #70E9FF;
+        color: #70e9ff;
       }
 
       hr {
@@ -45,7 +45,7 @@ svg {
 
 code {
   background-color: $theme-secondary-code-bg-color;
-  color: #70E9FF;
+  color: #70e9ff;
   padding: 0.25rem 0.5rem;
   border-radius: 3px;
   font-size: 87.5%;
