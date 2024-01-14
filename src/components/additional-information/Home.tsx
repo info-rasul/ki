@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React from "react";
-import oneSvg from "../assets/img/ServAddInformation1.svg";
-import ButtonsK from "../ButtonsK";
+import oneSvg from "../../assets/img/ServAddInformation1.svg";
+import ButtonsK from "../../components/ButtonsK";
 
 const AdditionalInformationHome: FunctionComponent = () => (
   <div className="flex flex-col justify-between bg-[#097990] p-[45px] gap-10 relative max-[1439px]:w-full max-sm:mt-[65px] px-[25px] pb-[25px] pt-[20px]">

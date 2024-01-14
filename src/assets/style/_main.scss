@@ -6,3 +6,8 @@ body {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(7.5px);
 }
+
+.home-banner {
+  background: url('../img/banner.png') no-repeat;
+  background-size: cover;
+}

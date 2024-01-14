@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React from "react";
 import oneSvg from "../assets/img/cusir-code-telegram.svg";
-import ButtonSocialK from "../ButtonSocialK";
+import ButtonSocialK from "../../components/ButtonSocialK";
 
 const QRCodeContacts: FunctionComponent = () => (
   <div className="flex justify-between bg-[#F8F8F8] w-full p-10 max-lg:pt-5 max-lg:px-[25px] max-lg:pb-[25px]">
