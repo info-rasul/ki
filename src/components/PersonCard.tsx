@@ -1,6 +1,7 @@
 import type { FunctionComponent } from 'react';
 import { Fragment } from "react";
 import oneSvg from '../assets/img/Ellipse.png';
+import React from 'react';
 
 const SubTitle: FunctionComponent = () => (
     <Fragment>
