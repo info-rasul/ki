@@ -14,7 +14,7 @@ import HomeGoodQuality from "./components/home-good-quality";
 const Home: FunctionComponent = () => (
   <div className="view-wrapper">
     <MetaInfo {...getRouteMetaInfo("Home")} />
-      <main className="w-screen">
+      <main className="w-full">
           <HomeBanner />
           <div className="px-20 mt-20 max-xl:mt-10 max-lg:px-4">
               <HomeArticle />

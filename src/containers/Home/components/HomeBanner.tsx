@@ -6,7 +6,7 @@ import PersonCard from "../../../components/PersonCard";
 const HomeBanner: FunctionComponent = () => (
     <Fragment>
         <section className="home-banner flex items-end h-[100vh] max-sm:h-[645px]">
-            <div className="w-screen px-20 pb-[59px] max-lg:px-4 max-sm:pb-[30px]">
+            <div className="w-full px-20 pb-[59px] max-lg:px-4 max-sm:pb-[30px]">
                 <h1 className="text-white text-[40px] font-medium leading-[140%] max-sm:text-[28px]">Трансформируем <br /> информацию в возможности </h1>
                 <div className="min-h-[1px] my-10 bg-[#FFFFFF]/[.20] max-sm:my-[25px]"></div>
                 <p className="text-white font-medium leading-[170%] max-sm:text-[14px] max-sm:leading-[150%]">

@@ -8,10 +8,12 @@ import React from "react";
 
 const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => (
   <Fragment>
-    <Header />
-    {children}
-    <BackToTop />
-    <Footer />
+      <div className="container-zoom">
+          <Header />
+          {children}
+          <BackToTop />
+          <Footer />
+      </div>
   </Fragment>
 );
 
