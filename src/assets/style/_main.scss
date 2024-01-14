@@ -57,3 +57,16 @@ body {
   width: 100%;
   z-index: 1;
 }
+
+#myVideo2 {
+  position: absolute;
+  height: 308px;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-back {
+  background: linear-gradient(4deg, rgb(9 59 69) 0%, rgb(8 108 128 / 79%) 35%);
+  min-height: 308px;
+}
