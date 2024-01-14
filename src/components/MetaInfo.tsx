@@ -41,6 +41,10 @@ const MetaInfo: FunctionComponent<MetaInfoProps> = ({
           content: description,
         },
         {
+          name: "viewport",
+          content: 'initial-scale=1.0,maximum-scale=5',
+        },
+        {
           property: "og:description",
           content: description,
         },
