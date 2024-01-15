@@ -10,10 +10,18 @@ const Footer: FunctionComponent = () => (
         <img className="h-[65px]" src={oneSvg} alt="logo" />
         <div className="footer__list flex justify-between max-w-[436px] w-full">
           <ul className="flex flex-col gap-5">
-            <li className="text-white leading-[145%]">О нас</li>
-            <li className="text-white leading-[145%]">Услуги</li>
-            <li className="text-white leading-[145%]">Блог</li>
-            <li className="text-white leading-[145%]">Контакты</li>
+            <li>
+              <a className="text-white leading-[145%]" href="/about-us">О нас</a>
+            </li>
+            <li>
+              <a className="text-white leading-[145%]" href="/services">Услуги</a>
+            </li>
+            <li>
+              <a className="text-white leading-[145%]" href="/blog">Блог</a>
+            </li>
+            <li>
+              <a className="text-white leading-[145%]" href="/contacts">Контакты</a>
+            </li>
           </ul>
           <p className="text-white leading-[145%] tracking-[0.38px]">
             ММДЦ “Москва-Сити” <br />
@@ -41,19 +49,19 @@ const Footer: FunctionComponent = () => (
       <div className="h-px bg-[#242D3E] my-[35px] w-full"></div>
       <ul className="flex flex-col gap-[25px] w-full">
         <li className="text-white leading-[145%] flex justify-between items-center">
-          <a href="#">О нас</a>
+          <a href="/about-us">О нас</a>
           <img src={twoSvg} alt="footer-icon" />
         </li>
         <li className="text-white leading-[145%] flex justify-between items-center">
-          <a href="#">Услуги</a>
+          <a href="/services">Услуги</a>
           <img src={twoSvg} alt="footer-icon" />
         </li>
         <li className="text-white leading-[145%] flex justify-between items-center">
-          <a href="#">Блог</a>
+          <a href="/blog">Блог</a>
           <img src={twoSvg} alt="footer-icon" />
         </li>
         <li className="text-white leading-[145%] flex justify-between items-center">
-          <a href="#">Контакты</a>
+          <a href="/contacts">Контакты</a>
           <img src={twoSvg} alt="footer-icon" />
         </li>
       </ul>

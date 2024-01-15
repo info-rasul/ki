@@ -35,7 +35,6 @@ const Home: FunctionComponent = () => (
               <HomeGoodQuality />
           </div>
       </main>
-
   </div>
 );
 

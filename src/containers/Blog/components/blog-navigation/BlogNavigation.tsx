@@ -1,15 +1,20 @@
 import React from 'react';
-import ServicesImg from '../../../../assets/img/services1.svg'
 
 const BlogNavigation = () => {
     return (
-        <div className="w-[630px] p-[45px] flex items-center bg-[#F8F8F8] gap-[60px] max-sm:gap-[25px] max-sm:p-5">
-            <img className="max-sm:w-[48px] h-[48px]" src={ServicesImg} alt="services1"/>
-                <p className="text-[25px] leading-[140%] tracking-[.2px] max-sm:text-[16px]	leading-[150%]-">
-                    Комплексная защита должников от кредиторов
-                </p>
+        <div className="hide__scrollbar my-[30px] flex gap-[10px] overflow-x-auto max-sm:mb-5 mt-[19px]">
+            <a className="navigation__elem text-white bg-[#097990] py-[10px] px-[15px] inline-block border border-[#E6E6E6] text-[15px] leading-[150%] tracking-[.06px] max-sm:text-[14px] whitespace-nowrap"
+               href="#">Все</a>
+            <a className="navigation__elem  py-[10px] px-[15px] inline-block border border-[#E6E6E6] text-[15px] leading-[150%] tracking-[.06px] max-sm:text-[14px] whitespace-nowrap"
+               href="#">Финансы</a>
+            <a className="navigation__elem  py-[10px] px-[15px] inline-block border border-[#E6E6E6] text-[15px] leading-[150%] tracking-[.06px] max-sm:text-[14px] whitespace-nowrap"
+               href="#">Банкротство</a>
+            <a className="navigation__elem  py-[10px] px-[15px] inline-block border border-[#E6E6E6] text-[15px] leading-[150%] tracking-[.06px] max-sm:text-[14px] whitespace-nowrap"
+               href="#">Долги</a>
+            <a className="navigation__elem  py-[10px] px-[15px] inline-block border border-[#E6E6E6] text-[15px] leading-[150%] tracking-[.06px] max-sm:text-[14px] whitespace-nowrap"
+               href="#">Уголовные дела</a>
         </div>
-    );
+);
 };
 
 export default BlogNavigation;

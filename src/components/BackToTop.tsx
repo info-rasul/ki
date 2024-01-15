@@ -9,25 +9,25 @@ const AngleDoubleUpIcon = styled(FontAwesomeIcon).attrs({
 })`
   display: block;
   color: #20232a;
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-left: 0.1rem;
-  margin: 0.95rem auto auto;
+  margin: 9px;
 `;
 
 const BackToTopLink = styled.a<{ show: boolean }>`
-  width: 3.5rem;
+  width: 2.5rem;
   z-index: 9999;
   display: block;
-  height: 3.5rem;
+  height: 2.5rem;
   right: 1.25rem;
   cursor: pointer;
   position: fixed;
   user-select: none;
   border-radius: 50%;
-  background: #61dafb;
-  border: 1px solid transparent;
+  background-color: white;
+  border: 1px solid rgb(152 152 152);
   -webkit-tap-highlight-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.265) 0px 0px 20px;
+  box-shadow: rgb(255 255 255 / 54%) 0 0 20px;
   transition:
     opacity 0.4s ease,
     bottom 0.4s ease;

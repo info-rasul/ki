@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React from "react";
-import oneSvg from "../assets/img/cusir-code-telegram.svg";
+import oneSvg from "../../assets/img/cusir-code-telegram.svg";
 import ButtonSocialK from "../../components/ButtonSocialK";
 
 const QRCodeContacts: FunctionComponent = () => (
@@ -19,10 +19,7 @@ const QRCodeContacts: FunctionComponent = () => (
       </div>
     </div>
     <div className="p-[7px] bg-white max-md:hidden">
-      <img
-        className="w-[150px] h-[150px]"
-        src={oneSvg}
-        alt="cusir-code-telegram"
+      <img className="w-[150px] h-[150px]" src={oneSvg} alt="cusir-code-telegram"
       />
     </div>
   </div>

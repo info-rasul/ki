@@ -8,6 +8,13 @@ body {
   --zoom-container: 1;
 }
 
+@media all and (max-width: 640px)
+{
+  :root {
+    --zoom-container: 1;
+  }
+}
+
 @media all and (max-width: 1450px)
 {
   :root {
@@ -29,6 +36,15 @@ body {
 }
 
 
+
+
+.article_banner {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.55) 44.01%, rgba(0, 0, 0, 0.90) 100%), url('../img/article-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 .container-zoom {
   zoom: var(--zoom-container);
 }
@@ -41,6 +57,31 @@ body {
 .home-banner {
   background: url('../img/banner.png') no-repeat;
   background-size: cover;
+}
+
+.contacts-banner {
+  background: url('../img/contacts-banner.jpg') no-repeat;
+  background-size: cover;
+}
+
+.navigation-home:hover {
+  color: black;
+}
+
+.buttons {
+  z-index: 1;
+}
+
+.button-social:hover {
+  transition: .3s;
+  background-color: #2699aa;
+  color: black;
+}
+
+.buttons-news:hover {
+  transition: .3s;
+  background-color: #2699aa;
+  color:white;
 }
 
 .bg-custom-gradient{

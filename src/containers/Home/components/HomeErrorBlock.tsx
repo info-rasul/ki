@@ -8,7 +8,7 @@ import ButtonSocialK from "../../../components/ButtonSocialK";
 
 const HomeErrorBlock: FunctionComponent = () => (
   <Fragment>
-    <div className="aside bg-[#0B162A] mt-20 p-[45px] relative max-sm:px-[25px] pt-[20px] pb-[25px] max-sm:mt-10">
+    <div className="aside bg-[#0B162A] mt-20 p-[45px] relative max-sm:px-[25px] max-sm:pt-[20px] max-sm:pb-[25px] max-sm:mt-10">
       <div className="flex flex-col lg:gap-[60px] max-lg:gap-10">
         <div className="flex flex-col gap-5 max-sm:gap-[15px]">
           <h2 className="text-white text-[30px] leading-[145%] tracking-[0.2px] max-lg:text-[20px] max-lg:leading-[135%]">
