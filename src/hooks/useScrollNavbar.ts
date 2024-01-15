@@ -8,11 +8,13 @@ const useScrollNavbar = (): void => {
     if (window.scrollY > 300 && menu.length) {
       for (let i = 0; i < menu.length; i++) {
         menu[i].style.background = "black";
+        menu[i].classList.add("scroll-menu");
       }
     } else {
       // Если страница прокручена меньше чем на  300px то удаляем стиль background: black;
       for (let i = 0; i < menu.length; i++) {
         menu[i].style.background = "";
+        menu[i].classList.remove("scroll-menu");
       }
     }
   });

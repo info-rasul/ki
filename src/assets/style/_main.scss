@@ -49,9 +49,43 @@ body {
   zoom: var(--zoom-container);
 }
 
-.header__menu {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(7.5px);
+.home-page {
+  .header__menu {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(7.5px);
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.inner-page {
+  .header__menu {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(7.5px);
+    a {
+      color: #000;
+    }
+  }
+
+  .fill-white {
+    fill: #000;
+  }
+
+  header {
+    border-bottom: 2px solid #f8f8f8;
+  }
+}
+
+.inner_page .header__menu a {
+  color: #000;
+}
+
+.header__menu.scroll-menu {
+  background: black;
+  a {
+    color: #fff;
+  }
 }
 
 .home-banner {
