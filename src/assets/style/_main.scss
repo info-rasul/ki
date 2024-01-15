@@ -53,6 +53,7 @@ body {
   .header__menu {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(7.5px);
+    z-index: 20;
     a {
       color: #fff;
     }
