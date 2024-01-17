@@ -6,8 +6,8 @@ const BlogCard = () => {
     return (
         <a href="/article" className="flex flex-col items-start w-[400px]">
             <img src={blogCardImg} alt="blog-card-img"/>
-            <h3 className="text-xl leading-[145%] mt-5">В июне на ПМЭФ пройдет бизнес-диалог Россия-Индия</h3>
-            <p className="text-[15px] leading-[170%] mt-2.5	line-clamp-3">
+            <h3 className="text-xl leading-[145%] mt-5 tracking-[.2px]">В июне на ПМЭФ пройдет бизнес-диалог  { " \"Россия-Индия\"" }</h3>
+            <p className="text-[15px] leading-[170%] mt-[12px]	line-clamp-3 tracking-[.15px]">
                 Индийские компании проявляют все больший интерес к Петербургскому международному экономическому
                 форуму,
                 как к главной площадке для развития бизнеса с Россией, 5 июня, в стартовый день форума,

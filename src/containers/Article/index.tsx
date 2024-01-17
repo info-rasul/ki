@@ -6,21 +6,23 @@ import ArticleBanner from "./components/article-banner/ArticleBanner";
 import ArticleContent from "./components/article-content/ArticleContent";
 import ArticleSocialLinks from "./components/article-social-links/ArticleSocialLinks";
 
-const About: FunctionComponent = () => (
+const Article: FunctionComponent = () => (
     <Fragment>
         <MetaInfo {...getRouteMetaInfo("Article")} />
-        <div>
-            <ArticleBanner />
-            <div className="xl:hidden">
-                <ArticleContent />
-            </div>
-            <div className="article__content flex px-[320px] py-20 gap-[190px] relative max-xl:hidden">
-                <ArticleContent />
-                <ArticleSocialLinks />
+        <ArticleBanner />
+        <div className="container">
+            <div className="w-[1440px]">
+                <div className="xl:hidden">
+                    <ArticleContent />
+                </div>
+                <div className="article__content flex px-[320px] py-20 gap-[190px] relative max-xl:hidden">
+                    <ArticleContent />
+                    <ArticleSocialLinks />
+                </div>
             </div>
         </div>
     </Fragment>
 
 );
 
-export default About;
+export default Article;

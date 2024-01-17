@@ -10,11 +10,11 @@ const QRCodeContacts: FunctionComponent = () => (
         <h2 className="text-[25px] leading-[145%] max-md:text-[22px] max-md:leading-[145%]">
           Наш телеграм канал
         </h2>
-        <p className="leading-[170%] max-md:text-[15px] max-md:leading-[150%]">
+        <p className="leading-[170%] tracking-[.05px] max-md:text-[15px] max-md:leading-[150%]">
           Наведите камеру телефона на QR код, чтобы перейти в наш телеграм
         </p>
       </div>
-      <div className="w-[198.3px] max-md:w-full bg-black rounded-full">
+      <div className="w-[194px] max-md:w-full bg-black rounded-full">
         <ButtonSocialK />
       </div>
     </div>

@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
-import oneSvg from "../../assets/img/gobbler.png";
+import oneSvg from "../../assets/img/quote.png";
 import twoSvg from "../../assets/img/Ellipse10.png";
 import PersonCard from "../../components/PersonCard";
 import PersonCardDesc from "../PersonCardDesc";
@@ -12,13 +12,13 @@ const QuoteArticle: FunctionComponent = () => (
         src={oneSvg}
         alt="gobbler"
       />
-      <p className="text-center text-[25px] mt-2 tracking-[.1px] max-md:text-[18px] leading-[150%]">
+      <p className="text-center text-[25px] mt-[6px] max-md:text-[18px] leading-[150%]">
         Об устойчивости ценового давления свидетельствует динамика{" "}
         <br className="max-lg:hidden" /> базовой инфляции. Этот показатель
         четыре месяца подряд растет <br className="max-lg:hidden" /> темпами
         выше 10 процентов в пересчете на год
       </p>
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-[13px] mt-[3px]">
         <div className="mainArticle__user flex items-center	gap-4 rounded-full py-[9px] pl-[9px] pr-[20px] bg-[#F8F8F8]">
           <img
             className="max-md:w-[28px] h-[28px]"

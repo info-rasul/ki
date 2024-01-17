@@ -8,12 +8,10 @@ const InformationCardAbout: FunctionComponent = () => {
 
   return (
     <Fragment>
-      <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[56px] max-w-[630px]">
+      <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[59px] max-w-[630px]">
         <img className="w-[100px] h-[100px]" src={oneSvg} alt="Frame1" />
         <div className="flex flex-col items-start gap-[20px]">
-          <h3 className="text-[25px] leading-[140%] tracking-[0.3px]">
-            646 млн
-          </h3>
+          <h3 className="text-[25px] leading-[140%] tracking-[0.3px]">646 млн</h3>
           <p className="leading-[170%]">
             Столько денег было сэкономленное нашим клиентам
           </p>
