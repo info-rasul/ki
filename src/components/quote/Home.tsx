@@ -10,7 +10,7 @@ const QuoteHome: FunctionComponent = () => (
           src={QuoteImg}
           alt="Цитата-изображение"
       />
-      <p className="text-center text-[25px] mt-[48px] mb-[40px] tracking-[.1px]  max-sm:text-[18px] leading-[150%] max-sm:mt-[2px]">
+      <p className="text-center text-[25px] mt-[48px] mb-[40px] tracking-[.1px]  max-sm:text-[18px] leading-[150%] max-sm:mt-[2px] max-sm:mb-0">
         «Мы обязаны помнить об исконных российских традициях справедливости{" "}
         <br className="max-lg:hidden" />и законности, помнить о том, что
         диктатура закона — это единственная <br className="max-lg:hidden" />

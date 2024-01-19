@@ -6,7 +6,7 @@ import twoSvg from "../../../../assets/img/Ellipse10.png";
 const EscortSidebar: React.FC = () => {
 
     return (
-        <div className="escort__sidebar flex flex-col gap-[15px] pt-20">
+        <div className="escort__sidebar flex flex-col gap-[15px] pt-20 max-[1390px]:hidden">
             <QRCodeServices />
             <div className="flex flex-col items-start justify-center bg-[#086c801a] w-[300px] px-[25px] pb-[25px] pt-[26px]">
                 <img className="w-[24px] h-[18px]" src={oneSvg} alt="gobbler" />

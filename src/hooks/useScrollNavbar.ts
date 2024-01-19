@@ -20,20 +20,14 @@ const useScrollNavbar = (): void => {
   });
 
   /*menu adaptive*/
-  let button = document.querySelector<HTMLElement>(".header__menu_btn");
-  let menuAdaptives = document.querySelectorAll<HTMLElement>(
-    ".header__menu_adaptive",
-  );
+  const button = document.querySelector('.header__menu_btn');
+  let menuAdaptives = document.querySelectorAll<HTMLElement>(".header__menu_adaptive");
   let headerAdaptive = document.querySelector<HTMLElement>(".header__adaptive");
-  let headerAdaptiveLogo = document.querySelector<HTMLElement>(
-    ".header__adaptive_logo",
-  );
-  let buttonLine1 = document.querySelector<HTMLElement>(
-    ".header__menu_btn_line1",
-  );
-  let buttonLine2 = document.querySelector<HTMLElement>(
-    ".header__menu_btn_line2",
-  );
+  let headerAdaptiveLogo = document.querySelector<HTMLElement>(".header__adaptive_logo");
+  let buttonLine1 = document.querySelector<HTMLElement>(".header__menu_btn_line1");
+  let buttonLine2 = document.querySelector<HTMLElement>(".header__menu_btn_line2");
+  console.log(button,menuAdaptives, headerAdaptive, headerAdaptiveLogo, buttonLine1, buttonLine2,);
+
 
   // Задаем базовые стили для анимации через CSS
   menuAdaptives.forEach((menuAdaptive) => {
@@ -52,6 +46,7 @@ const useScrollNavbar = (): void => {
 
     button.addEventListener("click", () => {
       let isOpen = button.classList.toggle("header__menu_active");
+
 
       menuAdaptives.forEach((menuAdaptive) => {
         if (!isOpen) {

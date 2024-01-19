@@ -2,13 +2,13 @@ body {
   font-family: "Helvetica Neue", sans-serif;
 }
 
-/*:root {
+:root {
   --main-fs: 1;
   --base-font-size: 1;
   --zoom-container: 1;
 }
 
-@media all and (max-width: 640px)
+/*@media all and (max-width: 640px)
 {
   :root {
     --zoom-container: 1;
@@ -42,6 +42,10 @@ body {
   max-width: 100vw;
   display: flex;
   justify-content: center;
+}
+
+.hide__scrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 .article_banner {
@@ -153,7 +157,6 @@ body {
   min-height: 308px;
 }
 
-
 .numbered-list ol{
   counter-reset: myCounter;
 }
@@ -170,19 +173,45 @@ body {
   line-height: 170%;
 }
 
+@media all and (max-width: 645px) {
+  .numbered-list li:before {
+    line-height: 171%;
+  }
+}
+
 .markers li {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   line-height: 187%;
   letter-spacing: 0.2px;
+}
+
+@media all and (max-width: 640px) {
+  .markers li {
+   font-size: 15px;
+    line-height: 160%;
+  }
 }
 
 .markers li::before {
   content: "";
   border-radius: 12px;
   background: #086C80;
-  width: 12px;
+  max-width: 12px;
+  width: 100%;
   height: 12px;
   margin-right: 24px;
   margin-left: 9px;
+}
+
+@media all and (max-width: 670px) {
+  .fXhhTj {
+    margin-right: 10px;
+  }
+}
+
+@media all and (max-width: 645px) {
+  .fXhhTj {
+    margin-right: 30px;
+  }
 }

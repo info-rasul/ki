@@ -6,19 +6,19 @@ import PersonCard from "../../components/PersonCard";
 import PersonCardDesc from "../PersonCardDesc";
 const QuoteArticle: FunctionComponent = () => (
   <Fragment>
-    <div className="flex flex-col gap-y-10 items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] py-10 my-20 max-md:my-10 max-md:pt-[35px] max-md:pb-[33px] max-md:gap-y-[23px]">
+    <div className="flex flex-col gap-y-10 items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] py-10 my-20 max-md:my-10 max-md:pt-[36px] max-md:pb-[33px] max-md:gap-y-[23px] max-sm:mb-[42px] max-sm:mt-[39px]">
       <img
         className="mt-1.5 w-[48px] h-[36px] max-md:w-[32px] max-md:h-[24px] max-md:mt-[2px]"
         src={oneSvg}
         alt="gobbler"
       />
-      <p className="text-center text-[25px] mt-[6px] max-md:text-[18px] leading-[150%]">
+      <p className="text-center text-[25px] mt-[6px] max-md:text-[18px] leading-[150%] max-sm:mt-[8px]">
         Об устойчивости ценового давления свидетельствует динамика{" "}
         <br className="max-lg:hidden" /> базовой инфляции. Этот показатель
         четыре месяца подряд растет <br className="max-lg:hidden" /> темпами
         выше 10 процентов в пересчете на год
       </p>
-      <div className="flex flex-col gap-[13px] mt-[3px]">
+      <div className="flex flex-col gap-[13px] mt-[3px] max-sm:mt-0 max-sm:gap-[9px]">
         <div className="mainArticle__user flex items-center	gap-4 rounded-full py-[9px] pl-[9px] pr-[20px] bg-[#F8F8F8]">
           <img
             className="max-md:w-[28px] h-[28px]"
