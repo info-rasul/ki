@@ -3,9 +3,10 @@ import { useLatestRef } from "../hooks";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState, type FunctionComponent } from "react";
 import React from "react";
+import TopButton from '../assets/img/top-button.svg'
 
 const AngleDoubleUpIcon = styled(FontAwesomeIcon).attrs({
-  icon: "angle-double-up",
+  /*icon: "angle-double-up",*/
 })`
   display: block;
   color: #20232a;
@@ -19,15 +20,13 @@ const BackToTopLink = styled.a<{ show: boolean }>`
   z-index: 9999;
   display: block;
   height: 2.5rem;
-  right: 1.25rem;
+  right: 80px;
   cursor: pointer;
   position: fixed;
   user-select: none;
   border-radius: 50%;
-  background-color: white;
-  border: 1px solid rgb(152 152 152);
+  background-color: #093b45;
   -webkit-tap-highlight-color: transparent;
-  box-shadow: rgb(255 255 255 / 54%) 0 0 20px;
   transition:
     opacity 0.4s ease,
     bottom 0.4s ease;
@@ -72,7 +71,7 @@ const BackToTop: FunctionComponent = () => {
       aria-label="Back to top"
       onClick={scrollToTop}
     >
-      <AngleDoubleUpIcon />
+      <img src={TopButton} alt="TopButton"/>
     </BackToTopLink>
   );
 };

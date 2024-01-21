@@ -3,15 +3,15 @@ import React, { Fragment } from "react";
 import oneSvg from "../../../assets/img/icon55.svg";
 
 const HomeArticle: FunctionComponent = () => (
-    <div className="flex justify-between mb-[138px] max-xl:flex-col max-xl:gap-[30px] max-xl:mb-[80px]">
-        <div className="max-w-[600px] max-xl:w-full max-xl:max-w-[100%]">
+    <div className="grid grid-cols-2 gap-4 mb-[138px] max-xl:flex-col max-xl:gap-[30px] max-xl:mb-[80px]">
+        <div className=" max-xl:w-full max-xl:max-w-full">
             <p className="text-[30px] leading-[140%] max-sm:text-[24px]">
                 Решение проблемных ситуаций <br className="max-xl:hidden" /> защита малого <br className="sm:hidden" /> и среднего
                 бизнеса <br className="max-xl:hidden" /> от недобросовестных кредиторов <br className="max-xl:hidden" /> и конкурентов
             </p>
             <img className="mt-[102px] ml-[-21px] max-xl:hidden" src={oneSvg} alt="icon55" />
         </div>
-        <div className="max-w-[545px] flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">
+        <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">
             <p className="leading-[180%] tracking-[.5px] font-medium max-sm:leading-[160%] text-[15px]">
                 Комитет информации (КИ) — концептуальный консалтинговый бренд,
                 объединяющий экспертов с многолетним опытом работы в правоохранительных и

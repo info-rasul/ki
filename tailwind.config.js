@@ -4,6 +4,26 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    container: {
+      // you can configure the container to be centered
+      center: true,
+
+      // or have default horizontal padding
+      padding: {
+        sm: '16px',
+        md: '40px',
+        lg: '60px',
+        xl: '80px',
+      },
+
+      // default breakpoints but with 40px removed
+      screens: {
+        sm: '600px',
+        md: '728px',
+        lg: '984px',
+        xl: '1440px',
+      },
+    },
   },
   plugins: [],
 }
