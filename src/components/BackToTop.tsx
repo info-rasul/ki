@@ -6,7 +6,6 @@ import React from "react";
 import TopButton from '../assets/img/top-button.svg'
 
 const AngleDoubleUpIcon = styled(FontAwesomeIcon).attrs({
-  /*icon: "angle-double-up",*/
 })`
   display: block;
   color: #20232a;

@@ -1,30 +1,110 @@
+// @ts-nocheck
 import type { FunctionComponent } from "react";
-import React, { Fragment } from "react";
+import React, {Fragment, useEffect, useState} from "react";
 import oneSvg from "../../assets/img/Frame1.svg";
+interface InformationCardHomeDataProps {
+  title: string;
+  desc: string;
+}
+const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title,desc }) => {
+  const innerHtml = { __html: title }
 
-const InformationCardHome: FunctionComponent = () => (
+  const [expanded, setExpanded] = useState(false);
+
+  const text = "Ваш скрытый текст здесь";
+
+  const toggleText = () => {
+    setExpanded(!expanded);
+  }
+
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // передаем пустой массив зависимостей, чтобы обработчик события resize добавлялся только один раз
+
+  console.log(windowWidth, 'windowWidth')
+
+  if (windowWidth >= 629) {
+
+  }
+
+  const styles: React.CSSProperties = {
+    textOverflow: "ellipsis",
+    overflow: expanded ? "visible" :"hidden",
+    display: expanded ? "block" : "-webkit-box",
+    WebkitBoxOrient: "vertical",
+    WebkitLineClamp: expanded ? 'none' : 6,
+  };
+
+  return (
   <Fragment>
-    <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[56px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25px]">
+    <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[57px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25.2px]">
       <img className="max-sm:w-[70px] max-sm:h-[70px]" src={oneSvg} alt="Frame1" />
-      <div className="card__content flex flex-col items-start gap-[30px] max-[1439px]:gap-[15px]">
+      <div style={{height: expanded ? 'auto' : 'auto', overflow: 'hidden',}} className="card__content flex flex-col items-start gap-[29px] max-[1439px]:gap-[15px]">
         <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[150%]">
-          Комплексная защита <br /> должников от кредиторов
+          <div dangerouslySetInnerHTML={{__html: title}} />
         </h3>
-        <p className="text-content leading-[170%] tracking-[.17px] max-[450px]:line-clamp-6  max-sm:text-[15px] max-sm:leading-[160%]">
-          Нестабильные условия рынка и жесткая санкционная политика
-          недружественных государств нередко провоцируют ситуации, при которых
-          исполнение кредитных обязательств субъектом предпринимательства
-          становится затруднительным. Своевременное обращение на ранней стадии к
-          команде наших экспертов позволит не только полностью исключить риски
-          наступления негативных последствий для должников, но и выйти
-          победителями в противостоянии с кредиторами.
+        <p style={windowWidth <= 629 ? styles : null} className="text-content leading-[170%] tracking-[.17px] max-sm:text-[15px] max-sm:leading-[160%]">
+          {desc}
         </p>
-        <p className="hide-text text-[15px] leading-[170%] text-[#097990] min-[450px]:hidden">
-          Читать полностью
+        <p onClick={toggleText} className="hide-text text-[15px] leading-[170%] text-[#097990] min-[629px]:hidden">
+          {expanded ? 'Скрыть' : 'Читать полностью'}
         </p>
       </div>
     </div>
   </Fragment>
-);
+)};
 
 export default InformationCardHome;
+
+/*
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+  let containers = document.querySelectorAll('.card__content');
+
+  let screenWidth = window.innerWidth;
+
+  containers.forEach(container => {
+  let textContainer = container.querySelector('.text-content');
+  let toggleButton = container.querySelector('.hide-text');
+
+  //  состояние текста как свёрнутое
+  let isExpanded = false;
+  textContainer.style.minHeight = '144px'; // Меняем minHeight на minHeight для корректной анимации
+  textContainer.style.transition = 'min-height 500ms'; // Добавляем анимацию
+
+  toggleButton.textContent = 'Читать полностью';
+
+  toggleButton.addEventListener('click', function () {
+  if (isExpanded) {
+  // Сворачиваем текст
+  textContainer.style.minHeight = '144px';
+  toggleButton.textContent = 'Читать полностью';
+  textContainer.classList.add('max-md:line-clamp-6'); // Добовляем класс для троеточия
+  toggleButton.setAttribute('aria-expanded', 'false');
+
+} else {
+  // Разворачиваем текст
+  textContainer.style.minHeight = '290px'; // Анимируем изменение minHeight вместо minHeight
+  toggleButton.textContent = 'Скрыть';
+  setTimeout(() => {
+  textContainer.classList.remove('max-md:line-clamp-6'); // Удаляем класс для троеточия
+}, 500);
+  toggleButton.setAttribute('aria-expanded', 'true');
+
+}
+  isExpanded = !isExpanded;
+});
+});
+});
+</script>*/

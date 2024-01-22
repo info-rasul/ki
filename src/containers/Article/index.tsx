@@ -11,7 +11,7 @@ const Article: FunctionComponent = () => (
         <MetaInfo {...getRouteMetaInfo("Article")} />
         <ArticleBanner />
         <div className="container">
-            <div className="w-[1440px]">
+            <div className="">
                 <div className="xl:hidden">
                     <ArticleContent />
                 </div>

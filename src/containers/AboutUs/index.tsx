@@ -5,14 +5,16 @@ import QuoteHome from "../../components/quote/Home";
 import InformationCard from "../../components/information-card/About";
 import {getRouteMetaInfo} from "../../config/routes.config";
 import oneSvg from "../../assets/img/Frame1.svg";
+import Header from "../../components/Header";
 
 const AboutUs: FunctionComponent = () => {
   const namePage = "О нас"
   return (
       <Fragment>
         <MetaInfo {...getRouteMetaInfo("AboutUs")} />
+        <Header />
         <div className="container">
-          <div className="w-[1440px] px-20 pt-[120px] max-lg:px-[16px] max-sm:pt-[53px]">
+          <div className="pt-[120px] max-lg:px-[16px] max-sm:pt-[53px]">
             <Navigation namePage={namePage}/>
             <div className="flex justify-between max-[1100px]:flex-col max-sm:w-full">
               <h2 className="text-[30px] leading-[142%] tracking-[.02px] mt-20 mb-10 max-[1100px]:mt-10 max-[1100px]:mb-[30px] max-sm:text-[24px] max-sm:leading-[140%]">

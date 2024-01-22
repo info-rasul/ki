@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
-import {MetaInfo, Navigation} from "../../components";
+import {Header, MetaInfo, Navigation} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import QRCodeContacts from "../../components/qr-code/Contacts";
 
@@ -10,8 +10,9 @@ const Contacts: FunctionComponent = () => {
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Contacts")} />
+            <Header />
             <div className="container">
-                <div className="w-[1440px] px-20 pt-[120px] pb-10 max-xl:px-4 max-md:pt-[53px]">
+                <div className="pt-[120px] pb-10 max-xl:px-4 max-md:pt-[53px]">
                     <Navigation namePage={namePage}/>
                     <div
                         className="contacts-banner flex justify-between p-[45px] pb-[92px] mt-10 mb-[21px] max-lg:p-[25px] gap-x-5 max-[880px]:flex-col max-md:mb-[38px]">

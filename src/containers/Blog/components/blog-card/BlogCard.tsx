@@ -23,7 +23,7 @@ const BlogCard = () => {
                     </div>
                 </div>
             </a>
-            <a href="/article" className="min-[1439px]:hidden min-[1439px]:hidden flex gap-[15px]">
+            <a href="/article" className="min-[1439px]:hidden  flex gap-[15px]">
                 <img className="max-[900px]:h-[175px] max-sm:h-[100px] max-[540px]:h-[65px] max-[540px]:w-[65px]"
                      src={blogCardImg} alt="blog-card-img"/>
                     <div

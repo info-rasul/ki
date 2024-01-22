@@ -4,7 +4,7 @@ import QuoteImg from "../../assets/img/quote.png";
 import PersonCard from "../../components/PersonCard";
 
 const QuoteHome: FunctionComponent = () => (
-    <div className="flex flex-col items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] pt-[60px] pb-[58px]  max-sm:py-[35px] max-sm:gap-y-[25px]">
+    <div className="flex flex-col items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] pt-[60px] pb-[58px]  max-sm:pt-[35px] max-sm:pb-[34px] max-sm:gap-y-[25px]">
       <img
           className="mt-1.5 max-sm:w-[32px] max-sm:h-[24px]"
           src={QuoteImg}

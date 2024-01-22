@@ -7,7 +7,7 @@ const Footer: FunctionComponent = () => (
   <Fragment>
     <footer className="footer flex flex-col pt-20 pb-10 bg-custom-gradient max-lg:hidden">
       <div className="container">
-        <div className="px-20">
+        <div className="">
           <div className="flex justify-between">
             <img className="h-[65px]" src={Logo} alt="Логотип" />
             <div className="flex justify-between max-w-[436px] w-full">

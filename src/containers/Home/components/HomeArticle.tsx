@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import oneSvg from "../../../assets/img/icon55.svg";
 
 const HomeArticle: FunctionComponent = () => (
-    <div className="grid grid-cols-2 gap-4 mb-[138px] max-xl:flex-col max-xl:gap-[30px] max-xl:mb-[80px]">
+    <div className="grid grid-cols-2 gap-48 mb-[138px] max-xl:gap-[30px] max-xl:mb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
         <div className=" max-xl:w-full max-xl:max-w-full">
             <p className="text-[30px] leading-[140%] max-sm:text-[24px]">
                 Решение проблемных ситуаций <br className="max-xl:hidden" /> защита малого <br className="sm:hidden" /> и среднего

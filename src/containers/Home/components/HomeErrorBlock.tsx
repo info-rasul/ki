@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import ErrorBlock1 from "../../../assets/img/error-block-1.svg";
 import ErrorBlock2 from "../../../assets/img/error-block-2.svg";
 import ErrorBlockMedia from "../../../assets/img/error-block-media.svg";
-import ButtonSocialK from "../../../components/ButtonSocialK";
+import ButtonSocialIcon from "../../../assets/img/Group6.svg";
 
 const HomeErrorBlock: FunctionComponent = () => (
   <Fragment>
@@ -15,14 +15,23 @@ const HomeErrorBlock: FunctionComponent = () => (
             привлекают к уголовной <br /> ответственности
           </h2>
           <p className="text-white leading-[170%] opacity-60 max-sm:leading-[150%] max-sm:text-[14px]">
-            Подпишись на наш Telegram-кaнaл и получи практический чек-лист,{" "}
-            <br />
+            Подпишись на наш Telegram-кaнaл и получи практический чек-лист,
+            <br className="max-sm:hidden"/>
             как избежать уголовной ответственности, сохранить свои активы,
             деньги и свободу!
           </p>
         </div>
-        <div className="w-[242px] max-sm:w-[293px]">
-          <ButtonSocialK />
+        <div className="bg-opacity-4 w-[242px] max-sm:w-[293px]">
+          <a className="button-social cursor-pointer flex items-center justify-center gap-[21px] py-[10px] pb-[8px] pl-[25px] pr-[7px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
+            Получить в Telegram
+            <img
+                className="max-md:hidden"
+                width="32"
+                height="32"
+                src={ButtonSocialIcon}
+                alt="ButtonSocialIcon"
+            />
+          </a>
         </div>
       </div>
       <img

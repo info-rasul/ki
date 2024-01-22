@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
-import React, {Fragment} from "react";
+import React, {Fragment, useState} from "react";
 import DownButton from "../../assets/img/down-button.svg";
-import { MetaInfo } from "../../components";
+import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import LegalSupport from "./components/legal-support/LegalSupport";
 import BankruptcyConcept from "./components/bankruptcy-concept/BankruptcyConcept";
@@ -23,24 +23,34 @@ const Escort: FunctionComponent = () => {
             behavior: 'smooth'
         });
     };
+    const [downButton, setDownButton] = useState(false);
+    window.addEventListener("scroll", () => {
+        if (window.scrollY >= 200) {
+            setDownButton(true)
+        } else if (window.scrollY < 2) {
+            setDownButton(false)
+        }
+    } )
 
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Escort")} />
-            <div className="container bg-custom-gradient">
-                <div className=" w-[1440px] flex items-end justify-between px-20 pt-[179px] pb-20 max-lg:pb-[30px] max-md:px-[16px] max-sm:flex-col max-sm:items-start max-sm:pt-[105px]">
+            <div className=" bg-custom-gradient">
+                <Header />
+
+                <div className="container flex items-end justify-between  pt-[179px] pb-20 max-lg:pb-[30px] max-md:px-[16px] max-sm:flex-col max-sm:items-start max-sm:pt-[105px]">
                     <h2 className="text-white text-[40px] leading-[140%] tracking-[.5px] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение на всех стадия <br className="max-sm:hidden"/> банкротства в интересах должника
                     </h2>
                     {<button onClick={smoothScroll}>
-                        <img className="max-sm:w-[42px] max-sm:h-[42px]" src={DownButton}
+                        <img style={{ display: downButton ? 'none' : 'block' }} className="max-sm:w-[42px] max-sm:h-[42px]" src={DownButton}
                              alt="Кнопка для прокрутки страницы вниз"/>
                     </button>}
                 </div>
             </div>
             <div className="container overflow-x-hidden">
-                <div className="w-[1440px]">
-                    <div className="flex justify-between px-20 relative max-md:px-[16px]">
+                <div className="">
+                    <div className="flex justify-between relative max-md:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1390px]:max-w-full">
                             <LegalSupport/>
                             <BankruptcyConcept/>

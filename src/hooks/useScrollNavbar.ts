@@ -5,7 +5,6 @@ import {useEffect, useState} from "react";
 const useScrollNavbar = (): void => {
   let menu: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header__menu");
   let logo: HTMLCollectionOf<HTMLElement> =document.getElementsByClassName("logo")
-  let downButton: HTMLCollectionOf<HTMLElement> =document.getElementsByClassName("down-button")
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
 
   useEffect(() => {
@@ -27,16 +26,6 @@ const useScrollNavbar = (): void => {
   }, [prevScrollPos]);
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY >= 200) {
-      for (let i = 0; i < logo.length; i++) {
-        downButton[i].style.opacity = "0";
-      }
-    } else if (window.scrollY < 2) {
-      for (let i = 0; i < logo.length; i++) {
-        downButton[i].style.opacity = "1";
-      }
-    }
-
     if (window.scrollY > 30) {
       for (let i = 0; i < logo.length; i++) {
         logo[i].style.opacity = "0";
@@ -50,7 +39,6 @@ const useScrollNavbar = (): void => {
     if (window.scrollY > 10 && menu.length) {
       for (let i = 0; i < menu.length; i++) {
         menu[i].style.background = "black";
-        menu[i].style.marginTop = "50px";
         menu[i].classList.add("scroll-menu");
       }
     } else  if (window.scrollY < 2) {

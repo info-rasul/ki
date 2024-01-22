@@ -1,9 +1,11 @@
 import React from 'react';
 import DownButton from '../../../../assets/img/down-button.svg'
+import {Header} from "../../../../components";
 const ArticleBanner = () => {
     return (
-        <div className="container article_banner">
-            <div className="w-[1440px] px-20 pb-[60px] h-[800px] flex flex-col justify-end max-xl:px-10 max-md:px-4 max-md:h-[645px] max-sm:pb-0">
+        <div className=" article_banner">
+            <Header />
+            <div className="container pb-[60px] h-[800px] flex flex-col justify-end max-xl:px-10 max-md:px-4 max-md:h-[645px] max-sm:pb-0">
                 <h2 className="text-[40px] leading-[138%] text-white tracking-[.5px] max-md:text-[24px] max-sm:leading-[140%]">
                     Центробанк в пятый раз подряд поднял <br className="max-lg:hidden"/> ключевую ставку. Как это повлияет на
                     курсы <br className="max-lg:hidden"/> валют, кредиты и ипотеку?
