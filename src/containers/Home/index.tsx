@@ -2,7 +2,7 @@
 import { MetaInfo } from "../../components";
 import type { FunctionComponent } from "react";
 import { getRouteMetaInfo } from "../../config/routes.config";
-import React from "react";
+import React, {useState} from "react";
 import HomeBanner from "./components/HomeBanner";
 import HomeArticle from "./components/HomeArticle";
 import QuoteHome from "../../components/quote/Home";
@@ -14,7 +14,6 @@ import HomeGoodQuality from "./components/home-good-quality";
 import InformationCardHomeData from "../../hooks/InformationCardHomeData";
 
 const Home: FunctionComponent = () => {
-
     return (
         <div className="view-wrapper">
             <MetaInfo {...getRouteMetaInfo("Home")} />
@@ -35,7 +34,7 @@ const Home: FunctionComponent = () => {
                             {
                                 // @ts-ignore
                                 InformationCardHomeData.map((item, index) => {
-                                    return <InformationCardHome key={index} title={item.title} desc={item.desc}/>
+                                    return <InformationCardHome key={index} title={item.title} desc={item.desc} animation={item.animation}/>
 
                                 })
                             }

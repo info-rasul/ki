@@ -1,12 +1,17 @@
 // @ts-nocheck
-import type { FunctionComponent } from "react";
 import React, {Fragment, useEffect, useState} from "react";
-import oneSvg from "../../assets/img/Frame1.svg";
+import Lottie from "react-lottie";
+import * as animation5 from '../assets/animations/ki_l0_v01.json'
 interface InformationCardHomeDataProps {
   title: string;
   desc: string;
+  animation: any;
 }
-const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title,desc }) => {
+const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, desc, animation }) => {
+  console.log('animation', animation)
+  const [isStopped, setIsStopped] = useState(false)
+  const [isPaused, setIsPaused] = useState(false)
+
   const innerHtml = { __html: title }
 
   const [expanded, setExpanded] = useState(false);
@@ -48,7 +53,13 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title,desc
   return (
   <Fragment>
     <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[57px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25.2px]">
-      <img className="max-sm:w-[70px] max-sm:h-[70px]" src={oneSvg} alt="Frame1" />
+      <div className="flex">
+        <Lottie options={animation}
+                height={132}
+                width={132}
+                isStopped={isStopped}
+                isPaused={isPaused}/>
+      </div>
       <div style={{height: expanded ? 'auto' : 'auto', overflow: 'hidden',}} className="card__content flex flex-col items-start gap-[29px] max-[1439px]:gap-[15px]">
         <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[150%]">
           <div dangerouslySetInnerHTML={{__html: title}} />

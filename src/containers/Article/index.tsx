@@ -15,7 +15,7 @@ const Article: FunctionComponent = () => (
                 <div className="xl:hidden">
                     <ArticleContent />
                 </div>
-                <div className="article__content flex px-[320px] py-20 gap-[190px] relative max-xl:hidden">
+                <div className="article__content flex px-[240px] py-20 gap-[190px] relative max-xl:hidden">
                     <ArticleContent />
                     <ArticleSocialLinks />
                 </div>
