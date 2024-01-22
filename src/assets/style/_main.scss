@@ -245,3 +245,15 @@ body {
     margin-right: 30px;
   }
 }
+
+.home-banner::before {
+  content: '';
+  background: linear-gradient(#0B162A, #010308);
+  position: absolute;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 18;
+}

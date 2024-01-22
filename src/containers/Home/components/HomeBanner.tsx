@@ -29,6 +29,7 @@ const HomeBanner: FunctionComponent = () => {
                 <video className="home-banner-video" autoPlay muted loop id="myVideo">
                     <source src={videoBack} type="video/mp4"/>
                 </video>
+                <div className="w-full flex flex-col h-screen justify-between z-20">
                 <Header />
                 <div className="flex z-10">
                     <div className="container max-[1080px]:px-4">
@@ -50,6 +51,7 @@ const HomeBanner: FunctionComponent = () => {
                             </button>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </Fragment>
