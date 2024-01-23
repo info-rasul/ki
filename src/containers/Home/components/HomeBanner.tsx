@@ -5,6 +5,7 @@ import videoBack from "../../../assets/video/back.mp4";
 import Header from "../../../components/Header";
 import PersonCard from "../../../components/PersonCard";
 import DownButton from "../../../assets/img/down-button.svg"
+import PersonCardImg from "../../../assets/img/person-card-img.jpg";
 
 const HomeBanner: FunctionComponent = () => {
     const smoothScroll = () => {
@@ -45,7 +46,10 @@ const HomeBanner: FunctionComponent = () => {
                             </p>
                         </div>
                         <div className="flex justify-between mt-4 max-sm:mt-[22px]">
-                            <PersonCard/>
+                            <div className="flex py-[9px] pl-[9px] pr-[20px] tracking-[-0.5px] items-center gap-[15px] rounded-[40px] border-[1px] border-[#FFFFFF]/[.20] max-sm:py-[7px] max-sm:pl-[7px]">
+                                <img className="max-sm:w-[28px] max-sm:h-[28px] rounded-full" src={PersonCardImg} alt="Изображение для карточки пользователя" />
+                                <p className="font-semibold text-[15px] text-white max-sm:text-[13px]">Н.Н. Талеб</p>
+                            </div>
                             <button onClick={smoothScroll}>
                                 <img style={{ display: downButton ? 'none' : 'block' }} className=" down-button max-sm:w-[42px] max-sm:h-[42px]" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
                             </button>

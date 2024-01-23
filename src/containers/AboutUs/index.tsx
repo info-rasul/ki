@@ -2,9 +2,8 @@ import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import {Navigation, SubTitle, Card, MetaInfo} from "../../components";
 import QuoteHome from "../../components/quote/Home";
-import InformationCard from "../../components/information-card/About";
 import {getRouteMetaInfo} from "../../config/routes.config";
-import oneSvg from "../../assets/img/Frame1.svg";
+import oneSvg from "../../assets/img/frame-1.svg";
 import Header from "../../components/Header";
 
 const AboutUs: FunctionComponent = () => {
@@ -30,8 +29,8 @@ const AboutUs: FunctionComponent = () => {
             <div className="flex gap-10 mb-20 mt-[103px] max-lg:mt-[60px] max-lg:gap-[10px] max-lg:mb-[29px]">
               <Card/>
               {/*md*/}
-             {/* <Card/>
-              <Card/>*/}
+              <Card/>
+              <Card/>
             </div>
             <div className="md:hidden w-full flex justify-center">
               <div className="w-[14px] h-[14px] bg-black"></div>
@@ -50,8 +49,24 @@ const AboutUs: FunctionComponent = () => {
                     </p>
                   </div>
                 </div>
-                <InformationCard/>
-                <InformationCard/>
+                <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[59px] w-[630px] max-lg:p-[25px] max-lg:gap-[43px] max-sm:w-full">
+                  <img className="w-[100px] h-[100px] max-lg:w-[79px] max-lg:h-[79px]" src={oneSvg} alt="Frame1" />
+                  <div className="flex flex-col items-start gap-[20px] max-lg:gap-[16px]">
+                    <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[130%]">646 млн</h3>
+                    <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
+                      Столько денег было сэкономленное нашим клиентам
+                    </p>
+                  </div>
+                </div>
+                <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[59px] w-[630px] max-lg:p-[25px] max-lg:gap-[43px] max-sm:w-full">
+                  <img className="w-[100px] h-[100px] max-lg:w-[79px] max-lg:h-[79px]" src={oneSvg} alt="Frame1" />
+                  <div className="flex flex-col items-start gap-[20px] max-lg:gap-[16px]">
+                    <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[130%]">646 млн</h3>
+                    <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
+                      Столько денег было сэкономленное нашим клиентам
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="my-[160px] max-lg:my-[80px]">

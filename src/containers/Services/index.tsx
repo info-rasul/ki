@@ -2,9 +2,9 @@ import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import {Navigation, MetaInfo, Header} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
-import ServicesImg from "../../assets/img/services1.svg";
+import ServicesImg from "../../assets/img/services-1.svg";
 import ButtonsK from "../../components/ButtonsK";
-import oneSvg from "../../assets/img/ServAddInformation.svg";
+import oneSvg from "../../assets/img/serv-add-information.svg";
 
 const Services: FunctionComponent = () => {
     const namePage = "Услуги"

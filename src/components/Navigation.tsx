@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React from "react";
-import twoSvg from "../assets/img/icon.png";
+import twoSvg from "../assets/img/navigation-icon.svg";
 interface NavigationProps {
     namePage: string;
 }
@@ -13,7 +13,7 @@ const Navigation: React.FC<NavigationProps> = ({namePage}) => (
       >
         Главная
       </a>
-      <img src={twoSvg} alt="icon" />
+      <img src={twoSvg} alt=">" />
       <a
         className="text-[13px] leading-[145%] font-helveticaNeue max-sm:leading-[150%]"
         href="#"

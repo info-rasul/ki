@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
-import oneSvg from "../../assets/img/quote.png";
-import twoSvg from "../../assets/img/Ellipse10.png";
+import oneSvg from "../../assets/img/quote.svg";
+import twoSvg from "../../assets/img/quote-media.svg";
 import PersonCard from "../../components/PersonCard";
 import PersonCardDesc from "../PersonCardDesc";
 const QuoteArticle: FunctionComponent = () => (
@@ -10,7 +10,7 @@ const QuoteArticle: FunctionComponent = () => (
       <img
         className="mt-1.5 w-[48px] h-[36px] max-md:w-[32px] max-md:h-[24px] max-md:mt-[2px]"
         src={oneSvg}
-        alt="gobbler"
+        alt="Изображение"
       />
       <p className="text-center text-[25px] mt-[6px] max-md:text-[18px] leading-[150%] max-sm:mt-[8px]">
         Об устойчивости ценового давления свидетельствует динамика{" "}

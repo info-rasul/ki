@@ -6,7 +6,7 @@ import EscortServicesCard3 from '../../../../assets/img/escort-services-card3.sv
 
 const OtherServices = () => {
     return (
-        <div className="flex flex-col px-20 pb-[77px] max-md:px-[16px] max-sm:pb-[39px]">
+        <div className="flex flex-col  pb-[77px] max-md:px-[16px] max-sm:pb-[39px]">
             <h2 className="text-[30px] leading-[150%] tracking-[.2px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[40px] max-sm:mb-[30px]">
                 Другие услуги
             </h2>

@@ -1,7 +1,7 @@
 import React from 'react';
 import AdditionalInformationEscort from "../../../../components/additional-information/Escort";
 import ButtonsK from "../../../../components/ButtonsK";
-import oneSvg from "../../../../assets/img/ServAddInformation.svg";
+import oneSvg from "../../../../assets/img/serv-add-information.svg";
 
 const BankruptcyConcept = () => {
     return (
@@ -51,7 +51,7 @@ const BankruptcyConcept = () => {
                 <img
                     className="absolute top-[-58px] right-[34px] w-[387px] h-[387px] max-sm:hidden"
                     src={oneSvg}
-                    alt="Vector"
+                    alt="Фон"
                 />
             </div>
         </div>

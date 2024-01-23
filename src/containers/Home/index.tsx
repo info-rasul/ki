@@ -27,7 +27,7 @@ const Home: FunctionComponent = () => {
                     </div>
                 </div>
                 <div className="w-full  bg-[#F8F8F8]">
-                    <div className="container mx-auto py-20 mt-20 max-[1080px]:px-4 max-md:pt-10 max-md:pb-[36px] max-md:px-4 max-md:mt-10">
+                    <div className="container mx-auto py-20 mt-20 max-[1080px]:px-4 max-md:pt-10 max-md:pb-[18px] max-md:px-4 max-md:mt-10">
                         <h2 className="leading-[140%] text-[30px] tracking-[-.2px] max-sm:text-[24px]">На чем мы
                             специализируемся? </h2>
                         <div className="grid grid-cols-2  gap-5 max-lg:grid-cols-1 mt-[60px] max-sm:mt-[30px] max-sm:gap-[15px]">

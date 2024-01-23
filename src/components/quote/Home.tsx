@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
-import QuoteImg from "../../assets/img/quote.png";
+import QuoteImg from "../../assets/img/quote.svg";
 import PersonCard from "../../components/PersonCard";
 
 const QuoteHome: FunctionComponent = () => (
@@ -8,7 +8,7 @@ const QuoteHome: FunctionComponent = () => (
       <img
           className="mt-1.5 max-sm:w-[32px] max-sm:h-[24px]"
           src={QuoteImg}
-          alt="Цитата-изображение"
+          alt="Иконка"
       />
       <p className="text-center text-[25px] mt-[48px] mb-[40px] tracking-[.1px]  max-sm:text-[18px] leading-[150%] max-sm:mt-[2px] max-sm:mb-0">
         «Мы обязаны помнить об исконных российских традициях справедливости{" "}

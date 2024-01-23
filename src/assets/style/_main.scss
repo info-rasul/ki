@@ -119,6 +119,25 @@ body {
   background-position: center 20px;
   background-color: #000;
 }
+@media all and (max-width: 640px) {
+  .home-banner {
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+.home-banner::before {
+  content: '';
+  background: linear-gradient(#0B162A, #010308);
+  position: absolute;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 18;
+}
+
 
 .contacts-banner {
   background: url('../img/contacts-banner.jpg') no-repeat;
@@ -248,14 +267,18 @@ body {
   }
 }
 
-.home-banner::before {
-  content: '';
-  background: linear-gradient(#0B162A, #010308);
-  position: absolute;
-  opacity: 0.5;
-  top: 0px;
-  left: 0px;
-  width: 100vw;
-  height: 100vh;
-  z-index: 18;
+
+@media all and (max-width: 768px) {
+  .card-home-animation div {
+    width: 70px!important;
+    height: 70px!important;
+  }
+}
+
+main {
+  overflow-x: clip;
+}
+
+.home-slider::-webkit-scrollbar {
+  display: none;
 }

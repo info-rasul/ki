@@ -16,19 +16,21 @@ const HomeArticle: FunctionComponent = () => {
     });
 
     return (
-        <div className="grid grid-cols-2 gap-48 mb-[138px] max-xl:gap-[30px] max-xl:mb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
-            <div className=" max-xl:w-full max-xl:max-w-full">
+        <div className="grid grid-cols-2 gap-48 mb-[160px] max-xl:gap-[30px] max-xl:mb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
+            <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
                 <p className="text-[30px] leading-[140%] max-sm:text-[24px]">
                     Решение проблемных ситуаций <br className="max-xl:hidden" /> защита малого <br className="sm:hidden" /> и среднего
                     бизнеса <br className="max-xl:hidden" /> от недобросовестных кредиторов <br className="max-xl:hidden" /> и конкурентов
                 </p>
-                <Lottie
-                    options={defaultOptions(animation5)}
-                    height={132}
-                    width={132}
-                    isStopped={isStopped}
-                    isPaused={isPaused}
-                />
+                <div className="w-[100px] max-[1080px]:hidden">
+                    <Lottie
+                        options={defaultOptions(animation5)}
+                        height={100}
+                        width={100}
+                        isStopped={isStopped}
+                        isPaused={isPaused}
+                    />
+                </div>
             </div>
             <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">
                 <p className="leading-[180%] tracking-[.5px] font-medium max-sm:leading-[160%] text-[15px]">

@@ -79,7 +79,7 @@ const SignsOfBankruptcy = () => {
                 Особенно важно это сделать, если предприятие планирует преодолеть трудности и вернуться к
                 нормальному функционированию.
             </p>
-            <img className="mt-[79px] max-sm:mt-[58px]" src={SignsOfBankruptcyImg} alt="Изображение для компонента SignsOfBankruptcyImg"/>
+            <img className="mt-[79px] max-sm:mt-[58px]" src={SignsOfBankruptcyImg} alt="Изображение"/>
         </div>
     );
 };

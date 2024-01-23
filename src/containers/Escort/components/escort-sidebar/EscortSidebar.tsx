@@ -1,7 +1,7 @@
 import React, {useEffect, useRef, useState} from 'react';
 import QRCodeServices from "../../../../components/qr-code/Services";
-import oneSvg from "../../../../assets/img/quote.png";
-import twoSvg from "../../../../assets/img/Ellipse10.png";
+import oneSvg from "../../../../assets/img/quote.svg";
+import twoSvg from "../../../../assets/img/quote-media.svg";
 
 const EscortSidebar: React.FC = () => {
 

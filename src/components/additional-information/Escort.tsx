@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React from "react";
-import oneSvg from "../../assets/img/ServAddInformation.svg";
+import oneSvg from "../../assets/img/serv-add-information.svg";
 import ButtonsK from "../../components/ButtonsK";
 
 const AdditionalInformationEscort: FunctionComponent = () => (

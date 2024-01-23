@@ -36,8 +36,6 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
     };
   }, []); // передаем пустой массив зависимостей, чтобы обработчик события resize добавлялся только один раз
 
-  console.log(windowWidth, 'windowWidth')
-
   if (windowWidth >= 629) {
 
   }
@@ -53,7 +51,7 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
   return (
   <Fragment>
     <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[57px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25.2px]">
-      <div className="flex">
+      <div className="card-home-animation flex">
         <Lottie options={animation}
                 height={132}
                 width={132}

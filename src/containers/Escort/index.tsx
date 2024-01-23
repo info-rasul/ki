@@ -12,9 +12,9 @@ import Specialists from "./components/specialists/Specialists";
 import Documentation from "./components/documentation/Documentation";
 import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 import OtherServices from "./components/other-services/OtherServices";
-import oneSvg from "../../assets/img/Vector3.svg";
+import oneSvg from "../../assets/img/vector-3.svg";
 import twoSvg from "../../assets/img/cusir-code-telegram.svg";
-import ButtonSocialIcon from "../../assets/img/ButtonSocial.svg";
+import ButtonSocialIcon from "../../assets/img/button-social.svg";
 
 const Escort: FunctionComponent = () => {
     const smoothScroll = () => {
@@ -37,8 +37,7 @@ const Escort: FunctionComponent = () => {
             <MetaInfo {...getRouteMetaInfo("Escort")} />
             <div className=" bg-custom-gradient">
                 <Header />
-
-                <div className="container flex items-end justify-between  pt-[179px] pb-20 max-lg:pb-[30px] max-md:px-[16px] max-sm:flex-col max-sm:items-start max-sm:pt-[105px]">
+                <div className="container flex items-end justify-between  pt-[56px] pb-20 max-lg:pb-[30px] max-md:px-[16px] max-sm:flex-col max-sm:items-start max-sm:pt-[105px]">
                     <h2 className="text-white text-[40px] leading-[140%] tracking-[.5px] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение на всех стадия <br className="max-sm:hidden"/> банкротства в интересах должника
                     </h2>
@@ -71,9 +70,9 @@ const Escort: FunctionComponent = () => {
                                 <img
                                     className="w-[150px] h-[150px] max-sm:hidden"
                                     src={twoSvg}
-                                    alt="QR-код для перехода в телеграм"
+                                    alt="QR-код"
                                 />
-                                <img className="absolute top-0 right-0" src={oneSvg} alt="Фоновое изображение"/>
+                                <img className="absolute top-0 right-0" src={oneSvg} alt="Фон"/>
                                 <a className="button-social cursor-pointer w-[293px] flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
                                     Telegram канал
                                 </a>

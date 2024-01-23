@@ -19,7 +19,7 @@ const QRCodeContacts: FunctionComponent = () => (
       </div>
     </div>
     <div className="p-[7px] bg-white max-md:hidden">
-      <img className="w-[150px] h-[150px]" src={oneSvg} alt="cusir-code-telegram"
+      <img className="w-[150px] h-[150px]" src={oneSvg} alt="QR-код"
       />
     </div>
   </div>

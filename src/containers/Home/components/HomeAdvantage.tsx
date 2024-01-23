@@ -5,7 +5,7 @@ import ButtonsK from "../../../components/ButtonsK";
 import videoBack from "../../../assets/video/back2.mp4";
 
 const HomeAdvantage: FunctionComponent = () => (
-    <div className="video-back flex flex-col items-center justify-center mt-[122px] max-sm:mt-20 max-sm:px-[25px] max-sm:items-start">
+    <div className="video-back flex flex-col items-center justify-center mt-[120px] max-sm:mt-20 max-sm:px-[25px] max-sm:items-start">
         <video className="max-[850px]:w-[700px] max-[640px]:max-w-[300px]" autoPlay muted loop id="myVideo2">
             <source src={videoBack} type="video/mp4" />
         </video>

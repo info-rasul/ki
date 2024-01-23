@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 import HeaderDot from "../assets/img/header-dot.svg";
 import HeaderMenuLine from "../assets/img/header-menu-line.svg";
 import useScrollNavbar from "../hooks/useScrollNavbar";
-import fourSvg from "../assets/img/Subtract-menu.svg";
+import fourSvg from "../assets/img/subtract-menu.svg";
 import closeMenu from "../assets/img/close-menu.svg";
 
 const Header: FunctionComponent = () => {
@@ -52,7 +52,7 @@ const Header: FunctionComponent = () => {
                   </a>
                 </li>
                 <li>
-                  <img className="px-[5px]" src={HeaderDot} alt="Точка для меню" />
+                  <img className="px-[5px]" src={HeaderDot} alt="." />
                 </li>
                 <li>
                   <a
@@ -63,7 +63,7 @@ const Header: FunctionComponent = () => {
                   </a>
                 </li>
                 <li>
-                  <img className="px-[5px]" src={HeaderMenuLine} alt="Вертикальная линия для меню" />
+                  <img className="px-[5px]" src={HeaderMenuLine} alt="|" />
                 </li>
                 <li>
                   <a
@@ -74,7 +74,7 @@ const Header: FunctionComponent = () => {
                   </a>
                 </li>
                 <li>
-                  <img className="px-[5px]" src={HeaderDot} alt="Точка для меню" />
+                  <img className="px-[5px]" src={HeaderDot} alt="." />
                 </li>
                 <li>
                   <a
@@ -125,7 +125,7 @@ const Header: FunctionComponent = () => {
                       >
                         О нас
                       </a>
-                      <img src={fourSvg} alt="Subtract-menu" />
+                      <img src={fourSvg} alt="Иконка" />
                     </li>
                     <li className="flex justify-between items-center">
                       <a
@@ -134,7 +134,7 @@ const Header: FunctionComponent = () => {
                       >
                         Услуги
                       </a>
-                      <img src={fourSvg} alt="Subtract-menu" />
+                      <img src={fourSvg} alt="Иконка" />
                     </li>
                     <li className="flex justify-between items-center">
                       <a
@@ -143,7 +143,7 @@ const Header: FunctionComponent = () => {
                       >
                         Блог
                       </a>
-                      <img src={fourSvg} alt="Subtract-menu" />
+                      <img src={fourSvg} alt="Иконка" />
                     </li>
                     <li className="flex justify-between items-center">
                       <a
@@ -152,7 +152,7 @@ const Header: FunctionComponent = () => {
                       >
                         Контакты
                       </a>
-                      <img src={fourSvg} alt="Subtract-menu" />
+                      <img src={fourSvg} alt="Иконка" />
                     </li>
                   </ul>
                   <div className="h-[1px]  bg-[#B3B3B3] mt-4"></div>

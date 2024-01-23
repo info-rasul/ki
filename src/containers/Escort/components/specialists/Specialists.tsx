@@ -9,7 +9,7 @@ const Specialists = () => {
             </h2>
             <div className="flex gap-[20px] max-sm:overflow-x-auto">
                 <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
-                    <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="escort-card-img" />
+                    <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
                         <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
                         <p className="text-[15px] leading-[170%] tracking-[.2px]">
@@ -19,7 +19,7 @@ const Specialists = () => {
                 </div>
                 {/*max-sm:hidden*/}
                 <div className=" max-sm:hidden flex flex-col gap-[20px] max-sm:gap-[15px] ">
-                    <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="escort-card-img" />
+                    <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
                         <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
                         <p className="text-[15px] leading-[170%] tracking-[.2px]">

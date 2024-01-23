@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
-import oneSvg from "../../assets/img/Frame1.svg";
+import oneSvg from "../../assets/img/frame-1.svg";
 import useCard from "./useCard";
 
 const InformationCardAbout: FunctionComponent = () => {
