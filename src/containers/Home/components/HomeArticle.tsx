@@ -1,19 +1,10 @@
 import type { FunctionComponent } from "react";
-import React, { useState} from "react";
-import Lottie from "react-lottie";
+import React, { useState, useRef } from "react";
+import Lottie from "lottie-react";
 import * as animation5 from '../../../assets/animations/ki_l0_v01.json'
 
 const HomeArticle: FunctionComponent = () => {
-    const [isStopped, setIsStopped] = useState(false)
-    const [isPaused, setIsPaused] = useState(false)
-    const defaultOptions = (url: any) => ({
-        loop: true,
-        autoplay: true,
-        animationData: url,
-        rendererSettings: {
-            preserveAspectRatio: 'xMidYMid slice'
-        }
-    });
+    const lottieRef = useRef();
 
     return (
         <div className="grid grid-cols-2 gap-48 mb-[160px] max-xl:gap-[30px] max-xl:mb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
@@ -23,13 +14,8 @@ const HomeArticle: FunctionComponent = () => {
                     бизнеса <br className="max-xl:hidden" /> от недобросовестных кредиторов <br className="max-xl:hidden" /> и конкурентов
                 </p>
                 <div className="w-[100px] max-[1080px]:hidden">
-                    <Lottie
-                        options={defaultOptions(animation5)}
-                        height={100}
-                        width={100}
-                        isStopped={isStopped}
-                        isPaused={isPaused}
-                    />
+                    {/* @ts-ignore */}
+                    <Lottie lottieRef={lottieRef} animationData={animation5} height={100} width={100} loop />
                 </div>
             </div>
             <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">

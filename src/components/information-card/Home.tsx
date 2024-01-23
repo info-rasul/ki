@@ -1,16 +1,13 @@
 // @ts-nocheck
-import React, {Fragment, useEffect, useState} from "react";
-import Lottie from "react-lottie";
-import * as animation5 from '../assets/animations/ki_l0_v01.json'
+import React, {Fragment, useEffect, useRef, useState} from "react";
+import Lottie from "lottie-react";
 interface InformationCardHomeDataProps {
   title: string;
   desc: string;
   animation: any;
 }
 const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, desc, animation }) => {
-  console.log('animation', animation)
-  const [isStopped, setIsStopped] = useState(false)
-  const [isPaused, setIsPaused] = useState(false)
+  const lottieRef = useRef();
 
   const innerHtml = { __html: title }
 
@@ -52,11 +49,8 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
   <Fragment>
     <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[57px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25.2px]">
       <div className="card-home-animation flex">
-        <Lottie options={animation}
-                height={132}
-                width={132}
-                isStopped={isStopped}
-                isPaused={isPaused}/>
+        {/* @ts-ignore */}
+        <Lottie lottieRef={lottieRef} animationData={animation} height={132} width={132} loop />
       </div>
       <div style={{height: expanded ? 'auto' : 'auto', overflow: 'hidden',}} className="card__content flex flex-col items-start gap-[29px] max-[1439px]:gap-[15px]">
         <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[150%]">
