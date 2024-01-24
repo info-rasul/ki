@@ -1,13 +1,30 @@
 // @ts-nocheck
-import React, {Fragment, useEffect, useRef, useState} from "react";
-import Lottie from "lottie-react";
+import React, {Fragment, useCallback, useEffect, useRef, useState} from "react";
+import Lottie, {useLottie} from "lottie-react";
+import * as animation5 from "../../assets/animations/ki_l0_v01.json";
 interface InformationCardHomeDataProps {
   title: string;
   desc: string;
   animation: any;
 }
+
+const style = {
+  height: 132,
+};
 const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, desc, animation }) => {
-  const lottieRef = useRef();
+  const [start, setStart] = useState(false)
+//@ts-ignore
+  const LottieAnimation = useCallback(() => {
+    const options = {
+      animationData: animation,
+      loop: true,
+      autoplay: false,
+    };
+
+    const { View, play, pause } = useLottie(options, style);
+    start ? play() : pause();
+    return View;
+  }, [start])
 
   const innerHtml = { __html: title }
 
@@ -47,10 +64,9 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
 
   return (
   <Fragment>
-    <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[57px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25.2px]">
+    <div  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[57px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25.2px]">
       <div className="card-home-animation flex">
-        {/* @ts-ignore */}
-        <Lottie lottieRef={lottieRef} animationData={animation} height={132} width={132} loop />
+        <LottieAnimation  />
       </div>
       <div style={{height: expanded ? 'auto' : 'auto', overflow: 'hidden',}} className="card__content flex flex-col items-start gap-[29px] max-[1439px]:gap-[15px]">
         <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[150%]">

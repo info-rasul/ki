@@ -1,21 +1,39 @@
 import type { FunctionComponent } from "react";
-import React, { useState, useRef } from "react";
-import Lottie from "lottie-react";
+import React, {useState, useRef, useCallback} from "react";
+// import Lottie from "lottie-react";
 import * as animation5 from '../../../assets/animations/ki_l0_v01.json'
+import { useLottie } from "lottie-react";
+import {Simulate} from "react-dom/test-utils";
+import pause = Simulate.pause;
+
+const style = {
+    height: 100,
+};
 
 const HomeArticle: FunctionComponent = () => {
-    const lottieRef = useRef();
+    const [start, setStart] = useState(false)
+
+    const LottieAnimation = useCallback(() => {
+        const options = {
+            animationData: animation5,
+            loop: true,
+            autoplay: false,
+        };
+
+        const { View, play, pause } = useLottie(options, style);
+        start ? play() : pause();
+        return View;
+    }, [start])
 
     return (
-        <div className="grid grid-cols-2 gap-48 mb-[160px] max-xl:gap-[30px] max-xl:mb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
+        <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)}  className="grid grid-cols-2 gap-48 pb-[160px] max-xl:gap-[30px] max-xl:mb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
                 <p className="text-[30px] leading-[140%] max-sm:text-[24px]">
                     Решение проблемных ситуаций <br className="max-xl:hidden" /> защита малого <br className="sm:hidden" /> и среднего
                     бизнеса <br className="max-xl:hidden" /> от недобросовестных кредиторов <br className="max-xl:hidden" /> и конкурентов
                 </p>
                 <div className="w-[100px] max-[1080px]:hidden">
-                    {/* @ts-ignore */}
-                    <Lottie lottieRef={lottieRef} animationData={animation5} height={100} width={100} loop />
+                    <LottieAnimation />
                 </div>
             </div>
             <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">

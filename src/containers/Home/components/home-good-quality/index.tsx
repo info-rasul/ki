@@ -38,7 +38,7 @@ const HomeGoodQuality: FunctionComponent = () => {
                 </div>
                 <h2 className="max-[400px]:hidden text-[30px] leading-[140%] tracking-[-0.3px] max-sm:text-[24px]">Наши ценности</h2>
                 <div onScroll={handleScroll} ref={scrollContainerRef}
-                     className="home-slider grid grid-cols-3 gap-6 max-lg:grid-cols-1 max-lg:gap-5 max-[400px]:flex max-[400px]:gap-[10px] max-[400px]:overflow-x-auto max-[400px]:w-screen max-[400px]:pr-[33px]">
+                     className="slider-scroll grid grid-cols-3 gap-6 max-lg:grid-cols-1 max-lg:gap-5 max-[400px]:flex max-[400px]:gap-[10px] max-[400px]:overflow-x-auto max-[400px]:w-screen max-[400px]:pr-[33px]">
                     {
                         homeGoodQualityData.map((item, index) => {
                             // @ts-ignore

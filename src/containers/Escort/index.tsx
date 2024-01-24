@@ -35,9 +35,9 @@ const Escort: FunctionComponent = () => {
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Escort")} />
-            <div className=" bg-custom-gradient">
+            <div className=" bg-custom-gradient max-sm:h-[310px]">
                 <Header />
-                <div className="container flex items-end justify-between  pt-[56px] pb-20 max-lg:pb-[30px] max-md:px-[16px] max-sm:flex-col max-sm:items-start max-sm:pt-[105px]">
+                <div className="container max-[1080px]:px-4 flex items-end justify-between  pt-[56px] pb-20 max-lg:pb-[30px] max-sm:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h2 className="text-white text-[40px] leading-[140%] tracking-[.5px] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение на всех стадия <br className="max-sm:hidden"/> банкротства в интересах должника
                     </h2>
@@ -49,8 +49,8 @@ const Escort: FunctionComponent = () => {
             </div>
             <div className="container overflow-x-hidden">
                 <div className="">
-                    <div className="flex justify-between relative max-md:px-[16px]">
-                        <div className="max-w-[900px] flex flex-col max-[1390px]:max-w-full">
+                    <div className="flex justify-between relative max-[1080px]:px-[16px]">
+                        <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
                             <LegalSupport/>
                             <BankruptcyConcept/>
                             <SignsOfBankruptcy/>

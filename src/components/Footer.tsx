@@ -5,7 +5,7 @@ import FooterIcon from "../assets/img/footer-icon.png";
 
 const Footer: FunctionComponent = () => (
   <Fragment>
-    <footer className="footer flex flex-col pt-20 pb-10 bg-custom-gradient max-lg:hidden">
+    <footer className="footer flex flex-col pt-20 pb-10 bg-custom-gradient max-[1080px]:px-4 max-lg:hidden">
       <div className="container">
         <div className="">
           <div className="flex justify-between">

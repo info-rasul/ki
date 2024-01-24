@@ -11,8 +11,8 @@ const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
   const location = useLocation();
   const classCss =
     location.pathname === "/" || location.pathname === "/article"
-      ? "container-zoom home-page"
-      : "container-zoom inner-page";
+      ? `container-zoom home-page ${location.pathname.slice(1)}`
+      : `container-zoom inner-page ${location.pathname.slice(1)}`;
 
   return (
     <Fragment>
