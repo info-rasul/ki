@@ -25,7 +25,7 @@ const Footer: FunctionComponent = () => (
                   <a className="text-white leading-[145%]" href="/contacts">Контакты</a>
                 </li>
               </ul>
-              <p className="text-white leading-[145%] tracking-[.1px]">
+              <p className="text-white leading-[145%]">
                 ММДЦ “Москва-Сити” <br />
                 Башня Федерация, г. Москва <br />
                 Пресненская наб. д. 12, офис 85
@@ -35,10 +35,10 @@ const Footer: FunctionComponent = () => (
           <div>
             <div className="h-px bg-[#242D3E] mt-[75px]"></div>
             <div className="footer__link flex justify-between mt-10 opacity-50">
-              <p className="text-white leading-[170%] tracking-[.3px]">
+              <p className="text-white leading-[170%]">
                 @ 2023 Комитет Информации
               </p>
-              <p className="text-white leading-[170%] tracking-[.3px]">
+              <p className="text-white leading-[170%]">
                 Политика конфиденциальности
               </p>
             </div>

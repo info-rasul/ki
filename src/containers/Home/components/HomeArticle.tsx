@@ -26,9 +26,9 @@ const HomeArticle: FunctionComponent = () => {
     }, [start])
 
     return (
-        <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)}  className="grid grid-cols-2 gap-48 pb-[160px] max-xl:gap-[30px] max-xl:mb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
+        <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)}  className="grid grid-cols-2 gap-48 pb-[160px] max-xl:gap-[30px] max-xl:pb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
-                <p className="text-[30px] leading-[140%] tracking-[-0.3px] max-sm:text-[24px]">
+                <p className="text-[30px] leading-[140%] tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
                     Решение проблемных ситуаций <br className="max-xl:hidden" /> защита малого <br className="sm:hidden" /> и среднего
                     бизнеса <br className="max-xl:hidden" /> от недобросовестных кредиторов <br className="max-xl:hidden" /> и конкурентов
                 </p>

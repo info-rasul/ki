@@ -9,7 +9,7 @@ interface InformationCardHomeDataProps {
 }
 
 const style = {
-  height: 132,
+  height: 130,
 };
 const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, desc, animation }) => {
   const [start, setStart] = useState(false)
@@ -64,15 +64,15 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
 
   return (
   <Fragment>
-    <div  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[57px] w-[630px] max-[1439px]:w-full max-[1439px]:gap-10 max-sm:p-[25.2px]">
+    <div  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[60px] max-lg:gap-10 max-sm:p-[25px]">
       <div className="card-home-animation flex">
         <LottieAnimation  />
       </div>
-      <div style={{height: expanded ? 'auto' : 'auto', overflow: 'hidden',}} className="card__content flex flex-col items-start gap-[29px] max-[1439px]:gap-[15px]">
-        <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[150%]">
+      <div style={{height: expanded ? 'auto' : 'auto', overflow: 'hidden',}} className="card__content flex flex-col items-start gap-[30px] max-[1439px]:gap-[15px]">
+        <h3 className="text-[25px] leading-[140%] max-sm:text-[18px] max-sm:leading-[150%]">
           <div dangerouslySetInnerHTML={{__html: title}} />
         </h3>
-        <p style={windowWidth <= 629 ? styles : null} className="text-content leading-[170%] tracking-[.17px] max-sm:text-[15px] max-sm:leading-[160%]">
+        <p style={windowWidth <= 629 ? styles : null} className="text-content leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
           {desc}
         </p>
         <p onClick={toggleText} className="hide-text text-[15px] leading-[170%] text-[#097990] min-[629px]:hidden">
