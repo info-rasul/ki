@@ -13,6 +13,7 @@ const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
     location.pathname === "/" || location.pathname === "/article"
       ? `container-zoom home-page ${location.pathname.slice(1)}`
       : `container-zoom inner-page ${location.pathname.slice(1)}`;
+  console.log(classCss ,'location.pathname')
 
   return (
     <Fragment>

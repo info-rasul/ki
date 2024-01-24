@@ -1,5 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import oneSvg from "../../../../assets/img/card-img.jpg";
+import oneSvg1 from "../../../../assets/img/card-img-1.jpg";
 import SliderNavigation from "../../../../components/slider-navigation/sliderNavigation";
 
 const Specialists = () => {
@@ -44,9 +45,9 @@ const Specialists = () => {
                     </div>
                 </div>
                 <div className=" flex flex-col gap-[20px] max-sm:gap-[15px] max-sm:">
-                    <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="Изображение" />
+                    <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg1} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
-                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
+                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Юлия Петрова</p>
                         <p className="text-[15px] leading-[170%] tracking-[.2px] max-sm:w-[320px]">
                             Эксперт в области юриспруденции
                         </p>
