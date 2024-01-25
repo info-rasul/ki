@@ -108,7 +108,7 @@ const Header: FunctionComponent = () => {
                   position: 'fixed',
                   top: '72px',
                   right: 0,
-                  height: '467px',
+                  height: '100vh',
                   width: '100%',
                   background: 'white',
                   zIndex: 1000,
