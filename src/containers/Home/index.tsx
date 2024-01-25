@@ -20,7 +20,7 @@ const Home: FunctionComponent = () => {
             <main className="">
                 <HomeBanner/>
                 <div className="container ">
-                    <div className="mt-20 max-xl:mt-10 max-[1080px]:px-4">
+                    <div className="mt-20 max-xl:mt-10 max-[1080px]:px-4 max-sm:mt-[43px]">
                         <HomeArticle/>
                         <QuoteHome/>
                         <HomeAdvantage/>

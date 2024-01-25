@@ -27,17 +27,17 @@ const HomeBanner: FunctionComponent = () => {
 
     return (
         <Fragment>
-            <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between home-banner pb-[60px] ">
+            <div className="w-full flex flex-col h-screen max-sm:h-[calc(100vh-23px)] justify-between home-banner pb-[60px] ">
                 <video className="max-md:hidden home-banner-video" autoPlay muted loop playsInline id="myVideo" controls={false}>
                     <source src={videoBack} type="video/mp4"/>
                 </video>
                 <video className="md:hidden home-banner-video" autoPlay muted loop playsInline id="myVideoMobile" controls={false}>
                     <source src={videoBackMob} type="video/mp4"/>
                 </video>
-                <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between z-20">
+                <div className="w-full flex flex-col h-screen justify-between z-20">
                 <Header />
                 <div className="flex z-10">
-                    <div className="container max-[1080px]:px-4 max-sm:mb-[25px]">
+                    <div className="container max-[1080px]:px-4 max-sm:mb-[29px]">
                         <div className="border-b-[1px] border-[#B3B3B3] pb-[37px] mb-[40px] max-sm:mb-[25px] max-sm:pb-[25px]">
                             <h1 className="text-white text-[40px] leading-[140%] max-sm:text-[28px] max-sm:leading-[137%]">
                                 Трансформируем <br/> информацию в возможности
