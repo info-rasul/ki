@@ -33,7 +33,7 @@ const Header: FunctionComponent = () => {
 
   return (
     <Fragment>
-      <div className="w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
+      <div className="services-header w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
         <div className="container ">
           <div className="grid grid-cols-8 gap-4 place-content-center max-[1080px]:px-4 max-md:hidden">
             <div className="logo col-span-2 z-10">
@@ -42,7 +42,7 @@ const Header: FunctionComponent = () => {
               </svg>
             </div>
             <div className="col-span-4 flex justify-center mt-[3px]">
-              <ul className="header__menu flex text-center justify-between items-center w-[419px] px-[30px] py-2.5 rounded-[25px] z-10 shadow-boxShadow fixed max-[900px]:mt-[-8px]">
+              <ul className="header__menu flex text-center justify-between items-center w-[419px] pl-[29px] pr-[26px] py-2.5 rounded-[25px] z-10 shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
                   <a
                       className="text-white text-[15px] font-medium leading-[150%]"
@@ -106,7 +106,7 @@ const Header: FunctionComponent = () => {
             {isOpen && (
                 <div style={{
                   position: 'fixed',
-                  top: '74px',
+                  top: '72px',
                   right: 0,
                   height: '467px',
                   width: '100%',
@@ -117,10 +117,10 @@ const Header: FunctionComponent = () => {
                   padding: '0 16px',
                 }}>
                   <div className="h-[1px] bg-[#B3B3B3]"></div>
-                  <ul className="flex flex-col gap-[26px] pt-[34px] pb-[21px]">
+                  <ul className="flex flex-col gap-[26px] pt-[36px] pb-[21px]">
                     <li className="flex justify-between items-center">
                       <a
-                          className="text-black text-[15px] font-medium leading-[150%]"
+                          className="text-black text-[15px] font-medium leading-[154%]"
                           href="/about-us"
                       >
                         О нас
@@ -129,7 +129,7 @@ const Header: FunctionComponent = () => {
                     </li>
                     <li className="flex justify-between items-center">
                       <a
-                          className="text-black text-[15px] font-medium leading-[150%]"
+                          className="text-black text-[15px] font-medium leading-[154%]"
                           href="/services"
                       >
                         Услуги
@@ -138,7 +138,7 @@ const Header: FunctionComponent = () => {
                     </li>
                     <li className="flex justify-between items-center">
                       <a
-                          className="text-black text-[15px] font-medium leading-[150%]"
+                          className="text-black text-[15px] font-medium leading-[154%]"
                           href="/blog"
                       >
                         Блог
@@ -147,7 +147,7 @@ const Header: FunctionComponent = () => {
                     </li>
                     <li className="flex justify-between items-center">
                       <a
-                          className="text-black text-[15px] font-medium leading-[150%]"
+                          className="text-black text-[15px] font-medium leading-[154%]"
                           href="/contacts"
                       >
                         Контакты
@@ -155,7 +155,7 @@ const Header: FunctionComponent = () => {
                       <img src={fourSvg} alt="Иконка" />
                     </li>
                   </ul>
-                  <div className="h-[1px]  bg-[#B3B3B3] mt-4"></div>
+                  <div className="h-[1px]  bg-[#B3B3B3] mt-[13px]"></div>
                   <div className="flex flex-col gap-4 mt-[35px]">
                     <div className="flex flex-col gap-[3px]">
                       <p className="text-[13px] leading-[145%] opacity-60">Тел.:</p>

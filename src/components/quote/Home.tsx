@@ -6,11 +6,11 @@ import PersonCardImg from "../../assets/img/quote-media.svg";
 const QuoteHome: FunctionComponent = () => (
     <div className="flex flex-col gap-10 items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] py-[60px]  max-sm:py-[35px] max-sm:gap-y-[25px]">
       <img
-          className="py-[7px] max-sm:py-[4px] max-sm:w-[32px] max-sm:h-[24px]"
+          className="py-[7px] max-sm:py-[4px] max-sm:w-[32px] max-sm:h-[32px]"
           src={QuoteImg}
           alt="Иконка"
       />
-      <p className="text-center text-[25px] tracking-[-0.25px] leading-[150%] max-sm:text-[18px] max-sm:tracking-[-0.18px]">
+      <p className="text-center text-[25px] tracking-[-0.25px] leading-[148%] max-sm:leading-[150%] max-sm:text-[18px] max-sm:tracking-[-0.18px]">
         «Мы обязаны помнить об исконных российских традициях справедливости
         <br className="max-lg:hidden" />и законности, помнить о том, что
         диктатура закона — это единственная <br className="max-lg:hidden" />

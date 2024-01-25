@@ -25,7 +25,7 @@ const HomeAdvantage: FunctionComponent = () => {
                 <h2 className="text-center text-white text-[30px] leading-[145%] tracking-[-0.3px] max-sm:text-left max-sm:text-[22px] max-sm:leading-[135%]">
                     Наше ключевое преимущество
                 </h2>
-                <p className="text-center text-white leading-[170%] mt-[20px] mb-10 opacity-80 max-sm:opacity-60 max-sm:text-left max-sm:mt-[15px] max-sm:mb-[30px] max-sm:leading-[150%] max-sm:text-[15px]">
+                <p className="text-center text-white leading-[170%] mt-[20px] mb-[38px] opacity-80 max-sm:opacity-60 max-sm:text-left max-sm:mt-[15px] max-sm:mb-[30px] max-sm:leading-[150%] max-sm:text-[15px]">
                     Обладаем уникальными возможностями сбора, формирования <br className="max-md:hidden" />
                     и легализации доказательств и информации (в том числе из закрытых источников)
                 </p>

@@ -118,6 +118,11 @@ body {
   }
 }
 
+.services .services-header {
+  border-bottom: 2px solid #f8f8f8;
+  padding: 31px 0;
+}
+
 
 .header__menu.scroll-menu {
   background: black;
@@ -314,6 +319,10 @@ main {
   height: 100px;
 }
 
+.services-animation {
+
+}
+
 @media all and (max-width: 640px) {
   .escort-animation {
     max-width: 48px;
@@ -321,3 +330,12 @@ main {
     height: 48px;
   }
 }
+
+@media all and (max-width: 1080px) {
+  .services-card-desc {
+    br {
+      display: none;
+    }
+  }
+}
+

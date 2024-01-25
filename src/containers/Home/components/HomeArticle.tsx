@@ -37,7 +37,7 @@ const HomeArticle: FunctionComponent = () => {
                 </div>
             </div>
             <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">
-                <p className="leading-[170%] max-sm:leading-[160%] max-sm:text-[15px]">
+                <p className="leading-[168%] max-sm:leading-[161%] max-sm:text-[15px]">
                     Комитет информации (КИ) — концептуальный консалтинговый бренд,
                     объединяющий экспертов с многолетним опытом работы в правоохранительных и
                     надзорных органах, а также в органах государственной власти Российской Федерации.

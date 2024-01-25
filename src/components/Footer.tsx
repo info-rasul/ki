@@ -55,31 +55,31 @@ const Footer: FunctionComponent = () => (
       />
       <div className="h-px bg-[#242D3E] my-[35px] w-full"></div>
       <ul className="flex flex-col gap-[25px] w-full">
-        <li className="text-white leading-[145%] flex justify-between items-center">
+        <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/about-us">О нас</a>
           <img src={FooterIcon} alt="Иконка" />
         </li>
-        <li className="text-white leading-[145%] flex justify-between items-center">
+        <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/services">Услуги</a>
           <img src={FooterIcon} alt="Иконка" />
         </li>
-        <li className="text-white leading-[145%] flex justify-between items-center">
+        <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/blog">Блог</a>
           <img src={FooterIcon} alt="Иконка" />
         </li>
-        <li className="text-white leading-[145%] flex justify-between items-center">
+        <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/contacts">Контакты</a>
           <img src={FooterIcon} alt="Иконка" />
         </li>
       </ul>
       <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>
-      <p className="text-white leading-[150%] tracking-[0.38px] mt-[35px] text-[15px]">
+      <p className="text-white leading-[150%] mt-[35px] text-[15px]">
         ММДЦ “Москва-Сити” <br />
         Башня Федерация, г. Москва <br />
         Пресненская наб. д. 12, офис
       </p>
       <div className="h-px bg-[#242D3E] mt-[36px] w-full"></div>
-      <div className="footer__link flex flex-col gap-[10px] mt-[25px] opacity-50">
+      <div className="footer__link flex flex-col gap-[10px] mt-[24px] opacity-50">
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
           @ 2023 Комитет Информации
         </p>

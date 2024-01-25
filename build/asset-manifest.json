@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.68b5347f.css",
-    "main.js": "/static/js/main.68725837.js",
+    "main.css": "/static/css/main.3bd15e10.css",
+    "main.js": "/static/js/main.c15e1c59.js",
     "static/js/496.e4c929b0.chunk.js": "/static/js/496.e4c929b0.chunk.js",
     "static/media/quote-media.svg": "/static/media/quote-media.14facdf52f16ab85ab5e3b9fc37e42bc.svg",
     "static/media/back.mp4": "/static/media/back.9502db0da2ccb124d124.mp4",
@@ -10,9 +10,16 @@
     "static/media/contacts-banner.jpg": "/static/media/contacts-banner.9ad4d795edeb2809f720.jpg",
     "static/media/article-img1.jpg": "/static/media/article-img1.45982840054f1c6dd94f.jpg",
     "static/media/signs-of-bankruptcy-img.jpg": "/static/media/signs-of-bankruptcy-img.4daa1ab0024c3e660750.jpg",
+    "static/media/HelveticaNeueWorld-75Bold.ttf": "/static/media/HelveticaNeueWorld-75Bold.b342c038b3e19f92931b.ttf",
+    "static/media/HelveticaNeueWorld-55Roman.ttf": "/static/media/HelveticaNeueWorld-55Roman.844b180a13bbb7867f27.ttf",
+    "static/media/HelveticaNeueWorld-45Lt.ttf": "/static/media/HelveticaNeueWorld-45Lt.af79e9cc380922675909.ttf",
     "static/media/article-banner.jpg": "/static/media/article-banner.c1a1b20ac73813b4e6f6.jpg",
+    "static/media/HelveticaNeueWorld-76BoldIt.ttf": "/static/media/HelveticaNeueWorld-76BoldIt.638415cc3cd16728fe86.ttf",
+    "static/media/HelveticaNeueWorld-56It.ttf": "/static/media/HelveticaNeueWorld-56It.f7168c671966498d989d.ttf",
+    "static/media/HelveticaNeueWorld-46LtIt.ttf": "/static/media/HelveticaNeueWorld-46LtIt.869190cfb7e1647dc7a4.ttf",
     "static/media/article-img2.jpg": "/static/media/article-img2.320626fd5ff56786e738.jpg",
     "static/media/blog-card-img.jpg": "/static/media/blog-card-img.acaef39eef0240ac972a.jpg",
+    "static/media/card-img-1.jpg": "/static/media/card-img-1.7b6c4c042eb33ce1cce6.jpg",
     "static/media/card-img.jpg": "/static/media/card-img.313ffc8d731e8030167e.jpg",
     "static/media/about-us-card-img.jpg": "/static/media/about-us-card-img.25bb9aacd558218aea3f.jpg",
     "service-worker.js": "/service-worker.js",
@@ -24,12 +31,9 @@
     "static/media/error-block-1.svg": "/static/media/error-block-1.61cd50aa6d3b63c85c00e809ebc314bb.svg",
     "static/media/error-block-media.svg": "/static/media/error-block-media.6edaf1f70c3c066bcc5b5d4f95c24b17.svg",
     "static/media/whatsapp.svg": "/static/media/whatsapp.510e78aff56d227473e559cd503e76df.svg",
-    "static/media/escort-services-card1.svg": "/static/media/escort-services-card1.733d75385e0b22b179623dd000b25f35.svg",
-    "static/media/escort-services-card3.svg": "/static/media/escort-services-card3.d980a250db44bb48ecf475699d198fdc.svg",
     "static/media/serv-add-information.svg": "/static/media/serv-add-information.b7bb59a80d91b4b6ee0e3758884b564d.svg",
     "static/media/frame-1.svg": "/static/media/frame-1.ac078f25906ae824fd860ec3f8d0571d.svg",
     "static/media/services-1.svg": "/static/media/services-1.f1e9a763ac5cc89c3043836ae7c2797d.svg",
-    "static/media/escort-services-card.svg": "/static/media/escort-services-card.7c7976584690bffbcb90d83d36c5225e.svg",
     "static/media/vk.svg": "/static/media/vk.eac82f4d1ee3871402362500cf02801c.svg",
     "static/media/additional-information-home.svg": "/static/media/additional-information-home.cddeb67afd73f0c6bd77cc0e69e3f3cc.svg",
     "static/media/telegram.svg": "/static/media/telegram.85b587ef05518170ef8cfb299ae7185c.svg",
@@ -39,7 +43,6 @@
     "static/media/top-button.svg": "/static/media/top-button.ce51523691875e9d6bf73968e30e5eaa.svg",
     "static/media/quote.svg": "/static/media/quote.80e2cdb220028a2689d6c94654869838.svg",
     "index.html": "/index.html",
-    "static/media/escort-services-card2.svg": "/static/media/escort-services-card2.36f8e21b41c9d83c4472c00361b89406.svg",
     "static/media/button-social.svg": "/static/media/button-social.a642cd36e1a50e55bf5cbc45233b6d69.svg",
     "static/media/blog-card-icon.svg": "/static/media/blog-card-icon.02cef8ccfac03e90ae992f9b2ffa56c3.svg",
     "static/media/close-menu.svg": "/static/media/close-menu.482d2e280bf4c6e253782eefefcbbfd9.svg",
@@ -47,12 +50,12 @@
     "static/media/navigation-icon.svg": "/static/media/navigation-icon.6bccc2a3ac09b9d5b12b1337c5d6d162.svg",
     "static/media/header-menu-line.svg": "/static/media/header-menu-line.13b4b588af3a649a590d25001c89c272.svg",
     "static/media/header-dot.svg": "/static/media/header-dot.0f85f387a42f239416dcde391ca78d26.svg",
-    "main.68b5347f.css.map": "/static/css/main.68b5347f.css.map",
-    "main.68725837.js.map": "/static/js/main.68725837.js.map",
+    "main.3bd15e10.css.map": "/static/css/main.3bd15e10.css.map",
+    "main.c15e1c59.js.map": "/static/js/main.c15e1c59.js.map",
     "496.e4c929b0.chunk.js.map": "/static/js/496.e4c929b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.68b5347f.css",
-    "static/js/main.68725837.js"
+    "static/css/main.3bd15e10.css",
+    "static/js/main.c15e1c59.js"
   ]
 }

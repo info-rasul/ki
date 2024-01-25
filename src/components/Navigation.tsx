@@ -8,14 +8,14 @@ const Navigation: React.FC<NavigationProps> = ({namePage}) => (
   <div className="flex flex-col gap-5 max-sm:gap-[10px]">
     <div className="services__navigation flex items-center mt-10 gap-[5px] max-sm:gap-[5px]">
       <a
-        className="navigation-home text-[#B3B3B3] text-[13px] leading-[145%] max-sm:leading-[150%]"
+        className="navigation-home text-[#B3B3B3] text-[13px] leading-[150%] max-sm:leading-[150%]"
         href="/"
       >
         Главная
       </a>
       <img src={twoSvg} alt=">" />
       <a
-        className="text-[13px] leading-[145%] font-helveticaNeue max-sm:leading-[150%]"
+        className="text-[13px] leading-[150%] font-helveticaNeue max-sm:leading-[150%]"
         href="#"
       >
           {namePage}

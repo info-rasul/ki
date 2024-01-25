@@ -7,7 +7,7 @@ import ButtonSocialIcon from "../../../assets/img/Group6.svg";
 
 const HomeErrorBlock: FunctionComponent = () => (
   <Fragment>
-    <div className="aside bg-[#0B162A] mt-20 p-[45px] relative max-sm:px-[25px] max-sm:pt-[20px] max-sm:pb-[25px] max-sm:mt-10">
+    <div className="aside bg-[#0B162A] mt-[79px] p-[45px] relative max-sm:px-[25px] max-sm:pt-[20px] max-sm:pb-[25px] max-sm:mt-10">
       <div className="flex flex-col lg:gap-[60px] max-lg:gap-10">
         <div className="flex flex-col gap-5 max-sm:gap-[15px]">
           <h2 className="text-white text-[30px] leading-[145%] max-lg:text-[20px] max-lg:leading-[135%]">
@@ -22,7 +22,7 @@ const HomeErrorBlock: FunctionComponent = () => (
           </p>
         </div>
         <div className="bg-opacity-4 w-[242px] max-sm:w-[293px]">
-          <a className="button-social cursor-pointer flex items-center justify-center py-[15px] pl-[25px] pr-[61px] relative rounded-full text-white text-[15px] font-medium leading-[20px] tracking-[0.3px] bg-white bg-opacity-[0.04] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
+          <a className="button-social cursor-pointer flex items-center justify-center py-[15px] pl-[25px] pr-[61px] relative rounded-full text-white text-[15px] font-medium leading-[20px] tracking-[0.3px] bg-white bg-opacity-[0.04] shadow-boxShadowBtn max-md:pr-[9px] max-md:w-full max-md:py-[14px]">
             Получить в Telegram
             <img
                 className="max-md:hidden absolute right-[9px]"

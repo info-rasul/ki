@@ -1,12 +1,41 @@
+// @ts-ignore
 import type { FunctionComponent } from "react";
-import React, {Fragment} from "react";
-import {Navigation, SubTitle, Card, MetaInfo} from "../../components";
+import React, {Fragment, useEffect, useRef, useState} from "react";
+import {Navigation, MetaInfo} from "../../components";
 import QuoteHome from "../../components/quote/Home";
 import {getRouteMetaInfo} from "../../config/routes.config";
-import oneSvg from "../../assets/img/frame-1.svg";
 import Header from "../../components/Header";
+import aboutUsServicesCardData from "../../hooks/aboutUsServicesCardData";
+import AboutUsServicesCard from "./component/about-us-services-card/AboutUsServicesCard";
+import oneSvg from "../../assets/img/card-img.jpg";
+import oneSvg1 from "../../assets/img/card-img-1.jpg";
+import SliderNavigation from "../../components/slider-navigation/sliderNavigation";
 
 const AboutUs: FunctionComponent = () => {
+  const [scrollPercentage, setScrollPercentage] = useState<number>(0);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+  const handleScroll = () => {
+    if (scrollContainerRef.current) {
+      const scrolled = scrollContainerRef.current.scrollLeft;
+      const totalWidth = scrollContainerRef.current.scrollWidth - scrollContainerRef.current.clientWidth;
+      const percentage = (scrolled / totalWidth) * 100;
+      setScrollPercentage(percentage);
+    }
+  };
+
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.addEventListener("scroll", handleScroll);
+    }
+    return () => {
+      if (scrollContainerRef.current) {
+        scrollContainerRef.current.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, []);
+  /*onScroll={handleScroll} ref={scrollContainerRef}*/
+
   const namePage = "О нас"
   return (
       <Fragment>
@@ -26,47 +55,51 @@ const AboutUs: FunctionComponent = () => {
                 от которых отказываются другие юридические компании.
               </p>
             </div>
-            <div className="flex gap-10 mb-20 mt-[103px] max-lg:mt-[60px] max-lg:gap-[10px] max-lg:mb-[29px]">
-              <Card/>
-              {/*md*/}
-              <Card/>
-              <Card/>
+            <div onScroll={handleScroll} ref={scrollContainerRef}
+                 className="slider-scroll flex gap-[20px] mb-20 mt-[103px] max-lg:mt-[60px] max-lg:gap-[10px] max-lg:mb-[29px] max-md:flex max-md:gap-[10px] max-md:overflow-x-auto max-md:w-screen max-md:pr-[33px] ">
+              <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
+                <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="Изображение" />
+                <div className="flex flex-col gap-[5px]">
+                  <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
+                  <p className="text-[15px] leading-[170%] tracking-[.2px] max-sm:w-[320px]">
+                    Эксперт в области юриспруденции
+                  </p>
+                </div>
+              </div>
+              <div className=" flex flex-col gap-[20px] max-sm:gap-[15px]">
+                <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg1} alt="Изображение" />
+                <div className="flex flex-col gap-[5px]">
+                  <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Юлия Петрова</p>
+                  <p className="text-[15px] leading-[170%] tracking-[.2px] max-sm:w-[320px]">
+                    Эксперт в области юриспруденции
+                  </p>
+                </div>
+              </div>
+              <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
+                <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="Изображение" />
+                <div className="flex flex-col gap-[5px]">
+                  <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
+                  <p className="text-[15px] leading-[170%] tracking-[.2px] max-sm:w-[320px]">
+                    Эксперт в области юриспруденции
+                  </p>
+                </div>
+              </div>
             </div>
-            <div className="md:hidden w-full flex justify-center">
-              <div className="w-[14px] h-[14px] bg-black"></div>
+            <div className="sm:hidden w-full flex justify-center mt-[30px]">
+              <SliderNavigation scrollPercentage={scrollPercentage}/>
             </div>
             <div className="mt-[120px] max-sm:mt-0">
               <h2 className="text-[30px] leading-[142%] tracking-[.02px] mt-20 mb-10 max-lg:mt-[60px] max-lg:mb-[30px] max-sm:text-[24px] max-sm:leading-[140%]">
                 Мы в цифрах
               </h2>
               <div className="flex gap-10 mt-[60px] max-lg:flex-col max-lg:gap-[15px] max-sm:mt-0">
-                <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[59px] w-[630px] max-lg:p-[25px] max-lg:gap-[43px] max-sm:w-full">
-                  <img className="w-[100px] h-[100px] max-lg:w-[79px] max-lg:h-[79px]" src={oneSvg} alt="Frame1" />
-                  <div className="flex flex-col items-start gap-[20px] max-lg:gap-[16px]">
-                    <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[130%]">646 млн</h3>
-                    <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
-                      Столько денег было сэкономленное нашим клиентам
-                    </p>
-                  </div>
-                </div>
-                <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[59px] w-[630px] max-lg:p-[25px] max-lg:gap-[43px] max-sm:w-full">
-                  <img className="w-[100px] h-[100px] max-lg:w-[79px] max-lg:h-[79px]" src={oneSvg} alt="Frame1" />
-                  <div className="flex flex-col items-start gap-[20px] max-lg:gap-[16px]">
-                    <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[130%]">646 млн</h3>
-                    <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
-                      Столько денег было сэкономленное нашим клиентам
-                    </p>
-                  </div>
-                </div>
-                <div className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[59px] w-[630px] max-lg:p-[25px] max-lg:gap-[43px] max-sm:w-full">
-                  <img className="w-[100px] h-[100px] max-lg:w-[79px] max-lg:h-[79px]" src={oneSvg} alt="Frame1" />
-                  <div className="flex flex-col items-start gap-[20px] max-lg:gap-[16px]">
-                    <h3 className="text-[25px] leading-[140%] tracking-[0.3px] max-sm:text-[18px] max-sm:leading-[130%]">646 млн</h3>
-                    <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
-                      Столько денег было сэкономленное нашим клиентам
-                    </p>
-                  </div>
-                </div>
+                {
+                  // @ts-ignore
+                  aboutUsServicesCardData.map((item, index) => {
+                    return <AboutUsServicesCard key={index} title={item.title} desc={item.desc} animation={item.animation}/>
+
+                  })
+                }
               </div>
             </div>
             <div className="my-[160px] max-lg:my-[80px]">
