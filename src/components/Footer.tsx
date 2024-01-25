@@ -9,9 +9,9 @@ const Footer: FunctionComponent = () => (
       <div className="container">
         <div className="">
           <div className="flex justify-between">
-            <img className="h-[65px]" src={Logo} alt="Логотип" />
-            <div className="flex justify-between max-w-[436px] w-full">
-              <ul className="flex flex-col gap-5">
+            <img className="h-[66px]" src={Logo} alt="Логотип" />
+            <div className="flex justify-between max-w-[436px] mb-[3px] w-full">
+              <ul className="flex flex-col gap-[1.15em]">
                 <li>
                   <a className="text-white leading-[145%]" href="/about-us">О нас</a>
                 </li>
@@ -25,8 +25,8 @@ const Footer: FunctionComponent = () => (
                   <a className="text-white leading-[145%]" href="/contacts">Контакты</a>
                 </li>
               </ul>
-              <p className="text-white leading-[145%]">
-                ММДЦ “Москва-Сити” <br />
+              <p className="text-white leading-[145%] [word-spacing:0.2px]">
+                <span className="tracking-[.3px]">ММДЦ “Москва-Сити”</span> <br />
                 Башня Федерация, г. Москва <br />
                 Пресненская наб. д. 12, офис 85
               </p>
@@ -35,10 +35,10 @@ const Footer: FunctionComponent = () => (
           <div>
             <div className="h-px bg-[#242D3E] mt-[75px]"></div>
             <div className="footer__link flex justify-between mt-10 opacity-50">
-              <p className="text-white leading-[170%]">
+              <p className="text-white leading-[170%] [word-spacing:-1.85px]">
                 @ 2023 Комитет Информации
               </p>
-              <p className="text-white leading-[170%]">
+              <p className="text-white leading-[170%] [word-spacing:-1.85px]">
                 Политика конфиденциальности
               </p>
             </div>

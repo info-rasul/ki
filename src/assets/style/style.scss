@@ -1,43 +1,43 @@
 @font-face{
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue My", sans-serif;
   font-style: normal;
   font-weight: 400;
-  src: local('Helvetica Neue'), url(../font/HelveticaNeueWorld-45Lt.ttf) format('ttf')
+  src: url(../font/HelveticaNeueWorld-45Lt.ttf) format('ttf')
 }
 
 @font-face{
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue My", sans-serif;
   font-style: italic;
   font-weight: 400;
-  src: local('Helvetica Neue'), url(../font/HelveticaNeueWorld-46LtIt.ttf) format('ttf')
+  src: url(../font/HelveticaNeueWorld-46LtIt.ttf) format('ttf')
 }
 
 @font-face{
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue My", sans-serif;
   font-style: normal;
   font-weight: 500;
-  src: local('Helvetica Neue'), url(../font/HelveticaNeueWorld-55Roman.ttf) format('ttf')
+  src: url(../font/HelveticaNeueWorld-55Roman.ttf) format('ttf')
 }
 
 @font-face{
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue My", sans-serif;
   font-style: italic;
   font-weight: 500;
-  src: local('Helvetica Neue'), url(../font/HelveticaNeueWorld-56It.ttf) format('ttf')
+  src: url(../font/HelveticaNeueWorld-56It.ttf) format('ttf')
 }
 
 @font-face{
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue My", sans-serif;
   font-style: normal;
   font-weight: 700;
-  src: local('.Helvetica Neue'), url(../font/HelveticaNeueWorld-75Bold.ttf) format('ttf')
+  src: url(../font/HelveticaNeueWorld-75Bold.ttf) format('ttf')
 }
 
 @font-face{
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue My", sans-serif;
   font-style: italic;
   font-weight: 700;
-  src: local('.Helvetica Neue'), url(../font/HelveticaNeueWorld-76BoldIt.ttf) format('ttf')
+  src: url(../font/HelveticaNeueWorld-76BoldIt.ttf) format('ttf')
 }
 @import "./tailwind";
 @import "./main";
