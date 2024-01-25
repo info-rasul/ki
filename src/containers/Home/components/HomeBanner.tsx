@@ -27,14 +27,14 @@ const HomeBanner: FunctionComponent = () => {
 
     return (
         <Fragment>
-            <div className="w-full flex flex-col h-[calc(100vh-40px)] justify-between home-banner pb-[60px]">
+            <div className="w-full flex flex-col h-screen min-sm:h-[calc(100vh-40px)] justify-between home-banner pb-[60px] ">
                 <video className="max-md:hidden home-banner-video" autoPlay muted loop id="myVideo" controls={false}>
                     <source src={videoBack} type="video/mp4"/>
                 </video>
                 <video className="md:hidden home-banner-video" autoPlay muted loop id="myVideoMobile" controls={false}>
                     <source src={videoBackMob} type="video/mp4"/>
                 </video>
-                <div className="w-full flex flex-col h-[calc(100vh-40px)] justify-between z-20">
+                <div className="w-full flex flex-col h-screen min-sm:h-[calc(100vh-40px)] justify-between z-20">
                 <Header />
                 <div className="flex z-10">
                     <div className="container max-[1080px]:px-4 max-sm:mb-[25px]">

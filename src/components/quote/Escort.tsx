@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
 import oneSvg from "../../assets/img/quote.svg";
-import twoSvg from "../../assets/img/quote-media.svg";
+import twoSvg from "../../assets/img/quote-media.png";
 
 const EscortArticle: FunctionComponent = () => (
   <Fragment>
