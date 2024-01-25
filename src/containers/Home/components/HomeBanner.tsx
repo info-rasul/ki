@@ -2,8 +2,9 @@ import type { FunctionComponent } from "react";
 import React, {Fragment, useState} from "react";
 // @ts-ignore
 import videoBack from "../../../assets/video/back.mp4";
+// @ts-ignore
+import videoBackMob from "../../../assets/video/back-mob-opt.mp4";
 import Header from "../../../components/Header";
-import PersonCard from "../../../components/PersonCard";
 import DownButton from "../../../assets/img/down-button.svg"
 import PersonCardImg from "../../../assets/img/person-card-img.jpg";
 
@@ -26,14 +27,17 @@ const HomeBanner: FunctionComponent = () => {
 
     return (
         <Fragment>
-            <div className="w-full flex flex-col h-screen justify-between home-banner pb-[60px] max-sm:pb-[30px]">
-                <video className="home-banner-video" autoPlay muted loop id="myVideo">
+            <div className="w-full flex flex-col h-[calc(100vh-40px)] justify-between home-banner pb-[60px]">
+                <video className="max-md:hidden home-banner-video" autoPlay muted loop id="myVideo" controls={false}>
                     <source src={videoBack} type="video/mp4"/>
                 </video>
-                <div className="w-full flex flex-col h-screen justify-between z-20">
+                <video className="md:hidden home-banner-video" autoPlay muted loop id="myVideoMobile" controls={false}>
+                    <source src={videoBackMob} type="video/mp4"/>
+                </video>
+                <div className="w-full flex flex-col h-[calc(100vh-40px)] justify-between z-20">
                 <Header />
                 <div className="flex z-10">
-                    <div className="container max-[1080px]:px-4">
+                    <div className="container max-[1080px]:px-4 max-sm:mb-[25px]">
                         <div className="border-b-[1px] border-[#B3B3B3] pb-[37px] mb-[40px] max-sm:mb-[25px] max-sm:pb-[25px]">
                             <h1 className="text-white text-[40px] leading-[140%] max-sm:text-[28px] max-sm:leading-[137%]">
                                 Трансформируем <br/> информацию в возможности
