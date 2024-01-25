@@ -13,6 +13,8 @@ const style = {
 };
 const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, desc, animation }) => {
   const [start, setStart] = useState(false)
+  const refBlock = useRef();
+
 //@ts-ignore
   const LottieAnimation = useCallback(() => {
     const options = {
@@ -26,11 +28,7 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
     return View;
   }, [start])
 
-  const innerHtml = { __html: title }
-
   const [expanded, setExpanded] = useState(false);
-
-  const text = "Ваш скрытый текст здесь";
 
   const toggleText = () => {
     setExpanded(!expanded);
@@ -50,10 +48,6 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
     };
   }, []); // передаем пустой массив зависимостей, чтобы обработчик события resize добавлялся только один раз
 
-  if (windowWidth >= 629) {
-
-  }
-
   const styles: React.CSSProperties = {
     textOverflow: "ellipsis",
     overflow: expanded ? "visible" :"hidden",
@@ -62,9 +56,21 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
     WebkitLineClamp: expanded ? 'none' : 6,
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries, observer) => {
+      const entry = entries[0];
+      if (windowWidth <= 640) {
+        setTimeout(() => {
+          setStart(entry.isIntersecting);
+        }, 1000)
+      }
+    });
+    observer.observe(refBlock.current);
+  }, []);
+
   return (
   <Fragment>
-    <a href="/escort"  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[60px] max-lg:gap-10 max-sm:p-[25px]">
+    <a href="/escort" ref={refBlock}  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[60px] max-lg:gap-10 max-sm:p-[25px]">
       <div className="card-home-animation flex">
         <LottieAnimation  />
       </div>

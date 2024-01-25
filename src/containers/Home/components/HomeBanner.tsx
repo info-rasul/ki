@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react";
-import React, {Fragment, useEffect, useState} from "react";
+import React, {Fragment, useEffect, useRef, useState} from "react";
 // @ts-ignore
 import videoBack from "../../../assets/video/back.mp4";
 // @ts-ignore
@@ -9,23 +9,15 @@ import DownButton from "../../../assets/img/down-button.svg"
 import PersonCardImg from "../../../assets/img/person-card-img.jpg";
 
 const HomeBanner: FunctionComponent = () => {
-    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
-
-    const handleResize = () => {
-        setWindowWidth(window.innerWidth);
-    };
+    const refVideo = useRef<HTMLVideoElement>();
+    const [startVideo, setStartVideo] = useState(false);
 
     useEffect(() => {
-        window.addEventListener('resize', handleResize);
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []); // Запускаем этот эффект только после монтирования компонента
-
-    console.log(windowWidth, 'windowWidth')
+        setStartVideo(!!(refVideo.current && refVideo.current.play()));
+    }, []);
     const smoothScroll = () => {
         window.scrollTo({
-            top: windowWidth < 780 ? window.innerHeight - 72 : window.innerHeight,
+            top: window.innerHeight,
             behavior: 'smooth'
         });
     };
@@ -38,14 +30,14 @@ const HomeBanner: FunctionComponent = () => {
         }
     } )
 
-
     return (
         <Fragment>
-            <div className="w-full flex flex-col h-screen max-sm:h-[calc(100vh-23px)] justify-between home-banner pb-[60px] ">
-                <video className="max-md:hidden home-banner-video" autoPlay muted loop playsInline id="myVideo" controls={false}>
+            <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between home-banner pb-[60px] ">
+                <video className="max-md:hidden home-banner-video" muted loop playsInline id="myVideo" controls={false}>
                     <source src={videoBack} type="video/mp4"/>
                 </video>
-                <video className="md:hidden home-banner-video" autoPlay muted loop playsInline id="myVideoMobile" controls={false}>
+                {/* @ts-ignore */}
+                <video ref={refVideo} className="md:hidden home-banner-video" autoPlay={startVideo} muted loop playsInline id="myVideoMobile" controls={false}>
                     <source src={videoBackMob} type="video/mp4"/>
                 </video>
                 <div className="w-full flex flex-col h-screen justify-between z-20">
