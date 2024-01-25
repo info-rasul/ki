@@ -1,14 +1,31 @@
 import type { FunctionComponent } from "react";
-import React, {useRef} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import ButtonsK from "../../../components/ButtonsK";
 // @ts-ignore
 import videoBack from "../../../assets/video/back2.mp4";
 
 const HomeAdvantage: FunctionComponent = () => {
-    const videoRef = useRef(null);
+    const videoRef = useRef();
+    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries, observer) => {
+            const entry = entries[0];
+            if (windowWidth <= 640) {
+                setTimeout(() => {
+                    // @ts-ignore
+                    entry.isIntersecting ? videoRef.current.play() : videoRef.current.pause()
+                }, 1000)
+            }
+        });
+
+        // @ts-ignore
+        observer.observe(videoRef.current);
+    }, []);
+
     const startVideo = () => {
         //@ts-ignore
-        videoRef.current.play()
+        videoRef.current && videoRef.current.play()
     }
 
     const stopVideo = () => {
@@ -18,7 +35,7 @@ const HomeAdvantage: FunctionComponent = () => {
     return (
         <div onMouseOver={() => startVideo()} onMouseOut={() => stopVideo()} className=" px-20 py-[50px] video-back flex flex-col items-center justify-center mt-[120px] max-sm:mt-20 max-sm:px-[25px] max-sm:items-start max-sm:pt-5 max-sm:pb-[25px]">
             {/* @ts-ignore */}
-            <video ref={videoRef} className="max-[850px]:w-[700px] max-[640px]:max-w-[300px]" muted loop id="myVideo2" controls={false}>
+            <video ref={videoRef} className="max-[850px]:w-[700px] max-[640px]:max-w-[300px]" muted loop playsInline id="myVideo2" controls={false}>
                 <source src={videoBack} type="video/mp4" />
             </video>
             <div className="">

@@ -12,9 +12,9 @@ const HomeBanner: FunctionComponent = () => {
     const refVideo = useRef<HTMLVideoElement>();
     const [startVideo, setStartVideo] = useState(false);
 
-    const playVideo = () => {
+    useEffect(() => {
         setStartVideo(!!(refVideo.current && refVideo.current.play()));
-    };
+    }, []);
     const smoothScroll = () => {
         window.scrollTo({
             top: window.innerHeight,
@@ -30,10 +30,6 @@ const HomeBanner: FunctionComponent = () => {
         }
     } )
 
-    useEffect(() => {
-        playVideo()
-    }, []);
-
     return (
         <Fragment>
             <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between home-banner pb-[60px] ">
@@ -41,9 +37,9 @@ const HomeBanner: FunctionComponent = () => {
                     <source src={videoBack} type="video/mp4"/>
                 </video>
                 {/* @ts-ignore */}
-                {startVideo && <video ref={refVideo} className="md:hidden home-banner-video" autoPlay muted loop playsInline id="myVideoMobile" controls={false}>
+                <video ref={refVideo} className="md:hidden home-banner-video" autoPlay={startVideo} muted loop playsInline id="myVideoMobile" controls={false}>
                     <source src={videoBackMob} type="video/mp4"/>
-                </video>}
+                </video>
                 <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between z-20">
                 <Header />
                 <div className="flex z-10">
