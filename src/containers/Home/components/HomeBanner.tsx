@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react";
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useEffect, useState} from "react";
 // @ts-ignore
 import videoBack from "../../../assets/video/back.mp4";
 // @ts-ignore
@@ -9,9 +9,23 @@ import DownButton from "../../../assets/img/down-button.svg"
 import PersonCardImg from "../../../assets/img/person-card-img.jpg";
 
 const HomeBanner: FunctionComponent = () => {
+    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []); // Запускаем этот эффект только после монтирования компонента
+
+    console.log(windowWidth, 'windowWidth')
     const smoothScroll = () => {
         window.scrollTo({
-            top: window.innerHeight,
+            top: windowWidth < 780 ? window.innerHeight - 72 : window.innerHeight,
             behavior: 'smooth'
         });
     };

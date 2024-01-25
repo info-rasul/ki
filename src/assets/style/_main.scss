@@ -208,11 +208,16 @@ body {
   }
 }
 
-@media all and (max-width: 440px)
-{
+@media all and (max-width: 440px) {
   #myVideo {
     margin-top: 50px;
     height: 400px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #myVideoMobile {
+    margin-top: 0!important;
   }
 }
 
