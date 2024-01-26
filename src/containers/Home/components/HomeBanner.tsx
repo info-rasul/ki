@@ -13,11 +13,17 @@ const HomeBanner: FunctionComponent = () => {
     const [startVideo, setStartVideo] = useState(false);
 
     useEffect(() => {
-        setStartVideo(!!(refVideo.current && refVideo.current.play()));
+        try {
+            setStartVideo(!!(refVideo.current && refVideo.current.play()));
+        } catch (e) {
+            setStartVideo(false)
+            console.log('e', e)
+        }
+
     }, []);
     const smoothScroll = () => {
         window.scrollTo({
-            top: window.innerHeight,
+            top: window.innerHeight - 120,
             behavior: 'smooth'
         });
     };
@@ -32,21 +38,21 @@ const HomeBanner: FunctionComponent = () => {
 
     return (
         <Fragment>
-            <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between home-banner pb-[60px] ">
-                <video className="max-md:hidden home-banner-video" muted loop playsInline id="myVideo" controls={false}>
+            <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-80px)] justify-between home-banner pb-[60px] ">
+                <video className="max-md:hidden home-banner-video" muted loop playsInline autoPlay id="myVideo" controls={false}>
                     <source src={videoBack} type="video/mp4"/>
                 </video>
                 {/* @ts-ignore */}
                 <video ref={refVideo} className="md:hidden home-banner-video" autoPlay={startVideo} muted loop playsInline id="myVideoMobile" controls={false}>
                     <source src={videoBackMob} type="video/mp4"/>
                 </video>
-                <div className="w-full flex flex-col h-screen justify-between z-20">
+                <div className="w-full flex flex-col h-full justify-between z-20">
                 <Header />
                 <div className="flex z-10">
-                    <div className="container max-[1080px]:px-4 max-sm:mb-[29px]">
+                    <div className="container max-[1080px]:px-4 max-sm:mb-[30px]">
                         <div className="border-b-[1px] border-[#B3B3B3] pb-[37px] mb-[40px] max-sm:mb-[25px] max-sm:pb-[25px]">
-                            <h1 className="text-white text-[40px] leading-[140%] max-sm:text-[28px] max-sm:leading-[137%]">
-                                Трансформируем <br/> информацию в возможности
+                            <h1 className="text-white text-[40px] leading-[140%] max-sm:text-[28px] max-sm:leading-[136%]">
+                                Трансформируем <br/> информацию в <br className="sm:hidden"/> возможности
                             </h1>
                         </div>
                         <div>

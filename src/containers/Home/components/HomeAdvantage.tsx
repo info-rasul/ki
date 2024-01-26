@@ -12,10 +12,14 @@ const HomeAdvantage: FunctionComponent = () => {
         const observer = new IntersectionObserver((entries, observer) => {
             const entry = entries[0];
             if (windowWidth <= 640) {
-                setTimeout(() => {
+                try {
+                    setTimeout(() => {
                     // @ts-ignore
                     entry.isIntersecting ? videoRef.current.play() : videoRef.current.pause()
-                }, 1000)
+                    }, 1000)
+                } catch (e) {
+                    console.log('e', e)
+                }
             }
         });
 
@@ -24,13 +28,25 @@ const HomeAdvantage: FunctionComponent = () => {
     }, []);
 
     const startVideo = () => {
-        //@ts-ignore
-        videoRef.current && videoRef.current.play()
+        try {
+            //@ts-ignore
+            if (videoRef.current) {
+                //@ts-ignore
+                videoRef.current.play()
+            }
+
+        } catch (e) {
+            console.log('e', e)
+        }
     }
 
     const stopVideo = () => {
-        //@ts-ignore
-        videoRef.current.pause()
+        try {
+            //@ts-ignore
+            videoRef.current.pause()
+        } catch (e) {
+            console.log('e', e)
+        }
     }
     return (
         <div onMouseOver={() => startVideo()} onMouseOut={() => stopVideo()} className=" px-20 py-[50px] video-back flex flex-col items-center justify-center mt-[120px] max-sm:mt-20 max-sm:px-[25px] max-sm:items-start max-sm:pt-5 max-sm:pb-[24px]">
@@ -42,7 +58,7 @@ const HomeAdvantage: FunctionComponent = () => {
                 <h2 className="text-center text-white text-[30px] leading-[145%] tracking-[-0.3px] max-sm:text-left max-sm:text-[22px] max-sm:leading-[135%]">
                     Наше ключевое преимущество
                 </h2>
-                <p className="text-center text-white leading-[170%] mt-[20px] mb-[38px] opacity-80 max-sm:opacity-60 max-sm:text-left max-sm:mt-[17px] max-sm:mb-[30px] max-sm:leading-[150%] max-sm:text-[15px]">
+                <p className="text-center text-white leading-[170%] mt-[20px] mb-[38px] opacity-80 max-sm:opacity-60 max-sm:text-left max-sm:mt-[16px] max-sm:mb-[30px] max-sm:leading-[150%] max-sm:text-[15px]">
                     Обладаем уникальными возможностями сбора, формирования <br className="max-md:hidden" />
                     и легализации доказательств и информации (в том числе из закрытых источников)
                 </p>

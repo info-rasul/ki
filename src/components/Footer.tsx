@@ -72,14 +72,14 @@ const Footer: FunctionComponent = () => (
           <img src={FooterIcon} alt="Иконка" />
         </li>
       </ul>
-      <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>
-      <p className="text-white leading-[150%] mt-[35px] text-[15px]">
+      <div className="h-px bg-[#242D3E] mt-[32px] w-full"></div>
+      <p className="text-white leading-[150%] mt-[36px] text-[15px]">
         ММДЦ “Москва-Сити” <br />
         Башня Федерация, г. Москва <br />
-        Пресненская наб. д. 12, офис
+        Пресненская наб. д. 12, офис 85
       </p>
-      <div className="h-px bg-[#242D3E] mt-[36px] w-full"></div>
-      <div className="footer__link flex flex-col gap-[10px] mt-[24px] opacity-50">
+      <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>
+      <div className="footer__link flex flex-col gap-[10px] mt-[26px] opacity-50">
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
           @ 2023 Комитет Информации
         </p>
