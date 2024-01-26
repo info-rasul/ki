@@ -21,7 +21,7 @@ const Navigation: React.FC<NavigationProps> = ({namePage}) => (
     </div>
       <div>
           <h1 className="text-[40px] leading-[140%] max-sm:text-[28px]">{namePage}</h1>
-          <div className="sm:hidden h-[1px]  bg-[#B3B3B3] mt-[19px]"></div>
+          <div className="sm:hidden h-[1px]  bg-[#B3B3B3] mt-5"></div>
       </div>
   </div>
 );

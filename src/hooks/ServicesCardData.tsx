@@ -9,7 +9,7 @@ import * as animation7 from '../assets/animations/ki_l5_v01.json'
 // @ts-ignore
 const ServicesCardData = [
     {
-        desc: "Комплексная защита должников от кредиторов",
+        desc: "Комплексная защита <br/> должников от кредиторов",
         animation: animation1
     },
     {
@@ -21,11 +21,11 @@ const ServicesCardData = [
         animation: animation3
     },
     {
-        desc: "Сопровождение <br/> уголовных дел",
+        desc: "Сопровождение <br class='br'/> уголовных дел",
         animation: animation4
     },
     {
-        desc: "Сопровождение <br/> уголовных дел",
+        desc: "Сопровождение <br class='br'/> уголовных дел",
         animation: animation5
     },
     {
@@ -33,7 +33,7 @@ const ServicesCardData = [
         animation: animation6
     },
     {
-        desc: "Параллельный <br/> импорт",
+        desc: "Параллельный <br class='br'/> импорт",
         animation: animation7
     },
 ]

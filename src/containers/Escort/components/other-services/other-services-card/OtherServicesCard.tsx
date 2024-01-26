@@ -8,6 +8,7 @@ interface IOtherServicesCardProps {
 
 const style = {
     height: 100,
+    width: 100,
 };
 
 const OtherServicesCard: React.FC<IOtherServicesCardProps> = ({desc, animation }) => {
@@ -28,11 +29,11 @@ const OtherServicesCard: React.FC<IOtherServicesCardProps> = ({desc, animation }
     const innerHtml = { __html: desc }
 
     return (
-        <a href="/escort" onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F8F8F8] flex gap-[60px] items-center max-w-[630px] w-full max-[1439px]:max-w-full max-lg:p-[20px] max-lg:gap-[25px]">
+        <a href="/escort" onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F8F8F8] flex gap-[60px] items-center w-full max-[1170px]:p-[20px] max-[1170px]:gap-[25px]">
             <div className="services-animation flex">
                 <LottieAnimation />
             </div>
-            <p className="services-card-desc leading-[143%] text-[25px] max-sm:text-[16px] max-sm:leading-[150%]">
+            <p className="services-card-desc leading-[140%] text-[25px] max-sm:text-[16px] max-sm:leading-[150%]">
                 <div dangerouslySetInnerHTML={{__html: desc}} />
             </p>
         </a>
