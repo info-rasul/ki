@@ -18,7 +18,7 @@ const EscortCardData = [
         animation: animation3
     },
     {
-        desc: "Сопровождение <br/> уголовных дел",
+        desc: "Сопровождение <br class='lene-break'/> уголовных дел",
         animation: animation4
     },
 ]

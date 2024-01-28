@@ -38,7 +38,7 @@ const Escort: FunctionComponent = () => {
             <div className=" bg-custom-gradient max-sm:h-[310px]">
                 <Header />
                 <div className="container max-[1080px]:px-4 flex items-end justify-between  pt-[56px] pb-20 max-lg:pb-[30px] max-sm:pt-[105px]  max-sm:flex-col max-sm:items-start">
-                    <h2 className="text-white text-[40px] leading-[140%] tracking-[.5px] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
+                    <h2 className="text-white text-[40px] leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение на всех стадия <br className="max-sm:hidden"/> банкротства в интересах должника
                     </h2>
                     {<button onClick={smoothScroll}>
@@ -49,7 +49,7 @@ const Escort: FunctionComponent = () => {
             </div>
             <div className="container overflow-x-hidden">
                 <div className="">
-                    <div className="flex justify-between relative max-[1080px]:px-[16px]">
+                    <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
                             <LegalSupport/>
                             <BankruptcyConcept/>
@@ -58,12 +58,12 @@ const Escort: FunctionComponent = () => {
                             <BankruptcyAssistance/>
                             <Specialists/>
                             <Documentation/>
-                            <div className="min-[1439px]:hidden mt-10 relative flex flex-col  gap-[25px] bg-[#097990] w-full px-[25px] pt-5 pb-[25px] max-sm:gap-[43px]">
+                            <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
                                 <div className="flex flex-col gap-[15px]">
-                                    <h2 className="text-[20px] leading-[150%] text-white tracking-[1.2px]">
+                                    <h2 className="text-[22px] leading-[135%] text-white">
                                         Наш телеграм канал
                                     </h2>
-                                    <p className="text-[15px] leading-[140%] text-[#CFF4FC] tracking-[.2px]">
+                                    <p className="text-[15px] leading-[150%] text-[#CFF4FC]">
                                         Наведите камеру телефона на QR код, чтобы перейти в наш телеграм
                                     </p>
                                 </div>

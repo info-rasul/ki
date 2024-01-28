@@ -8,10 +8,10 @@ import ButtonSocialIcon from "../../assets/img/button-social.svg";
 const QRCodeServices: FunctionComponent = () => (
   <div className="relative flex flex-col gap-[25px] bg-[#097990] w-[300px] px-[25px] pt-5 pb-[25px]">
     <div className="flex flex-col gap-[5px]">
-      <h2 className="text-[20px] leading-[150%] text-white">
+      <h2 className="text-[20px] leading-[150%] text-white tracking-[-0.2px]">
         Наш телеграм канал
       </h2>
-      <p className="text-[15px] leading-[140%] text-[#CFF4FC] tracking-[.2px]">
+      <p className="text-[15px] leading-[140%] text-[#CFF4FC]">
         Наведите камеру телефона на QR код, чтобы перейти в наш телеграм
       </p>
     </div>

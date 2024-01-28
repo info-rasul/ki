@@ -30,7 +30,7 @@ const Specialists = () => {
 
     return (
         <div>
-            <h2 className="text-[30px] leading-[150%] tracking-[.2px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[60px] max-sm:mb-[30px]">
+            <h2 className="text-[30px] leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[60px] max-sm:mb-[30px] max-sm:tracking-normal tracking-[-0.18px]">
                 Специалисты
             </h2>
             <div onScroll={handleScroll} ref={scrollContainerRef}
@@ -38,8 +38,8 @@ const Specialists = () => {
                 <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
                     <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
-                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
-                        <p className="text-[15px] leading-[170%] tracking-[.2px] max-sm:w-[320px]">
+                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%] tracking-[-0.18px]">Сергей Гаврилов</p>
+                        <p className="text-[15px] leading-[170%] max-sm:w-[320px]">
                             Эксперт в области юриспруденции
                         </p>
                     </div>
@@ -47,8 +47,8 @@ const Specialists = () => {
                 <div className=" flex flex-col gap-[20px] max-sm:gap-[15px] max-sm:">
                     <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg1} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
-                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Юлия Петрова</p>
-                        <p className="text-[15px] leading-[170%] tracking-[.2px] max-sm:w-[320px]">
+                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%] tracking-[-0.18px]">Юлия Петрова</p>
+                        <p className="text-[15px] leading-[170%] max-sm:w-[320px]">
                             Эксперт в области юриспруденции
                         </p>
                     </div>
@@ -56,8 +56,8 @@ const Specialists = () => {
                 <div className="sm:hidden flex flex-col gap-[20px] max-sm:gap-[15px]">
                     <img className="max-sm:w-[320px] max-sm:h-[320px]" src={oneSvg} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
-                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
-                        <p className="text-[15px] leading-[170%] tracking-[.2px] max-sm:w-[320px]">
+                        <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%] tracking-[-0.18px]">Сергей Гаврилов</p>
+                        <p className="text-[15px] leading-[170%] max-sm:w-[320px]">
                             Эксперт в области юриспруденции
                         </p>
                     </div>
