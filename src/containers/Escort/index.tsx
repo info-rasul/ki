@@ -78,7 +78,7 @@ const Escort: FunctionComponent = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="absolute">
+                        <div className="absolute h-screen overflow-y-scroll	">
                             <EscortSidebar />
                         </div>
                     </div>

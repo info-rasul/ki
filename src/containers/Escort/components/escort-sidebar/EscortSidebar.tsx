@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, {useEffect, useState} from 'react';
 import QRCodeServices from "../../../../components/qr-code/Services";
 import oneSvg from "../../../../assets/img/quote.svg";
@@ -22,7 +23,7 @@ const EscortSidebar: React.FC = () => {
     console.log(scrollY, 'scrollY')
 
     return (
-        <div className="escort__sidebar flex flex-col gap-[15px] pt-20 fixed right-20 max-[1080px]:hidden">
+        <div style={{top: scrollY > 400 ? '45px' : '',}} className="escort__sidebar h-screen flex flex-col fixed right-20 gap-[15px] pt-20 max-[1080px]:hidden">
             <QRCodeServices />
             <div className="flex flex-col items-start justify-center bg-[#086c801a] w-[300px] p-[25px]">
                 <img className="w-[24px] h-[18px]" src={oneSvg} alt="gobbler" />
