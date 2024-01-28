@@ -154,15 +154,7 @@ body {
   background: black;
 }
 
-.about-us .header__adaptive {
-  height: 72px;
-}
-
 @media all and (max-width: 640px) {
-  .about-us .header__adaptive {
-    height: 72px!important;
-  }
-
   .about-us .header__menu_btn {
     padding-right: 9px;
     padding-top: 15px;

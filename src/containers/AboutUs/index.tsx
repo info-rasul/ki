@@ -42,7 +42,7 @@ const AboutUs: FunctionComponent = () => {
       <Fragment>
         <MetaInfo {...getRouteMetaInfo("AboutUs")} />
         <Header />
-        <div className="container max-[1080px]:px-[16px] max-sm:mt-[66px]">
+        <div className="container max-[1080px]:px-[16px]">
           <div className="overflow-x-hidden	">
             <Navigation namePage={namePage}/>
             <div className="flex justify-between mt-20 max-[1000px]:flex-col max-sm:w-full max-sm:mt-10">
