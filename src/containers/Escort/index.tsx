@@ -78,7 +78,9 @@ const Escort: FunctionComponent = () => {
                                 </a>
                             </div>
                         </div>
-                        <EscortSidebar />
+                        <div className="absolute">
+                            <EscortSidebar />
+                        </div>
                     </div>
                     <OtherServices/>
                 </div>

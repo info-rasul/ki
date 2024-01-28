@@ -30,9 +30,10 @@ const Specialists = () => {
 
     return (
         <div>
-            <h2 className="text-[30px] leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[60px] max-sm:mb-[30px] max-sm:tracking-normal tracking-[-0.18px]">
+            <h2 className="text-[30px] leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[60px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Специалисты
             </h2>
+
             <div onScroll={handleScroll} ref={scrollContainerRef}
                 className="slider-scroll flex gap-[20px] max-sm:flex max-sm:gap-[10px] max-sm:overflow-x-auto max-sm:w-screen max-sm:pr-[33px] ">
                 <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">

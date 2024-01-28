@@ -3,7 +3,14 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        homeBanner: ['clamp(28px, 4vw, 40px)'],
+        homeArticle: ['clamp(24px, 2.5vw, 30px)'],
+        homeQuote: ['clamp(18px, 2vw, 25px)'],
+        homeAdvantage: ['clamp(22px, 2.5vw, 30px)'],
+      },
+    },
     container: {
       // you can configure the container to be centered
       center: true,

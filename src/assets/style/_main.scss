@@ -142,16 +142,16 @@ body {
   height: 100px!important;
 }*/
 
-.about-us .header__menu_btn_line {
-  background: black!important;
+body .about-us .header__menu_btn_line {
+  background-color: #000000!important;
 }
 
-.services .header__menu_btn_line {
-  background: black!important;
+body .services .header__menu_btn_line {
+  background-color: #000000!important;
 }
 
-.contacts .header__menu_btn_line {
-  background: black!important;
+body .contacts .header__menu_btn_line {
+  background-color: #000000!important;
 }
 
 @media all and (max-width: 640px) {

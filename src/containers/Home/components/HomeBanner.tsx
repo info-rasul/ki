@@ -51,7 +51,7 @@ const HomeBanner: FunctionComponent = () => {
                 <div className="flex z-10">
                     <div className="container max-[1080px]:px-4 max-sm:mb-[30px]">
                         <div className="border-b-[1px] border-[#B3B3B3] pb-[37px] mb-[40px] max-sm:mb-[25px] max-sm:pb-[25px]">
-                            <h1 className="text-white text-[40px] leading-[140%] max-sm:text-[28px] max-sm:leading-[136%]">
+                            <h1 className="text-white text-homeBanner leading-[140%] max-sm:text-[28px] max-sm:leading-[136%]">
                                 трансформируем <br/> информацию в <br className="sm:hidden"/> возможности
                             </h1>
                         </div>
