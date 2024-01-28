@@ -1,14 +1,14 @@
-@font-face{
+/*@font-face{
   font-family: "Helvetica Neue My", sans-serif;
   font-style: normal;
-  font-weight: 400;
-  src: url(../font/HelveticaNeueWorld-45Lt.ttf) format('ttf')
+  font-weight: normal;
+  src: url(../font/HelveticaNeueCyr-Medium.ttf) format('ttf')
 }
 
 @font-face{
   font-family: "Helvetica Neue My", sans-serif;
   font-style: italic;
-  font-weight: 400;
+  font-weight: normal;
   src: url(../font/HelveticaNeueWorld-46LtIt.ttf) format('ttf')
 }
 
@@ -16,7 +16,7 @@
   font-family: "Helvetica Neue My", sans-serif;
   font-style: normal;
   font-weight: 500;
-  src: url(../font/HelveticaNeueWorld-55Roman.ttf) format('ttf')
+  src: url(../font/HelveticaNeueCyr-Roman.ttf) format('ttf')
 }
 
 @font-face{
@@ -38,6 +38,7 @@
   font-style: italic;
   font-weight: 700;
   src: url(../font/HelveticaNeueWorld-76BoldIt.ttf) format('ttf')
-}
+}*/
 @import "./tailwind";
 @import "./main";
+@import "../font/font/stylesheet.css";
