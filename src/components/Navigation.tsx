@@ -6,7 +6,7 @@ interface NavigationProps {
 }
 const Navigation: React.FC<NavigationProps> = ({namePage}) => (
   <div className="flex flex-col gap-5 max-sm:gap-[10px]">
-    <div className="services__navigation flex items-center mt-10 gap-[5px] max-sm:mt-[29px]">
+    <div className="services__navigation flex items-center mt-10 gap-[5px] max-sm:mt-[92px]">
       <a href="/" className="navigation-home text-[#B3B3B3] text-[13px] leading-[150%]"
       >
         Главная
