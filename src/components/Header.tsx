@@ -96,7 +96,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                 <li>
                   <a
                       className="text-white  text-[15px] font-medium leading-[150%]"
-                      href="/blog"
+                      href="/news"
                   >
                     Блог
                   </a>
