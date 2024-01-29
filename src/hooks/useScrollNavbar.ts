@@ -1,7 +1,10 @@
 // @ts-nocheck
 import {useEffect, useState} from "react";
+import { useLocation } from "react-router-dom";
 
 const useScrollNavbar = (): void => {
+  const location = useLocation()
+  console.log('location', location)
   let menu: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header__menu");
   let logo: HTMLCollectionOf<HTMLElement> =document.getElementsByClassName("logo")
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
@@ -37,13 +40,13 @@ const useScrollNavbar = (): void => {
     // Если страница прокручена на 300px то добавляем новый стиль background: black;
     if (window.scrollY > 10 && menu.length) {
       for (let i = 0; i < menu.length; i++) {
-        menu[i].style.background = "black";
+        // menu[i].style.background = "black";
         menu[i].classList.add("scroll-menu");
       }
     } else  if (window.scrollY < 2) {
       // Если страница прокручена меньше чем на  300px то удаляем стиль background: black;
       for (let i = 0; i < menu.length; i++) {
-        menu[i].style.background = "";
+        // menu[i].style.background = "";
         menu[i].classList.remove("scroll-menu");
       }
     }
