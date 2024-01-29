@@ -114,9 +114,9 @@ body {
     color:  #fff;
   }
 
-  .fill-white {
-    fill: #fff;
-  }
+  /*.fill-white {
+    fill: #fff!important;
+  }*/
 }
 
 .services .services-header {
@@ -142,6 +142,9 @@ body {
   width: 100px!important;
   height: 100px!important;
 }*/
+/*.header__menu_btn_line_black {
+  background-color: #000000!important;
+}
 
 body .about-us .header__menu_btn_line {
   background-color: #000000!important;
@@ -153,7 +156,7 @@ body .services .header__menu_btn_line {
 
 body .contacts .header__menu_btn_line {
   background-color: #000000!important;
-}
+}*/
 
 @media all and (max-width: 640px) {
   .about-us .header__menu_btn {
@@ -444,3 +447,14 @@ main {
   }
 }
 
+.services-sidebar-fixed {
+  position: fixed;
+  top: -72px;
+  right: 80px;
+}
+
+.services-sidebar-fixed-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

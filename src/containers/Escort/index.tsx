@@ -1,5 +1,6 @@
+// @ts-nocheck
 import type { FunctionComponent } from "react";
-import React, {Fragment, useState} from "react";
+import React, {Fragment, useEffect, useRef, useState} from "react";
 import DownButton from "../../assets/img/down-button.svg";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
@@ -14,7 +15,6 @@ import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 import OtherServices from "./components/other-services/OtherServices";
 import oneSvg from "../../assets/img/vector-3.svg";
 import twoSvg from "../../assets/img/cusir-code-telegram.svg";
-import ButtonSocialIcon from "../../assets/img/button-social.svg";
 
 const Escort: FunctionComponent = () => {
     const smoothScroll = () => {
@@ -31,6 +31,29 @@ const Escort: FunctionComponent = () => {
             setDownButton(false)
         }
     } )
+
+    /*const handleScroll = () => {
+        const sidebar = document.querySelector('.services-sidebar');
+        console.log(window.scrollY, 'window.scrollY')
+        if (sidebar && window.scrollY > 445  && window.scrollY < 6125) {
+            sidebar.classList.add('services-sidebar-fixed');
+            sidebar.classList.remove('services-sidebar-fixed-bottom');
+        } else if (sidebar  && window.scrollY > 445 && window.scrollY > 6125) {
+            sidebar.classList.remove('services-sidebar-fixed');
+            sidebar.classList.add('services-sidebar-fixed-bottom');
+        } else  if (sidebar && window.scrollY < 445) {
+            sidebar.classList.remove('services-sidebar-fixed');
+            sidebar.classList.remove('services-sidebar-fixed-bottom');
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);*/
 
     return (
         <Fragment>
@@ -78,9 +101,10 @@ const Escort: FunctionComponent = () => {
                                 </a>
                             </div>
                         </div>
-                        <div className="absolute h-screen overflow-y-scroll	">
+                       {/* <div className="services-sidebar">
                             <EscortSidebar />
-                        </div>
+                        </div>*/}
+                        <EscortSidebar />
                     </div>
                     <OtherServices/>
                 </div>
