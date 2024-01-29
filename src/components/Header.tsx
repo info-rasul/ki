@@ -172,7 +172,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                 <li className="flex justify-between items-center">
                   <a
                       className="text-black text-[15px] font-medium leading-[154%]"
-                      href="/blog"
+                      href="/news"
                   >
                     Блог
                   </a>

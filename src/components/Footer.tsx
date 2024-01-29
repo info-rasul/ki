@@ -19,7 +19,7 @@ const Footer: FunctionComponent = () => (
                   <a className="text-white leading-[145%]" href="/services">Услуги</a>
                 </li>
                 <li>
-                  <a className="text-white leading-[145%]" href="/blog">Блог</a>
+                  <a className="text-white leading-[145%]" href="/news">Блог</a>
                 </li>
                 <li>
                   <a className="text-white leading-[145%]" href="/contacts">Контакты</a>
@@ -64,7 +64,7 @@ const Footer: FunctionComponent = () => (
           <img src={FooterIcon} alt="Иконка" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">
-          <a href="/blog">Блог</a>
+          <a href="/news">Блог</a>
           <img src={FooterIcon} alt="Иконка" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">

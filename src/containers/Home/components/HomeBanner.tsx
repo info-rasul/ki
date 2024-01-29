@@ -49,7 +49,7 @@ const HomeBanner: FunctionComponent = () => {
                 <video ref={refVideo} className="md:hidden home-banner-video" autoPlay={startVideo} muted loop playsInline id="myVideoMobile" controls={false}>
                     <source src={videoBackMob} type="video/mp4"/>
                 </video>
-                <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between z-20">
+                <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-80px)] justify-between z-20">
                 <Header isDarMenu={darkMenu} />
                 <div className="flex z-10">
                     <div className="container max-[1080px]:px-4 max-sm:mb-[30px]">
