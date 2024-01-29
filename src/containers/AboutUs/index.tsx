@@ -36,15 +36,16 @@ const AboutUs: FunctionComponent = () => {
     };
   }, []);
   /*onScroll={handleScroll} ref={scrollContainerRef}*/
-
+  const { isDarkMenu } = getRouteMetaInfo("AboutUs");
+  const darkMenu = !!isDarkMenu;
   const namePage = "О нас"
   return (
       <Fragment>
         <MetaInfo {...getRouteMetaInfo("AboutUs")} />
-        <Header />
+        <Header isDarMenu={darkMenu} />
         <div className="container max-[1080px]:px-[16px]">
           <div className="overflow-x-hidden	">
-            <Navigation namePage={namePage}/>
+            <Navigation namePage={namePage} />
             <div className="flex justify-between mt-20 max-[1000px]:flex-col max-sm:w-full max-sm:mt-10">
               <h2 className="text-[30px] leading-[140%] tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
                 Наблюдательный совет <br /> Комитета информации

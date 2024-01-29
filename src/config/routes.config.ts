@@ -11,6 +11,7 @@ export type MetaInfoProps = Partial<
     defer: boolean;
     locale: string;
     description: string;
+    isDarkMenu: boolean;
   }>
 >;
 
@@ -29,6 +30,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "Home",
       description: `Home ${DESC_SUFFIX}`,
+      isDarkMenu: false
     },
   },
   {
@@ -38,6 +40,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "About",
       description: `About ${DESC_SUFFIX}`,
+      isDarkMenu: true,
     },
   },
   {
@@ -47,6 +50,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "Blog",
       description: `Blog ${DESC_SUFFIX}`,
+      isDarkMenu: true,
     },
   },
   {
@@ -56,6 +60,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "AboutUs",
       description: `AboutUs ${DESC_SUFFIX}`,
+      isDarkMenu: true,
     },
   },
   {
@@ -65,6 +70,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "Services",
       description: `Services ${DESC_SUFFIX}`,
+      isDarkMenu: true,
     },
   },
   {
@@ -74,6 +80,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "Contacts",
       description: `Contacts ${DESC_SUFFIX}`,
+      isDarkMenu: true,
     },
   },
   {
@@ -83,6 +90,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "Article",
       description: `Article ${DESC_SUFFIX}`,
+      isDarkMenu: true,
     },
   },
   {
@@ -92,6 +100,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "Escort",
       description: `Escort ${DESC_SUFFIX}`,
+      isDarkMenu: false,
     },
   },
 ];

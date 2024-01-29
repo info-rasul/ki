@@ -6,11 +6,12 @@ import QRCodeContacts from "../../components/qr-code/Contacts";
 
 const Contacts: FunctionComponent = () => {
     const namePage = "Контакты"
-
+    const { isDarkMenu } = getRouteMetaInfo("Contacts");
+    const darkMenu = !!isDarkMenu;
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Contacts")} />
-            <Header />
+            <Header isDarMenu={darkMenu} />
             <div className="container">
                 <div className="pb-10 max-xl:px-4">
                     <Navigation namePage={namePage}/>

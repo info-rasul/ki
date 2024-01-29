@@ -7,10 +7,13 @@ import videoBackMob from "../../../assets/video/back-mob-opt.mp4";
 import Header from "../../../components/Header";
 import DownButton from "../../../assets/img/down-button.svg"
 import PersonCardImg from "../../../assets/img/person-card-img.jpg";
+import {getRouteMetaInfo} from "../../../config/routes.config";
 
 const HomeBanner: FunctionComponent = () => {
     const refVideo = useRef<HTMLVideoElement>();
     const [startVideo, setStartVideo] = useState(false);
+    const { isDarkMenu } = getRouteMetaInfo("Home");
+    const darkMenu = !!isDarkMenu;
 
     useEffect(() => {
         try {
@@ -47,7 +50,7 @@ const HomeBanner: FunctionComponent = () => {
                     <source src={videoBackMob} type="video/mp4"/>
                 </video>
                 <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-40px)] justify-between z-20">
-                <Header />
+                <Header isDarMenu={darkMenu} />
                 <div className="flex z-10">
                     <div className="container max-[1080px]:px-4 max-sm:mb-[30px]">
                         <div className="border-b-[1px] border-[#B3B3B3] pb-[37px] mb-[40px] max-sm:mb-[25px] max-sm:pb-[25px]">

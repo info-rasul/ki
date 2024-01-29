@@ -12,11 +12,13 @@ import ServicesCardData from "../../hooks/ServicesCardData";
 
 const Services: FunctionComponent = () => {
     const namePage = "Услуги"
+    const { isDarkMenu } = getRouteMetaInfo("Services");
+    const darkMenu = !!isDarkMenu;
 
     return(
         /*удалил класс - container*/
         <Fragment>
-            <Header />
+            <Header isDarMenu={darkMenu} />
             <div className="container">
                 <MetaInfo {...getRouteMetaInfo("Services")} />
                 <div className="overflow-x-hidden max-[1100px]:px-4 max-[850px]:px-4">

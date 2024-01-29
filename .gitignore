@@ -4,7 +4,8 @@
 .idea
 .vs/
 .vscode/
-buld/
+build/
+build.zip
 # dependencies
 /node_modules
 
@@ -23,3 +24,4 @@ logs
 # misc
 .DS_Store
 package-lock.json
+/build/
