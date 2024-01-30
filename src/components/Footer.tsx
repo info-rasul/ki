@@ -9,7 +9,9 @@ const Footer: FunctionComponent = () => (
       <div className="container">
         <div className="">
           <div className="flex justify-between">
-            <img className="h-[66px]" src={Logo} alt="Логотип" />
+            <a href="/">
+              <img className="h-[66px]" src={Logo} alt="Логотип" />
+            </a>
             <div className="flex justify-between max-w-[436px] mb-[3px] w-full">
               <ul className="flex flex-col gap-[1.15em]">
                 <li>
@@ -48,11 +50,13 @@ const Footer: FunctionComponent = () => (
     </footer>
 
     <footer className="footer lg:hidden flex flex-col items-start bg-custom-gradient max-sm:pt-10 px-4 pb-[25px]">
-      <img
-        className="h-[65px] max-sm:h-[40px] w-[155px]"
-        src={Logo}
-        alt="Логотип"
-      />
+      <a href="/">
+        <img
+            className="h-[65px] max-sm:h-[40px] w-[155px]"
+            src={Logo}
+            alt="Логотип"
+        />
+      </a>
       <div className="h-px bg-[#242D3E] my-[35px] w-full"></div>
       <ul className="flex flex-col gap-[25px] w-full">
         <li className="text-white leading-[151%] flex justify-between items-center">

@@ -72,10 +72,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
             <div className="col-span-4 flex justify-center mt-[3px]">
               <ul className="header__menu flex text-center justify-between items-center w-[419px] pl-[29px] pr-[26px] py-2.5 rounded-[25px] z-10 shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
-                  <a
-                      className="text-white text-[15px] font-medium leading-[150%]"
-                      href="/about-us"
-                  >
+                  <a className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
                     О нас
                   </a>
                 </li>
@@ -83,10 +80,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a
-                      className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]"
-                      href="/services"
-                  >
+                  <a className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]" href="/services">
                     Услуги
                   </a>
                 </li>
@@ -94,10 +88,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderMenuLine} alt="|" />
                 </li>
                 <li>
-                  <a
-                      className="text-white  text-[15px] font-medium leading-[150%]"
-                      href="/news"
-                  >
+                  <a className="text-white  text-[15px] font-medium leading-[150%]" href="/news">
                     Блог
                   </a>
                 </li>
@@ -105,10 +96,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a
-                      className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]"
-                      href="/contacts"
-                  >
+                  <a className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]" href="/contacts">
                     Контакты
                   </a>
                 </li>
@@ -151,68 +139,42 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
             }}>
               <div className="h-[1px] bg-[#B3B3B3]"></div>
               <ul className="flex flex-col gap-[6px] pt-[27px] pb-[10px]">
-                <a href="/about-us" className="py-2.5">
-                  <li className="flex justify-between items-center">
-                    <a
-                        className="text-black text-[15px] font-medium leading-[154%]"
-                        href="/about-us"
-                    >
-                      О нас
-                    </a>
+                <li>
+                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/about-us">
+                    О нас
                     <img src={fourSvg} alt="Иконка" />
-                  </li>
-                </a>
-                <a href="/services" className="py-2.5">
-                  <li className="flex justify-between items-center">
-                    <a
-                        className="text-black text-[15px] font-medium leading-[154%]"
-                        href="/services"
-                    >
-                      Услуги
-                    </a>
+                  </a>
+                </li>
+                <li>
+                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/services">
+                    Услуги
                     <img src={fourSvg} alt="Иконка" />
-                  </li>
-                </a>
-                <a href="/news" className="py-2.5">
-                  <li className="flex justify-between items-center">
-                    <a
-                        className="text-black text-[15px] font-medium leading-[154%]"
-                        href="/news"
-                    >
-                      Блог
-                    </a>
+                  </a>
+                </li>
+                <li>
+                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/news">
+                    Блог
                     <img src={fourSvg} alt="Иконка" />
-                  </li>
-                </a>
-                <a href="/contacts" className="py-2.5">
-                  <li className="flex justify-between items-center">
-                    <a
-                        className="text-black text-[15px] font-medium leading-[154%]"
-                        href="/contacts"
-                    >
-                      Контакты
-                    </a>
+                  </a>
+                </li>
+                <li>
+                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/contacts">
+                    Контакты
                     <img src={fourSvg} alt="Иконка" />
-                  </li>
-                </a>
+                  </a>
+                </li>
               </ul>
               <div className="h-[1px]  bg-[#B3B3B3] mt-[13px]"></div>
               <div className="flex flex-col gap-4 mt-[35px]">
                 <div className="flex flex-col gap-[3px]">
                   <p className="text-[13px] leading-[145%] opacity-60">Тел.:</p>
-                  <a
-                      className="text-[16px] leading-[145%]"
-                      href="tel:+74950883333"
-                  >
+                  <a className="text-[16px] leading-[145%]" href="tel:+74950883333">
                     +7 495 088-33-33
                   </a>
                 </div>
                 <div className="flex flex-col gap-[3px]">
                   <p className="text-[13px] leading-[145%] opacity-60">Факс:</p>
-                  <a
-                      className="text-[16px] leading-[145%]"
-                      href="tel:+74955325364"
-                  >
+                  <a className="text-[16px] leading-[145%]" href="tel:+74955325364">
                     +7 495 532-53-64
                   </a>
                 </div>
@@ -220,10 +182,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <p className="text-[13px] leading-[145%] opacity-60">
                     Эл. почта:
                   </p>
-                  <a
-                      href="mailto:info@ki112.ru"
-                      className="text-[16px] leading-[145%]"
-                  >
+                  <a href="mailto:info@ki112.ru" className="text-[16px] leading-[145%]">
                     info@ki112.ru
                   </a>
                 </div>
