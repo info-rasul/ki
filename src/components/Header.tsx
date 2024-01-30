@@ -150,8 +150,8 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               padding: '0 16px',
             }}>
               <div className="h-[1px] bg-[#B3B3B3]"></div>
-              <ul className="flex flex-col gap-[26px] pt-[36px] pb-[21px]">
-                <a href="/about-us">
+              <ul className="flex flex-col gap-[6px] pt-[27px] pb-[10px]">
+                <a href="/about-us" className="py-2.5">
                   <li className="flex justify-between items-center">
                     <a
                         className="text-black text-[15px] font-medium leading-[154%]"
@@ -162,7 +162,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                     <img src={fourSvg} alt="Иконка" />
                   </li>
                 </a>
-                <a href="/services">
+                <a href="/services" className="py-2.5">
                   <li className="flex justify-between items-center">
                     <a
                         className="text-black text-[15px] font-medium leading-[154%]"
@@ -173,7 +173,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                     <img src={fourSvg} alt="Иконка" />
                   </li>
                 </a>
-                <a href="/news">
+                <a href="/news" className="py-2.5">
                   <li className="flex justify-between items-center">
                     <a
                         className="text-black text-[15px] font-medium leading-[154%]"
@@ -184,7 +184,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                     <img src={fourSvg} alt="Иконка" />
                   </li>
                 </a>
-                <a href="/contacts">
+                <a href="/contacts" className="py-2.5">
                   <li className="flex justify-between items-center">
                     <a
                         className="text-black text-[15px] font-medium leading-[154%]"

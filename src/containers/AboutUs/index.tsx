@@ -60,7 +60,7 @@ const AboutUs: FunctionComponent = () => {
             <div onScroll={handleScroll} ref={scrollContainerRef}
                  className="slider-scroll flex gap-10 mb-20 mt-[120px] max-lg:mt-[60px] max-lg:gap-[10px] max-lg:mb-[29px] max-md:flex max-md:gap-[10px] max-md:overflow-x-auto max-md:w-screen max-md:pr-[16px] ">
               <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
-                <img className="max-sm:w-[320px] max-sm:h-[320px]" src={CardImg1} alt="Изображение" />
+                <img className="max-sm:h-[320px] max-sm:object-cover" src={CardImg1} alt="Изображение" />
                 <div className="flex flex-col gap-[10px] max-sm:gap-[5px]">
                   <p className="text-[20px] text-black leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
                   <p className="text-[15px] text-black leading-[170%] max-md:w-[320px]">
@@ -69,7 +69,7 @@ const AboutUs: FunctionComponent = () => {
                 </div>
               </div>
               <div className=" flex flex-col gap-[20px] max-sm:gap-[15px]">
-                <img className="max-sm:w-[320px] max-sm:h-[320px]" src={CardImg2} alt="Изображение" />
+                <img className="max-sm:h-[320px] max-sm:object-cover" src={CardImg2} alt="Изображение" />
                 <div className="flex flex-col gap-[10px] max-sm:gap-[5px]">
                   <p className="text-[20px] text-black leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Николай Поднебесный</p>
                   <p className="text-[15px] text-black leading-[170%] max-md:w-[320px]">
@@ -78,7 +78,7 @@ const AboutUs: FunctionComponent = () => {
                 </div>
               </div>
               <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
-                <img className="max-sm:w-[320px] max-sm:h-[320px]" src={CardImg3} alt="Изображение" />
+                <img className="max-sm:h-[320px] max-sm:object-cover" src={CardImg3} alt="Изображение" />
                 <div className="flex flex-col gap-[10px] max-sm:gap-[5px]">
                   <p className="text-[20px] text-black leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Альберт Нечаев</p>
                   <p className="text-[15px] text-black leading-[170%] max-md:w-[320px]">
