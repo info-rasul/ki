@@ -28,7 +28,7 @@ const Home: FunctionComponent = () => {
                 </div>
                 <div className="w-full  bg-[#F8F8F8]">
                     <div className="container mx-auto py-20 mt-20 max-[1080px]:px-4 max-md:pt-10 max-md:pb-[41px] max-md:px-4 max-md:mt-10">
-                        <h2 className="leading-[140%] text-[30px] tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
+                        <h2 className="leading-[140%] text-homeSpecialization tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
                             На чем мы <br className="sm:hidden"/> специализируемся?
                         </h2>
                         <div className="grid grid-cols-2 mt-[60px] gap-5 max-lg:grid-cols-1 max-sm:mt-[31px] max-sm:gap-[15px]">

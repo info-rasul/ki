@@ -8,7 +8,10 @@ module.exports = {
         homeBanner: ['clamp(28px, 4vw, 40px)'],
         homeArticle: ['clamp(24px, 2.5vw, 30px)'],
         homeQuote: ['clamp(18px, 2vw, 25px)'],
-        homeAdvantage: ['clamp(22px, 2.5vw, 30px)'],
+        homeAdvantage: ['clamp(22px, 2.2vw, 30px)'],
+        homeSpecialization: ['clamp(24px, 2.2vw, 30px)'],
+        homeInformationCar: ['clamp(18px, 2vw, 25px)'],
+        homeErrorBlock: ['clamp(20px, 2.1vw, 30px)'],
       },
     },
     container: {

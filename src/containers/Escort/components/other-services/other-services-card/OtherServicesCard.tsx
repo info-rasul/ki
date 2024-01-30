@@ -33,7 +33,7 @@ const OtherServicesCard: React.FC<IOtherServicesCardProps> = ({desc, animation }
             <div className="services-animation flex">
                 <LottieAnimation />
             </div>
-            <div className="services-card-desc leading-[140%] text-[25px] max-[1080px]:text-[16px] max-[1080px]:leading-[150%] max-[1080px]:tracking-[-0.16px]">
+            <div style={{ fontSize: 'clamp(16px, 1.8vw, 25px)' }} className="services-card-desc leading-[140%] max-[1080px]:text-[16px] max-[1080px]:leading-[150%] max-[1080px]:tracking-[-0.16px]">
                 <div dangerouslySetInnerHTML={{__html: desc}} />
             </div>
         </a>

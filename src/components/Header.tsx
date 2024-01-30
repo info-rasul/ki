@@ -59,7 +59,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
 
   return (
     <Fragment>
-      <div className="max-md:hidden services-header w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
+      <div className="max-[783px]:hidden services-header w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
         <div className="container ">
           <div className="grid grid-cols-8 gap-4 place-content-center max-[1080px]:px-4 max-md:hidden">
             <div className="logo col-span-2 z-10">
@@ -120,7 +120,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
       </div>
 
 
-      <div className="md:hidden container z-20 overflow-x-hidden flex flex-col">
+      <div className="min-[783px]:hidden container z-20 overflow-x-hidden flex flex-col">
         <div style={{background: isDarMenu || isOpen || scrollTop > 50 ? 'white' : ''}} className="header-adaptive h-[72px] w-full flex justify-between items-center fixed top-0 z-20 px-[17px]">
           <a href="/">
             <svg style={{fill: (isOpen || scrollTop > 50) || isDarMenu ? 'black' : 'white'}} className="header__adaptive_logo fill-white w-[138px]" width="214" height="56" viewBox="0 0 214 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -151,42 +151,50 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
             }}>
               <div className="h-[1px] bg-[#B3B3B3]"></div>
               <ul className="flex flex-col gap-[26px] pt-[36px] pb-[21px]">
-                <li className="flex justify-between items-center">
-                  <a
-                      className="text-black text-[15px] font-medium leading-[154%]"
-                      href="/about-us"
-                  >
-                    О нас
-                  </a>
-                  <img src={fourSvg} alt="Иконка" />
-                </li>
-                <li className="flex justify-between items-center">
-                  <a
-                      className="text-black text-[15px] font-medium leading-[154%]"
-                      href="/services"
-                  >
-                    Услуги
-                  </a>
-                  <img src={fourSvg} alt="Иконка" />
-                </li>
-                <li className="flex justify-between items-center">
-                  <a
-                      className="text-black text-[15px] font-medium leading-[154%]"
-                      href="/news"
-                  >
-                    Блог
-                  </a>
-                  <img src={fourSvg} alt="Иконка" />
-                </li>
-                <li className="flex justify-between items-center">
-                  <a
-                      className="text-black text-[15px] font-medium leading-[154%]"
-                      href="/contacts"
-                  >
-                    Контакты
-                  </a>
-                  <img src={fourSvg} alt="Иконка" />
-                </li>
+                <a href="/about-us">
+                  <li className="flex justify-between items-center">
+                    <a
+                        className="text-black text-[15px] font-medium leading-[154%]"
+                        href="/about-us"
+                    >
+                      О нас
+                    </a>
+                    <img src={fourSvg} alt="Иконка" />
+                  </li>
+                </a>
+                <a href="/services">
+                  <li className="flex justify-between items-center">
+                    <a
+                        className="text-black text-[15px] font-medium leading-[154%]"
+                        href="/services"
+                    >
+                      Услуги
+                    </a>
+                    <img src={fourSvg} alt="Иконка" />
+                  </li>
+                </a>
+                <a href="/news">
+                  <li className="flex justify-between items-center">
+                    <a
+                        className="text-black text-[15px] font-medium leading-[154%]"
+                        href="/news"
+                    >
+                      Блог
+                    </a>
+                    <img src={fourSvg} alt="Иконка" />
+                  </li>
+                </a>
+                <a href="/contacts">
+                  <li className="flex justify-between items-center">
+                    <a
+                        className="text-black text-[15px] font-medium leading-[154%]"
+                        href="/contacts"
+                    >
+                      Контакты
+                    </a>
+                    <img src={fourSvg} alt="Иконка" />
+                  </li>
+                </a>
               </ul>
               <div className="h-[1px]  bg-[#B3B3B3] mt-[13px]"></div>
               <div className="flex flex-col gap-4 mt-[35px]">

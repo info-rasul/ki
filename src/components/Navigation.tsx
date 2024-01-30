@@ -20,7 +20,7 @@ const Navigation: React.FC<NavigationProps> = ({namePage}) => (
       </a>
     </div>
       <div>
-          <h1 className="text-[40px] leading-[140%] max-sm:text-[28px]">{namePage}</h1>
+          <h1 style={{ fontSize: 'clamp(28px, 2.8vw, 40px)' }} className="leading-[140%] max-sm:text-[28px]">{namePage}</h1>
           <div className="sm:hidden h-[1px]  bg-[#B3B3B3] mt-5"></div>
       </div>
   </div>

@@ -3,7 +3,7 @@ import React from 'react';
 const LegalSupport = () => {
     return (
         <div>
-            <h2 className="text-[30px] leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-lg:mt-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-normal">
+            <h2 style={{ fontSize: 'clamp(20px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-lg:mt-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-normal">
                 Юридическое сопровождение во время процесса банкротства – это та самая «соломка»,
                 которую полезно будет «подстелить» каждому, кому предстоит пройти через процедуру банкротства
             </h2>

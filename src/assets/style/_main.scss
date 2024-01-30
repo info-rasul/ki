@@ -104,6 +104,15 @@ body {
   }*/
 }
 
+@media all and (min-width: 783px) {
+  .escort {
+    .fill-white {
+      fill: #ffffff!important;
+    }
+  }
+}
+
+
 .inner_page .header__menu a {
   color:  #000;
 }
@@ -287,8 +296,14 @@ body .contacts .header__menu_btn_line {
   position: absolute;
   height: auto;
   width: 100%;
-  margin-top: 75px;
 }
+
+@media all and (max-width: 640px) {
+  #myVideoMobile {
+    margin-top: 75px;
+  }
+}
+
 #myVideo2 {
   position: absolute;
   height: 308px;

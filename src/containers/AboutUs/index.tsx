@@ -44,10 +44,10 @@ const AboutUs: FunctionComponent = () => {
         <MetaInfo {...getRouteMetaInfo("AboutUs")} />
         <Header isDarMenu={darkMenu} />
         <div className="container max-[1080px]:px-[16px]">
-          <div className="overflow-x-hidden	">
+          <div className="overflow-x-hidden">
             <Navigation namePage={namePage} />
             <div className="flex justify-between mt-20 max-[1000px]:flex-col max-sm:w-full max-sm:mt-10">
-              <h2 className="text-[30px] leading-[140%] tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
+              <h2 style={{ fontSize: 'clamp(24px, 2.1vw, 30px)' }} className="leading-[140%] tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
                 Наблюдательный совет <br /> Комитета информации
               </h2>
               <p className="leading-[170%] w-[545px] max-[1000px]:mt-[30px] max-sm:text-[15px] max-sm:leading-[160%] max-sm:w-full">
@@ -62,8 +62,8 @@ const AboutUs: FunctionComponent = () => {
               <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
                 <img className="max-sm:w-[320px] max-sm:h-[320px]" src={CardImg1} alt="Изображение" />
                 <div className="flex flex-col gap-[10px] max-sm:gap-[5px]">
-                  <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
-                  <p className="text-[15px] leading-[170%] max-md:w-[320px]">
+                  <p className="text-[20px] text-black leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Сергей Гаврилов</p>
+                  <p className="text-[15px] text-black leading-[170%] max-md:w-[320px]">
                     Эксперт в области юриспруденции
                   </p>
                 </div>
@@ -71,8 +71,8 @@ const AboutUs: FunctionComponent = () => {
               <div className=" flex flex-col gap-[20px] max-sm:gap-[15px]">
                 <img className="max-sm:w-[320px] max-sm:h-[320px]" src={CardImg2} alt="Изображение" />
                 <div className="flex flex-col gap-[10px] max-sm:gap-[5px]">
-                  <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Николай Поднебесный</p>
-                  <p className="text-[15px] leading-[170%] max-md:w-[320px]">
+                  <p className="text-[20px] text-black leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Николай Поднебесный</p>
+                  <p className="text-[15px] text-black leading-[170%] max-md:w-[320px]">
                     Эксперт в области юриспруденции
                   </p>
                 </div>
@@ -80,8 +80,8 @@ const AboutUs: FunctionComponent = () => {
               <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
                 <img className="max-sm:w-[320px] max-sm:h-[320px]" src={CardImg3} alt="Изображение" />
                 <div className="flex flex-col gap-[10px] max-sm:gap-[5px]">
-                  <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Альберт Нечаев</p>
-                  <p className="text-[15px] leading-[170%] max-md:w-[320px]">
+                  <p className="text-[20px] text-black leading-[145%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:leading-[150%]">Альберт Нечаев</p>
+                  <p className="text-[15px] text-black leading-[170%] max-md:w-[320px]">
                     Эксперт в области юриспруденции
                   </p>
                 </div>
@@ -91,7 +91,7 @@ const AboutUs: FunctionComponent = () => {
               <SliderNavigation scrollPercentage={scrollPercentage}/>
             </div>
             <div className="mt-[120px] max-sm:mt-0">
-              <h2 className="text-[30px] leading-[140%] tracking-[-0.3px] mt-20 max-lg:mt-[60px] max-lg:mb-[30px] max-sm:text-[24px] max-sm:tracking-normal">
+              <h2 style={{ fontSize: 'clamp(24px, 2.1vw, 30px)' }} className="leading-[140%] tracking-[-0.3px] mt-20 max-lg:mt-[60px] max-lg:mb-[30px] max-sm:text-[24px] max-sm:tracking-normal">
                 Мы в цифрах
               </h2>
               <div className="flex gap-10 mt-[60px] max-sm:flex-col max-lg:gap-[15px] max-sm:mt-0">
@@ -105,7 +105,7 @@ const AboutUs: FunctionComponent = () => {
               </div>
             </div>
             <div className="mt-[160px] mb-[158px] max-lg:my-[80px]">
-              <h2 className="text-[30px] leading-[140%] tracking-[-0.3px] mt-40 mb-10 max-lg:mt-0 max-sm:text-[24px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-0">
+              <h2 style={{ fontSize: 'clamp(24px, 2.1vw, 30px)' }} className="leading-[140%] tracking-[-0.3px] mt-40 mb-10 max-lg:mt-0 max-sm:text-[24px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-0">
                 Как мы помогаем <br className="sm:hidden"/> нашим клиентам
               </h2>
               <div className="flex gap-20 mt-[60px] max-lg:mt-[30px] max-lg:flex-col max-lg:gap-[25px]">

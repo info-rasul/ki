@@ -10,7 +10,7 @@ const AboutUsQuote: FunctionComponent = () => (
           src={QuoteImg}
           alt="Иконка"
       />
-      <p className="text-center text-[25px] tracking-[-0.25px] leading-[148%] max-sm:leading-[150%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:w-[343px]">
+      <p style={{ fontSize: 'clamp(18px, 1.8vw, 25px)' }} className="text-center tracking-[-0.25px] leading-[148%] max-sm:leading-[150%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:w-[343px]">
         «Мы обязаны помнить об исконных российских традициях справедливости
         <br className="max-lg:hidden" /> и законности, помнить о том, что
         диктатура закона — это единственная <br className="max-lg:hidden" />
@@ -18,7 +18,7 @@ const AboutUsQuote: FunctionComponent = () => (
       </p>
         <div className="flex py-[9px] pl-[9px] pr-[20px] items-center gap-[15px] rounded-[40px] bg-[#F8F8F8] border-[1px] border-[#FFFFFF]/[.20] max-sm:py-[5px] max-sm:pl-[5px]">
             <img className="rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Изображение для карточки пользователя" />
-            <p className="text-[15px] leading-[20px] max-sm:text-[13px]">Сергей Гаврилов</p>
+            <p className="text-[15px] leading-[20px] whitespace-nowrap max-sm:text-[13px]">Сергей Гаврилов</p>
         </div>
     </div>
 );

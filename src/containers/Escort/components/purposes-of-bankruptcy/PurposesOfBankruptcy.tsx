@@ -3,7 +3,7 @@ import React from 'react';
 const PurposesOfBankruptcy = () => {
     return (
         <div>
-            <h2 className="text-[30px] leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[60px] max-sm:mb-[30px] max-sm:tracking-normal">
+            <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[60px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Цели банкротства
             </h2>
             <p className="leading-[170%]  max-sm:text-[15px] max-sm:leading-[160%]">

@@ -6,7 +6,7 @@ import oneSvg from "../../../../assets/img/serv-add-information.svg";
 const BankruptcyConcept = () => {
     return (
         <div>
-            <h2 className="text-[30px] leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-normal">
+            <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-normal">
                 Понятие банкротства
             </h2>
             <div className="flex flex-col gap-5 max-sm:gap-[25px]">
@@ -41,7 +41,7 @@ const BankruptcyConcept = () => {
                 чтобы сделать закон более «рабочим», логичным, удобным для судов и самих банкротов.
             </p>
             <div className="flex flex-col justify-between bg-[#097990] p-[40px] gap-10 mt-20 relative max-sm:p-[25px] max-sm:pt-[20px] max-sm:mt-[60px]">
-                <span className="text-white	text-[25px] leading-[145%] max-sm:text-[20px] max-sm:leading-[135%]">
+                <span style={{ fontSize: 'clamp(20px, 1.8vw, 25px)' }} className="text-white leading-[145%] max-sm:text-[20px] max-sm:leading-[135%]">
                   Хотите знать больше? <br className="sm:hidden"/> Читайте новости <br className="max-sm:hidden"/> или подписывайтесь на наш
                   телеграм канал
                 </span>
