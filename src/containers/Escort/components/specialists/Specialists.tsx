@@ -37,7 +37,7 @@ const Specialists = () => {
             <div onScroll={handleScroll} ref={scrollContainerRef}
                 className="slider-scroll flex gap-[20px] max-sm:flex max-sm:gap-[10px] max-sm:overflow-x-auto max-sm:w-screen max-sm:pr-[33px] ">
                 <div className="flex flex-col gap-[20px] max-sm:gap-[15px]">
-                    <img className="max-sm:h-[320px] max-sm:object-cover" src={oneSvg} alt="Изображение" />
+                    <img className="max-sm:h-[320px] object-cover" src={oneSvg} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
                         <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%] tracking-[-0.18px]">Сергей Гаврилов</p>
                         <p className="text-[15px] leading-[170%] max-sm:w-[320px]">
@@ -46,7 +46,7 @@ const Specialists = () => {
                     </div>
                 </div>
                 <div className=" flex flex-col gap-[20px] max-sm:gap-[15px] max-sm:">
-                    <img className="max-sm:h-[320px] max-sm:object-cover" src={oneSvg1} alt="Изображение" />
+                    <img className="max-sm:h-[320px] object-cover" src={oneSvg1} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
                         <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%] tracking-[-0.18px]">Юлия Петрова</p>
                         <p className="text-[15px] leading-[170%] max-sm:w-[320px]">
@@ -55,7 +55,7 @@ const Specialists = () => {
                     </div>
                 </div>
                 <div className="sm:hidden flex flex-col gap-[20px] max-sm:gap-[15px]">
-                    <img className="max-sm:h-[320px] max-sm:object-cover" src={oneSvg} alt="Изображение" />
+                    <img className="max-sm:h-[320px] object-cover" src={oneSvg} alt="Изображение" />
                     <div className="flex flex-col gap-[5px]">
                         <p className="text-[20px] leading-[145%] max-sm:text-[18px] max-sm:leading-[150%] tracking-[-0.18px]">Сергей Гаврилов</p>
                         <p className="text-[15px] leading-[170%] max-sm:w-[320px]">
