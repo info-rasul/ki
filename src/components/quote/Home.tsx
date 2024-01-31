@@ -14,10 +14,10 @@ const QuoteHome: FunctionComponent = () => (
         «Мы обязаны помнить об исконных российских традициях справедливости
         <br className="max-lg:hidden" /> и законности, помнить о том, что
         диктатура закона — это единственная <br className="max-lg:hidden" />
-        разновидность диктатуры, которой мы обязаны подчиняться».
+        разновидность диктатуры, которой мы обязаны подчиняться»
       </p>
         <div className="flex py-[9px] pl-[9px] pr-[20px] items-center gap-[15px] rounded-[40px] bg-[#F8F8F8] border-[1px] border-[#FFFFFF]/[.20] max-sm:py-[5px] max-sm:pl-[5px]">
-            <img className="rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Изображение для карточки пользователя" />
+            <img className="w-[32px] rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Изображение для карточки пользователя" />
             <p className="text-[15px] leading-[20px] max-sm:text-[13px]">В.В.Путин</p>
         </div>
     </div>

@@ -1,5 +1,5 @@
 // @ts-nocheck
-import React, {useCallback, useState} from 'react';
+import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {useLottie} from "lottie-react";
 interface AboutUsServicesCardProps {
     title: string;
@@ -13,6 +13,8 @@ const style = {
 
 const AboutUsServicesCard: React.FC<AboutUsServicesCardProps> = ({title, desc, animation }) => {
     const [start, setStart] = useState(false)
+    const refBlock = useRef();
+
 //@ts-ignore
     const LottieAnimation = useCallback(() => {
         const options = {
@@ -26,8 +28,34 @@ const AboutUsServicesCard: React.FC<AboutUsServicesCardProps> = ({title, desc, a
         return View;
     }, [start])
 
+    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
+    const handleResize = () => {
+        setWindowWidth(window.innerWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []); // передаем пустой массив зависимостей, чтобы обработчик события resize добавлялся только один раз
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries, observer) => {
+            const entry = entries[0];
+            if (windowWidth <= 640) {
+                setTimeout(() => {
+                    setStart(entry.isIntersecting);
+                }, 1000)
+            }
+        });
+        observer.observe(refBlock.current);
+    }, []);
+
     return (
-        <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="card-animation-block p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[59px] w-[630px] max-lg:p-[25px] max-lg:gap-[40px] max-sm:w-full">
+        <div ref={refBlock}  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="card-animation-block p-[45px] bg-[#F2F2F2] hover:bg-[#e9e9e9] flex flex-col items-start gap-[59px] w-[630px] max-lg:p-[25px] max-lg:gap-[40px] max-sm:w-full">
             <div className="card-home-animation flex">
                 <LottieAnimation  />
             </div>

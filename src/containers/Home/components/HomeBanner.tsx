@@ -6,7 +6,7 @@ import videoBack from "../../../assets/video/back.mp4";
 import videoBackMob from "../../../assets/video/back-mob-opt.mp4";
 import Header from "../../../components/Header";
 import DownButton from "../../../assets/img/down-button.svg"
-import PersonCardImg from "../../../assets/img/person-card-img.jpg";
+import PersonCardImg from "../../../assets/img/person-card-img.png";
 import {getRouteMetaInfo} from "../../../config/routes.config";
 
 const HomeBanner: FunctionComponent = () => {
@@ -66,7 +66,7 @@ const HomeBanner: FunctionComponent = () => {
                         </div>
                         <div className="flex justify-between mt-[20px] h-[50px] max-sm:mt-[25px] max-sm:h-[42px]">
                             <div className="flex  pl-[9px] pr-[20px] items-center gap-[15px] rounded-[40px] border-[1px] border-[#FFFFFF]/[.20] max-sm:py-[7px] max-sm:pl-[7px]">
-                                <img className="rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Изображение для карточки пользователя" />
+                                <img className="w-[32px] rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Изображение для карточки пользователя" />
                                 <p className="text-[15px] text-white leading-[20px] max-sm:text-[13px]">
                                     Н.Н. Талеб
                                 </p>

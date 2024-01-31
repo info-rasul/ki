@@ -11,7 +11,7 @@ const EscortArticle: FunctionComponent = () => (
         «Мы обязаны помнить об исконных российских традициях справедливости
         <br />и законности, помнить о том, что диктатура закона — это
         единственная <br />
-        разновидность диктатуры, которой мы обязаны подчиняться».
+        разновидность диктатуры, которой мы обязаны подчиняться»
       </p>
       <div className="mainArticle__user flex items-center	gap-4 rounded-full py-[9px] pl-[9px] pr-[20px] bg-[#F8F8F8]">
         <img src={twoSvg} alt="Ellipse10" />

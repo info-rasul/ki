@@ -11,14 +11,14 @@ const HomeErrorBlock: FunctionComponent = () => (
       <div className="flex flex-col lg:gap-[60px] max-lg:gap-[42px]">
         <div className="flex flex-col gap-5 max-sm:gap-[15px]">
           <h2 className="text-white text-homeErrorBlock leading-[145%] max-lg:text-[20px] max-lg:leading-[135%]">
-            ТОП-5 критических ошибок, из-за которых предпринимателей
-            привлекают к уголовной ответственности
+            ТОП-5 критических ошибок, <br className="min-[500px]:hidden"/> из-за которых <br/> предпринимателей <br className="min-[500px]:hidden"/>
+            привлекают к уголовной <br/> ответственности
           </h2>
           <p className="text-white leading-[170%] opacity-60 max-sm:leading-[150%] max-sm:text-[14px]">
             Подпишись на наш Telegram-кaнaл и получи практический чек-лист,
             <br className="max-sm:hidden"/>
-            как избежать уголовной ответственности, сохранить свои активы,
-            деньги и свободу!
+            как избежать уголовной ответственности, сохранить <br className="min-[466px]:hidden"/>
+            свои активы, деньги и свободу!
           </p>
         </div>
         <div className="bg-opacity-4 w-[242px] max-sm:w-[293px]">

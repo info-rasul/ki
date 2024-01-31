@@ -2,8 +2,11 @@ import React from 'react';
 import AdditionalInformationEscort from "../../../../components/additional-information/Escort";
 import ButtonsK from "../../../../components/ButtonsK";
 import oneSvg from "../../../../assets/img/serv-add-information.svg";
+interface BankruptcyConceptProps {
+    styles: React.CSSProperties;
+}
 
-const BankruptcyConcept = () => {
+const BankruptcyConcept: React.FC<BankruptcyConceptProps> = ({ styles }) => {
     return (
         <div>
             <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-normal">
@@ -24,7 +27,7 @@ const BankruptcyConcept = () => {
                     «хозяйственные преступления». Потери кредитора компенсировались из бюджета.
                 </p>
             </div>
-            <div className="pr-[35px] pl-[31px] py-[25px] border-l-4 border-green-700 bg-teal-200 bg-opacity-10 my-[30px] max-sm:mt-[25px] max-sm:pr-[30px] max-sm:pl-[26px] max-sm:py-[20px]">
+            <div style={styles} className="pr-[35px] pl-[31px] py-[25px]  bg-opacity-10 my-[30px] max-sm:mt-[25px] max-sm:pr-[30px] max-sm:pl-[26px] max-sm:py-[20px]">
                 <p className="text-[#086C80] leading-[180%] max-sm:text-[15px] max-sm:leading-[150%]">
                     «Лихие девяностые» исчерпали себя сами собой – по мере изменения экономических и социальных условий
                     ужесточения уголовного законодательства и повышения эффективности работы правоохранительных

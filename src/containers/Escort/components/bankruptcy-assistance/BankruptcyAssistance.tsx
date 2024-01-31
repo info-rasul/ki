@@ -1,6 +1,9 @@
 import React from 'react';
+interface BankruptcyAssistanceProps {
+    styles: React.CSSProperties;
+}
 
-const BankruptcyAssistance = () => {
+const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
             <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
@@ -41,7 +44,7 @@ const BankruptcyAssistance = () => {
                     </li>
                 </ol>
             </div>
-            <div className="pr-[35px] pl-[31px] py-[25px] border-l-4 border-green-700 bg-teal-200 bg-opacity-10 mt-[30px] max-sm:pr-[30px] max-sm:pl-[26px] max-sm:py-[20px] max-sm:mt-[25px]">
+            <div style={styles} className="pr-[35px] pl-[31px] py-[25px] mt-[30px] max-sm:pr-[30px] max-sm:pl-[26px] max-sm:py-[20px] max-sm:mt-[25px]">
                 <p className="text-[#086C80] leading-[180%]  max-sm:text-[15px] max-sm:leading-[150%]">
                     Оптимальный вариант – сначала найти сопровождающего, а уже затем, с его помощью, подать заявление о
                     банкротстве. Но можно сделать это на любом этапе, как только вы обнаружите необходимость в поддержке.

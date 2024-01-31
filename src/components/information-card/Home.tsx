@@ -70,7 +70,7 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
 
   return (
   <Fragment>
-    <div ref={refBlock}  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F2F2F2] flex flex-col items-start gap-[60px] max-lg:gap-10 max-sm:p-[25px]">
+    <div ref={refBlock}  onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F2F2F2] hover:bg-[#e9e9e9] flex flex-col items-start gap-[60px] max-lg:gap-10 max-sm:p-[25px]">
       <div className="card-home-animation flex">
         <LottieAnimation  />
       </div>

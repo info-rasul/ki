@@ -34,6 +34,11 @@ const Escort: FunctionComponent = () => {
         }
     } )
 
+    const styles = {
+        borderLeft: '4px solid var(--700, #097990)',
+        background: 'rgba(8, 108, 128, 0.10)',
+    };
+
     /*const handleScroll = () => {
         const sidebar = document.querySelector('.services-sidebar');
         console.log(window.scrollY, 'window.scrollY')
@@ -77,10 +82,10 @@ const Escort: FunctionComponent = () => {
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
                             <LegalSupport/>
-                            <BankruptcyConcept/>
-                            <SignsOfBankruptcy/>
+                            <BankruptcyConcept styles={styles}/>
+                            <SignsOfBankruptcy styles={styles}/>
                             <PurposesOfBankruptcy/>
-                            <BankruptcyAssistance/>
+                            <BankruptcyAssistance styles={styles}/>
                             <Specialists/>
                             <Documentation/>
                             <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">

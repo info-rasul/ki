@@ -31,7 +31,7 @@ const EscortSidebar: React.FC = () => {
                     разновидность диктатуры, которой мы обязаны <br/> подчиняться».
                 </p>
                 <div className="mainArticle__user flex items-center	gap-[15px] rounded-full py-[9px] pl-[9px] pr-[20px] bg-[#F8F8F8] mt-[25px]">
-                    <img className="w-[32px] h-[32px]" src={PersonCardImg} alt="Ellipse10" />
+                    <img className="w-[32px]" src={PersonCardImg} alt="Ellipse10" />
                     <p className="text-[15px] leading-[20px]">В.В.Путин</p>
                 </div>
             </div>

@@ -21,7 +21,7 @@ const QRCodeServices: FunctionComponent = () => (
       src={twoSvg}
       alt="QR-код"
     />
-      <a className="button-social cursor-pointer flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
+      <a className="button-social cursor-pointer flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] whitespace-nowrap rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
           Telegram канал
           <img
               className="max-md:hidden"

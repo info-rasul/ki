@@ -88,7 +88,7 @@ body {
 
 .inner-page {
   .header__menu {
-    background: rgba(255, 255, 255, 0.04);
+    background: #F8F8F8;
     backdrop-filter: blur(7.5px);
     a {
       color: #000;
@@ -119,13 +119,14 @@ body {
 
 
 .escort {
-  .header__menu a {
-    color:  #fff;
-  }
+  .header__menu {
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(7.5px);
 
-  /*.fill-white {
-    fill: #fff!important;
-  }*/
+    a {
+      color: #fff !important;
+    }
+  }
 }
 
 .services .services-header {
@@ -358,9 +359,10 @@ body .contacts .header__menu_btn_line {
   height: 24px;
   margin: 3px 18px 3px -42px;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   line-height: 170%;
+  font-family: 'Poppins';
 }
 
 .markers li {

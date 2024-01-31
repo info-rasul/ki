@@ -1,7 +1,10 @@
 import React from 'react';
 import SignsOfBankruptcyImg from '../../../../assets/img/signs-of-bankruptcy-img.jpg'
+interface SignsOfBankruptcyProps {
+    styles: React.CSSProperties;
+}
 
-const SignsOfBankruptcy = () => {
+const SignsOfBankruptcy: React.FC<SignsOfBankruptcyProps> = ({ styles }) => {
     return (
         <div>
             <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[60px] max-sm:mb-[30px] max-sm:tracking-normal">
@@ -28,7 +31,7 @@ const SignsOfBankruptcy = () => {
                 несостоятельности. В противном случае, когда он все-таки обратится с заявлением,
                 на него наложат административный штраф за пропуск срока подачи заявления.
             </p>
-            <div className="pr-[35px] pl-[31px] py-[25px] border-l-4 border-green-700 bg-teal-200 bg-opacity-10 mt-[30px] max-sm:mt-[24px] max-sm:py-[20px] max-sm:pr-[30px] max-sm:pl-[26px]">
+            <div style={styles} className="pr-[35px] pl-[31px] py-[25px]  mt-[30px] max-sm:mt-[24px] max-sm:py-[20px] max-sm:pr-[30px] max-sm:pl-[26px]">
                 <p className="text-[#086C80] leading-[181%] max-sm:text-[15px] max-sm:leading-[150%]">
                     <span className="font-bold">ВНИМАНИЕ!</span> Неплатежеспособность может быть временной или абсолютной. Если речь идет лишь о временных
                     финансовых трудностях должника, обладающего крупными активами или имуществом,
