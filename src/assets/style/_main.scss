@@ -122,26 +122,31 @@ body {
   .header__menu {
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(7.5px);
-
     a {
       color: #fff !important;
     }
   }
 }
 
-.services .services-header {
-  border-bottom: 2px solid #f8f8f8;
-  padding: 32px 0;
+.services {
+  .services-header {
+    border-bottom: 2px solid #f8f8f8;
+    padding: 32px 0;
+  }
 }
 
-.about-us .services-header {
-  border-bottom: 2px solid #f8f8f8;
-  padding: 32px 0;
+.about-us {
+  .services-header {
+    border-bottom: 2px solid #f8f8f8;
+    padding: 32px 0;
+  }
 }
 
-.contacts .services-header {
-  border-bottom: 2px solid #f8f8f8;
-  padding: 32px 0;
+.contacts {
+  .services-header {
+    border-bottom: 2px solid #f8f8f8;
+    padding: 32px 0;
+  }
 }
 
 .header-scroll {
