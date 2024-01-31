@@ -3,7 +3,7 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {useLottie} from "lottie-react";
 interface IOtherServicesCardProps {
     desc: string;
-    animation: any;
+    animation: any ;
 }
 
 const style = {
@@ -14,7 +14,7 @@ const style = {
 const OtherServicesCard: React.FC<IOtherServicesCardProps> = ({desc, animation }) => {
     const [start, setStart] = useState(false)
     const refBlock = useRef();
-
+    console.log(animation, 'animation')
 //@ts-ignore
     const LottieAnimation = useCallback(() => {
         const options = {

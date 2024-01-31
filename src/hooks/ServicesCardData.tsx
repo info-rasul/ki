@@ -1,9 +1,10 @@
+import ServicesAnimation5 from "../assets/img/services-animation5.svg"
+import ServicesAnimation6 from "../assets/img/services-animation6.svg"
 import * as animation1 from '../assets/animations/ki_l1_v01.json'
 import * as animation2 from '../assets/animations/ki_l2_v01.json'
 import * as animation3 from '../assets/animations/ki_l3_v01.json'
 import * as animation4 from '../assets/animations/ki_l4_v01.json'
 import * as animation5 from '../assets/animations/ki_l3-2_v01.json'
-import * as animation6 from '../assets/animations/ki_l4-1_v01.json'
 import * as animation7 from '../assets/animations/ki_l5_v01.json'
 
 // @ts-ignore
@@ -30,7 +31,7 @@ const ServicesCardData = [
     },
     {
         desc: "Сопровождение на всех стадия банкротства",
-        animation: animation6
+        animation: animation5
     },
     {
         desc: "Параллельный <br class='br'/> импорт",
