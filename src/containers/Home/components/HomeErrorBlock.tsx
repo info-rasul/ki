@@ -22,7 +22,7 @@ const HomeErrorBlock: FunctionComponent = () => (
           </p>
         </div>
         <div className="bg-opacity-4 w-[242px] max-sm:w-[293px]">
-          <a className="button-social cursor-pointer flex items-center justify-center py-[15px] pl-[25px] pr-[61px] relative rounded-full text-white text-[15px] font-medium leading-[20px] tracking-[0.3px] bg-white bg-opacity-[0.04] shadow-boxShadowBtn max-md:pr-[9px] max-md:w-full max-md:py-[14px]">
+          <a className="button-social cursor-pointer flex items-center justify-center py-[15px] pl-[25px] pr-[61px] relative rounded-full text-white text-[15px] font-medium leading-[20px] tracking-[0.3px] bg-white bg-opacity-[0.04] shadow-boxShadowBtn max-md:pr-[9px] max-md:w-full max-md:py-[14px] max-md:leading-[19px]">
             Получить в Telegram
             <img
                 className="max-md:hidden absolute right-[9px]"

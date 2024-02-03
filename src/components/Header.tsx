@@ -6,6 +6,7 @@ import HeaderMenuLine from "../assets/img/header-menu-line.svg";
 import useScrollNavbar from "../hooks/useScrollNavbar";
 import fourSvg from "../assets/img/subtract-menu.svg";
 import closeMenu from "../assets/img/close-menu.svg";
+import LoadingBar from "./LoadingBar";
 
 interface HeaderProps {
   isDarMenu?: boolean;
@@ -56,6 +57,14 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflowY = 'hidden';
+    } else {
+      document.body.style.overflowY = 'auto';
+    }
+  }, [isOpen]);
 
   return (
     <Fragment>
@@ -116,7 +125,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
             </svg>
           </a>
           <div>
-            {isOpen ? <img onClick={toggleMenu} src={closeMenu} alt="Кнопка для меню"/>
+            {isOpen ? <img onClick={toggleMenu} src={closeMenu} alt="X"/>
                 :<div onClick={toggleMenu} className="header__menu_btn flex flex-col gap-[5px] px-[10px] py-[15.5px] rounded-full bg-white/[.04]">
                   <div style={{backgroundColor:  scrollTop > 50 || isDarMenu ? 'black' : ''}} className="header__menu_btn_line h-[2px] w-[20px] bg-white"></div>
                   <div style={{backgroundColor:  scrollTop > 50 || isDarMenu ? 'black' : ''}} className="header__menu_btn_line h-[2px] w-[20px] bg-white"></div>
@@ -126,6 +135,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
         </div>
         {isOpen && (
             <div style={{
+              overflowY: isOpen ? 'hidden' : 'auto',
               position: 'fixed',
               top: '72px',
               right: 0,
