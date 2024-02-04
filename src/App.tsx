@@ -14,7 +14,6 @@ const App: FunctionComponent = () => {
 
   return (
     <Layout>
-        <LoadingBar />
       <MetaInfo />
       <SwitchTransition mode="out-in">
         <CSSTransition timeout={250} classNames="fade" key={location.key}>

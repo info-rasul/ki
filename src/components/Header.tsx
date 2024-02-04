@@ -1,12 +1,12 @@
 // @ts-nocheck
-import {useState, type FunctionComponent, useEffect} from "react";
+import {useState, useEffect} from "react";
 import React, { Fragment } from "react";
 import HeaderDot from "../assets/img/header-dot.svg";
 import HeaderMenuLine from "../assets/img/header-menu-line.svg";
 import useScrollNavbar from "../hooks/useScrollNavbar";
 import fourSvg from "../assets/img/subtract-menu.svg";
 import closeMenu from "../assets/img/close-menu.svg";
-import LoadingBar from "./LoadingBar";
+import LoadingBar from 'react-top-loading-bar'
 
 interface HeaderProps {
   isDarMenu?: boolean;
@@ -16,6 +16,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
   useScrollNavbar();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [progress, setProgress] = useState(0);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -33,11 +34,13 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
   };
 
   useEffect(() => {
+    setProgress(100)
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
 
   let scrolling: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("services-header");
   if (window.scrollY > 30 && scrolling.length || windowWidth < 783) {
@@ -68,6 +71,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
 
   return (
     <Fragment>
+      <LoadingBar style={{zIndex: 20}} color={isDarMenu ? '#000' : '#fff'} progress={progress} />
       <div className="max-[783px]:hidden services-header w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
         <div className="container ">
           <div className="grid grid-cols-8 gap-4 place-content-center max-[1080px]:px-4 max-md:hidden">

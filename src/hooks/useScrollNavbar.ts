@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const useScrollNavbar = (): void => {
   const location = useLocation()
-  console.log('location', location)
+
   let menu: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header__menu");
   let logo: HTMLCollectionOf<HTMLElement> =document.getElementsByClassName("logo")
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
