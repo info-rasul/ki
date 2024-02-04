@@ -6,7 +6,6 @@ import { useScrollToTop } from "./hooks";
 import { useLocation, Route, Routes } from "react-router-dom";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import React from "react";
-import LoadingBar from "./components/LoadingBar";
 
 const App: FunctionComponent = () => {
   useScrollToTop();
