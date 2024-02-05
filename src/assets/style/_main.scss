@@ -104,6 +104,7 @@ body {
   }*/
 }
 
+
 @media all and (min-width: 783px) {
   .escort {
     .fill-white {
@@ -125,6 +126,10 @@ body {
     a {
       color: #fff !important;
     }
+  }
+
+  .fill-white {
+    fill: #fff;
   }
 }
 
