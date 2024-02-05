@@ -83,7 +83,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               </a>
             </div>
             <div className="col-span-4 flex justify-center mt-[3px]">
-              <ul className="header__menu flex text-center justify-between items-center w-[419px] pl-[29px] pr-[26px] py-2.5 rounded-[25px] z-10 shadow-boxShadow fixed max-[900px]:mt-[-8px]">
+              <ul className="header__menu flex text-center justify-between items-center w-[419px] pl-[29px] pr-[32px] py-2.5 rounded-[25px] z-10 shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
                   <a className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
                     О нас
@@ -109,7 +109,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]" href="/contacts">
+                  <a className="text-white text-[15px] font-medium leading-[150%] tracking-[-0.1px]" href="/contacts">
                     Контакты
                   </a>
                 </li>
