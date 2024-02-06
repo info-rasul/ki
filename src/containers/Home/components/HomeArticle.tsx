@@ -28,17 +28,17 @@ const HomeArticle: FunctionComponent = () => {
     return (
         <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)}  className="grid grid-cols-2 gap-48 pb-[160px] max-xl:gap-[30px] max-xl:pb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
-                <p className="text-homeArticle leading-[140%] tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
-                    Решение проблемных <br className="sm:hidden" /> ситуаций защита малого <br className="sm:hidden" /> и среднего
-                    бизнеса <br className="max-xl:hidden" /> от недобросовестных <br className="sm:hidden" /> кредиторов <br className="max-xl:hidden" /> и конкурентов
+                <p className="text-homeArticle leading-[140%] text-justify tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
+                    Решение проблемных ситуаций защита малого и среднего
+                    бизнеса от недобросовестных кредиторов и конкурентов
                 </p>
                 <div className="w-[100px] max-[1080px]:hidden">
                     <LottieAnimation />
                 </div>
             </div>
             <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">
-                <p className="leading-[168%] max-sm:leading-[160%] max-sm:text-[15px]">
-                    Комитет информации (КИ) — концептуальный консалтинговый бренд,
+                <p className="leading-[168%] text-justify max-sm:leading-[160%] max-sm:text-[15px]">
+                    Комитет информации (<span className="font-medium">КИ</span>) — концептуальный консалтинговый бренд,
                     объединяющий экспертов с многолетним опытом работы в правоохранительных и
                     надзорных органах, а также в органах государственной власти Российской Федерации.
                     Предоставляем комплексные услуги в области банкротства, защиты от субсидиарной ответственности,
@@ -46,7 +46,7 @@ const HomeArticle: FunctionComponent = () => {
                     госорганов (в том числе и от уголовных преследований), разрешение корпоративных споров,
                     сделок слияния и поглощения  (М&А), управления проблемными активами и форензика.
                 </p>
-                <p className="leading-[170%] max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px]">
+                <p className="leading-[170%] text-justify max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px]">
                     Мы не мыслим шаблонно! Находим не рискованные, а юридически законные способы сохранить
                     Ваш бизнес в период турбулентности надвигающего кризиса на внутренних и внешних рынках.
                 </p>

@@ -50,7 +50,7 @@ const AboutUs: FunctionComponent = () => {
               <h2 style={{ fontSize: 'clamp(24px, 2.1vw, 30px)' }} className="leading-[140%] tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
                 Наблюдательный совет <br /> Комитета информации
               </h2>
-              <p className="leading-[170%] w-[545px] max-[1000px]:mt-[30px] max-sm:text-[15px] max-sm:leading-[160%] max-sm:w-full">
+              <p className="leading-[170%] w-[545px] text-justify max-[1000px]:mt-[30px] max-sm:text-[15px] max-sm:leading-[160%] max-sm:w-full">
                 Наш наблюдательный совет, сотрудники и партнеры — эксперты
                 с более чем 20-летним опытом работы в сфере безопасности
                 и юридической защиты бизнеса. Благодаря этому мы решаем сложные задачи,
@@ -110,19 +110,19 @@ const AboutUs: FunctionComponent = () => {
               </h2>
               <div className="flex gap-20 mt-[60px] max-lg:mt-[30px] max-lg:flex-col max-lg:gap-[25px]">
                 <div className="flex flex-col gap-[20px] max-lg:gap-[25px]">
-                  <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
+                  <p className="leading-[170%] text-justify max-sm:text-[15px] max-sm:leading-[160%]">
                     Рынок был готов к таким действиям Центробанка, хотя в последнее время его решения было сложно
                     предсказать. Банки начали заранее закладыватьужесточение ДКП в ставки по вкладам и,
                     судя по комментариям, были готовы скорее увидеть 17 процентов, чем 15.
                   </p>
-                  <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
+                  <p className="leading-[170%] text-justify max-sm:text-[15px] max-sm:leading-[160%]">
                     На этом фоне рубль незначительно укрепился, вновь преодолев отметку в 90 рублей за доллар,
                     однако высокая волатильность в последние месяцы стала нормальной для российской валюты.
                     К тому же с учетом обязательных продаж валютной выручки и курсовых пошлин ставка перестала
                     играть ту роль в курсе рубля, что раньше.
                   </p>
                 </div>
-                <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
+                <p className="leading-[170%] text-justify max-sm:text-[15px] max-sm:leading-[160%]">
                   Полтора месяца назад, во время предыдущего повышения ставки с 13 до 15 процентов,
                   большинство аналитиков ожидали, что ужесточение ДКП закончено. Ближе к 15 декабря
                   консенсусным стало мнение, что ЦБ придется повышать ставку, основной вопрос был только

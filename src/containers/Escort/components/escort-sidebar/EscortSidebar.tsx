@@ -25,7 +25,7 @@ const EscortSidebar: React.FC = () => {
             <QRCodeServices />
             <div className="flex flex-col items-start justify-center bg-[#086c801a] w-[300px] p-[25px]">
                 <img className="w-[24px] h-[18px]" src={oneSvg} alt="gobbler" />
-                <p className="text-start text-[15px] text-[#086C80] leading-[170%] mt-[15px]">
+                <p className="text-start text-[15px] tracking-[.1px] text-[#086C80] leading-[170%] mt-[15px]">
                     «Мы обязаны помнить об исконных российских традициях справедливости
                     и законности, помнить о том, что диктатура закона — это единственная
                     разновидность диктатуры, которой мы обязаны <br/> подчиняться».

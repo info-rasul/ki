@@ -13,7 +13,7 @@ const HomeGoodQualityBlock: React.FC<homeGoodQualityDataProps> = ({title,desc })
                 <h3 className="text-[25px] leading-[140%] max-sm:w-[270px] max-sm:text-[18px] max-sm:leading-[150%]">
                     <div dangerouslySetInnerHTML={{__html: title}} />
                 </h3>
-                <p className="leading-[170%] text-[#333] max-sm:w-[270px] max-sm:text-[15px] max-sm:leading-[172%]">
+                <p className="leading-[170%] text-[#333] text-justify max-sm:w-[270px] max-sm:text-[15px] max-sm:leading-[172%]">
                     {desc}
                 </p>
             </div>
