@@ -70,85 +70,16 @@ body {
   background-repeat: no-repeat;
 }
 
-
 .container-zoom {
   zoom: var(--zoom-container);
 }
 
-.home-page {
-  .header__menu {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(7.5px);
-    z-index: 20;
-    a {
-      color: #fff;
-    }
-  }
-}
-
-.header__menu_contact {
-  background: rgba(255, 255, 255, 0.04);
+.header__menu {
   backdrop-filter: blur(7.5px);
 }
 
-.inner-page {
-  .header__menu {
-    background: #F8F8F8;
-    backdrop-filter: blur(7.5px);
-    a {
-      color: #000;
-    }
-  }
-
-  .header__menu_contact {
-    background: #F8F8F8;
-    color: #000;
-  }
-
-  .fill-white {
-    fill: #000;
-  }
-
-  /*header {
-    border-bottom: 2px solid #f8f8f8;
-  }*/
-}
-
-.escort {
-  .header__menu_contact {
-    background: rgba(255, 255, 255, 0.04)!important;
-    backdrop-filter: blur(7.5px)!important;
-    color: #fff!important;
-  }
-}
-
-
-@media all and (min-width: 783px) {
-  .escort {
-    .fill-white {
-      fill: #ffffff!important;
-    }
-  }
-}
-
-
-.inner_page .header__menu a {
-  color:  #000;
-}
-
-
-.escort {
-  .header__menu {
-    background: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(7.5px);
-    a {
-      color: #fff !important;
-    }
-  }
-
-  .fill-white {
-    fill: #fff;
-  }
+.header__menu_contact {
+  backdrop-filter: blur(7.5px);
 }
 
 .services {
@@ -225,10 +156,10 @@ body .contacts .header__menu_btn_line {
 
 
 .header__menu.scroll-menu {
-  background: black;
+  background: black!important;
   top: 32px;
   a {
-    color: #fff;
+    color: #fff!important;
   }
 }
 

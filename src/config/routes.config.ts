@@ -110,7 +110,7 @@ export const routes: Route[] = [
     metaInfo: {
       title: "QuestionsAndAnswers",
       description: `QuestionsAndAnswers ${DESC_SUFFIX}`,
-      isDarkMenu: false,
+      isDarkMenu: true,
     },
   },
 ];
