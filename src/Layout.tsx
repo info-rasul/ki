@@ -10,10 +10,9 @@ import { useLocation } from "react-router-dom";
 const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
   const location = useLocation();
   const classCss =
-    location.pathname === "/" || location.pathname === "/article"
+    location.pathname === "/"
       ? `container-zoom home-page ${location.pathname.slice(1)}`
       : `container-zoom inner-page ${location.pathname.slice(1)}`;
-  console.log(classCss ,'location.pathname')
 
   return (
     <Fragment>
