@@ -43,6 +43,8 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
 
 
   let scrolling: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("services-header");
+  let header: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header");
+
   if (window.scrollY > 30 && scrolling.length || windowWidth < 783) {
     for (let i = 0; i < scrolling.length; i++) {
       scrolling[i].classList.add("header-scroll");
@@ -69,11 +71,29 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
     }
   }, [isOpen]);
 
+  if (window.scrollY > 30 && !isDarMenu) {
+    for (let i = 0; i < header.length; i++) {
+      header[i].style.borderBottom = "none";
+    }
+  } else if (window.scrollY < 30 && isDarMenu) {
+    for (let i = 0; i < header.length; i++) {
+      header[i].style.borderBottom = "2px solid #f8f8f8";
+    }
+  }
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 30) {
+      for (let i = 0; i < header.length; i++) {
+        header[i].style.borderBottom = "none";
+      }
+    }
+  })
+
   return (
     <Fragment>
       <LoadingBar style={{zIndex: 20}} color={isDarMenu ? '#000' : '#fff'} progress={progress} />
-      <div className="max-[1030px]:hidden services-header w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
-        <div className="container ">
+      <div className="header max-[1030px]:hidden w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
+        <div className="container">
           <div className="grid grid-cols-8 gap-4 place-content-center max-[1080px]:px-4 max-md:hidden">
             <div className="logo col-span-2 z-10 flex items-center">
               <a href="/">

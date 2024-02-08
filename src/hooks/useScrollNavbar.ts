@@ -9,7 +9,6 @@ const useScrollNavbar = (): void => {
   let headerMenuContact: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header__menu_contact");
   let logo: HTMLCollectionOf<HTMLElement> =document.getElementsByClassName("logo")
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
-  console.log(headerMenuContact, 'headerMenuContact')
 
   useEffect(() => {
     const handleScroll = () => {
