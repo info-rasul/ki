@@ -6,3 +6,4 @@ export { default as Blog } from "./Blog";
 export { default as Contacts } from "./Contacts";
 export { default as Article } from "./Article";
 export { default as Escort } from "./Escort";
+export { default as QuestionsAndAnswers } from "./QuestionsAndAnswers";

@@ -6,7 +6,7 @@ module.exports = {
     extend: {
       fontSize: {
         homeBanner: ['clamp(28px, 4vw, 40px)'],
-        homeArticle: ['clamp(24px, 2.5vw, 30px)'],
+        homeArticle: ['clamp(24px, 2.5vw, 25px)'],
         homeQuote: ['clamp(18px, 2vw, 25px)'],
         homeAdvantage: ['clamp(22px, 2.2vw, 30px)'],
         homeSpecialization: ['clamp(24px, 2.2vw, 30px)'],

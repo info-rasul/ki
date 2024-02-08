@@ -28,10 +28,14 @@ const HomeArticle: FunctionComponent = () => {
     return (
         <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)}  className="grid grid-cols-2 gap-48 pb-[160px] max-xl:gap-[30px] max-xl:pb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
-                <p className="text-homeArticle leading-[140%] text-justify tracking-[-0.3px] max-sm:text-[24px] max-sm:tracking-normal">
-                    Решение проблемных ситуаций защита малого и среднего
-                    бизнеса от недобросовестных кредиторов и конкурентов
-                </p>
+                <div>
+                    <p className="text-homeArticle leading-[37.5px] tracking-[-.1px] text-black bg-opacity-100 max-sm:text-[24px] max-sm:tracking-normal">
+                        Решение проблемных ситуаций <br className="max-[1080px]:hidden" /> защита малого и среднего бизнеса от
+                    </p>
+                    <p className="leading-[34px]">
+                        недобросовестных  кредиторов  и конкурентов
+                    </p>
+                </div>
                 <div className="w-[100px] max-[1080px]:hidden">
                     <LottieAnimation />
                 </div>
@@ -46,7 +50,7 @@ const HomeArticle: FunctionComponent = () => {
                     госорганов (в том числе и от уголовных преследований), разрешение корпоративных споров,
                     сделок слияния и поглощения  (М&А), управления проблемными активами и форензика.
                 </p>
-                <p className="leading-[170%] text-justify max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px]">
+                <p className="leading-[170%] text-justify max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px] pl-[15px] border-l-[4px] border-[#000]">
                     Мы не мыслим шаблонно! Находим не рискованные, а юридически законные способы сохранить
                     Ваш бизнес в период турбулентности надвигающего кризиса на внутренних и внешних рынках.
                 </p>

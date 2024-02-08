@@ -6,8 +6,11 @@ const useScrollNavbar = (): void => {
   const location = useLocation()
 
   let menu: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header__menu");
+  let headerMenuContact: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header__menu_contact");
+  let headerAdaptive: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header-adaptive");
   let logo: HTMLCollectionOf<HTMLElement> =document.getElementsByClassName("logo")
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+  console.log(headerMenuContact, 'headerMenuContact')
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,9 +35,15 @@ const useScrollNavbar = (): void => {
       for (let i = 0; i < logo.length; i++) {
         logo[i].style.opacity = "0";
       }
+      for (let i = 0; i < headerMenuContact.length; i++) {
+        headerMenuContact[i].style.opacity = "0";
+      }
     } else if (window.scrollY < 30) {
       for (let i = 0; i < logo.length; i++) {
         logo[i].style.opacity = "1";
+      }
+      for (let i = 0; i < headerMenuContact.length; i++) {
+        headerMenuContact[i].style.opacity = "1";
       }
     }
     // Если страница прокручена на 300px то добавляем новый стиль background: black;
