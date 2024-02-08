@@ -41,6 +41,10 @@ const MetaInfo: FunctionComponent<MetaInfoProps> = ({
           content: description,
         },
         {
+          name: "robots",
+          content: "noindex, nofollow",
+        },
+        {
           property: "og:description",
           content: description,
         },

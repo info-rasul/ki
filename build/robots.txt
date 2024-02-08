@@ -1,4 +1,2 @@
 User-agent: *
-Disallow:
-
-Sitemap: https://www.reactseofriendlyspatemplate.com/sitemap.xml
+Disallow: /

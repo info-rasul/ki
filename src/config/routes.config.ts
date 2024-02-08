@@ -1,7 +1,7 @@
 import type { ComponentType } from "react";
 import {Home, About, Services, AboutUs, Blog, Contacts, Article, Escort, QuestionsAndAnswers} from "../containers";
 
-const DESC_SUFFIX = "description - length <= 160 chars.";
+const DESC_SUFFIX = "КИ";
 
 export type MetaInfoProps = Partial<
   Readonly<{
