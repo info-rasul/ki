@@ -1,21 +1,18 @@
-import Alert from "./Alert";
-import MetaInfo from "./MetaInfo";
 import type { FunctionComponent } from "react";
 import React from "react";
-
-const NOT_FOUND_TITLE = "404: Not Found";
-const NOT_FOUND_DESCRIPTION = "The requested page could not be found.";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const NotFound404: FunctionComponent = () => (
-  <div className="container view-wrapper">
-    <MetaInfo title={NOT_FOUND_TITLE} description={NOT_FOUND_DESCRIPTION} />
-    <Alert
-      title={NOT_FOUND_TITLE}
-      subTitle={NOT_FOUND_DESCRIPTION}
-      iconName="exclamation-circle"
-      alertBackgroundColor="#e93e60"
-      alertAnimation="rubberBand_animation 1s"
-    />
+  <div className="">
+      <div className="bg-[#0B162A] max-[1030px]:h-[75px]">
+          <Header />
+      </div>
+      <div className="w-screen h-screen flex justify-center flex-col items-center bg-[#cfcfcf]">
+          <p style={{ fontSize: 'clamp(50px, 7vw, 100px)' }} className="leading-none text-[#0B162A] mt-[-125px] max-[1030px]:mt-[-75px]">404</p>
+          <p style={{ fontSize: 'clamp(12px, 1.2vw, 18px)' }} className="text-black ">Извините, страница, которую вы ищете, не существует.</p>
+      </div>
+      <Footer />
   </div>
 );
 

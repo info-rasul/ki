@@ -6,7 +6,7 @@ import videoBack from "../../../assets/video/back.mp4";
 import videoBackMob from "../../../assets/video/back-mob-opt.mp4";
 import Header from "../../../components/Header";
 import DownButton from "../../../assets/img/down-button.svg"
-import PersonCardImg from "../../../assets/img/person-card-img.png";
+import PersonCardImg from "../../../assets/img/persone-card-img2.jpg";
 import {getRouteMetaInfo} from "../../../config/routes.config";
 
 const HomeBanner: FunctionComponent = () => {

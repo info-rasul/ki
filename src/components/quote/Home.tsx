@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
 import QuoteImg from "../../assets/img/quote.svg";
-import PersonCardImg from "../../assets/img/quote-media.png";
+import PersonCardImg from "../../assets/img/quote-media.jpg";
 
 const QuoteHome: FunctionComponent = () => (
     <div className="flex flex-col gap-10 items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] py-[60px]  max-sm:py-[35px] max-sm:gap-y-[25px]">

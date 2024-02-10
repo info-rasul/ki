@@ -1,6 +1,6 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
-import PersonCardImg from "../assets/img/person-card-img.png";
+import PersonCardImg from "../assets/img/persone-card-img2.jpg";
 
 const SubTitle: FunctionComponent = () => (
   <Fragment>

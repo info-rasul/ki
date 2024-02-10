@@ -2,7 +2,7 @@ import type { FunctionComponent } from "react";
 import React, {useEffect, useRef, useState} from "react";
 import ButtonsK from "../../../components/ButtonsK";
 // @ts-ignore
-import videoBack from "../../../assets/video/back2.mp4";
+import videoBack from "../../../assets/video/bck1.mp4";
 
 const HomeAdvantage: FunctionComponent = () => {
     const videoRef = useRef();
