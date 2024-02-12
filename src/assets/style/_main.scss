@@ -77,8 +77,18 @@ body {
 .header__menu {
   backdrop-filter: blur(7.5px);
 
+  a {
+    padding: 10px 14px;
+  }
+
   a:hover {
+    transition-duration:  .5s;
     color: #EA3C3D!important;
+  }
+
+  a:not(:hover) {
+    transition-duration: .5s;
+    color: #ffffff!important;
   }
 }
 
@@ -87,7 +97,13 @@ body {
 }
 
 .header__menu_contact:hover {
+  transition-duration:  .5s;
   color: #EA3C3D!important;
+}
+
+.header__menu_contact:not(:hover) {
+  transition-duration:  .5s;
+  color: #ffffff!important;
 }
 
 .header-scroll {
