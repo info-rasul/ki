@@ -6,7 +6,8 @@ import HeaderMenuLine from "../assets/img/header-menu-line.svg";
 import useScrollNavbar from "../hooks/useScrollNavbar";
 import fourSvg from "../assets/img/subtract-menu.svg";
 import closeMenu from "../assets/img/close-menu.svg";
-import PhoneImg from "../assets/img/phone.svg"
+import PhoneBlack from "../assets/img/phone-black.svg";
+import PhoneWhite from "../assets/img/phone-white.svg";
 import LoadingBar from 'react-top-loading-bar'
 
 interface HeaderProps {
@@ -17,6 +18,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
   useScrollNavbar();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollMenu, setScrollMenu] = useState(false);
   const [progress, setProgress] = useState(0);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -87,6 +89,9 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
       for (let i = 0; i < header.length; i++) {
         header[i].style.borderBottom = "none";
       }
+      setScrollMenu(true)
+    } else {
+      setScrollMenu(false)
     }
   })
 
@@ -106,7 +111,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
             <div className="col-span-4 flex justify-center mt-[3px]">
               <ul style={isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)'}} className="header__menu border border-white flex text-center justify-between items-center z-20 w-[606px] pl-[14px] pr-[17px] py-2.5 rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
-                  <a style={isDarMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
+                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
                     О нас
                   </a>
                 </li>
@@ -114,7 +119,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a style={isDarMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]" href="/services">
+                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]" href="/services">
                     Услуги
                   </a>
                 </li>
@@ -122,7 +127,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a style={isDarMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[.2px]" href="/questions-and-answers">
+                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[.2px]" href="/questions-and-answers">
                     Вопросы и ответы
                   </a>
                 </li>
@@ -130,7 +135,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderMenuLine} alt="|" />
                 </li>
                 <li>
-                  <a style={isDarMenu ? { color: '#000' } : { color: '#fff' }} className="text-white  text-[15px] font-medium leading-[150%]" href="/news">
+                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white  text-[15px] font-medium leading-[150%]" href="/news">
                     Блог
                   </a>
                 </li>
@@ -138,16 +143,16 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a style={isDarMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[-0.1px]" href="/contacts">
+                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[-0.1px]" href="/contacts">
                     Контакты
                   </a>
                 </li>
               </ul>
             </div>
             <div className="col-span-2 flex justify-end">
-              <div style={isDarMenu ? { background: '#F8F8F8', color: '#000' } : { background: 'rgba(255, 255, 255, 0.04)', color: '#fff'}} className="border border-white h-[50px] mt-[3px] pr-[16px] pl-[20px] rounded-[25px] flex items-center justify-center">
-                <img src={PhoneImg} alt="телефон"/>
-                <a  className="header__menu_contact px-3.5 py-[12px]  text-white text-[15px] font-medium leading-[22.5px]" href="tel:+74950883333">
+              <div style={isDarMenu ? { background: '#F8F8F8'} : { background: 'rgba(255, 255, 255, 0.04)'}} className="header__menu_contact border border-white h-[50px] mt-[3px] pr-[16px] pl-[20px] rounded-[25px] flex items-center justify-center">
+                <img src={isDarMenu ? PhoneBlack : PhoneWhite} alt="icon"/>
+                <a style={isDarMenu ? {color: '#000' } : {color: '#fff'}} className="px-3.5 py-[12px] text-white text-[15px] font-medium leading-[22.5px]" href="tel:+74950883333">
                   +7-495-088-33-33
                 </a>
               </div>

@@ -82,13 +82,8 @@ body {
   }
 
   a:hover {
-    transition-duration:  .2s;
+    transition-duration:  .5s;
     color: #EA3C3D!important;
-  }
-
-  a:not(:hover) {
-    transition-duration: .2s;
-    color: #ffffff!important;
   }
 }
 
@@ -96,14 +91,11 @@ body {
   backdrop-filter: blur(7.5px);
 }
 
-.header__menu_contact:hover {
-  transition-duration:  .5s;
-  color: #EA3C3D!important;
-}
-
-.header__menu_contact:not(:hover) {
-  transition-duration:  .5s;
-  color: #ffffff!important;
+.header__menu_contact {
+  a:hover {
+    transition-duration:  .5s;
+    color: #EA3C3D!important;
+  }
 }
 
 .header-scroll {
@@ -161,9 +153,6 @@ body .contacts .header__menu_btn_line {
 .header__menu.scroll-menu {
   background: black!important;
   top: 32px;
-  a {
-    color: #fff!important;
-  }
 }
 
 .home-banner {
