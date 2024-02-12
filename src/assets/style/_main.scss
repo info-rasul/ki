@@ -76,10 +76,18 @@ body {
 
 .header__menu {
   backdrop-filter: blur(7.5px);
+
+  a:hover {
+    color: #EA3C3D!important;
+  }
 }
 
 .header__menu_contact {
   backdrop-filter: blur(7.5px);
+}
+
+.header__menu_contact:hover {
+  color: #EA3C3D!important;
 }
 
 .header-scroll {

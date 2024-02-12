@@ -103,7 +103,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               </a>
             </div>
             <div className="col-span-4 flex justify-center mt-[3px]">
-              <ul style={isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)'}} className="header__menu flex text-center justify-between items-center z-20 w-[606px] pl-[29px] pr-[32px] py-2.5 rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
+              <ul style={isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)'}} className="header__menu border border-white flex text-center justify-between items-center z-20 w-[606px] pl-[29px] pr-[32px] py-2.5 rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
                   <a style={isDarMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
                     О нас
@@ -144,7 +144,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               </ul>
             </div>
             <div className="col-span-2 flex justify-end">
-              <a style={isDarMenu ? { background: '#F8F8F8', color: '#000' } : { background: 'rgba(255, 255, 255, 0.04)', color: '#fff'}} className="header__menu_contact text-white text-[15px] font-medium leading-[22.5px] h-[50px] mt-[3px] px-[30px] rounded-[25px] flex items-center justify-center" href="tel:+74950883333">
+              <a style={isDarMenu ? { background: '#F8F8F8', color: '#000' } : { background: 'rgba(255, 255, 255, 0.04)', color: '#fff'}} className="header__menu_contact border border-white text-white text-[15px] font-medium leading-[22.5px] h-[50px] mt-[3px] px-[30px] rounded-[25px] flex items-center justify-center" href="tel:+74950883333">
                 +7-495-088-33-33
               </a>
             </div>

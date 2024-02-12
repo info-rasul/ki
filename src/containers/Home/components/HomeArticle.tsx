@@ -30,10 +30,10 @@ const HomeArticle: FunctionComponent = () => {
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
                 <div>
                     <p className="text-homeArticle leading-[37.5px] tracking-[-.1px] text-black bg-opacity-100 max-sm:text-[24px] max-sm:tracking-normal">
-                        Решение проблемных ситуаций <br className="max-[1080px]:hidden" /> защита малого и среднего бизнеса от
+                        Решение проблемных ситуаций <br className="max-[1080px]:hidden" /> защита малого и среднего бизнеса
                     </p>
                     <p className="leading-[34px]">
-                        недобросовестных  кредиторов  и конкурентов
+                        от недобросовестных  кредиторов  и конкурентов
                     </p>
                 </div>
                 <div className="w-[100px] max-[1080px]:hidden">
@@ -50,10 +50,12 @@ const HomeArticle: FunctionComponent = () => {
                     госорганов (в том числе и от уголовных преследований), разрешение корпоративных споров,
                     сделок слияния и поглощения  (М&А), управления проблемными активами и форензика.
                 </p>
-                <p className="leading-[170%] text-justify max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px] pl-[15px] border-l-[4px] border-[#000]">
-                    Мы не мыслим шаблонно! Находим не рискованные, а юридически законные способы сохранить
-                    Ваш бизнес в период турбулентности надвигающего кризиса на внутренних и внешних рынках.
-                </p>
+                <div style={{background: 'rgba(8, 108, 128, 0.10)', borderLeft: '4px solid var(--700, #086C80)'}} className="pr-[35px] pl-[31px] py-[25px]">
+                    <p className="text-[#086C80] leading-[170%] text-justify max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px] pl-[15px]">
+                        Мы не мыслим шаблонно! Находим не рискованные, а юридически законные способы сохранить
+                        Ваш бизнес в период турбулентности надвигающего кризиса на внутренних и внешних рынках.
+                    </p>
+                </div>
             </div>
         </div>
     );
