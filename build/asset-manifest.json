@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.b912459a.css",
-    "main.js": "/static/js/main.adfa5df4.js",
+    "main.css": "/static/css/main.df9589ca.css",
+    "main.js": "/static/js/main.94588993.js",
     "static/js/496.e4c929b0.chunk.js": "/static/js/496.e4c929b0.chunk.js",
     "static/media/back.mp4": "/static/media/back.9502db0da2ccb124d124.mp4",
-    "static/media/back2.mp4": "/static/media/back2.367485a69bc3d8f6ed5c.mp4",
     "static/media/back-mob-opt.mp4": "/static/media/back-mob-opt.11c872b428064651096b.mp4",
     "static/media/contacts-banner.jpg": "/static/media/contacts-banner.c7f37ae5821e903fd8fb.jpg",
-    "static/media/banner.png": "/static/media/banner.f4a96253fc05e4bf8495.png",
+    "static/media/bck1.mp4": "/static/media/bck1.18abdf200d8dcff3851a.mp4",
     "static/media/article-img1.jpg": "/static/media/article-img1.45982840054f1c6dd94f.jpg",
     "static/media/signs-of-bankruptcy-img.jpg": "/static/media/signs-of-bankruptcy-img.4daa1ab0024c3e660750.jpg",
     "static/media/article-banner.jpg": "/static/media/article-banner.c1a1b20ac73813b4e6f6.jpg",
@@ -24,6 +23,7 @@
     "static/media/video-back.jpg": "/static/media/video-back.a5ee56fbab51ff31f271.jpg",
     "static/media/about-us-card1.jpg": "/static/media/about-us-card1.167bd7267af2bf5e9da7.jpg",
     "static/media/about-us-card-img.jpg": "/static/media/about-us-card-img.25bb9aacd558218aea3f.jpg",
+    "static/media/banner.jpg": "/static/media/banner.4c70f12a653ed42997bb.jpg",
     "static/media/HelveticaNeueBoldCondensed.woff": "/static/media/HelveticaNeueBoldCondensed.032c5f4da263ec230768.woff",
     "static/media/HelveticaNeueBlackCondensed.woff": "/static/media/HelveticaNeueBlackCondensed.d47ad62d25f9aee44126.woff",
     "service-worker.js": "/service-worker.js",
@@ -79,7 +79,6 @@
     "static/media/HelveticaNeueCyr-Bold.woff": "/static/media/HelveticaNeueCyr-Bold.e8ac3e02953308d54ad6.woff",
     "static/media/HelveticaNeueCyr-Heavy.woff": "/static/media/HelveticaNeueCyr-Heavy.b5abc4a289cda2939dee.woff",
     "static/media/quote-media.png": "/static/media/quote-media.39868de1f36b48ceb766.png",
-    "static/media/person-card-img.png": "/static/media/person-card-img.8fbf09ace80ae2a6b552.png",
     "static/media/HelveticaNeueCyr-LightItalic.woff2": "/static/media/HelveticaNeueCyr-LightItalic.bd4e9d1d0813fa37c753.woff2",
     "static/media/HelveticaNeueCyr-BlackItalic.woff2": "/static/media/HelveticaNeueCyr-BlackItalic.aa3aba821167633605e0.woff2",
     "static/media/HelveticaNeueCyr-UltraLightItalic.woff2": "/static/media/HelveticaNeueCyr-UltraLightItalic.e7533e52a0956c205070.woff2",
@@ -120,12 +119,12 @@
     "static/media/navigation-icon.svg": "/static/media/navigation-icon.6bccc2a3ac09b9d5b12b1337c5d6d162.svg",
     "static/media/header-menu-line.svg": "/static/media/header-menu-line.13b4b588af3a649a590d25001c89c272.svg",
     "static/media/header-dot.svg": "/static/media/header-dot.0f85f387a42f239416dcde391ca78d26.svg",
-    "main.b912459a.css.map": "/static/css/main.b912459a.css.map",
-    "main.adfa5df4.js.map": "/static/js/main.adfa5df4.js.map",
+    "main.df9589ca.css.map": "/static/css/main.df9589ca.css.map",
+    "main.94588993.js.map": "/static/js/main.94588993.js.map",
     "496.e4c929b0.chunk.js.map": "/static/js/496.e4c929b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b912459a.css",
-    "static/js/main.adfa5df4.js"
+    "static/css/main.df9589ca.css",
+    "static/js/main.94588993.js"
   ]
 }
