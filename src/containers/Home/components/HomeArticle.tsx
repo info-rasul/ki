@@ -41,7 +41,7 @@ const HomeArticle: FunctionComponent = () => {
                 </div>
             </div>
             <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">
-                <p className="leading-[168%] text-justify max-sm:leading-[160%] max-sm:text-[15px]">
+                <p className="leading-[168%] max-sm:leading-[160%] max-sm:text-[15px]">
                     <span className="font-medium">Комитет информации (КИ)</span> — концептуальный консалтинговый бренд,
                     объединяющий экспертов с многолетним опытом работы в правоохранительных и
                     надзорных органах, а также в органах государственной власти Российской Федерации.
@@ -50,8 +50,8 @@ const HomeArticle: FunctionComponent = () => {
                     госорганов (в том числе и от уголовных преследований), разрешение корпоративных споров,
                     сделок слияния и поглощения  (М&А), управления проблемными активами и форензика.
                 </p>
-                <div style={{background: 'rgba(8, 108, 128, 0.10)', borderLeft: '4px solid var(--700, #086C80)'}} className="pr-[35px] pl-[31px] py-[25px]">
-                    <p className="text-[#086C80] leading-[170%] text-justify max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px] pl-[15px]">
+                <div style={{borderLeft: '4px solid var(--700, #086C80)'}}>
+                    <p className="text-[#086C80] leading-[170%] max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px] pl-[15px]">
                         Мы не мыслим шаблонно! Находим не рискованные, а юридически законные способы сохранить
                         Ваш бизнес в период турбулентности надвигающего кризиса на внутренних и внешних рынках.
                     </p>

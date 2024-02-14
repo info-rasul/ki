@@ -78,7 +78,7 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
         <h3 className="text-homeInformationCar leading-[140%] max-sm:text-[18px] max-sm:leading-[151%] max-sm:tracking-[-0.18px">
           <div dangerouslySetInnerHTML={{__html: title}} />
         </h3>
-        <p style={windowWidth <= 629 ? styles : null} className="text-content leading-[169%] text-justify max-sm:text-[15px] max-sm:leading-[160%]">
+        <p style={windowWidth <= 629 ? styles : null} className="text-content leading-[169%] max-sm:text-[15px] max-sm:leading-[160%]">
           {desc}
         </p>
         <p onClick={toggleText} className="hide-text text-[15px] leading-[170%] text-[#097990] min-[629px]:hidden">
