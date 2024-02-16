@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
   let scrolling: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("services-header");
   let header: HTMLCollectionOf<HTMLElement> = document.getElementsByClassName("header");
 
-  if (window.scrollY > 30 && scrolling.length || windowWidth < 783) {
+  if (window.scrollY > 0 && scrolling.length || windowWidth < 783) {
     for (let i = 0; i < scrolling.length; i++) {
       scrolling[i].classList.add("header-scroll");
     }

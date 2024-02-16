@@ -35,7 +35,13 @@ const Home: FunctionComponent = () => {
                             {
                                 // @ts-ignore
                                 InformationCardHomeData.map((item, index) => {
-                                    return <InformationCardHome key={index} title={item.title} desc={item.desc} animation={item.animation}/>
+                                    return <InformationCardHome
+                                        key={index}
+                                        link={item.link}
+                                        title={item.title}
+                                        desc={item.desc}
+                                        animation={item.animation}
+                                    />
 
                                 })
                             }

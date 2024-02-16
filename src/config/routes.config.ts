@@ -94,7 +94,7 @@ export const routes: Route[] = [
     },
   },
   {
-    path: "/escort",
+    path: "/services/escort",
     name: "Escort",
     Component: Escort,
     metaInfo: {
@@ -114,7 +114,7 @@ export const routes: Route[] = [
     },
   },
   {
-    path: "/support-of-criminal-cases",
+    path: "/services/support-of-criminal-cases",
     name: "SupportOfCriminalCases",
     Component: SupportOfCriminalCases,
     metaInfo: {
@@ -124,7 +124,7 @@ export const routes: Route[] = [
     },
   },
   {
-    path: "/parallel-import",
+    path: "/services/parallel-import",
     name: "ParallelImport",
     Component: ParallelImport,
     metaInfo: {

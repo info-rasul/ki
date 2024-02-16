@@ -12,35 +12,27 @@ const ServicesCardData = [
     {
         desc: "Комплексная защита <br/> должников от кредиторов",
         animation: animation1,
-        path: '/escort'
+        path: '/services/escort'
     },
     {
         desc: "Защита от субсидиарной ответственности",
         animation: animation2,
-        path: '/escort'
+        path: '/services/escort'
     },
     {
-        desc: "Сопровождение на всех стадия банкротства в интересах должника",
+        desc: "Сопровождение на всех стадиях банкротства в интересах должника",
         animation: animation3,
-        path: '/escort'
+        path: '/services/escort'
     },
     {
         desc: "Сопровождение <br class='br'/> уголовных дел",
         animation: animation4,
-        path: '/support-of-criminal-cases'
+        path: '/services/support-of-criminal-cases'
     },
-    /*{
-        desc: "Сопровождение <br class='br'/> уголовных дел",
-        animation: animation5
-    },
-    {
-        desc: "Сопровождение на всех стадия банкротства",
-        animation: animation5
-    },*/
     {
         desc: "Параллельный <br class='br'/> импорт",
         animation: animation7,
-        path: '/parallel-import'
+        path: '/services/parallel-import'
     },
 ]
 

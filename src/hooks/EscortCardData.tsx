@@ -16,7 +16,7 @@ const EscortCardData = [
         path: '/escort'
     },
     {
-        desc: "Сопровождение на всех стадия <br/> банкротства в интересах должника",
+        desc: "Сопровождение на всех стадиях <br/> банкротства в интересах должника",
         animation: animation3,
         path: '/escort'
     },

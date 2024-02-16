@@ -6,10 +6,7 @@ interface BankruptcyAssistanceProps {
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
-            <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
-                Сопровождение сложных уголовных дел
-            </h2>
-            <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
+            <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%] mt-20">
                 Комитет Информации предоставляет индивидуальное, комплексное и всестороннее сопровождение сложных уголовных дел:
             </p>
             <ul className="markers flex flex-col gap-[10px] mt-[20px] max-sm:mt-[25px]">
