@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import {Home, About, Services, AboutUs, Blog, Contacts, Article, Escort, QuestionsAndAnswers} from "../containers";
+import {Home, About, Services, AboutUs, Blog, Contacts, Article, Escort, QuestionsAndAnswers, SupportOfCriminalCases, ParallelImport} from "../containers";
 
 const DESC_SUFFIX = "КИ";
 
@@ -110,6 +110,26 @@ export const routes: Route[] = [
     metaInfo: {
       title: "QuestionsAndAnswers",
       description: `QuestionsAndAnswers ${DESC_SUFFIX}`,
+      isDarkMenu: true,
+    },
+  },
+  {
+    path: "/support-of-criminal-cases",
+    name: "SupportOfCriminalCases",
+    Component: SupportOfCriminalCases,
+    metaInfo: {
+      title: "SupportOfCriminalCases",
+      description: `SupportOfCriminalCases ${DESC_SUFFIX}`,
+      isDarkMenu: true,
+    },
+  },
+  {
+    path: "/parallel-import",
+    name: "ParallelImport",
+    Component: ParallelImport,
+    metaInfo: {
+      title: "ParallelImport",
+      description: `ParallelImport ${DESC_SUFFIX}`,
       isDarkMenu: true,
     },
   },

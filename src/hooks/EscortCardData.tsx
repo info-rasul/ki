@@ -7,19 +7,23 @@ import * as animation4 from '../assets/animations/ki_l4_v01.json'
 const EscortCardData = [
     {
         desc: "Комплексная защита <br/> должников от кредиторов",
-        animation: animation1
+        animation: animation1,
+        path: '/escort'
     },
     {
         desc: "Защита от субсидиарной <br/> ответственности",
-        animation: animation2
+        animation: animation2,
+        path: '/escort'
     },
     {
         desc: "Сопровождение на всех стадия <br/> банкротства в интересах должника",
-        animation: animation3
+        animation: animation3,
+        path: '/escort'
     },
     {
         desc: "Сопровождение <br class='lene-break'/> уголовных дел",
-        animation: animation4
+        animation: animation4,
+        path: '/escort'
     },
 ]
 

@@ -3,7 +3,6 @@ import React, {useCallback, useEffect, useRef, useState} from 'react';
 import {useLottie} from "lottie-react";
 interface IOtherServicesCardProps {
     desc: string;
-    path: string;
     animation: any ;
 }
 
@@ -12,7 +11,7 @@ const style = {
     width: 100,
 };
 
-const OtherServicesCard: React.FC<IOtherServicesCardProps> = ({desc, animation , path}) => {
+const OtherServicesCard: React.FC<IOtherServicesCardProps> = ({desc, animation }) => {
     const [start, setStart] = useState(false)
     const refBlock = useRef();
 
@@ -59,7 +58,7 @@ const OtherServicesCard: React.FC<IOtherServicesCardProps> = ({desc, animation ,
     const innerHtml = { __html: desc }
 
     return (
-        <a href={path}  ref={refBlock} onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F8F8F8] hover:bg-[#e9e9e9] flex gap-[60px] items-center w-full max-[1170px]:p-[20px] max-[1170px]:gap-[25px]">
+        <a href="/escort"  ref={refBlock} onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)} className="p-[45px] bg-[#F8F8F8] hover:bg-[#e9e9e9] flex gap-[60px] items-center w-full max-[1170px]:p-[20px] max-[1170px]:gap-[25px]">
             <div className="services-animation flex">
                 <LottieAnimation />
             </div>

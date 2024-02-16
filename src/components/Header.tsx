@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
   }
 
   window.addEventListener("scroll", () => {
-    if (window.scrollY > 30) {
+    if (window.scrollY > 10) {
       for (let i = 0; i < header.length; i++) {
         header[i].style.borderBottom = "none";
       }
@@ -109,7 +109,8 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               </a>
             </div>
             <div className="col-span-4 flex justify-center mt-[3px]">
-              <ul style={isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)'}} className="header__menu border border-white flex text-center justify-between items-center z-20 w-[606px] pl-[14px] pr-[17px] py-2.5 rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
+              <ul style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...(isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)' })}}
+                  className="header__menu flex text-center justify-between items-center z-20 w-[606px] pl-[14px] pr-[17px] py-2.5 rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
                   <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
                     О нас
@@ -150,7 +151,8 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               </ul>
             </div>
             <div className="col-span-2 flex justify-end">
-              <div style={isDarMenu ? { background: '#F8F8F8'} : { background: 'rgba(255, 255, 255, 0.04)'}} className="header__menu_contact border border-white h-[50px] mt-[3px] pr-[16px] pl-[20px] rounded-[25px] flex items-center justify-center">
+              <div style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...isDarMenu ? { background: '#F8F8F8'} : { background: 'rgba(255, 255, 255, 0.04)'}}}
+                className="header__menu_contact h-[50px] mt-[3px] pr-[16px] pl-[20px] rounded-[25px] flex items-center justify-center">
                 <img src={isDarMenu ? PhoneBlack : PhoneWhite} alt="icon"/>
                 <a style={isDarMenu ? {color: '#000' } : {color: '#fff'}} className="px-3.5 py-[12px] text-white text-[15px] font-medium leading-[22.5px]" href="tel:+74950883333">
                   +7-495-088-33-33
