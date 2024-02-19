@@ -15,6 +15,7 @@ import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 import OtherServices from "./components/other-services/OtherServices";
 import oneSvg from "../../assets/img/vector-3.svg";
 import twoSvg from "../../assets/img/cusir-code-telegram.svg";
+import HomeAdvantage from "../Home/components/HomeAdvantage";
 
 const Escort: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
@@ -68,9 +69,9 @@ const Escort: FunctionComponent = () => {
             <div className=" bg-custom-gradient max-sm:h-[310px]">
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 flex items-end justify-between  pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
-                    <h2 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
+                    <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение на всех <br className="sm:hidden"/> стадиях <br className="max-sm:hidden"/> банкротства в <br className="sm:hidden"/> интересах должника
-                    </h2>
+                    </h1>
                     {<button onClick={smoothScroll}>
                         <img style={{ display: downButton ? 'none' : 'block' }} className="max-sm:w-[42px] max-sm:h-[42px]" src={DownButton}
                              alt="Кнопка для прокрутки страницы вниз"/>
@@ -86,6 +87,7 @@ const Escort: FunctionComponent = () => {
                             <SignsOfBankruptcy styles={styles}/>
                             <PurposesOfBankruptcy/>
                             <BankruptcyAssistance styles={styles}/>
+                            <HomeAdvantage/>
                             <Specialists/>
                             <Documentation/>
                             <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">

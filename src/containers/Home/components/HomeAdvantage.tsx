@@ -49,7 +49,7 @@ const HomeAdvantage: FunctionComponent = () => {
         }
     }
     return (
-        <div onMouseOver={() => startVideo()} onMouseOut={() => stopVideo()} className=" px-20 py-[50px] video-back flex flex-col items-center justify-center mt-[120px] max-sm:mt-20 max-sm:px-[25px] max-sm:items-start max-sm:pt-5 max-sm:pb-[24px]">
+        <div onMouseOver={() => startVideo()} onMouseOut={() => stopVideo()} className="video-back px-20 py-[50px] flex flex-col items-center justify-center mt-[121px] max-sm:mt-20 max-sm:px-[25px] max-sm:items-start max-sm:pt-5 max-sm:pb-[24px]">
             {/* @ts-ignore */}
             <video ref={videoRef} className="max-[850px]:w-[700px] max-[640px]:max-w-[300px]" muted loop playsInline id="myVideo2" controls={false}>
                 <source src={videoBack} type="video/mp4" />

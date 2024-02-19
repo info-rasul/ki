@@ -29,12 +29,12 @@ const HomeArticle: FunctionComponent = () => {
         <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)}  className="grid grid-cols-2 gap-48 pb-[160px] max-xl:gap-[30px] max-xl:pb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
                 <div>
-                    <p className="text-homeArticle leading-[37.5px] tracking-[-.1px] text-black bg-opacity-100 max-sm:text-[24px] max-sm:tracking-normal">
-                        Решение проблемных ситуаций <br className="max-[1080px]:hidden" /> защита малого и среднего бизнеса
+                    <p className="text-homeArticle leading-[152%] tracking-[-0.2px] max-sm:text-[24px] max-sm:tracking-normal">
+                        Решение проблемных <br className="sm:hidden"/> ситуаций <br className="max-xl:hidden"/> защита малого <br className="sm:hidden" />
+                        и среднего бизнеса <br className="max-xl:hidden" /> от <br className="sm:hidden"/> недобросовестных
+                        <br className="sm:hidden" /> кредиторов <br className="max-xl:hidden" /> и конкурентов
                     </p>
-                    <p className="leading-[34px]">
-                        от недобросовестных  кредиторов  и конкурентов
-                    </p>
+
                 </div>
                 <div className="w-[100px] max-[1080px]:hidden">
                     <LottieAnimation />
@@ -42,7 +42,7 @@ const HomeArticle: FunctionComponent = () => {
             </div>
             <div className=" flex flex-col gap-10 max-xl:max-w-[100%] max-sm:gap-[25px]">
                 <p className="leading-[168%] max-sm:leading-[160%] max-sm:text-[15px]">
-                    <span className="font-medium">Комитет информации (КИ)</span> — концептуальный консалтинговый бренд,
+                    Комитет информации (КИ) — концептуальный консалтинговый бренд,
                     объединяющий экспертов с многолетним опытом работы в правоохранительных и
                     надзорных органах, а также в органах государственной власти Российской Федерации.
                     Предоставляем комплексные услуги в области банкротства, защиты от субсидиарной ответственности,
@@ -51,7 +51,7 @@ const HomeArticle: FunctionComponent = () => {
                     сделок слияния и поглощения  (М&А), управления проблемными активами и форензика.
                 </p>
                 <div style={{borderLeft: '4px solid var(--700, #086C80)'}}>
-                    <p className="text-[#086C80] leading-[170%] max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px] pl-[15px]">
+                    <p className="leading-[170%] max-xl:mt-0 max-sm:leading-[160%] max-sm:text-[15px] pl-[15px]">
                         Мы не мыслим шаблонно! Находим не рискованные, а юридически законные способы сохранить
                         Ваш бизнес в период турбулентности надвигающего кризиса на внутренних и внешних рынках.
                     </p>

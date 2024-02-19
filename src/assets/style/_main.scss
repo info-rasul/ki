@@ -174,7 +174,7 @@ body .contacts .header__menu_btn_line {
 
 .home-banner::before {
   content: '';
-  background: linear-gradient(#0B162A, #010308);
+  //background: linear-gradient(#0B162A, #010308);
   position: absolute;
   opacity: 0.5;
   top: 0px;
@@ -271,7 +271,7 @@ body .contacts .header__menu_btn_line {
 }
 
 .video-back {
-  background: linear-gradient(4deg, rgb(9 59 69) 0%, rgb(8 108 128 / 79%) 35%);
+  background: linear-gradient(4deg, rgb(9, 59, 69) 0%, rgba(8, 108, 128, 0.9) 0%);
   min-height: 308px;
 }
 
@@ -345,26 +345,26 @@ body .contacts .header__menu_btn_line {
 }
 
 @media all and (max-width: 670px) {
-  .fXhhTj {
-    margin-right: 10px;
+  .hxXHvG {
+    right: 10px!important;
   }
 }
 
 @media all and (max-width: 645px) {
-  .fXhhTj {
-    margin-right: 30px;
+  .hxXHvG {
+    right: 30px!important;
   }
 }
 
 @media all and (max-width: 670px) {
-  .fyruxK {
-    margin-right: 10px;
+  .hxXHvG {
+    right: 10px!important;
   }
 }
 
 @media all and (max-width: 645px) {
-  .fyruxK {
-    margin-right: 30px;
+  .hxXHvG {
+    right: 30px!important;
   }
 }
 

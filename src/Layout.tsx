@@ -19,6 +19,7 @@ const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
       <div className={classCss}>
         {children}
         <Footer />
+        <BackToTop />
       </div>
     </Fragment>
   );

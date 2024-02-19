@@ -30,7 +30,7 @@ const BackToTopLink = styled.a<{ show: boolean }>`
     opacity 0.4s ease,
     bottom 0.4s ease;
   opacity: ${({ show }) => (show ? 1 : 0)};
-  bottom: ${({ show }) => (show ? 1.25 : -3.5)}rem;
+  bottom: ${({ show }) => (show ? 3.9 : -3.5)}rem;
 `;
 
 // Write the show state value to a ref so we can use it as a check to prevent

@@ -1,5 +1,7 @@
 import React from 'react';
 import AdditionalInformationHome from "../../../../components/additional-information/Home";
+import ButtonsK from "../../../../components/ButtonsK";
+import AdditionalInformationHomeImg from "../../../../assets/img/additional-information-home.svg";
 interface BankruptcyAssistanceProps {
     styles: React.CSSProperties;
 }
@@ -80,7 +82,20 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 Если у вас остались вопросы или вы хотели бы обсудить возможность сотрудничества,
                 то вы можете обратиться за консультацией наших специалистов по телефону или написать нам на почту.
             </p>
-            <AdditionalInformationHome/>
+            <div className="flex flex-col justify-between bg-[#097990] p-[35px] mt-20 gap-[20px] relative max-[1439px]:w-full max-lg:gap-[39px] max-sm:mt-[65px] max-sm:px-[25px] max-sm:pb-[23px] max-sm:pt-[20px]">
+                <span style={{ fontSize: 'clamp(20px, 2.1vw, 30px)' }} className="text-white leading-[145%] max-sm:text-[20px] max-sm:leading-[135%]">
+                    А чтобы оставаться в курсе актуальных новостей и держать руку на пульсе, <br className="max-lg:hidden"/>
+                    подписывайтесь на наш telegram-канал!
+                </span>
+                <div className="flex justify-start max-[1439px]:w-full">
+                    <ButtonsK />
+                </div>
+                <img
+                    className="absolute bottom-0 min-[1440px]:left-0 max-[1439px]:right-0 max-sm:hidden"
+                    src={AdditionalInformationHomeImg}
+                    alt="Vector"
+                />
+            </div>
         </div>
     );
 };

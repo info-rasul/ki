@@ -10,11 +10,11 @@ const HomeErrorBlock: FunctionComponent = () => (
     <div className="aside bg-[#0B162A] mt-[79px] p-[45px] relative max-sm:px-[25px] max-sm:pt-[20px] max-sm:pb-[25px] max-sm:mt-10">
       <div className="flex flex-col lg:gap-[60px] max-lg:gap-[42px]  max-sm:items-center  max-sm:justify-center">
         <div className="flex flex-col gap-5 max-sm:gap-[15px]">
-          <h2 className="text-white text-homeErrorBlock leading-[145%] max-lg:text-[20px] max-lg:leading-[135%]">
+          <h2 className="text-white text-homeErrorBlock leading-[147%] max-lg:text-[20px] max-lg:leading-[135%]">
             ТОП-5 критических ошибок, <br className="min-[500px]:hidden"/> из-за которых <br/> предпринимателей <br className="min-[500px]:hidden"/>
             привлекают к уголовной <br/> ответственности
           </h2>
-          <p className="text-white leading-[170%] opacity-60 max-sm:leading-[150%] max-sm:text-[14px]">
+          <p className="text-white leading-[172%] opacity-60 max-sm:leading-[150%] max-sm:text-[14px]">
             Подпишись на наш Telegram-кaнaл и получи практический чек-лист,
             <br className="max-sm:hidden"/>
             как избежать уголовной ответственности, сохранить <br className="min-[466px]:hidden"/>
