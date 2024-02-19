@@ -64,7 +64,7 @@ const ParallelImport: FunctionComponent = () => {
                             <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
                                 <div className="flex flex-col gap-[15px]">
                                     <h2 className="text-[22px] leading-[135%] text-white">
-                                        Наш телеграм канал
+                                        Наш телеграм-канал
                                     </h2>
                                     <p className="text-[15px] leading-[150%] text-[#CFF4FC]">
                                         Наведите камеру телефона на QR код, чтобы перейти в наш телеграм

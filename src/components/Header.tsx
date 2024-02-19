@@ -109,7 +109,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               </a>
             </div>
             <div className="col-span-4 flex justify-center mt-[3px]">
-              <ul style={{border: '1px solid rgba(255, 255, 255)', ...(isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)' })}}
+              <ul style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...(isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)' })}}
                   className="header__menu flex text-center justify-between items-center z-20 w-[607px] pl-[16px] pr-[18px] py-[9px] rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
                   <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
@@ -151,7 +151,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               </ul>
             </div>
             <div className="col-span-2 flex justify-end">
-              <div style={{border: '1px solid rgba(255, 255, 255)', ...isDarMenu ? { background: '#F8F8F8'} : { background: 'rgba(255, 255, 255, 0.04)'}}}
+              <div style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...isDarMenu ? { background: '#F8F8F8'} : { background: 'rgba(255, 255, 255, 0.04)'}}}
                 className="header__menu_contact h-[50px] mt-[3px] pr-[16px] pl-[20px] rounded-[25px] flex items-center justify-center">
                 <img src={isDarMenu ? PhoneBlack : PhoneWhite} alt="icon"/>
                 <a style={isDarMenu ? {color: '#000' } : {color: '#fff'}} className="px-3.5 pb-[12px] pt-[14px] text-white text-[15px] font-medium leading-[22.5px]" href="tel:+74950883333">
