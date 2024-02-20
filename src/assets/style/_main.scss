@@ -151,8 +151,13 @@ body .contacts .header__menu_btn_line {
 
 .header__menu.scroll-menu {
   background: black!important;
-  top: 35px;
+  top: 2rem;
   border: none!important;
+  position: fixed;
+}
+.header__menu:not(.scroll-menu) {
+  position: relative;
+  max-height: 50px;
 }
 
 .home-banner {
