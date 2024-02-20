@@ -163,7 +163,7 @@ body .contacts .header__menu_btn_line {
 .home-banner {
   background: url('../img/banner.jpg') no-repeat;
   background-size: cover;
-  background-position: center -23px;
+  background-position: center 0;
   background-color: #000;
 }
 @media all and (max-width: 640px) {
@@ -171,7 +171,8 @@ body .contacts .header__menu_btn_line {
     background: url('../img/video-back.jpg') no-repeat;
     background-size: 98%;
     background-position: center 100px;
-    background-color: #000;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(12 47 95) 100%);
     padding-bottom: 0;
   }
 }
