@@ -15,7 +15,7 @@ const OtherServices = () => {
                 {
                     // @ts-ignore
                     EscortCardData.map((item, index) => {
-                        return <OtherServicesCard key={index} desc={item.desc} animation={item.animation}/>
+                        return <OtherServicesCard key={index} desc={item.desc} animation={item.animation} path={item.path}/>
 
                     })
                 }

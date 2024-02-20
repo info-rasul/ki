@@ -10,11 +10,9 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
     return (
         <div>
             <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
-                Постановление Правительства РФ от 29.03.2022 г. № 506 предоставило возможность легально ввозить
-                в страну востребованные оригинальные товары без согласия правообладателей. Но это привело к ужесточению
-                и усложнению любых комплаенс-процедур со стороны всех крупных поставщиков и производителей.
+                Защита от субсидиарной ответственности
             </h2>
-            <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
+            {/*<p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
                 Требование
                 <a className="leading-[170%] font-bold" href="#"> «Nо Russia» не даст вам совершить сделку напрямую. </a>
                 А любая
@@ -95,7 +93,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                     src={AdditionalInformationHomeImg}
                     alt="Vector"
                 />
-            </div>
+            </div>*/}
         </div>
     );
 };

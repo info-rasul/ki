@@ -18,6 +18,7 @@ import twoSvg from "../../assets/img/cusir-code-telegram.svg";
 import EscortCardData from "../../hooks/EscortCardData";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
 import SupportOfCriminalCasesData from "../../hooks/SupportOfCriminalCasesData";
+import HomeAdvantage from "../Home/components/HomeAdvantage";
 
 const SupportOfCriminalCases: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
@@ -45,16 +46,21 @@ const SupportOfCriminalCases: FunctionComponent = () => {
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Escort")} />
-            <div className=" bg-custom-gradient max-sm:h-[310px]">
+            <div className=" bg-custom-gradient">
                 <Header isDarMenu={darkMenu} />
-                <div className="container max-[1080px]:px-4 flex items-end justify-between  pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
+                <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h2 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение сложных <br /> уголовных дел
                     </h2>
-                    {<button onClick={smoothScroll}>
-                        <img style={{ display: downButton ? 'none' : 'block' }} className="max-sm:w-[42px] max-sm:h-[42px]" src={DownButton}
-                             alt=""/>
-                    </button>}
+                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                        Комплексное сопровождение расследования сложных много эпизодных уголовных дел экономической
+                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
+                        неисполнение обязательств по договорам, корпоративные и арбитражные споры,
+                        осложненные уголовно-правовым элементом, преднамеренное банкротство, фиктивное банкротство,
+                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
+                        Наши эксперты успешно добиваются прекращения уголовных дел органами следствия
+                        на стадии предварительного следствия.
+                    </p>
                 </div>
             </div>
             <div className="container overflow-x-hidden">
@@ -89,6 +95,9 @@ const SupportOfCriminalCases: FunctionComponent = () => {
                         </div>*/}
                         <EscortSidebar />
                     </div>
+                    <div className="mt-[-46px] mb-[40px]">
+                        <HomeAdvantage/>
+                    </div>
                     <div className="flex flex-col pb-[80px] max-[1080px]:px-[16px] max-sm:pb-[40px]">
                         <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[145%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[40px] max-sm:mb-[30px]">
                             Другие услуги
@@ -97,7 +106,7 @@ const SupportOfCriminalCases: FunctionComponent = () => {
                             {
                                 // @ts-ignore
                                 SupportOfCriminalCasesData.map((item, index) => {
-                                    return <OtherServicesCard key={index} desc={item.desc} animation={item.animation}/>
+                                    return <OtherServicesCard key={index} desc={item.desc} animation={item.animation} path={item.path}/>
 
                                 })
                             }

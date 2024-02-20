@@ -66,16 +66,21 @@ const Escort: FunctionComponent = () => {
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Escort")} />
-            <div className=" bg-custom-gradient max-sm:h-[310px]">
+            <div className=" bg-custom-gradient">
                 <Header isDarMenu={darkMenu} />
-                <div className="container max-[1080px]:px-4 flex items-end justify-between  pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
+                <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение на всех <br className="sm:hidden"/> стадиях <br className="max-sm:hidden"/> банкротства в <br className="sm:hidden"/> интересах должника
                     </h1>
-                    {<button onClick={smoothScroll}>
-                        <img style={{ display: downButton ? 'none' : 'block' }} className="max-sm:w-[42px] max-sm:h-[42px]" src={DownButton}
-                             alt="Кнопка для прокрутки страницы вниз"/>
-                    </button>}
+                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                        Комплексное сопровождение расследования сложных много эпизодных уголовных дел экономической
+                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
+                        неисполнение обязательств по договорам, корпоративные и арбитражные споры,
+                        осложненные уголовно-правовым элементом, преднамеренное банкротство, фиктивное банкротство,
+                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
+                        Наши эксперты успешно добиваются прекращения уголовных дел органами следствия
+                        на стадии предварительного следствия.
+                    </p>
                 </div>
             </div>
             <div className="container overflow-x-hidden">
@@ -87,7 +92,6 @@ const Escort: FunctionComponent = () => {
                             <SignsOfBankruptcy styles={styles}/>
                             <PurposesOfBankruptcy/>
                             <BankruptcyAssistance styles={styles}/>
-                            <HomeAdvantage/>
                             <Specialists/>
                             <Documentation/>
                             <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
@@ -114,6 +118,9 @@ const Escort: FunctionComponent = () => {
                             <EscortSidebar />
                         </div>*/}
                         <EscortSidebar />
+                    </div>
+                    <div className="mt-[-46px] mb-[40px]">
+                        <HomeAdvantage/>
                     </div>
                     <OtherServices/>
                 </div>

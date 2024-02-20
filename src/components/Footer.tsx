@@ -54,7 +54,7 @@ const Footer: FunctionComponent = () => {
                   Политика конфиденциальности
                 </p>
                 <button onClick={scrollToTop}>
-                  <img className="down-button max-sm:w-[42px] max-sm:h-[42px] absolute right-[30px] mt-[-70px] transform rotate-180	" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
+                  <img className="down-button max-sm:w-[42px] max-sm:h-[42px] absolute right-[20px] mt-[-70px] transform rotate-180	" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
                 </button>
               </div>
             </div>
