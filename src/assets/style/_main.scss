@@ -151,8 +151,8 @@ body .contacts .header__menu_btn_line {
 
 .header__menu.scroll-menu {
   background: black!important;
-  top: 2rem;
-  border: none!important;
+  top: 2.2rem;
+  border-color: transparent!important;
   position: fixed;
 }
 .header__menu:not(.scroll-menu) {

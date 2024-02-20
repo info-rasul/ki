@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, { Fragment } from "react";
 import QuoteImg from "../../assets/img/quote.svg";
-import PersonCardImg from "../../assets/img/quote-media.jpg";
+import PersonCardImg from "../../assets/img/putin.png";
 
 const QuoteHome: FunctionComponent = () => (
     <div className="flex flex-col gap-10 items-center justify-center border-t-[1px] border-b-[1px] border-[#B3B3B3] py-[60px]  max-sm:py-[35px] max-sm:gap-y-[25px]">
@@ -17,7 +17,7 @@ const QuoteHome: FunctionComponent = () => (
         разновидность диктатуры, которой мы обязаны подчиняться»
       </h2>
         <div className="flex py-[9px] pl-[9px] pr-[20px] items-center gap-[15px] rounded-[40px] bg-[#F8F8F8] border-[1px] border-[#FFFFFF]/[.20] max-sm:py-[5px] max-sm:pl-[5px]">
-            <img className="w-[32px] rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Изображение для карточки пользователя" />
+            <img className="w-[32px] rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Путин" />
             <p className="text-[15px] leading-[20px] max-sm:text-[13px]">В.В.Путин</p>
         </div>
     </div>
