@@ -86,7 +86,7 @@ const ParallelImport: FunctionComponent = () => {
                                 />
                                 <img className="absolute top-0 right-0" src={oneSvg} alt="Фон"/>
                                 <a className="button-social cursor-pointer w-[293px] flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
-                                    Telegram канал
+                                    Telegram-канал
                                 </a>
                             </div>
                         </div>
