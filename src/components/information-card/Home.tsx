@@ -76,11 +76,9 @@ const InformationCardHome: React.FC<InformationCardHomeDataProps> = ({title, des
         <LottieAnimation  />
       </div>
       <div style={{height: expanded ? 'auto' : 'auto', overflow: 'hidden',}} className="card__content flex flex-col items-start gap-[30px] max-[1439px]:gap-[15px]">
-        <h3 className="text-homeInformationCar leading-[140%] max-sm:text-[18px] max-sm:leading-[151%] max-sm:tracking-[-0.18px">
-          <a href={link}>
-            <div dangerouslySetInnerHTML={{__html: title}} />
-          </a>
-        </h3>
+        <a href={link}>
+          <h3 className="text-homeInformationCar leading-[140%] max-sm:text-[18px] max-sm:leading-[151%] max-sm:tracking-[-0.18px" dangerouslySetInnerHTML={{__html: title}} />
+        </a>
         <p style={windowWidth <= 629 ? styles : null} className="text-content leading-[169%] max-sm:text-[15px] max-sm:leading-[160%]">
           {desc}
         </p>

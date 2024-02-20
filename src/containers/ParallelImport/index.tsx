@@ -15,6 +15,9 @@ import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 import OtherServices from "./components/other-services/OtherServices";
 import oneSvg from "../../assets/img/vector-3.svg";
 import twoSvg from "../../assets/img/cusir-code-telegram.svg";
+import EscortCardData from "../../hooks/EscortCardData";
+import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
+import ParallelImportData from "../../hooks/ParallelImportData";
 
 const ParallelImport: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
@@ -86,7 +89,19 @@ const ParallelImport: FunctionComponent = () => {
                         </div>*/}
                         <EscortSidebar />
                     </div>
-                    <OtherServices/>
+                    <div className="flex flex-col pb-[80px] max-[1080px]:px-[16px] max-sm:pb-[40px]">
+                        <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[145%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[40px] max-sm:mb-[30px]">
+                            Другие услуги
+                        </h2>
+                        <div className="grid grid-cols-2 gap-5 max-sm:gap-[15px] max-[1080px]:flex max-[1080px]:flex-wrap">
+                            {
+                                // @ts-ignore
+                                ParallelImportData.map((item, index) => {
+                                    return <OtherServicesCard key={index} desc={item.desc} animation={item.animation} path={item.path}/>
+                                })
+                            }
+                        </div>
+                    </div>
                 </div>
             </div>
         </Fragment>

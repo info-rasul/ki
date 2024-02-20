@@ -1,5 +1,6 @@
 import type { ComponentType } from "react";
-import {Home, About, Services, AboutUs, Blog, Contacts, Article, Escort, QuestionsAndAnswers, SupportOfCriminalCases, ParallelImport} from "../containers";
+import {Home, About, Services, AboutUs, Blog, Contacts, Article, Escort, QuestionsAndAnswers, SupportOfCriminalCases, ParallelImport, ProtectionFromSubsidiaryResponsibility} from "../containers";
+import ComprehensiveProtection from "../containers/ComprehensiveProtection";
 
 const DESC_SUFFIX = "КИ";
 
@@ -130,6 +131,26 @@ export const routes: Route[] = [
     metaInfo: {
       title: "ParallelImport",
       description: `ParallelImport ${DESC_SUFFIX}`,
+      isDarkMenu: true,
+    },
+  },
+  {
+    path: "/services/comprehensive-protection",
+    name: "ComprehensiveProtection",
+    Component: ComprehensiveProtection,
+    metaInfo: {
+      title: "ComprehensiveProtection",
+      description: `ComprehensiveProtection ${DESC_SUFFIX}`,
+      isDarkMenu: true,
+    },
+  },
+  {
+    path: "/services/protection-from-subsidiary-responsibility",
+    name: "ProtectionFromSubsidiaryResponsibility",
+    Component: ProtectionFromSubsidiaryResponsibility,
+    metaInfo: {
+      title: "ProtectionFromSubsidiaryResponsibility",
+      description: `ProtectionFromSubsidiaryResponsibility ${DESC_SUFFIX}`,
       isDarkMenu: true,
     },
   },

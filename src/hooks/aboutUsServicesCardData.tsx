@@ -1,8 +1,6 @@
 import * as animation1 from '../assets/animations/ki_l1_v01.json'
 import * as animation2 from '../assets/animations/ki_l2_v01.json'
 import * as animation3 from '../assets/animations/ki_l3_v01.json'
-import * as animation4 from '../assets/animations/ki_l4_v01.json'
-import * as animation5 from '../assets/animations/ki_l5_v01.json'
 
 // @ts-ignore
 const aboutUsServicesCardData = [

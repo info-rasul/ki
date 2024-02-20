@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment, useEffect, useRef, useState} from "react";
 // @ts-ignore
-import videoBack from "../../../assets/video/back.mp4";
+import videoBack from "../../../assets/video/back3.mp4";
 // @ts-ignore
 import videoBackMob from "../../../assets/video/back-mob-opt.mp4";
 import Header from "../../../components/Header";
@@ -24,20 +24,6 @@ const HomeBanner: FunctionComponent = () => {
         }
 
     }, []);
-    const smoothScroll = () => {
-        window.scrollTo({
-            top: window.innerHeight - 120,
-            behavior: 'smooth'
-        });
-    };
-    const [downButton, setDownButton] = useState(false);
-    window.addEventListener("scroll", () => {
-        if (window.scrollY >= 200) {
-            setDownButton(true)
-        } else if (window.scrollY < 2) {
-            setDownButton(false)
-        }
-    } )
 
     return (
         <Fragment>
@@ -71,9 +57,6 @@ const HomeBanner: FunctionComponent = () => {
                                     Н.Н. Талеб
                                 </p>
                             </div>
-                            <button onClick={smoothScroll}>
-                                <img style={{ display: downButton ? 'none' : 'block' }} className="down-button max-sm:w-[42px] max-sm:h-[42px]" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
-                            </button>
                         </div>
                     </div>
                 </div>

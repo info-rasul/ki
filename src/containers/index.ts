@@ -9,3 +9,5 @@ export { default as Escort } from "./Escort";
 export { default as QuestionsAndAnswers } from "./QuestionsAndAnswers";
 export { default as SupportOfCriminalCases } from "./SupportOfCriminalCases";
 export { default as ParallelImport } from "./ParallelImport";
+export { default as ProtectionFromSubsidiaryResponsibility } from "./ProtectionFromSubsidiaryResponsibility";
+export { default as ComprehensiveProtection } from "./ComprehensiveProtection";

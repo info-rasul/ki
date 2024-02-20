@@ -33,10 +33,10 @@ const Services: FunctionComponent = () => {
                         }
                     </div>
                     <div className="flex flex-col justify-between bg-[#097990] p-10 gap-10 mb-20 relative max-sm:p-[25px] max-sm:pt-5 max-sm:mb-10">
-                        <span style={{ fontSize: 'clamp(20px, 1.8vw, 25px)' }} className="text-white	text-[25px] leading-[142%] max-sm:text-[20px] max-sm:leading-[135%]">
+                        <h2 style={{ fontSize: 'clamp(20px, 1.8vw, 25px)' }} className="text-white	text-[25px] leading-[142%] max-sm:text-[20px] max-sm:leading-[135%]">
                           Хотите знать больше? <br className="sm:hidden max-sm:block"/> Читайте новости
                             <br className="max-sm:hidden" /> или подписывайтесь на наш телеграм-канал
-                        </span>
+                        </h2>
                         <div className="flex justify-start max-sm:mt-[-1px]">
                             <ButtonsK />
                         </div>
