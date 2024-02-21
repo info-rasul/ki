@@ -24,11 +24,11 @@ const EscortSidebar: React.FC = () => {
         <div className="escort__sidebar flex flex-col gap-[15px] pt-20 right-20 max-[1080px]:hidden">
             <QRCodeServices />
             <div className="flex flex-col items-start justify-center bg-[#086c801a] w-[300px] p-[25px]">
-                <img className="w-[24px] h-[18px]" src={oneSvg} alt="gobbler" />
-                <p className="text-start text-[15px] tracking-[.1px] text-[#086C80] leading-[170%] mt-[15px]">
-                    «Мы обязаны помнить об исконных российских традициях справедливости
+                <img className="w-[24px] h-[18px] mt-[4px]" src={oneSvg} alt="gobbler" />
+                <p className="text-start text-[15px] tracking-[.1px] text-[#086C80] leading-[25.5px] mt-[20px]">
+                    Мы обязаны помнить об исконных российских традициях справедливости
                     и законности, помнить о том, что диктатура закона — это единственная
-                    разновидность диктатуры, которой мы обязаны <br/> подчиняться».
+                    разновидность диктатуры, которой мы обязаны подчиняться.
                 </p>
                 <div className="mainArticle__user flex items-center	gap-[15px] rounded-full py-[9px] pl-[9px] pr-[20px] bg-[#F8F8F8] mt-[25px]">
                     <img className="w-[32px]" src={PersonCardImg} alt="Ellipse10" />

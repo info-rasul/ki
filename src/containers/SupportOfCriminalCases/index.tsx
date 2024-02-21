@@ -49,17 +49,17 @@ const SupportOfCriminalCases: FunctionComponent = () => {
             <div className=" bg-custom-gradient">
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
-                    <h2 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
-                        Сопровождение сложных <br /> уголовных дел
-                    </h2>
-                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Комплексное сопровождение расследования сложных много эпизодных уголовных дел экономической
-                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
+                    <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[56px] tracking-[0.2px] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
+                        Сопровождение уголовных дел
+                    </h1>
+                    <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                        Комплексное сопровождение расследования сложных многоэпизодныхуголовных дел экономической
+                        направленности, в том числе контрабанда, неуплатаналогов, коррупционные действия,
                         неисполнение обязательств по договорам, корпоративные и арбитражные споры,
-                        осложненные уголовно-правовым элементом, преднамеренное банкротство, фиктивное банкротство,
-                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
-                        Наши эксперты успешно добиваются прекращения уголовных дел органами следствия
-                        на стадии предварительного следствия.
+                        осложненные уголовно-правовым элементом,преднамеренное банкротство, фиктивное банкротство,
+                        заказные дела со стороныбизнес-конкурентов и партнеров по бизнесу.
+                        Наши эксперты успешно добиваютсяпрекращения уголовных дел органами
+                        следствия на стадии предварительного расследования.
                     </p>
                 </div>
             </div>
@@ -68,8 +68,6 @@ const SupportOfCriminalCases: FunctionComponent = () => {
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
                             <BankruptcyAssistance styles={styles}/>
-                            <Specialists/>
-                            <Documentation/>
                             <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
                                 <div className="flex flex-col gap-[15px]">
                                     <h2 className="text-[22px] leading-[135%] text-white">
