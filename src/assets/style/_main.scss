@@ -172,7 +172,7 @@ body .contacts .header__menu_btn_line {
     background-size: 98%;
     background-position: center 100px;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(12 47 95) 100%);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(8 44 87) 100%);
     padding-bottom: 0;
   }
 }
@@ -182,8 +182,8 @@ body .contacts .header__menu_btn_line {
   //background: linear-gradient(#0B162A, #010308);
   position: absolute;
   opacity: 0.5;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   width: 100%;
   height: calc(100vh - 80px);
   z-index: 18;
@@ -263,7 +263,7 @@ body .contacts .header__menu_btn_line {
 
 @media all and (max-width: 640px) {
   #myVideoMobile {
-    margin-top: 75px;
+    margin-top: 76px;
   }
 }
 

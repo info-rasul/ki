@@ -3,7 +3,7 @@ import React, {Fragment, useEffect, useRef, useState} from "react";
 // @ts-ignore
 import videoBack from "../../../assets/video/back3.mp4";
 // @ts-ignore
-import videoBackMob from "../../../assets/video/back-mob-opt.mp4";
+import videoBackMob from "../../../assets/video/back-mob3.mp4";
 import Header from "../../../components/Header";
 import DownButton from "../../../assets/img/down-button.svg"
 import PersonCardImg from "../../../assets/img/taleb.png";
