@@ -94,7 +94,7 @@ const Escort: FunctionComponent = () => {
                             <BankruptcyAssistance styles={styles}/>
                             <Specialists/>
                             <Documentation/>
-                            <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
+                            {/*<div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
                                 <div className="flex flex-col gap-[15px]">
                                     <h2 className="text-[22px] leading-[135%] text-white">
                                         Наш телеграм-канал
@@ -112,14 +112,14 @@ const Escort: FunctionComponent = () => {
                                 <a className="button-social cursor-pointer w-[293px] flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
                                     Telegram-канал
                                 </a>
-                            </div>
+                            </div>*/}
                         </div>
                        {/* <div className="services-sidebar">
                             <EscortSidebar />
                         </div>*/}
                         <EscortSidebar />
                     </div>
-                    <div className="mt-[-46px] mb-[40px]">
+                    <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">
                         <HomeAdvantage/>
                     </div>
                     <OtherServices/>

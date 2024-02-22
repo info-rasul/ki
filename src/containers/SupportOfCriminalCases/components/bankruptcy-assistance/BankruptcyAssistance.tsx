@@ -37,7 +37,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </p>
             </div>
             <div>
-                <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[45px] tracking-[-0.1px] mt-10 mb-[38px] max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+                <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[45px] tracking-[-0.1px] mt-10 mb-10 max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                     Но сложности нас не пугают, а вдохновляют!
                 </h2>
                 <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">

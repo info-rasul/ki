@@ -95,7 +95,7 @@ const ComprehensiveProtection: FunctionComponent = () => {
                         </div>*/}
                         <EscortSidebar />
                     </div>
-                    <div className="mt-[-46px] mb-[40px]">
+                    <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">
                         <HomeAdvantage/>
                     </div>
                     <div className="flex flex-col pb-[80px] max-[1080px]:px-[16px] max-sm:pb-[40px]">

@@ -27,7 +27,7 @@ const HomeBanner: FunctionComponent = () => {
 
     return (
         <Fragment>
-            <div className="w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-80px)] justify-between home-banner pb-[60px] ">
+            <div className="home-banner w-full flex flex-col h-screen max-[640px]:h-[calc(100vh-80px)] justify-between pb-[60px] ">
                 <video className="max-md:hidden home-banner-video" muted loop playsInline autoPlay id="myVideo" controls={false}>
                     <source src={videoBack} type="video/mp4"/>
                 </video>
