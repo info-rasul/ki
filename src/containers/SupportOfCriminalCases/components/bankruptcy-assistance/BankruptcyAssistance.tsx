@@ -49,14 +49,14 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                         как на этапе проверки сообщения о преступлении, так и после возбуждения уголовного дела.
                     </h3>
                     <div className="flex justify-between gap-[20px] mt-[28px] max-lg:flex-col max-lg:mt-0 max-lg:gap-[30px]">
-                        <div className="gradient-border-left w-[412px]">
+                        <div className="gradient-border-left w-[412px] max-lg:w-full">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                                При проведении предварительного <br className="max-md:hidden"/> расследования
+                                При проведении предварительного <br className="max-lg:hidden"/> расследования
                             </p>
                         </div>
-                        <div className="gradient-border-left w-[412px]">
+                        <div className="gradient-border-left w-[412px] max-lg:w-full">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                                Осуществления следственных действий, <br className="max-md:hidden"/> проверок уполномоченными органами <br className="max-md:hidden"/> и осуществлении
+                                Осуществления следственных действий, <br className="max-lg:hidden"/> проверок уполномоченными органами <br className="max-lg:hidden"/> и осуществлении
                                 иных оперативно-розыскных мероприятий
                             </p>
                         </div>

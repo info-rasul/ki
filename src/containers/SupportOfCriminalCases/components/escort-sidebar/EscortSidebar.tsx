@@ -42,7 +42,7 @@ const EscortSidebar: React.FC<MyArrayProps> = ({sidebarDesc}) => {
             </div>
             <div className="flex flex-col p-[25px] pt-[30px] gap-[20px] bg-black w-[300px]">
                 <img className="w-[24px] h-[18px] mt-[4px]" src={oneSvg1} alt="gobbler" />
-                <p  className="text-start text-[20px] tracking-[.1px] text-white leading-[34px]">
+                <p  className="sidebar-desc text-start text-[20px] tracking-[.1px] text-white leading-[34px]">
                     {sidebarDesc[0]}
                 </p>
                 <p className="text-start text-[15px] tracking-[.1px] text-white leading-[25.5px]">

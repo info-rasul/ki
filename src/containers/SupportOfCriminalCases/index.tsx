@@ -54,7 +54,7 @@ const SupportOfCriminalCases: FunctionComponent = () => {
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Escort")} />
-            <div className=" bg-custom-gradient">
+            <div className="bg-custom-gradient">
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[56px] tracking-[0.2px] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
@@ -74,12 +74,9 @@ const SupportOfCriminalCases: FunctionComponent = () => {
             <div className="container overflow-x-hidden">
                 <div className="">
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
-                        <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
+                        <div className="w-[900px] flex flex-col max-[1310px]:w-[760px] max-[1160px]:w-[720px] max-[1080px]:w-full">
                             <BankruptcyAssistance styles={styles}/>
                         </div>
-                       {/* <div className="services-sidebar">
-                            <EscortSidebar />
-                        </div>*/}
                         <EscortSidebar sidebarDesc={sidebarDesc}/>
                     </div>
                     <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">
