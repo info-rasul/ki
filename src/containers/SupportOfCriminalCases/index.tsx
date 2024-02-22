@@ -21,6 +21,14 @@ import SupportOfCriminalCasesData from "../../hooks/SupportOfCriminalCasesData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
 const SupportOfCriminalCases: FunctionComponent = () => {
+    const sidebarDesc = [
+        "Иногда в массе данных нет никакого смысла, а иногда единственный факт бесценен — ",
+        "Известная цитата Н. Талеба, полностью отражающая принцип нашей работы!",
+        "Мы всесторонне изучаем дело, не упуская ни малейшей детали. Находим в массе данных и видем то," +
+        "что другие упускают из своего поля зрения. Добываем тот «бесценный факт», перевернув дело с ног на голову," +
+        " и использовуем его для достижения целей с максимальной результативностью и выгодой",
+    ]
+
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -68,30 +76,11 @@ const SupportOfCriminalCases: FunctionComponent = () => {
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
                             <BankruptcyAssistance styles={styles}/>
-                            <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
-                                <div className="flex flex-col gap-[15px]">
-                                    <h2 className="text-[22px] leading-[135%] text-white">
-                                        Наш телеграм-канал
-                                    </h2>
-                                    <p className="text-[15px] leading-[150%] text-[#CFF4FC]">
-                                        Наведите камеру телефона на QR код, чтобы перейти в наш телеграм
-                                    </p>
-                                </div>
-                                <img
-                                    className="w-[150px] h-[150px] max-sm:hidden"
-                                    src={twoSvg}
-                                    alt="QR-код"
-                                />
-                                <img className="absolute top-0 right-0" src={oneSvg} alt="Фон"/>
-                                <a className="button-social cursor-pointer w-[293px] flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
-                                    Telegram-канал
-                                </a>
-                            </div>
                         </div>
                        {/* <div className="services-sidebar">
                             <EscortSidebar />
                         </div>*/}
-                        <EscortSidebar />
+                        <EscortSidebar sidebarDesc={sidebarDesc}/>
                     </div>
                     <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">
                         <HomeAdvantage/>

@@ -3,6 +3,8 @@ interface BankruptcyAssistanceProps {
     styles: React.CSSProperties;
 }
 
+
+
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
@@ -35,66 +37,45 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                     невозможности ведения любой финансово-хозяйственной деятельности предприятием
                     или ответственными лицами.
                 </p>
+                <p className="leading-[27.2px] max-sm:text-[15px]">
+                    Но сложности нас не пугают, а вдохновляют!
+                </p>
             </div>
             <div>
-                <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[45px] tracking-[-0.1px] mt-10 mb-10 max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
-                    Но сложности нас не пугают, а вдохновляют!
-                </h2>
-                <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">
-                    <h3 className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
+                <div className="flex flex-col gap-[30px] p-[28px] bg-[#F8F8F8] mt-10">
+                    <h3 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                         Наша высококвалифицированная команда профессионалов предоставляет индивидуальное,
-                        комплексное и всестороннее сопровождение сложных уголовных дел,
-                        как на этапе проверки сообщения о преступлении, так и после возбуждения уголовного дела
+                        комплексное и всестороннее сопровождение  уголовных дел,
+                        как на этапе проверки сообщения о преступлении, так и после возбуждения уголовного дела.
                     </h3>
-                    <div className="gradient-border-left">
-                        <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                            При проведении предварительного расследования
-                        </p>
+                    <div className="flex justify-between gap-[20px] mt-[28px] max-lg:flex-col max-lg:mt-0 max-lg:gap-[30px]">
+                        <div className="gradient-border-left w-[412px]">
+                            <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
+                                При проведении предварительного <br className="max-md:hidden"/> расследования
+                            </p>
+                        </div>
+                        <div className="gradient-border-left w-[412px]">
+                            <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
+                                Осуществления следственных действий, <br className="max-md:hidden"/> проверок уполномоченными органами <br className="max-md:hidden"/> и осуществлении
+                                иных оперативно-розыскных мероприятий
+                            </p>
+                        </div>
                     </div>
-                    <div className="gradient-border-left">
-                        <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                            Осуществления следственных действий, проверок уполномоченными органами <br className="max-md:hidden"/> и осуществлении
-                            иных оперативно-розыскных мероприятий
-                        </p>
-                    </div>
-                </div>
-                <p className="leading-[27.2px] mt-10 max-sm:text-[15px]">
-                    Боле того, мы приложим все усилия, чтобы уголовное дело не было возбуждено,
-                    а возбужденное подлежало прекращению. На всех стадиях судебного процесса,
-                    в т. ч. при обжаловании приговора, снятии судимости, а также по вопросам изменения меры пресечения,
-                    условно-досрочного освобождения или помилования.
-                </p>
-                <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8] mt-10">
-                    <h3 className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
-                        «Иногда в массе данных нет никакого смысла, а иногда единственный факт
-                        бесценен» — известная цитата Н. Талеба, полностью отражающая принцип нашей работы,
-                        который заключается в следующем:
-                    </h3>
-                    <div className="gradient-border-left">
-                        <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                            Всесторонне изучать дело, не упуская ни малейшей детали;
-                        </p>
-                    </div>
-                    <div className="gradient-border-left">
-                        <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                            Находить в массе данных и видеть то, что другие упускают из своего поля зрения;
-                        </p>
-                    </div>
-                    <div className="gradient-border-left">
-                        <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                            Добыть тот «бесценный факт», перевернув дело с ног на голову,
-                            и использовать его для достижения <br className="max-md:hidden"/> целей с максимальной результативностью и выгодой.
-                        </p>
-                    </div>
+                    <p className="leading-[27.2px] max-sm:text-[15px]">
+                        Боле того, мы приложим все усилия, чтобы уголовное дело не было возбуждено,
+                        а возбужденное подлежало прекращению. На всех стадиях судебного процесса, в т. ч.
+                        при обжаловании приговора, снятии судимости, а также по вопросам изменения меры пресечения,
+                        условно-досрочного освобождения или помилования.
+                    </p>
                 </div>
             </div>
             <div className="flex flex-col mt-10">
                 <h3 className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
-                    Наши специалисты отличаются своим подходом к информации: ее сбору, поиску, анализу <br/> и использованию.
+                    Наши специалисты отличаются своим подходом к информации: ее сбору, поиску, анализу <br className="max-md:hidden"/> и использованию.
                 </h3>
                 <p className="leading-[27.2px] mt-[20px] max-sm:text-[15px]">
                     Высококвалифицированная команда готова немедленно приступить к изучению необходимого массива данных.
-                    Мы не только занимаемся глубоким анализом уже известной информации,
+                    <br className="max-md:hidden"/> Мы не только занимаемся глубоким анализом уже известной информации,
                     но и получаем ее из дополнительных источников, проводим личные расследования,
                     инициируем переговоры и применяем альтернативные способы разрешения ситуации.
                 </p>
@@ -173,12 +154,6 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                     </div>
                 </div>
             </div>
-            <p className="leading-[27.2px] max-sm:text-[15px] mt-[60px]">
-                Мы не предлагаем в сложных обстоятельствах призрачную надежду или веру в счастливый случай,
-                не работаем с прицелом на почасовую оплату, «гонорар успеха» и не заключаем невыгодных сделок для
-                быстрого разрешения дела, а бьем точно в цель — оказываем профессиональную помощь,
-                которая способна в корне изменить ситуацию и решить ваши проблемы в объективной реальности.
-            </p>
         </div>
     );
 };
