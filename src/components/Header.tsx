@@ -59,12 +59,16 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
   }
 
   useEffect(() => {
+    if (!isDarMenu) {
+      document.body.classList.add("dark-body");
+    }
+
     window.addEventListener('scroll', handleScroll);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [isDarMenu]);
 
   useEffect(() => {
     if (isOpen) {
