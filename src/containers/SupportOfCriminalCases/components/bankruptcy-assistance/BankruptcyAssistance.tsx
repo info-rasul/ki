@@ -8,7 +8,7 @@ interface BankruptcyAssistanceProps {
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
-            <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[45px] tracking-[-0.2px] mt-20 mb-10 max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+            <h2 className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Экономическая преступность — это сложная совокупность нескольких десятков составов преступлений,
                 предусмотренных уголовным законом. Сложность данного рода преступлений связана, как с расследованием,
                 так и с защитой законных прав и интересов.
@@ -43,11 +43,11 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
             </div>
             <div>
                 <div className="flex flex-col gap-[30px] p-[28px] bg-[#F8F8F8] mt-10">
-                    <h3 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                    <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                         Наша высококвалифицированная команда профессионалов предоставляет индивидуальное,
                         комплексное и всестороннее сопровождение  уголовных дел,
                         как на этапе проверки сообщения о преступлении, так и после возбуждения уголовного дела.
-                    </h3>
+                    </h2>
                     <div className="flex justify-between gap-[20px] mt-[28px] max-lg:flex-col max-lg:mt-0 max-lg:gap-[30px]">
                         <div className="gradient-border-left w-[412px] max-lg:w-full">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
