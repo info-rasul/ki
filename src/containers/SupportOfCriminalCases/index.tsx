@@ -21,6 +21,14 @@ import SupportOfCriminalCasesData from "../../hooks/SupportOfCriminalCasesData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
 const SupportOfCriminalCases: FunctionComponent = () => {
+    const sidebarDesc = [
+        "Иногда в массе данных нет никакого смысла, а иногда единственный факт бесценен — ",
+        "Известная цитата Н. Талеба, полностью отражающая принцип нашей работы!",
+        "Мы всесторонне изучаем дело, не упуская ни малейшей детали. Находим в массе данных и видем то," +
+        "что другие упускают из своего поля зрения. Добываем тот «бесценный факт», перевернув дело с ног на голову," +
+        " и использовуем его для достижения целей с максимальной результативностью и выгодой",
+    ]
+
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -46,56 +54,32 @@ const SupportOfCriminalCases: FunctionComponent = () => {
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Escort")} />
-            <div className=" bg-custom-gradient">
+            <div className="bg-custom-gradient">
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
-                    <h2 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
-                        Сопровождение сложных <br /> уголовных дел
-                    </h2>
-                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Комплексное сопровождение расследования сложных много эпизодных уголовных дел экономической
-                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
+                    <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[56px] tracking-[0.2px] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
+                        Сопровождение уголовных дел
+                    </h1>
+                    <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                        Комплексное сопровождение расследования сложных многоэпизодныхуголовных дел экономической
+                        направленности, в том числе контрабанда, неуплатаналогов, коррупционные действия,
                         неисполнение обязательств по договорам, корпоративные и арбитражные споры,
-                        осложненные уголовно-правовым элементом, преднамеренное банкротство, фиктивное банкротство,
-                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
-                        Наши эксперты успешно добиваются прекращения уголовных дел органами следствия
-                        на стадии предварительного следствия.
+                        осложненные уголовно-правовым элементом,преднамеренное банкротство, фиктивное банкротство,
+                        заказные дела со стороныбизнес-конкурентов и партнеров по бизнесу.
+                        Наши эксперты успешно добиваютсяпрекращения уголовных дел органами
+                        следствия на стадии предварительного расследования.
                     </p>
                 </div>
             </div>
             <div className="container overflow-x-hidden">
                 <div className="">
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
-                        <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
+                        <div className="w-[900px] flex flex-col max-[1310px]:w-[760px] max-[1160px]:w-[720px] max-[1080px]:w-full">
                             <BankruptcyAssistance styles={styles}/>
-                            <Specialists/>
-                            <Documentation/>
-                            <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
-                                <div className="flex flex-col gap-[15px]">
-                                    <h2 className="text-[22px] leading-[135%] text-white">
-                                        Наш телеграм-канал
-                                    </h2>
-                                    <p className="text-[15px] leading-[150%] text-[#CFF4FC]">
-                                        Наведите камеру телефона на QR код, чтобы перейти в наш телеграм
-                                    </p>
-                                </div>
-                                <img
-                                    className="w-[150px] h-[150px] max-sm:hidden"
-                                    src={twoSvg}
-                                    alt="QR-код"
-                                />
-                                <img className="absolute top-0 right-0" src={oneSvg} alt="Фон"/>
-                                <a className="button-social cursor-pointer w-[293px] flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
-                                    Telegram-канал
-                                </a>
-                            </div>
                         </div>
-                       {/* <div className="services-sidebar">
-                            <EscortSidebar />
-                        </div>*/}
-                        <EscortSidebar />
+                        <EscortSidebar sidebarDesc={sidebarDesc}/>
                     </div>
-                    <div className="mt-[-46px] mb-[40px]">
+                    <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">
                         <HomeAdvantage/>
                     </div>
                     <div className="flex flex-col pb-[80px] max-[1080px]:px-[16px] max-sm:pb-[40px]">

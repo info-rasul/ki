@@ -10,6 +10,10 @@ div#root {
   background-color: #fff;
 }
 
+.sidebar-desc {
+  font-style: italic;
+}
+
 :root {
   --main-fs: 1;
   --base-font-size: 1;
@@ -407,3 +411,9 @@ main {
   bottom: 0;
   right: 0;
 }
+
+.gradient-border-left {
+  border-left: 4px solid;
+  border-color: #097990;
+}
+

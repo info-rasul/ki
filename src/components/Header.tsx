@@ -102,7 +102,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
   return (
     <Fragment>
       <LoadingBar style={{zIndex: 20}} color={isDarMenu ? '#000' : '#fff'} progress={progress} />
-      <div className="header max-[1030px]:hidden w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
+      <div className="header max-[1070px]:hidden w-full flex flex-col sticky top-0 z-20 pt-8 pb-9 max-md:p-0">
         <div className="container">
           <div className="grid grid-cols-8 gap-4 place-content-center max-[1080px]:px-4 max-md:hidden">
             <div className="logo col-span-2 z-10 flex items-center">
@@ -114,7 +114,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
             </div>
             <div className="col-span-4 flex justify-center mt-[3px]">
               <ul style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...(isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)' })}}
-                  className="header__menu flex text-center justify-between items-center z-20 w-[607px] pl-[16px] pr-[18px] py-[9px] rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
+                  className="header__menu flex text-center justify-between items-center z-20 min-w-[607px] pl-[16px] pr-[18px] py-[9px] rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
                   <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
                     О нас
@@ -167,7 +167,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
         </div>
       </div>
 
-      <div className="min-[1030px]:hidden container z-20 overflow-x-hidden flex flex-col">
+      <div className="min-[1070px]:hidden container z-20 overflow-x-hidden flex flex-col">
         <div style={{background: isDarMenu || isOpen || scrollTop > 50 ? 'white' : '', opacity: isOpen ? '1' : ''}} className="header-adaptive h-[72px] w-full flex justify-between items-center fixed top-0 z-20 px-[17px]">
           <a href="/">
             <svg style={{fill: (isOpen || scrollTop > 50) || isDarMenu ? 'black' : 'white'}} className="header__adaptive_logo w-[138px]" width="214" height="56" viewBox="0 0 214 56" fill="none" xmlns="http://www.w3.org/2000/svg">
