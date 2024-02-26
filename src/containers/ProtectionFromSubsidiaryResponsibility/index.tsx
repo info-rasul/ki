@@ -53,13 +53,13 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                         Защита от субсидиарной <br/> ответственности
                     </h1>
                     <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Комплексное сопровождение расследования сложных много эпизодных уголовных дел экономической
-                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
-                        неисполнение обязательств по договорам, корпоративные и арбитражные споры,
-                        осложненные уголовно-правовым элементом, преднамеренное банкротство, фиктивное банкротство,
-                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
-                        Наши эксперты успешно добиваются прекращения уголовных дел органами следствия
-                        на стадии предварительного следствия.
+                        Наши специалисты оказывают комплекс услуг по защите от субсидиарной ответственности,
+                        включающий в себя полный и всесторонний анализ финансово-хозяйственной деятельности
+                        вашего бизнеса, сделок (в т. ч. направленных на вывод активов) и деятельности руководящих лиц,
+                        а также в случае наличия конфликтов с партнерами или острых имущественных споров.
+                        Мы практикуем как превентивные меры по оценке характера и степени угрозы,
+                        так и радикальные - в случаях инициации процедуры банкротства или предъявлении требований
+                        со стороны кредиторов.
                     </p>
                 </div>
             </div>
@@ -68,31 +68,7 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
                            <BankruptcyAssistance styles={styles}/>
-                            <Specialists/>
-                            <Documentation/>
-                            <div className="min-[1081px]:hidden mt-10 relative flex flex-col gap-[25px] bg-[#097990] w-full p-[25px] pt-5 max-sm:gap-[40px]">
-                                <div className="flex flex-col gap-[15px]">
-                                    <h2 className="text-[22px] leading-[135%] text-white">
-                                        Наш телеграм-канал
-                                    </h2>
-                                    <p className="text-[15px] leading-[150%] text-[#CFF4FC]">
-                                        Наведите камеру телефона на QR код, чтобы перейти в наш телеграм
-                                    </p>
-                                </div>
-                                <img
-                                    className="w-[150px] h-[150px] max-sm:hidden"
-                                    src={twoSvg}
-                                    alt="QR-код"
-                                />
-                                <img className="absolute top-0 right-0" src={oneSvg} alt="Фон"/>
-                                <a className="button-social cursor-pointer w-[293px] flex items-center justify-center gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
-                                    Telegram-канал
-                                </a>
-                            </div>
                         </div>
-                        {/* <div className="services-sidebar">
-                            <EscortSidebar />
-                        </div>*/}
                         <EscortSidebar />
                     </div>
                     <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">

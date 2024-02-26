@@ -6,14 +6,14 @@ import * as animation4 from '../assets/animations/ki_l4_v01.json'
 // @ts-ignore
 const ParallelImportData = [
     {
+        desc: "Сопровождение <br class='lene-break'/> уголовных дел",
+        animation: animation4,
+        path: '/services/support-of-criminal-cases'
+    },
+    {
         desc: "Комплексная защита <br/> должников от кредиторов",
         animation: animation1,
         path: '/services/comprehensive-protection'
-    },
-    {
-        desc: "Защита от субсидиарной <br/> ответственности",
-        animation: animation2,
-        path: '/services/protection-from-subsidiary-responsibility'
     },
     {
         desc: "Сопровождение на всех <br/> стадиях банкротства в <br/> интересах должника",
@@ -21,9 +21,9 @@ const ParallelImportData = [
         path: '/services/escort'
     },
     {
-        desc: "Сопровождение <br class='lene-break'/> уголовных дел",
-        animation: animation4,
-        path: '/services/support-of-criminal-cases'
+        desc: "Защита от субсидиарной <br/> ответственности",
+        animation: animation2,
+        path: '/services/protection-from-subsidiary-responsibility'
     },
 ]
 

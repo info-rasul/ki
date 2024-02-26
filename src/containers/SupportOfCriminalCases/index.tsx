@@ -1,21 +1,10 @@
 // @ts-nocheck
 import type { FunctionComponent } from "react";
-import React, {Fragment, useEffect, useRef, useState} from "react";
-import DownButton from "../../assets/img/down-button.svg";
+import React, {Fragment, useState} from "react";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
-import LegalSupport from "./components/legal-support/LegalSupport";
-import BankruptcyConcept from "./components/bankruptcy-concept/BankruptcyConcept";
-import SignsOfBankruptcy from "./components/signs-of-bankruptcy/SignsOfBankruptcy";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
-import PurposesOfBankruptcy from "./components/purposes-of-bankruptcy/PurposesOfBankruptcy";
-import Specialists from "./components/specialists/Specialists";
-import Documentation from "./components/documentation/Documentation";
 import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
-import OtherServices from "./components/other-services/OtherServices";
-import oneSvg from "../../assets/img/vector-3.svg";
-import twoSvg from "../../assets/img/cusir-code-telegram.svg";
-import EscortCardData from "../../hooks/EscortCardData";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
 import SupportOfCriminalCasesData from "../../hooks/SupportOfCriminalCasesData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
@@ -61,12 +50,12 @@ const SupportOfCriminalCases: FunctionComponent = () => {
                         Сопровождение уголовных дел
                     </h1>
                     <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Комплексное сопровождение расследования сложных многоэпизодныхуголовных дел экономической
-                        направленности, в том числе контрабанда, неуплатаналогов, коррупционные действия,
+                        Комплексное сопровождение расследования сложных многоэпизодных уголовных дел экономической
+                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
                         неисполнение обязательств по договорам, корпоративные и арбитражные споры,
                         осложненные уголовно-правовым элементом,преднамеренное банкротство, фиктивное банкротство,
-                        заказные дела со стороныбизнес-конкурентов и партнеров по бизнесу.
-                        Наши эксперты успешно добиваютсяпрекращения уголовных дел органами
+                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
+                        Наши эксперты успешно добиваются прекращения уголовных дел органами
                         следствия на стадии предварительного расследования.
                     </p>
                 </div>

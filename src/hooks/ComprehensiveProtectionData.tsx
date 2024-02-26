@@ -6,16 +6,6 @@ import * as animation7 from "../assets/animations/ki_l5_v01.json";
 // @ts-ignore
 const ComprehensiveProtectionData = [
     {
-        desc: "Защита от субсидиарной <br/> ответственности",
-        animation: animation2,
-        path: '/services/protection-from-subsidiary-responsibility'
-    },
-    {
-        desc: "Сопровождение на всех <br/> стадиях банкротства в <br/> интересах должника",
-        animation: animation3,
-        path: '/services/escort'
-    },
-    {
         desc: "Сопровождение <br class='lene-break'/> уголовных дел",
         animation: animation4,
         path: '/services/support-of-criminal-cases'
@@ -24,6 +14,16 @@ const ComprehensiveProtectionData = [
         desc: "Параллельный <br class='br'/> импорт",
         animation: animation7,
         path: '/services/parallel-import'
+    },
+    {
+        desc: "Сопровождение на всех <br/> стадиях банкротства в <br/> интересах должника",
+        animation: animation3,
+        path: '/services/escort'
+    },
+    {
+        desc: "Защита от субсидиарной <br/> ответственности",
+        animation: animation2,
+        path: '/services/protection-from-subsidiary-responsibility'
     },
 ]
 
