@@ -1,5 +1,5 @@
 import type { ComponentType } from "react";
-import {Home, About, Services, AboutUs, Blog, Contacts, Article, Escort, QuestionsAndAnswers, SupportOfCriminalCases, ParallelImport, ProtectionFromSubsidiaryResponsibility} from "../containers";
+import {Home, About, Services, AboutUs, Blog, Contacts, Article, Escort, EscortNew, QuestionsAndAnswers, SupportOfCriminalCases, ParallelImport, ProtectionFromSubsidiaryResponsibility} from "../containers";
 import ComprehensiveProtection from "../containers/ComprehensiveProtection";
 
 const DESC_SUFFIX = "КИ";
@@ -101,6 +101,16 @@ export const routes: Route[] = [
     metaInfo: {
       title: "Escort",
       description: `Escort ${DESC_SUFFIX}`,
+      isDarkMenu: false,
+    },
+  },
+  {
+    path: "/services/escort-new",
+    name: "EscortNew",
+    Component: EscortNew,
+    metaInfo: {
+      title: "EscortNew",
+      description: `EscortNew ${DESC_SUFFIX}`,
       isDarkMenu: false,
     },
   },
