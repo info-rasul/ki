@@ -56,8 +56,6 @@ const ComprehensiveProtectionNew: FunctionComponent = () => {
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
                             <BankruptcyAssistance styles={styles}/>
-                            <Specialists/>
-                            <Documentation/>
                         </div>
                         <EscortSidebar />
                     </div>
