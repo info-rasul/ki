@@ -43,7 +43,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                     </p>
                 </div>
             </div>
-            <div className="flex flex-col gap-5 mt-5 max-sm:gap-[25px]">
+            <div className="flex flex-col gap-5 mt-10 max-sm:gap-[25px]">
                 <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                     Что такое параллельный импорт для нас?
                 </h2>
