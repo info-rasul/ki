@@ -6,8 +6,6 @@ type MyArrayProps = {
     sidebarDesc: string[];
 };
 const EscortSidebar: React.FC<MyArrayProps> = ({sidebarDesc}) => {
-
-    console.log(sidebarDesc)
     const [scrollY, setScrollY] = useState(0);
 
     const handleScroll = () => {
