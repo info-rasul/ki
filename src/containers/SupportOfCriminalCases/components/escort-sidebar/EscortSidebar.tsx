@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import QRCodeServices from "../../../../components/qr-code/Services";
 import oneSvg from "../../../../assets/img/quote.svg";
 import oneSvg1 from "../../../../assets/img/quote-1.svg";
-import PersonCardImg from "../../../../assets/img/quote-media.png";
 type MyArrayProps = {
     sidebarDesc: string[];
 };

@@ -7,11 +7,10 @@ import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyA
 import Specialists from "./components/specialists/Specialists";
 import Documentation from "./components/documentation/Documentation";
 import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
-import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
-import ComprehensiveProtectionData from "../../hooks/ComprehensiveProtectionData";
+import OtherServices from "./components/other-services/OtherServices";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const ComprehensiveProtection: FunctionComponent = () => {
+const EscortNew: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -34,6 +33,29 @@ const ComprehensiveProtection: FunctionComponent = () => {
         background: 'rgba(8, 108, 128, 0.10)',
     };
 
+    /*const handleScroll = () => {
+        const sidebar = document.querySelector('.services-sidebar');
+        console.log(window.scrollY, 'window.scrollY')
+        if (sidebar && window.scrollY > 445  && window.scrollY < 6125) {
+            sidebar.classList.add('services-sidebar-fixed');
+            sidebar.classList.remove('services-sidebar-fixed-bottom');
+        } else if (sidebar  && window.scrollY > 445 && window.scrollY > 6125) {
+            sidebar.classList.remove('services-sidebar-fixed');
+            sidebar.classList.add('services-sidebar-fixed-bottom');
+        } else  if (sidebar && window.scrollY < 445) {
+            sidebar.classList.remove('services-sidebar-fixed');
+            sidebar.classList.remove('services-sidebar-fixed-bottom');
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);*/
+
     return (
         <Fragment>
             <MetaInfo {...getRouteMetaInfo("Escort")} />
@@ -41,16 +63,17 @@ const ComprehensiveProtection: FunctionComponent = () => {
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
-                        Комплексная защита <br/> должников от кредиторов
+                        Сопровождение на всех <br className="max-sm:hidden"/> стадиях банкротства
                     </h1>
                     <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Комплексное сопровождение расследования сложных много эпизодных уголовных дел экономической
-                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
-                        неисполнение обязательств по договорам, корпоративные и арбитражные споры,
-                        осложненные уголовно-правовым элементом, преднамеренное банкротство, фиктивное банкротство,
-                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
-                        Наши эксперты успешно добиваются прекращения уголовных дел органами следствия
-                        на стадии предварительного следствия.
+                        Наша компания оказывает комплексную услугу по сопровождению на всех стадиях банкротства.
+                        Мы проводим глубокий анализ финансового положения клиента и его бизнеса,
+                        имеющихся задолженностей или требований кредиторов для инициации процедуры банкротства,
+                        контроля арбитражного управляющего и защиты активов клиента от посягательств,
+                        субсидиарной ответственности или незаконного владения со стороны третьих лиц.
+                        Наши специалисты занимаются подготовкой всех необходимых документов,
+                        практикуют применение упрощенной процедуры, проводят банкротство должников по специальным
+                        нормам и противодействуют оспариванию сделок по выводу имущества или активов должника.
                     </p>
                 </div>
             </div>
@@ -67,23 +90,11 @@ const ComprehensiveProtection: FunctionComponent = () => {
                     <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">
                         <HomeAdvantage/>
                     </div>
-                    <div className="flex flex-col pb-[80px] max-[1080px]:px-[16px] max-sm:pb-[40px]">
-                        <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[145%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mt-[40px] max-sm:mb-[30px]">
-                            Другие услуги
-                        </h2>
-                        <div className="grid grid-cols-2 gap-5 max-sm:gap-[15px] max-[1080px]:flex max-[1080px]:flex-wrap">
-                            {
-                                // @ts-ignore
-                                ComprehensiveProtectionData.map((item, index) => {
-                                    return <OtherServicesCard key={index} desc={item.desc} animation={item.animation} path={item.path}/>
-                                })
-                            }
-                        </div>
-                    </div>
+                    <OtherServices/>
                 </div>
             </div>
         </Fragment>
     );
 };
 
-export default ComprehensiveProtection;
+export default EscortNew;

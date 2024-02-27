@@ -11,10 +11,8 @@ import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyA
 import PurposesOfBankruptcy from "./components/purposes-of-bankruptcy/PurposesOfBankruptcy";
 import Specialists from "./components/specialists/Specialists";
 import Documentation from "./components/documentation/Documentation";
-import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
+import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
 import OtherServices from "./components/other-services/OtherServices";
-import oneSvg from "../../assets/img/vector-3.svg";
-import twoSvg from "../../assets/img/cusir-code-telegram.svg";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
 const Escort: FunctionComponent = () => {

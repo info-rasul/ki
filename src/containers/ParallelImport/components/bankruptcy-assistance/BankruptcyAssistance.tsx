@@ -82,6 +82,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 Если у вас остались вопросы или вы хотели бы обсудить возможность сотрудничества,
                 то вы можете обратиться за консультацией наших специалистов по телефону или написать нам на почту.
             </p>
+            <p className="leading-[170%] max-sm:text-[15px] mt-[20px] max-sm:leading-[160%]">
+                Если у вас остались вопросы или вы хотели бы обсудить возможность сотрудничества,
+                то вы можете обратиться за консультацией наших специалистов по телефону или написать нам на почту.
+            </p>
             <div className="flex flex-col justify-between bg-[#097990] p-[35px] mt-20 gap-[20px] relative max-[1439px]:w-full max-lg:gap-[39px] max-sm:mt-[65px] max-sm:px-[25px] max-sm:pb-[23px] max-sm:pt-[20px]">
                 <span style={{ fontSize: 'clamp(20px, 2.1vw, 30px)' }} className="text-white leading-[145%] max-sm:text-[20px] max-sm:leading-[135%]">
                     А чтобы оставаться в курсе актуальных новостей и держать руку на пульсе, <br className="max-lg:hidden"/>

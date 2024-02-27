@@ -4,12 +4,14 @@ import React, {Fragment, useEffect, useRef, useState} from "react";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
+import Specialists from "./components/specialists/Specialists";
+import Documentation from "./components/documentation/Documentation";
 import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
-import ProtectionFromSubsidiaryResponsibilityData from "../../hooks/ProtectionFromSubsidiaryResponsibilityData";
+import ParallelImportData from "../../hooks/ParallelImportData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
+const ParallelImportNew: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -39,16 +41,20 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
-                        Защита от субсидиарной <br/> ответственности
+                        Параллельный импорт <br /> высокотехнологичного оборудования
                     </h1>
                     <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Наши специалисты оказывают комплекс услуг по защите от субсидиарной ответственности,
-                        включающий в себя полный и всесторонний анализ финансово-хозяйственной деятельности
-                        вашего бизнеса, сделок (в т. ч. направленных на вывод активов) и деятельности руководящих лиц,
-                        а также в случае наличия конфликтов с партнерами или острых имущественных споров.
-                        Мы практикуем как превентивные меры по оценке характера и степени угрозы,
-                        так и радикальные - в случаях инициации процедуры банкротства или предъявлении требований
-                        со стороны кредиторов.
+                        Наша компания предоставляет услуги по параллельному импорту дефицитных товаров и
+                        высокотехнологичного оборудования, что включает в себя: подбор поставщиков;
+                        приобретение товаров у производителя в обход санкционных ограничений;  взаиморасчеты и
+                        транзакции через децентрализованную финансовую систему, без использования SWIFT; полное
+                        сопровождение ввоза и легализации товаров на территории РФ; модификацию устройств и
+                        программного обеспечения специалистами до момента ввоза для отключения средств слежения
+                        и удаленной блокировки; скрытие конечного покупателя от производителя, а также объемов
+                        приобретенной партии; соблюдение конфиденциальности на самом высоком уровне. Наша команда
+                        подбирает индивидуальные решения для каждой бизнес-инициативы по параллельному импорту товаров:
+                        вы получите необходимые товарные единицы с заявленными характеристиками и всеми необходимыми
+                        документами для полностью легальной реализации на территории РФ.
                     </p>
                 </div>
             </div>
@@ -56,7 +62,7 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                 <div className="">
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
-                           <BankruptcyAssistance styles={styles}/>
+                            <BankruptcyAssistance styles={styles}/>
                         </div>
                         <EscortSidebar />
                     </div>
@@ -70,7 +76,7 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                         <div className="grid grid-cols-2 gap-5 max-sm:gap-[15px] max-[1080px]:flex max-[1080px]:flex-wrap">
                             {
                                 // @ts-ignore
-                                ProtectionFromSubsidiaryResponsibilityData.map((item, index) => {
+                                ParallelImportData.map((item, index) => {
                                     return <OtherServicesCard key={index} desc={item.desc} animation={item.animation} path={item.path}/>
                                 })
                             }
@@ -82,4 +88,4 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
     );
 };
 
-export default ProtectionFromSubsidiaryResponsibility;
+export default ParallelImportNew;

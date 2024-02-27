@@ -4,12 +4,14 @@ import React, {Fragment, useEffect, useRef, useState} from "react";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
+import Specialists from "./components/specialists/Specialists";
+import Documentation from "./components/documentation/Documentation";
 import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
-import ProtectionFromSubsidiaryResponsibilityData from "../../hooks/ProtectionFromSubsidiaryResponsibilityData";
+import ComprehensiveProtectionData from "../../hooks/ComprehensiveProtectionData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
+const ComprehensiveProtectionNew: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -39,16 +41,13 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
-                        Защита от субсидиарной <br/> ответственности
+                        Комплексная защита <br/> должников от кредиторов
                     </h1>
                     <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Наши специалисты оказывают комплекс услуг по защите от субсидиарной ответственности,
-                        включающий в себя полный и всесторонний анализ финансово-хозяйственной деятельности
-                        вашего бизнеса, сделок (в т. ч. направленных на вывод активов) и деятельности руководящих лиц,
-                        а также в случае наличия конфликтов с партнерами или острых имущественных споров.
-                        Мы практикуем как превентивные меры по оценке характера и степени угрозы,
-                        так и радикальные - в случаях инициации процедуры банкротства или предъявлении требований
-                        со стороны кредиторов.
+                        Наша команда предоставляет комплекс услуг и мер по защите интересов должников от кредиторов.
+                        Мы сопровождаем как досудебное урегулирование сложных материально-финансовых споров и ситуаций,
+                        так и все стадии банкротства, до полного прекращения кредитных или иных долговых обязательств,
+                        а также полного финансового оздоровления и возврата платежеспособности наших клиентов.
                     </p>
                 </div>
             </div>
@@ -56,7 +55,9 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                 <div className="">
                     <div className="flex justify-between gap-5 relative max-[1080px]:px-[16px]">
                         <div className="max-w-[900px] flex flex-col max-[1080px]:max-w-full">
-                           <BankruptcyAssistance styles={styles}/>
+                            <BankruptcyAssistance styles={styles}/>
+                            <Specialists/>
+                            <Documentation/>
                         </div>
                         <EscortSidebar />
                     </div>
@@ -70,7 +71,7 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                         <div className="grid grid-cols-2 gap-5 max-sm:gap-[15px] max-[1080px]:flex max-[1080px]:flex-wrap">
                             {
                                 // @ts-ignore
-                                ProtectionFromSubsidiaryResponsibilityData.map((item, index) => {
+                                ComprehensiveProtectionData.map((item, index) => {
                                     return <OtherServicesCard key={index} desc={item.desc} animation={item.animation} path={item.path}/>
                                 })
                             }
@@ -82,4 +83,4 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
     );
 };
 
-export default ProtectionFromSubsidiaryResponsibility;
+export default ComprehensiveProtectionNew;

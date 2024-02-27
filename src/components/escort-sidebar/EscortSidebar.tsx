@@ -1,13 +1,10 @@
 import React, {useEffect, useState} from 'react';
-import QRCodeServices from "../../../../components/qr-code/Services";
-import oneSvg from "../../../../assets/img/quote.svg";
-import oneSvg1 from "../../../../assets/img/quote-1.svg";
-type MyArrayProps = {
-    sidebarDesc: string[];
-};
-const EscortSidebar: React.FC<MyArrayProps> = ({sidebarDesc}) => {
+import QRCodeServices from "../qr-code/Services";
+import oneSvg from "../../assets/img/quote.svg";
+import oneSvg1 from "../../assets/img/quote-1.svg";
 
-    console.log(sidebarDesc)
+const EscortSidebar: React.FC = () => {
+
     const [scrollY, setScrollY] = useState(0);
 
     const handleScroll = () => {
@@ -42,13 +39,16 @@ const EscortSidebar: React.FC<MyArrayProps> = ({sidebarDesc}) => {
             <div className="flex flex-col p-[25px] pt-[30px] gap-[20px] bg-black w-[300px]">
                 <img className="w-[24px] h-[18px] mt-[4px]" src={oneSvg1} alt="gobbler" />
                 <p  className="sidebar-desc text-start text-[20px] tracking-[.1px] text-white leading-[34px]">
-                    {sidebarDesc[0]}
+                    Иногда в массе данных нет никакого смысла, а иногда единственный факт бесценен —
                 </p>
                 <p className="text-start text-[15px] tracking-[.1px] text-white leading-[25.5px]">
-                    {sidebarDesc[1]}
+                    Известная цитата Н. Талеба, полностью отражающая принцип нашей работы!
                 </p>
                 <p className="text-start text-[15px] tracking-[.1px] text-white leading-[25.5px]">
-                    {sidebarDesc[2]}
+                    Мы всесторонне изучаем дело, не упуская ни малейшей детали. Находим в массе данных и видем то,
+                    что другие упускают из своего поля зрения. Добываем тот «бесценный факт»,
+                    перевернув дело с ног на голову, и использовуем его для достижения целей с максимальной
+                    результативностью и выгодой
                 </p>
             </div>
         </div>

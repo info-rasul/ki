@@ -4,20 +4,12 @@ import React, {Fragment, useState} from "react";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
-import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
 import SupportOfCriminalCasesData from "../../hooks/SupportOfCriminalCasesData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
+import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
 
 const SupportOfCriminalCases: FunctionComponent = () => {
-    const sidebarDesc = [
-        "Иногда в массе данных нет никакого смысла, а иногда единственный факт бесценен — ",
-        "Известная цитата Н. Талеба, полностью отражающая принцип нашей работы!",
-        "Мы всесторонне изучаем дело, не упуская ни малейшей детали. Находим в массе данных и видем то," +
-        "что другие упускают из своего поля зрения. Добываем тот «бесценный факт», перевернув дело с ног на голову," +
-        " и использовуем его для достижения целей с максимальной результативностью и выгодой",
-    ]
-
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -66,7 +58,7 @@ const SupportOfCriminalCases: FunctionComponent = () => {
                         <div className="w-[900px] flex flex-col max-[1310px]:w-[760px] max-[1160px]:w-[720px] max-[1080px]:w-full">
                             <BankruptcyAssistance styles={styles}/>
                         </div>
-                        <EscortSidebar sidebarDesc={sidebarDesc}/>
+                        <EscortSidebar />
                     </div>
                     <div className="mt-[-46px] mb-[40px] max-[1080px]:mx-[16px]">
                         <HomeAdvantage/>

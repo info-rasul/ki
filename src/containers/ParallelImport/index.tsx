@@ -1,21 +1,12 @@
 // @ts-nocheck
 import type { FunctionComponent } from "react";
 import React, {Fragment, useEffect, useRef, useState} from "react";
-import DownButton from "../../assets/img/down-button.svg";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
-import LegalSupport from "./components/legal-support/LegalSupport";
-import BankruptcyConcept from "./components/bankruptcy-concept/BankruptcyConcept";
-import SignsOfBankruptcy from "./components/signs-of-bankruptcy/SignsOfBankruptcy";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
-import PurposesOfBankruptcy from "./components/purposes-of-bankruptcy/PurposesOfBankruptcy";
 import Specialists from "./components/specialists/Specialists";
 import Documentation from "./components/documentation/Documentation";
-import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
-import OtherServices from "./components/other-services/OtherServices";
-import oneSvg from "../../assets/img/vector-3.svg";
-import twoSvg from "../../assets/img/cusir-code-telegram.svg";
-import EscortCardData from "../../hooks/EscortCardData";
+import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
 import ParallelImportData from "../../hooks/ParallelImportData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
@@ -53,13 +44,17 @@ const ParallelImport: FunctionComponent = () => {
                         Параллельный импорт <br /> высокотехнологичного оборудования
                     </h1>
                     <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Комплексное сопровождение расследования сложных много эпизодных уголовных дел экономической
-                        направленности, в том числе контрабанда, неуплата налогов, коррупционные действия,
-                        неисполнение обязательств по договорам, корпоративные и арбитражные споры,
-                        осложненные уголовно-правовым элементом, преднамеренное банкротство, фиктивное банкротство,
-                        заказные дела со стороны бизнес-конкурентов и партнеров по бизнесу.
-                        Наши эксперты успешно добиваются прекращения уголовных дел органами следствия
-                        на стадии предварительного следствия.
+                        Наша компания предоставляет услуги по параллельному импорту дефицитных товаров и
+                        высокотехнологичного оборудования, что включает в себя: подбор поставщиков;
+                        приобретение товаров у производителя в обход санкционных ограничений;  взаиморасчеты и
+                        транзакции через децентрализованную финансовую систему, без использования SWIFT; полное
+                        сопровождение ввоза и легализации товаров на территории РФ; модификацию устройств и
+                        программного обеспечения специалистами до момента ввоза для отключения средств слежения
+                        и удаленной блокировки; скрытие конечного покупателя от производителя, а также объемов
+                        приобретенной партии; соблюдение конфиденциальности на самом высоком уровне. Наша команда
+                        подбирает индивидуальные решения для каждой бизнес-инициативы по параллельному импорту товаров:
+                        вы получите необходимые товарные единицы с заявленными характеристиками и всеми необходимыми
+                        документами для полностью легальной реализации на территории РФ.
                     </p>
                 </div>
             </div>

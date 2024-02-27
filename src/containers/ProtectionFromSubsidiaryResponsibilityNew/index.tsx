@@ -9,7 +9,7 @@ import OtherServicesCard from "./components/other-services/other-services-card/O
 import ProtectionFromSubsidiaryResponsibilityData from "../../hooks/ProtectionFromSubsidiaryResponsibilityData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
+const ProtectionFromSubsidiaryResponsibilityNew: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -82,4 +82,4 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
     );
 };
 
-export default ProtectionFromSubsidiaryResponsibility;
+export default ProtectionFromSubsidiaryResponsibilityNew;
