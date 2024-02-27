@@ -41,9 +41,9 @@ const ParallelImportNew: FunctionComponent = () => {
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
-                        Параллельный импорт <br /> высокотехнологичного оборудования
+                        Параллельный импорт
                     </h1>
-                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                    <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
                         Наша компания предоставляет услуги по параллельному импорту дефицитных товаров и
                         высокотехнологичного оборудования, что включает в себя: подбор поставщиков;
                         приобретение товаров у производителя в обход санкционных ограничений;  взаиморасчеты и

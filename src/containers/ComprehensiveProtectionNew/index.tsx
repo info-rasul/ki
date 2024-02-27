@@ -43,7 +43,7 @@ const ComprehensiveProtectionNew: FunctionComponent = () => {
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Комплексная защита <br/> должников от кредиторов
                     </h1>
-                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                    <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
                         Наша команда предоставляет комплекс услуг и мер по защите интересов должников от кредиторов.
                         Мы сопровождаем как досудебное урегулирование сложных материально-финансовых споров и ситуаций,
                         так и все стадии банкротства, до полного прекращения кредитных или иных долговых обязательств,

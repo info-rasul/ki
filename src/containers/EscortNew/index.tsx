@@ -63,7 +63,7 @@ const EscortNew: FunctionComponent = () => {
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Сопровождение на всех <br className="max-sm:hidden"/> стадиях банкротства
                     </h1>
-                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                    <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
                         Наша компания оказывает комплексную услугу по сопровождению на всех стадиях банкротства.
                         Мы проводим глубокий анализ финансового положения клиента и его бизнеса,
                         имеющихся задолженностей или требований кредиторов для инициации процедуры банкротства,

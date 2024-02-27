@@ -41,7 +41,7 @@ const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
                         Защита от субсидиарной <br/> ответственности
                     </h1>
-                    <p className="text-white leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
+                    <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
                         Наши специалисты оказывают комплекс услуг по защите от субсидиарной ответственности,
                         включающий в себя полный и всесторонний анализ финансово-хозяйственной деятельности
                         вашего бизнеса, сделок (в т. ч. направленных на вывод активов) и деятельности руководящих лиц,
