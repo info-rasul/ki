@@ -1,17 +1,15 @@
 // @ts-nocheck
 import type { FunctionComponent } from "react";
-import React, {Fragment, useEffect, useRef, useState} from "react";
+import React, {Fragment, useState} from "react";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
-import Specialists from "./components/specialists/Specialists";
-import Documentation from "./components/documentation/Documentation";
 import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
 import OtherServices from "./components/other-services/OtherServices";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
 const EscortNew: FunctionComponent = () => {
-    const { isDarkMenu } = getRouteMetaInfo("Escort");
+    const { isDarkMenu } = getRouteMetaInfo("EscortNew");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
         window.scrollTo({
