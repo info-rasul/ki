@@ -166,17 +166,7 @@ export const routes: Route[] = [
       description: `ProtectionFromSubsidiaryResponsibility ${DESC_SUFFIX}`,
       isDarkMenu: true,
     },
-  },
-  {
-    path: "/services-new/comprehensive-protection",
-    name: "ComprehensiveProtection",
-    Component: ComprehensiveProtection,
-    metaInfo: {
-      title: "ComprehensiveProtection",
-      description: `ComprehensiveProtection ${DESC_SUFFIX}`,
-      isDarkMenu: true,
-    },
-  },
+  }
 ];
 
 export const getRouteMetaInfo = (name: string): MetaInfoProps => {

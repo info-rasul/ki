@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d0d9e74.css",
-    "main.js": "/static/js/main.c41e3ca7.js",
+    "main.css": "/static/css/main.61d6b8ff.css",
+    "main.js": "/static/js/main.497a53b9.js",
     "static/js/496.e4c929b0.chunk.js": "/static/js/496.e4c929b0.chunk.js",
     "static/media/back-mob3.mp4": "/static/media/back-mob3.acfb1ec3d44b37bef8f7.mp4",
     "static/media/back3.mp4": "/static/media/back3.3e7fc0c702be506f837d.mp4",
     "static/media/contacts-banner.jpg": "/static/media/contacts-banner.c7f37ae5821e903fd8fb.jpg",
     "static/media/bck1.mp4": "/static/media/bck1.18abdf200d8dcff3851a.mp4",
     "static/media/article-img1.jpg": "/static/media/article-img1.45982840054f1c6dd94f.jpg",
-    "static/media/signs-of-bankruptcy-img.jpg": "/static/media/signs-of-bankruptcy-img.4daa1ab0024c3e660750.jpg",
     "static/media/article-banner.jpg": "/static/media/article-banner.c1a1b20ac73813b4e6f6.jpg",
     "static/media/article-img2.jpg": "/static/media/article-img2.320626fd5ff56786e738.jpg",
-    "static/media/card-img-1.jpg": "/static/media/card-img-1.7b6c4c042eb33ce1cce6.jpg",
     "static/media/HelveticaNeueBoldCondensed.eot": "/static/media/HelveticaNeueBoldCondensed.5fb81c36cc15b45f058e.eot",
     "static/media/HelveticaNeueBoldCondensed.ttf": "/static/media/HelveticaNeueBoldCondensed.7ff1b25d7041efe11b45.ttf",
     "static/media/HelveticaNeueBlackCondensed.eot": "/static/media/HelveticaNeueBlackCondensed.2fd967ecca3cf8f1a9bd.eot",
     "static/media/HelveticaNeueBlackCondensed.ttf": "/static/media/HelveticaNeueBlackCondensed.2e8b367db51828f58e83.ttf",
     "static/media/about-us-card3.jpg": "/static/media/about-us-card3.20db2c01a0cf310217e0.jpg",
-    "static/media/card-img.jpg": "/static/media/card-img.313ffc8d731e8030167e.jpg",
     "static/media/about-us-card2.jpg": "/static/media/about-us-card2.361614f590419188af04.jpg",
     "static/media/video-back.jpg": "/static/media/video-back.a5ee56fbab51ff31f271.jpg",
     "static/media/about-us-card1.jpg": "/static/media/about-us-card1.167bd7267af2bf5e9da7.jpg",
@@ -109,7 +106,6 @@
     "static/media/telegram.svg": "/static/media/telegram.85b587ef05518170ef8cfb299ae7185c.svg",
     "static/media/down-button.svg": "/static/media/down-button.2b73c08c84ccb26f599589e152aced09.svg",
     "static/media/subtract-menu.svg": "/static/media/subtract-menu.ceb579f6b39efda6eef37cef04698859.svg",
-    "static/media/documents-card-img.svg": "/static/media/documents-card-img.181475ee8ad7dccf0866e540f5e99373.svg",
     "static/media/top-button.svg": "/static/media/top-button.ce51523691875e9d6bf73968e30e5eaa.svg",
     "static/media/quote.svg": "/static/media/quote.80e2cdb220028a2689d6c94654869838.svg",
     "static/media/quote-1.svg": "/static/media/quote-1.60b75ec95f9c67b372fd9f9b376bace8.svg",
@@ -120,12 +116,12 @@
     "static/media/navigation-icon.svg": "/static/media/navigation-icon.6bccc2a3ac09b9d5b12b1337c5d6d162.svg",
     "static/media/header-menu-line.svg": "/static/media/header-menu-line.13b4b588af3a649a590d25001c89c272.svg",
     "static/media/header-dot.svg": "/static/media/header-dot.0f85f387a42f239416dcde391ca78d26.svg",
-    "main.9d0d9e74.css.map": "/static/css/main.9d0d9e74.css.map",
-    "main.c41e3ca7.js.map": "/static/js/main.c41e3ca7.js.map",
+    "main.61d6b8ff.css.map": "/static/css/main.61d6b8ff.css.map",
+    "main.497a53b9.js.map": "/static/js/main.497a53b9.js.map",
     "496.e4c929b0.chunk.js.map": "/static/js/496.e4c929b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d0d9e74.css",
-    "static/js/main.c41e3ca7.js"
+    "static/css/main.61d6b8ff.css",
+    "static/js/main.497a53b9.js"
   ]
 }
