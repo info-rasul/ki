@@ -13,10 +13,6 @@ import {
   ParallelImport,
   ProtectionFromSubsidiaryResponsibility,
   ComprehensiveProtection,
-  EscortNew,
-  ComprehensiveProtectionNew,
-  ProtectionFromSubsidiaryResponsibilityNew,
-  ParallelImportNew
 } from "../containers";
 
 const DESC_SUFFIX = "КИ";
@@ -172,42 +168,12 @@ export const routes: Route[] = [
     },
   },
   {
-    path: "/services-new/escort",
-    name: "EscortNew",
-    Component: EscortNew,
-    metaInfo: {
-      title: "Escort",
-      description: `Escort ${DESC_SUFFIX}`,
-      isDarkMenu: false,
-    },
-  },
-  {
-    path: "/services-new/parallel-import",
-    name: "ParallelImportNew",
-    Component: ParallelImportNew,
-    metaInfo: {
-      title: "ParallelImport",
-      description: `ParallelImport ${DESC_SUFFIX}`,
-      isDarkMenu: true,
-    },
-  },
-  {
     path: "/services-new/comprehensive-protection",
-    name: "ComprehensiveProtectionNew",
-    Component: ComprehensiveProtectionNew,
+    name: "ComprehensiveProtection",
+    Component: ComprehensiveProtection,
     metaInfo: {
       title: "ComprehensiveProtection",
       description: `ComprehensiveProtection ${DESC_SUFFIX}`,
-      isDarkMenu: true,
-    },
-  },
-  {
-    path: "/services-new/protection-from-subsidiary-responsibility",
-    name: "ProtectionFromSubsidiaryResponsibilityNew",
-    Component: ProtectionFromSubsidiaryResponsibilityNew,
-    metaInfo: {
-      title: "ProtectionFromSubsidiaryResponsibility",
-      description: `ProtectionFromSubsidiaryResponsibility ${DESC_SUFFIX}`,
       isDarkMenu: true,
     },
   },

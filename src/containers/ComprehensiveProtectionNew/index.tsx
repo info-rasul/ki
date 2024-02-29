@@ -11,7 +11,7 @@ import OtherServicesCard from "./components/other-services/other-services-card/O
 import ComprehensiveProtectionData from "../../hooks/ComprehensiveProtectionData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const ComprehensiveProtectionNew: FunctionComponent = () => {
+const ComprehensiveProtection: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -81,4 +81,4 @@ const ComprehensiveProtectionNew: FunctionComponent = () => {
     );
 };
 
-export default ComprehensiveProtectionNew;
+export default ComprehensiveProtection;

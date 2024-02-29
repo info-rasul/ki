@@ -4,11 +4,11 @@ import React, {Fragment, useState} from "react";
 import {Header, MetaInfo} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
-import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
+import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 import OtherServices from "./components/other-services/OtherServices";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const EscortNew: FunctionComponent = () => {
+const Escort: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("EscortNew");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -64,14 +64,11 @@ const EscortNew: FunctionComponent = () => {
                         Сопровождение на всех <br className="max-sm:hidden"/> стадиях банкротства
                     </h1>
                     <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Наша компания оказывает комплексную услугу по сопровождению на всех стадиях банкротства.
-                        Мы проводим глубокий анализ финансового положения клиента и его бизнеса,
-                        имеющихся задолженностей или требований кредиторов для инициации процедуры банкротства,
-                        контроля арбитражного управляющего и защиты активов клиента от посягательств,
-                        субсидиарной ответственности или незаконного владения со стороны третьих лиц.
-                        Наши специалисты занимаются подготовкой всех необходимых документов,
-                        практикуют применение упрощенной процедуры, проводят банкротство должников по специальным
-                        нормам и противодействуют оспариванию сделок по выводу имущества или активов должника.
+                        Комплексное сопровождение Вашей компании на всех стадиях банкротства с целью полного
+                        прекращения процедуры банкротства и сохранения Вашего бизнеса, или с целью ликвидации
+                        предприятия с полным безвозвратным списанием всех долгов и с превентивным исключением рисков
+                        субсидиарной ответственности. Только наши эксперты смогут собрать, легендировать и легализовать
+                        доказательную базу об отсутствии наличия признаков фиктивного и преднамеренного банкротства.
                     </p>
                 </div>
             </div>
@@ -93,4 +90,4 @@ const EscortNew: FunctionComponent = () => {
     );
 };
 
-export default EscortNew;
+export default Escort;

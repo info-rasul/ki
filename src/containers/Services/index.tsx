@@ -3,11 +3,9 @@ import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import {Navigation, MetaInfo, Header} from "../../components";
 import { getRouteMetaInfo } from "../../config/routes.config";
-import ServicesImg from "../../assets/img/services-1.svg";
 import ButtonsK from "../../components/ButtonsK";
 import oneSvg from "../../assets/img/serv-add-information.svg";
-import EscortCardData from "../../hooks/EscortCardData";
-import OtherServicesCard from "../Escort/components/other-services/other-services-card/OtherServicesCard";
+import OtherServicesCard from "../EscortNew/components/other-services/other-services-card/OtherServicesCard";
 import ServicesCardData from "../../hooks/ServicesCardData";
 
 const Services: FunctionComponent = () => {

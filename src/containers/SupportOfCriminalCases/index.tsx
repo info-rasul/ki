@@ -7,7 +7,7 @@ import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyA
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
 import SupportOfCriminalCasesData from "../../hooks/SupportOfCriminalCasesData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
-import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
+import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 
 const SupportOfCriminalCases: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");

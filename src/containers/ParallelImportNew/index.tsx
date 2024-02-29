@@ -11,7 +11,7 @@ import OtherServicesCard from "./components/other-services/other-services-card/O
 import ParallelImportData from "../../hooks/ParallelImportData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const ParallelImportNew: FunctionComponent = () => {
+const ParallelImport: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -88,4 +88,4 @@ const ParallelImportNew: FunctionComponent = () => {
     );
 };
 
-export default ParallelImportNew;
+export default ParallelImport;

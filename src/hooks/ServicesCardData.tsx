@@ -7,21 +7,6 @@ import * as animation7 from '../assets/animations/ki_l5_v01.json'
 // @ts-ignore
 const ServicesCardData = [
     {
-        desc: "Комплексная защита <br/> должников от кредиторов",
-        animation: animation1,
-        path: '/services/comprehensive-protection'
-    },
-    {
-        desc: "Защита от субсидиарной ответственности",
-        animation: animation2,
-        path: '/services/protection-from-subsidiary-responsibility'
-    },
-    {
-        desc: "Сопровождение на всех стадиях банкротства в интересах должника",
-        animation: animation3,
-        path: '/services/escort'
-    },
-    {
         desc: "Сопровождение <br class='br'/> уголовных дел",
         animation: animation4,
         path: '/services/support-of-criminal-cases'
@@ -30,6 +15,21 @@ const ServicesCardData = [
         desc: "Параллельный <br class='br'/> импорт",
         animation: animation7,
         path: '/services/parallel-import'
+    },
+    {
+        desc: "Комплексная защита <br/> должников от кредиторов",
+        animation: animation1,
+        path: '/services/comprehensive-protection'
+    },
+    {
+        desc: "Сопровождение на всех стадиях банкротства в интересах должника",
+        animation: animation3,
+        path: '/services/escort'
+    },
+    {
+        desc: "Защита от субсидиарной ответственности",
+        animation: animation2,
+        path: '/services/protection-from-subsidiary-responsibility'
     },
 ]
 

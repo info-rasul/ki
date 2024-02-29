@@ -9,7 +9,7 @@ import OtherServicesCard from "./components/other-services/other-services-card/O
 import ProtectionFromSubsidiaryResponsibilityData from "../../hooks/ProtectionFromSubsidiaryResponsibilityData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
 
-const ProtectionFromSubsidiaryResponsibilityNew: FunctionComponent = () => {
+const ProtectionFromSubsidiaryResponsibility: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("Escort");
     const darkMenu = !!isDarkMenu;
     const smoothScroll = () => {
@@ -42,13 +42,11 @@ const ProtectionFromSubsidiaryResponsibilityNew: FunctionComponent = () => {
                         Защита от субсидиарной <br/> ответственности
                     </h1>
                     <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
-                        Наши специалисты оказывают комплекс услуг по защите от субсидиарной ответственности,
-                        включающий в себя полный и всесторонний анализ финансово-хозяйственной деятельности
-                        вашего бизнеса, сделок (в т. ч. направленных на вывод активов) и деятельности руководящих лиц,
-                        а также в случае наличия конфликтов с партнерами или острых имущественных споров.
-                        Мы практикуем как превентивные меры по оценке характера и степени угрозы,
-                        так и радикальные - в случаях инициации процедуры банкротства или предъявлении требований
-                        со стороны кредиторов.
+                        Не дожидайтесь проблем. С командой наших экспертов Вы всегда на шаг впереди,
+                        заранее предотвращая риски субсидиарной ответственности. Там, где другие видят риски,
+                        мы ищем и находим нестандартные решения, организуем превентивную защиту,
+                        сохраняем личные активы. Защищаем контролирующих должника лиц (КДЛ) от субсидиарной
+                        ответственности и добиваемся полного списания задолженности.
                     </p>
                 </div>
             </div>
@@ -82,4 +80,4 @@ const ProtectionFromSubsidiaryResponsibilityNew: FunctionComponent = () => {
     );
 };
 
-export default ProtectionFromSubsidiaryResponsibilityNew;
+export default ProtectionFromSubsidiaryResponsibility;
