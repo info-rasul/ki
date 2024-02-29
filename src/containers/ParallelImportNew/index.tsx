@@ -6,7 +6,7 @@ import { getRouteMetaInfo } from "../../config/routes.config";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
 import Specialists from "./components/specialists/Specialists";
 import Documentation from "./components/documentation/Documentation";
-import EscortSidebar from "../../components/escort-sidebar/EscortSidebar";
+import EscortSidebar from "./components/escort-sidebar/EscortSidebar";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
 import ParallelImportData from "../../hooks/ParallelImportData";
 import HomeAdvantage from "../Home/components/HomeAdvantage";
