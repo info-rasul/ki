@@ -12,6 +12,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
            {/* <h2 className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Суровая реальность
             </h2>*/}
+
             <div className="flex flex-col mt-20 gap-5  max-sm:gap-[25px]">
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     В соответствии с гражданским законодательством долг – это обязательство, в силу которого одно лицо
