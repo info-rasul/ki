@@ -8,22 +8,22 @@ const SupportOfCriminalCasesData = [
     {
         desc: "Параллельный <br class='br'/> импорт",
         animation: animation7,
-        path: '/services/parallel-import'
+        path: '/parallelnyy-import-oborudovaniya'
     },
     {
         desc: "Комплексная защита <br/> должников от кредиторов",
         animation: animation1,
-        path: '/services/comprehensive-protection'
+        path: '/zashchita-dolzhnikov-ot-kreditorov'
     },
     {
         desc: "Сопровождение на всех <br/> стадиях банкротства в <br/> интересах должника",
         animation: animation3,
-        path: '/services/escort'
+        path: '/yuridicheskoe-soprovozhdenie-bankrotstva'
     },
     {
         desc: "Защита от субсидиарной <br/> ответственности",
         animation: animation2,
-        path: '/services/protection-from-subsidiary-responsibility'
+        path: '/zashchita-ot-subsidiarnoy-otvetstvennosti'
     },
 ]
 

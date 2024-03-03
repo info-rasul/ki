@@ -116,7 +116,11 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               <ul style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...(isDarMenu ? { background: '#F8F8F8' } : { background: 'rgba(255, 255, 255, 0.04)' })}}
                   className="header__menu flex text-center justify-between items-center z-20 min-w-[607px] pl-[16px] pr-[18px] py-[9px] rounded-[25px] shadow-boxShadow fixed max-[900px]:mt-[-8px]">
                 <li>
-                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%]" href="/about-us">
+                  <a
+                      style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }}
+                      className="text-white text-[15px] font-medium leading-[150%]"
+                      href="/o-nas"
+                  >
                     О нас
                   </a>
                 </li>
@@ -124,7 +128,11 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]" href="/services">
+                  <a
+                      style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }}
+                      className="text-white text-[15px] font-medium leading-[150%] tracking-[.7px]"
+                      href="/uslugi"
+                  >
                     Услуги
                   </a>
                 </li>
@@ -132,7 +140,11 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[.2px]" href="/questions-and-answers">
+                  <a
+                      style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }}
+                      className="text-white text-[15px] font-medium leading-[150%] tracking-[.2px]"
+                      href="/vopros-otvet"
+                  >
                     Вопросы и ответы
                   </a>
                 </li>
@@ -140,7 +152,11 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderMenuLine} alt="|" />
                 </li>
                 <li>
-                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white  text-[15px] font-medium leading-[150%]" href="/news">
+                  <a
+                      style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }}
+                      className="text-white  text-[15px] font-medium leading-[150%]"
+                      href="/blog"
+                  >
                     Блог
                   </a>
                 </li>
@@ -148,7 +164,11 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <img className="" src={HeaderDot} alt="." />
                 </li>
                 <li>
-                  <a style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }} className="text-white text-[15px] font-medium leading-[150%] tracking-[-0.1px]" href="/contacts">
+                  <a
+                      style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }}
+                      className="text-white text-[15px] font-medium leading-[150%] tracking-[-0.1px]"
+                      href="/kontakty"
+                  >
                     Контакты
                   </a>
                 </li>
@@ -204,31 +224,46 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
               <div className="h-[1px] bg-[#B3B3B3]"></div>
               <ul className="flex flex-col gap-[6px] pt-[27px] pb-[10px]">
                 <li>
-                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/about-us">
+                  <a
+                      className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5"
+                      href="/o-nas"
+                  >
                     О нас
                     <img src={fourSvg} alt="Иконка" />
                   </a>
                 </li>
                 <li>
-                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/services">
+                  <a
+                      className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5"
+                      href="/uslugi"
+                  >
                     Услуги
                     <img src={fourSvg} alt="Иконка" />
                   </a>
                 </li>
                 <li>
-                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/questions-and-answers">
+                  <a
+                      className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5"
+                      href="/vopros-otvet"
+                  >
                     Вопросы и ответы
                     <img src={fourSvg} alt="Иконка" />
                   </a>
                 </li>
                 <li>
-                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/news">
+                  <a
+                      className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5"
+                      href="/blog"
+                  >
                     Блог
                     <img src={fourSvg} alt="Иконка" />
                   </a>
                 </li>
                 <li>
-                  <a className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5" href="/contacts">
+                  <a
+                      className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5"
+                      href="/kontakty"
+                  >
                     Контакты
                     <img src={fourSvg} alt="Иконка" />
                   </a>

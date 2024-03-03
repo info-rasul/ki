@@ -24,12 +24,12 @@ const Contacts: FunctionComponent = () => {
                                 <p className="text-white text-[25px] leading-[145%] max-sm:text-[15px] opacity-60">Адрес:</p>
                                 <a style={{ fontSize: 'clamp(18px, 1.8vw, 25px)' }} className="text-white leading-[145%] max-sm:text-[18px]">
                                     <span>ММДЦ “Москва-Сити” Башня <br className="lg:hidden"/> Федерация,<br className="max-lg:hidden"/></span>
-                                    <span itemProp="addressLocality">Москва</span>,
+                                    <span itemProp="addressLocality">Москва </span>
                                     <span itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
                                 </a>
                             </div>
-                            <div className="h-px bg-[#E6E6E6] my-[25px] min-[880px]:hidden"></div>
-                            <div className="flex flex-col gap-[25px] w-[350px] max-md:w-full max-md:gap-0">
+                            <div className="h-px bg-[#E6E6E6] my-[25px] min-[881px]:hidden"></div>
+                            <div className="flex flex-col gap-[25px] w-[350px] max-[880px]:w-full max-md:gap-0">
                                 <div className="flex flex-col gap-[5px]">
                                     <p
                                         style={{ fontSize: 'clamp(15px, 1.8vw, 25px)' }}

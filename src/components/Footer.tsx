@@ -42,25 +42,28 @@ const Footer: FunctionComponent = () => {
             <a href="/">
               <img className="h-[66px]" src={Logo} alt="Логотип" />
             </a>
-            <div className="flex justify-between max-w-[436px] mb-[3px] w-full" itemScope itemType="http://schema.org/Organization">
+            <div className="flex gap-[50px] max-w-[436px] mb-[3px] w-full" itemScope itemType="http://schema.org/Organization">
               <ul className="flex flex-col gap-[1.15em]">
                 <li>
-                  <a className="text-white leading-[145%]" href="/about-us">О нас</a>
+                  <a className="text-white leading-[145%]" href="/o-nas">О нас</a>
                 </li>
                 <li>
-                  <a className="text-white leading-[145%]" href="/services">Услуги</a>
+                  <a className="text-white leading-[145%]" href="/uslugi">Услуги</a>
+                </li>
+                <li className="w-[140px]">
+                  <a className="text-white leading-[145%]" href="/vopros-otvet">Вопросы и ответы</a>
                 </li>
                 <li>
-                  <a className="text-white leading-[145%]" href="/news">Блог</a>
+                  <a className="text-white leading-[145%]" href="/blog">Блог</a>
                 </li>
                 <li>
-                  <a className="text-white leading-[145%]" href="/contacts">Контакты</a>
+                  <a className="text-white leading-[145%]" href="/kontakty">Контакты</a>
                 </li>
               </ul>
               <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-                <span className="text-white leading-[145%] [word-spacing:0.2px] tracking-[.3px]">ММДЦ “Москва-Сити” <br /> Башня Федерация,</span>
+                <span className="text-white leading-[145%] [word-spacing:0.2px]">ММДЦ “Москва-Сити” <br /> Башня Федерация, </span>
                 <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="addressLocality">г. Москва</span>,
-                <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+                <span className="text-white leading-[145%] [word-spacing:0.2px] block w-[247px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
               </div>
             </div>
           </div>
@@ -97,19 +100,23 @@ const Footer: FunctionComponent = () => {
       <div className="h-px bg-[#242D3E] my-[35px] w-full"></div>
       <ul className="flex flex-col gap-[25px] w-full">
         <li className="text-white leading-[151%] flex justify-between items-center">
-          <a href="/about-us">О нас</a>
+          <a href="/o-nas">О нас</a>
           <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">
-          <a href="/services">Услуги</a>
+          <a href="/uslugi">Услуги</a>
           <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">
-          <a href="/news">Блог</a>
+          <a href="/vopros-otvet">Вопросы и ответы</a>
           <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">
-          <a href="/contacts">Контакты</a>
+          <a href="/blog">Блог</a>
+          <img src={FooterIcon} alt="Иконка" width="18" height="18" />
+        </li>
+        <li className="text-white leading-[151%] flex justify-between items-center">
+          <a href="/kontakty">Контакты</a>
           <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
       </ul>
