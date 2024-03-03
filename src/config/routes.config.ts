@@ -42,8 +42,10 @@ export const routes: Route[] = [
     name: "Home",
     Component: Home,
     metaInfo: {
-      title: "Home",
-      description: `Home ${DESC_SUFFIX}`,
+      title: "Юридические услуги по защите малого и среднего бизнеса| Комитет информации",
+      description: "Услуги в области банкротства, защиты от субсидиарной ответственности, взыскания долгов, " +
+          "недобросовестной конкуренции, необоснованных претензий госорганов, разрешение корпоративных споров, " +
+          "сделок слияния и поглощения (М&А), управления проблемными активами и форензика. Звоните ☎ +7 (495) 088-33-33",
       isDarkMenu: false
     },
   },
@@ -52,8 +54,8 @@ export const routes: Route[] = [
     name: "About",
     Component: About,
     metaInfo: {
-      title: "About",
-      description: `About ${DESC_SUFFIX}`,
+      title: "О компании | Комитет информации",
+      description: "Ценности, история, философия, сотрудники компании «Комитет информации». Звоните ☎ +7 (495) 088-33-33",
       isDarkMenu: true,
     },
   },
@@ -72,8 +74,8 @@ export const routes: Route[] = [
     name: "AboutUs",
     Component: AboutUs,
     metaInfo: {
-      title: "AboutUs",
-      description: `AboutUs ${DESC_SUFFIX}`,
+      title: "О компании | Комитет информации",
+      description: "Ценности, история, философия, сотрудники компании «Комитет информации». Звоните ☎ +7 (495) 088-33-33",
       isDarkMenu: true,
     },
   },
@@ -82,8 +84,8 @@ export const routes: Route[] = [
     name: "Services",
     Component: Services,
     metaInfo: {
-      title: "Services",
-      description: `Services ${DESC_SUFFIX}`,
+      title: "Оказываемые юридические услуги | Комитет информации",
+      description: "Перечень оказываемых юридических услуг. Звоните ☎ +7 (495) 088-33-33",
       isDarkMenu: true,
     },
   },
@@ -92,8 +94,8 @@ export const routes: Route[] = [
     name: "Contacts",
     Component: Contacts,
     metaInfo: {
-      title: "Contacts",
-      description: `Contacts ${DESC_SUFFIX}`,
+      title: "Юридическая компания в Москве, услуги для малого и среднего бизнеса | Комитет информации",
+      description: "Комитет информации – адрес и контакты юридической компании в Москве. Звоните ☎ +7 (495)-088-33-33",
       isDarkMenu: true,
     },
   },
@@ -112,8 +114,8 @@ export const routes: Route[] = [
     name: "QuestionsAndAnswers",
     Component: QuestionsAndAnswers,
     metaInfo: {
-      title: "QuestionsAndAnswers",
-      description: `QuestionsAndAnswers ${DESC_SUFFIX}`,
+      title: "Раздел Вопрос-Ответ|Комитет информации",
+      description: "Популярные вопросы и ответы",
       isDarkMenu: true,
     },
   },
@@ -122,8 +124,9 @@ export const routes: Route[] = [
     name: "Escort",
     Component: Escort,
     metaInfo: {
-      title: "Escort",
-      description: `Escort ${DESC_SUFFIX}`,
+      title: "Сопровождение банкротства юридических и физических лиц под ключ, помощь в списании долгов| КИ",
+      description: "Банкротство юридических и физических лиц. Оформим и процедуру банкротства под ключ, " +
+          "спишем долги законно. Звоните +7 (495)-088-33-33",
       isDarkMenu: false,
     },
   },
@@ -132,8 +135,9 @@ export const routes: Route[] = [
     name: "SupportOfCriminalCases",
     Component: SupportOfCriminalCases,
     metaInfo: {
-      title: "SupportOfCriminalCases",
-      description: `SupportOfCriminalCases ${DESC_SUFFIX}`,
+      title: "Сопровождение уголовных дел экономической направленности | КИ",
+      description: "Сопровождение и ведение экономических уголовных дел. Успешное прекращение дел, " +
+          "помощь на всех этапах рассмотрения. Эффективная защита прав клиентов. Звоните +7 (495)-088-33-33",
       isDarkMenu: true,
     },
   },
@@ -142,8 +146,9 @@ export const routes: Route[] = [
     name: "ParallelImport",
     Component: ParallelImport,
     metaInfo: {
-      title: "ParallelImport",
-      description: `ParallelImport ${DESC_SUFFIX}`,
+      title: "Параллельный импорт высокотехнологичного  оборудования | КИ",
+      description: "Услуги по параллельному импорту высокотехнологичного  оборудования. Решаем все вопросы по закупке, " +
+          "ввозу, оплате и оформлению. Звоните +7 (495)-088-33-33",
       isDarkMenu: true,
     },
   },
@@ -152,8 +157,8 @@ export const routes: Route[] = [
     name: "ComprehensiveProtection",
     Component: ComprehensiveProtection,
     metaInfo: {
-      title: "ComprehensiveProtection",
-      description: `ComprehensiveProtection ${DESC_SUFFIX}`,
+      title: "Защита прав и интересов должников от кредиторов | КИ",
+      description: "Защитим права должника от требований кредиторов. Звоните +7 (495)-088-33-33",
       isDarkMenu: true,
     },
   },
@@ -162,8 +167,9 @@ export const routes: Route[] = [
     name: "ProtectionFromSubsidiaryResponsibility",
     Component: ProtectionFromSubsidiaryResponsibility,
     metaInfo: {
-      title: "ProtectionFromSubsidiaryResponsibility",
-      description: `ProtectionFromSubsidiaryResponsibility ${DESC_SUFFIX}`,
+      title: "Защита от субсидиарной ответственности. Защитим ваши активы при угрозе субсидиарки | КИ",
+      description: "Защита от субсидиарной ответственности владельцев,  участников бизнеса и прочих юридических лиц. " +
+          "Добьемся списания задолженностей законно. Звоните +7 (495) -088-33-33",
       isDarkMenu: true,
     },
   }

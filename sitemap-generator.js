@@ -1,5 +1,5 @@
 const SitemapGenerator = require('sitemap-generator');
-const SITEMAP_URL = 'https://www.reactseofriendlyspatemplate.com';
+const SITEMAP_URL = 'http://localhost:3000';
 
 // create generator
 const generator = SitemapGenerator(SITEMAP_URL, {

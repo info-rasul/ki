@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { FunctionComponent } from "react";
 import React, {Fragment, useState} from "react";
 import Logo from "../assets/img/logo.svg";
@@ -11,6 +12,24 @@ const Footer: FunctionComponent = () => {
       behavior: 'smooth'
     });
   };
+
+  const metrics = () => {
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+
+    ym(96484145, "init", {
+      clickmap:true,
+      trackLinks:true,
+      accurateTrackBounce:true,
+      webvisor:true
+    });
+  }
+
+  metrics();
 
     return (
   <Fragment>
@@ -91,11 +110,13 @@ const Footer: FunctionComponent = () => {
         </li>
       </ul>
       <div className="h-px bg-[#242D3E] mt-[32px] w-full"></div>
-      <p className="text-white leading-[150%] mt-[36px] text-[15px]">
-        ММДЦ “Москва-Сити” <br />
-        Башня Федерация, г. Москва <br />
-        Пресненская наб. д. 12, офис 85
-      </p>
+      <div className="mt-[36px]" itemScope itemType="http://schema.org/Organization">
+        <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+          <span className="text-white leading-[150%] text-[15px]" >ММДЦ “Москва-Сити” Башня Федерация,</span>
+          <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality">г. Москва</span>,
+          <span className="text-white leading-[150%] text-[15px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+        </div>
+      </div>
       <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>
       <div className="footer__link flex flex-col gap-[10px] mt-[26px] opacity-50">
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
@@ -111,6 +132,7 @@ const Footer: FunctionComponent = () => {
         </button>
       </div>
     </footer>
+    <noscript><div><img src="https://mc.yandex.ru/watch/96484145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   </Fragment>
 )};
 
