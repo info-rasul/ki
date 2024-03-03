@@ -69,25 +69,27 @@ const Footer: FunctionComponent = () => {
             className="h-[65px] max-sm:h-[40px] w-[155px]"
             src={Logo}
             alt="Логотип"
+            width="155"
+            height="40"
         />
       </a>
       <div className="h-px bg-[#242D3E] my-[35px] w-full"></div>
       <ul className="flex flex-col gap-[25px] w-full">
         <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/about-us">О нас</a>
-          <img src={FooterIcon} alt="Иконка" />
+          <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/services">Услуги</a>
-          <img src={FooterIcon} alt="Иконка" />
+          <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/news">Блог</a>
-          <img src={FooterIcon} alt="Иконка" />
+          <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
         <li className="text-white leading-[151%] flex justify-between items-center">
           <a href="/contacts">Контакты</a>
-          <img src={FooterIcon} alt="Иконка" />
+          <img src={FooterIcon} alt="Иконка" width="18" height="18" />
         </li>
       </ul>
       <div className="h-px bg-[#242D3E] mt-[32px] w-full"></div>
