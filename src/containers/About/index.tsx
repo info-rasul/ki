@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React from "react";
 import { Alert, MetaInfo } from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 
 const About: FunctionComponent = () => (
   <div className="container view-wrapper">

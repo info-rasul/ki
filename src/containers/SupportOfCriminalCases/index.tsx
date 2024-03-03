@@ -2,7 +2,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment, useState} from "react";
 import {Header, MetaInfo} from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 import BankruptcyAssistance from "./components/bankruptcy-assistance/BankruptcyAssistance";
 import OtherServicesCard from "./components/other-services/other-services-card/OtherServicesCard";
 import SupportOfCriminalCasesData from "../../hooks/SupportOfCriminalCasesData";

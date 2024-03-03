@@ -2,7 +2,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import {Navigation, MetaInfo, Header} from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 
 const QuestionsAndAnswers: FunctionComponent = () => {
     const namePage = "Вопросы и ответы"

@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import { MetaInfo, Header} from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 const Services: FunctionComponent = () => {
     const namePage = "Блог"
 

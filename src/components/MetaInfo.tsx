@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import type { FunctionComponent } from "react";
-import { getRouteMetaInfo, type MetaInfoProps } from "../config/routes.config";
+import { getRouteMetaInfo, type MetaInfoProps } from "../config/meta.config";
 import {
   APP_NAME,
   BASE_URL,

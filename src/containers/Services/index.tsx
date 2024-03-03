@@ -2,7 +2,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import {Navigation, MetaInfo, Header} from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 import ButtonsK from "../../components/ButtonsK";
 import oneSvg from "../../assets/img/serv-add-information.svg";
 import OtherServicesCard from "../EscortNew/components/other-services/other-services-card/OtherServicesCard";

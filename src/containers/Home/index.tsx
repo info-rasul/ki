@@ -1,7 +1,7 @@
 // @ts-ignore
 import { MetaInfo } from "../../components";
 import type { FunctionComponent } from "react";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 import React, { lazy } from "react";
 import InformationCardHomeData from "../../hooks/InformationCardHomeData";
 

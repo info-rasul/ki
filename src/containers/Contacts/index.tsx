@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import {Header, MetaInfo, Navigation} from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 import QRCodeContacts from "../../components/qr-code/Contacts";
 
 const Contacts: FunctionComponent = () => {

@@ -2,7 +2,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment, useEffect, useRef, useState} from "react";
 import {Navigation, MetaInfo} from "../../components";
-import {getRouteMetaInfo} from "../../config/routes.config";
+import {getRouteMetaInfo} from "../../config/meta.config";
 import Header from "../../components/Header";
 import aboutUsServicesCardData from "../../hooks/aboutUsServicesCardData";
 import AboutUsServicesCard from "./component/about-us-services-card/AboutUsServicesCard";

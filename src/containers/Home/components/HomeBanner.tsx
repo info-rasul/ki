@@ -7,7 +7,7 @@ import videoBackMob from "../../../assets/video/back-mob3.mp4";
 import Header from "../../../components/Header";
 import DownButton from "../../../assets/img/down-button.svg"
 import PersonCardImg from "../../../assets/img/taleb.png";
-import {getRouteMetaInfo} from "../../../config/routes.config";
+import {getRouteMetaInfo} from "../../../config/meta.config";
 
 const HomeBanner: FunctionComponent = () => {
     const refVideo = useRef<HTMLVideoElement>();

@@ -1,7 +1,7 @@
 import type { FunctionComponent } from "react";
 import React, {Fragment} from "react";
 import { MetaInfo } from "../../components";
-import { getRouteMetaInfo } from "../../config/routes.config";
+import { getRouteMetaInfo } from "../../config/meta.config";
 import ArticleBanner from "./components/article-banner/ArticleBanner";
 import ArticleContent from "./components/article-content/ArticleContent";
 import ArticleSocialLinks from "./components/article-social-links/ArticleSocialLinks";
