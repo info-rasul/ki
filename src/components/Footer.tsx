@@ -29,7 +29,9 @@ const Footer: FunctionComponent = () => {
     });
   }
 
-  metrics();
+  setTimeout(() => {
+    metrics();
+  }, 500);
 
     return (
   <Fragment>

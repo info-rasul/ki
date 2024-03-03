@@ -2,16 +2,17 @@
 import { MetaInfo } from "../../components";
 import type { FunctionComponent } from "react";
 import { getRouteMetaInfo } from "../../config/routes.config";
-import React, {useState} from "react";
-import HomeBanner from "./components/HomeBanner";
-import HomeArticle from "./components/HomeArticle";
-import QuoteHome from "../../components/quote/Home";
-import HomeAdvantage from "./components/HomeAdvantage";
-import InformationCardHome from "../../components/information-card/Home";
-import AdditionalInformationHome from "../../components/additional-information/Home";
-import HomeErrorBlock from "./components/HomeErrorBlock";
-import HomeGoodQuality from "./components/home-good-quality";
+import React, { lazy } from "react";
 import InformationCardHomeData from "../../hooks/InformationCardHomeData";
+
+const HomeBanner = lazy(() => import('./components/HomeBanner'));
+const HomeArticle = lazy(() => import('./components/HomeArticle'));
+const QuoteHome = lazy(() => import('../../components/quote/Home'));
+const HomeAdvantage = lazy(() => import('./components/HomeAdvantage'));
+const AdditionalInformationHome = lazy(() => import('../../components/additional-information/Home'));
+const InformationCardHome = lazy(() => import('../../components/information-card/Home'));
+const HomeErrorBlock = lazy(() => import('./components/HomeErrorBlock'));
+const HomeGoodQuality = lazy(() => import('./components/home-good-quality'));
 
 const Home: FunctionComponent = () => {
     return (

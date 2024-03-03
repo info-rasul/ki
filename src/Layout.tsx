@@ -1,11 +1,12 @@
-import { Footer, BackToTop, Header } from "./components";
 import {
   Fragment,
-  type FunctionComponent,
+  type FunctionComponent, lazy,
   type PropsWithChildren,
 } from "react";
+
 import React from "react";
 import { useLocation } from "react-router-dom";
+const Footer = lazy(() => import('./components/Footer'));
 
 const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
   const location = useLocation();
@@ -19,7 +20,6 @@ const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
       <div className={classCss}>
         {children}
         <Footer />
-        {/*<BackToTop />*/}
       </div>
     </Fragment>
   );
