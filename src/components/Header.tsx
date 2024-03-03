@@ -155,7 +155,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                   <a
                       style={isDarMenu && !scrollMenu ? { color: '#000' } : { color: '#fff' }}
                       className="text-white  text-[15px] font-medium leading-[150%]"
-                      href="/blog"
+                      href="/news"
                   >
                     Блог
                   </a>
@@ -253,7 +253,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                 <li>
                   <a
                       className="text-black text-[15px] font-medium leading-[154%] flex justify-between items-center py-2.5"
-                      href="/blog"
+                      href="/news"
                   >
                     Блог
                     <img src={fourSvg} alt="Иконка" />
