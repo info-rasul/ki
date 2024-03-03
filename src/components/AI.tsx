@@ -24,7 +24,7 @@ const Footer: FunctionComponent = () => (
       <div className="h-px bg-[#242D3E] mt-[35px]"></div>
       <div className="footer__link flex justify-between mt-10 opacity-50">
         <p className="text-white leading-[170%] tracking-[.3px]">
-          @ 2023 Комитет Информации
+          @ 2024 Комитет Информации
         </p>
         <p className="text-white leading-[170%] tracking-[.3px]">
           Политика конфиденциальности
@@ -65,7 +65,7 @@ const Footer: FunctionComponent = () => (
       <div className="h-px bg-[#242D3E] mt-[36px] w-full"></div>
       <div className="footer__link flex flex-col gap-[10px] mt-[25px] opacity-50">
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
-          @ 2023 Комитет Информации
+          @ 2024 Комитет Информации
         </p>
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
           Политика конфиденциальности

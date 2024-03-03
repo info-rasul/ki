@@ -42,7 +42,7 @@ const Footer: FunctionComponent = () => {
             <a href="/">
               <img className="h-[66px]" src={Logo} alt="Логотип" />
             </a>
-            <div className="flex justify-between max-w-[436px] mb-[3px] w-full">
+            <div className="flex justify-between max-w-[436px] mb-[3px] w-full" itemScope itemType="http://schema.org/Organization">
               <ul className="flex flex-col gap-[1.15em]">
                 <li>
                   <a className="text-white leading-[145%]" href="/about-us">О нас</a>
@@ -57,18 +57,18 @@ const Footer: FunctionComponent = () => {
                   <a className="text-white leading-[145%]" href="/contacts">Контакты</a>
                 </li>
               </ul>
-              <p className="text-white leading-[145%] [word-spacing:0.2px]">
-                <span className="tracking-[.3px]">ММДЦ “Москва-Сити”</span> <br />
-                Башня Федерация, г. Москва <br />
-                Пресненская наб. д. 12, офис 85
-              </p>
+              <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                <span className="text-white leading-[145%] [word-spacing:0.2px] tracking-[.3px]">ММДЦ “Москва-Сити” <br /> Башня Федерация,</span>
+                <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="addressLocality">г. Москва</span>,
+                <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+              </div>
             </div>
           </div>
           <div>
             <div className="h-px bg-[#242D3E] mt-[75px]"></div>
             <div className="footer__link flex justify-between mt-10">
               <p className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50">
-                @ 2023 Комитет Информации
+                @ 2024 Комитет Информации
               </p>
               <div className="flex">
                 <p className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50">
@@ -124,7 +124,7 @@ const Footer: FunctionComponent = () => {
       <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>
       <div className="footer__link flex flex-col gap-[10px] mt-[26px] opacity-50">
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
-          @ 2023 Комитет Информации
+          @ 2024 Комитет Информации
         </p>
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
           Политика конфиденциальности
