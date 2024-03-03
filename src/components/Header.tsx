@@ -154,13 +154,17 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                 </li>
               </ul>
             </div>
-            <div className="col-span-2 flex justify-end">
+            <div itemScope itemType="http://schema.org/Organization" className="col-span-2 flex justify-end">
               <div style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...isDarMenu ? { background: '#F8F8F8'} : { background: 'rgba(255, 255, 255, 0.04)'}}}
                    className="header__menu_contact h-[50px] mt-[3px] pr-[16px] pl-[20px] rounded-[25px] flex items-center justify-center">
                 <img src={isDarMenu ? PhoneBlack : PhoneWhite} alt="icon"/>
-                <a style={isDarMenu ? {color: '#000' } : {color: '#fff'}} className="px-3.5 pb-[12px] pt-[14px] text-white text-[15px] font-medium leading-[22.5px]" href="tel:+74950883333">
-                  +7-495-088-33-33
-                </a>
+                <span
+                    style={isDarMenu ? {color: '#000' } : {color: '#fff'}}
+                    className="px-3.5 pb-[12px] pt-[14px] text-white text-[15px] font-medium leading-[22.5px] cursor-pointer"
+                    itemProp="telephone"
+                >
+                  +7 495 088-33-33
+                </span>
               </div>
             </div>
           </div>
@@ -231,26 +235,35 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                 </li>
               </ul>
               <div className="h-[1px]  bg-[#B3B3B3] mt-[13px]"></div>
-              <div className="flex flex-col gap-4 mt-[35px]">
+              <div itemScope itemType="http://schema.org/Organization" className="flex flex-col gap-4 mt-[35px]">
                 <div className="flex flex-col gap-[3px]">
                   <p className="text-[13px] leading-[145%] opacity-60">Тел.:</p>
-                  <a className="text-[16px] leading-[145%]" href="tel:+74950883333">
-                    +7 495 088-33-33
-                  </a>
+                  <span
+                      className="text-[16px] leading-[145%]"
+                      itemProp="telephone"
+                  >
+                  +7 495 088-33-33
+                </span>
                 </div>
                 <div className="flex flex-col gap-[3px]">
                   <p className="text-[13px] leading-[145%] opacity-60">Факс:</p>
-                  <a className="text-[16px] leading-[145%]" href="tel:+74955325364">
+                  <span
+                      className="text-[16px] leading-[145%]"
+                      itemProp="faxNumber"
+                  >
                     +7 495 532-53-64
-                  </a>
+                  </span>
                 </div>
                 <div className="flex flex-col gap-[3px]">
                   <p className="text-[13px] leading-[145%] opacity-60">
                     Эл. почта:
                   </p>
-                  <a href="mailto:info@ki112.ru" className="text-[16px] leading-[145%]">
+                  <span
+                      className="text-[16px] leading-[145%]"
+                      itemProp="email"
+                  >
                     info@ki112.ru
-                  </a>
+                  </span>
                 </div>
               </div>
             </div>

@@ -6,18 +6,24 @@ interface NavigationProps {
 }
 const Navigation: React.FC<NavigationProps> = ({namePage}) => (
   <div className="flex flex-col gap-5 max-sm:gap-[10px]">
-    <div className="services__navigation flex items-center mt-10 gap-[5px] max-[1030px]:mt-[92px]">
-      <a href="/" className="navigation-home text-[#B3B3B3] text-[13px] leading-[150%]"
-      >
-        Главная
-      </a>
-      <img src={twoSvg} alt=">" />
-      <a
-        className="text-[13px] leading-[150%] font-helveticaNeue"
-        href="#"
-      >
-          {namePage}
-      </a>
+    <div className="services__navigation mt-10 gap-[5px] max-[1030px]:mt-[92px]">
+        <ol className="flex items-center" itemScope itemType="https://schema.org/BreadcrumbList">
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a itemProp="item" href="/">
+                    <span className="navigation-home text-[#B3B3B3] text-[13px] leading-[150%]" itemProp="name">Главная</span>
+                </a>
+                <meta itemProp="position" content="1"/>
+            </li>
+            <li>
+                <img src={twoSvg} alt=">" />
+            </li>
+            <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
+                <a itemProp="item" href="">
+                    <span className="text-[13px] leading-[150%] font-helveticaNeue" itemProp="name"> {namePage} </span>
+                </a>
+                <meta itemProp="position" content="2"/>
+            </li>
+        </ol>
     </div>
       <div>
           <h1 style={{ fontSize: 'clamp(28px, 2.8vw, 40px)' }} className="leading-[140%] max-sm:text-[28px]">{namePage}</h1>
