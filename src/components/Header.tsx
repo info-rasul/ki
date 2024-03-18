@@ -183,7 +183,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                     className="px-3.5 pb-[12px] pt-[14px] text-white text-[15px] font-medium leading-[22.5px] cursor-pointer"
                     itemProp="telephone"
                 >
-                  +7 495 088-33-33
+                  495 248-37-37
                 </span>
               </div>
             </div>
@@ -277,7 +277,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                       className="text-[16px] leading-[145%]"
                       itemProp="telephone"
                   >
-                  +7 495 088-33-33
+                  495 248-37-37
                 </span>
                 </div>
                 <div className="flex flex-col gap-[3px]">
@@ -286,7 +286,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
                       className="text-[16px] leading-[145%]"
                       itemProp="faxNumber"
                   >
-                    +7 495 532-53-64
+                    495 248-36-49
                   </span>
                 </div>
                 <div className="flex flex-col gap-[3px]">

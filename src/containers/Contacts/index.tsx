@@ -53,7 +53,7 @@ const Contacts: FunctionComponent = () => {
                                         className="text-white leading-[145%] max-sm:text-[18px] cursor-pointer"
                                         itemProp="faxNumber"
                                     >
-                                        +7 495 532-53-64
+                                        495 248-36-49
                                     </span>
                                 </div>
                                 <div className="h-px bg-[#E6E6E6] mt-[4px] max-md:my-[25px]"></div>
