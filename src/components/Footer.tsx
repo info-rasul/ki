@@ -4,6 +4,8 @@ import React, {Fragment, useState} from "react";
 import Logo from "../assets/img/logo.svg";
 import FooterIcon from "../assets/img/footer-icon.png";
 import DownButton from "../assets/img/down-button.svg";
+import PhoneIcon from "../assets/img/footer-phone.svg";
+import GmailIcon from "../assets/img/footer-gmail.svg";
 
 const Footer: FunctionComponent = () => {
   const scrollToTop = () => {
@@ -60,10 +62,24 @@ const Footer: FunctionComponent = () => {
                   <a className="text-white leading-[145%]" href="/kontakty">Контакты</a>
                 </li>
               </ul>
-              <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-                <span className="text-white leading-[145%] [word-spacing:0.2px]">ММДЦ “Москва-Сити” <br /> Башня Федерация, </span>
-                <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="addressLocality">г. Москва</span>,
-                <span className="text-white leading-[145%] [word-spacing:0.2px] block w-[247px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+              <div className="flex flex-col gap-[1.15em]">
+                <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                  <span className="text-white leading-[145%] [word-spacing:0.2px]">ММДЦ “Москва-Сити” <br /> Башня Федерация, </span>
+                  <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="addressLocality">г. Москва</span>,
+                  <span className="text-white leading-[145%] [word-spacing:0.2px] block w-[247px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  <img src={PhoneIcon} alt="tel"/>
+                  <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="telephone">
+                  495 248-37-37
+                  </span>
+                </div>
+                <div className="flex items-center gap-[10px]">
+                  <img src={GmailIcon} alt="gmail"/>
+                  <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="email">
+                    info@ki112.ru
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -121,11 +137,25 @@ const Footer: FunctionComponent = () => {
         </li>
       </ul>
       <div className="h-px bg-[#242D3E] mt-[32px] w-full"></div>
-      <div className="mt-[36px]" itemScope itemType="http://schema.org/Organization">
-        <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-          <span className="text-white leading-[150%] text-[15px]" >ММДЦ “Москва-Сити” Башня Федерация,</span>
-          <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"> г. Москва</span>,
-          <span className="text-white leading-[150%] text-[15px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+      <div className="flex flex-col gap-[25px]">
+        <div className="mt-[36px]" itemScope itemType="http://schema.org/Organization">
+          <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+            <span className="text-white leading-[150%] text-[15px]" >ММДЦ “Москва-Сити” Башня Федерация,</span>
+            <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"> г. Москва</span>,
+            <span className="text-white leading-[150%] text-[15px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+          </div>
+        </div>
+        <div className="flex items-center gap-[10px]">
+          <img src={PhoneIcon} alt="tel"/>
+          <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="telephone">
+            495 248-37-37
+          </span>
+        </div>
+        <div className="flex items-center gap-[10px]">
+          <img src={GmailIcon} alt="gmail"/>
+          <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="email">
+            info@ki112.ru
+          </span>
         </div>
       </div>
       <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>

@@ -176,7 +176,7 @@ const Header: React.FC<HeaderProps> = ({isDarMenu}) => {
             </div>
             <div itemScope itemType="http://schema.org/Organization" className="col-span-2 flex justify-end">
               <div style={{border: '1px solid rgba(255, 255, 255, 0.5)', ...isDarMenu ? { background: '#F8F8F8'} : { background: 'rgba(255, 255, 255, 0.04)'}}}
-                   className="header__menu_contact h-[50px] mt-[3px] pr-[16px] pl-[20px] rounded-[25px] flex items-center justify-center">
+                   className="header__menu_contact h-[50px] mt-[3px] pr-[6px] pl-[20px] rounded-[25px] flex items-center justify-center">
                 <img src={isDarMenu ? PhoneBlack : PhoneWhite} alt="icon"/>
                 <span
                     style={isDarMenu ? {color: '#000' } : {color: '#fff'}}
