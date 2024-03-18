@@ -141,7 +141,7 @@ const Footer: FunctionComponent = () => {
         <div className="mt-[36px]" itemScope itemType="http://schema.org/Organization">
           <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
             <span className="text-white leading-[150%] text-[15px]" >ММДЦ “Москва-Сити” Башня Федерация,</span>
-            <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"> г. Москва</span>,
+            <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"><br/> г. Москва</span>,
             <span className="text-white leading-[150%] text-[15px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
           </div>
         </div>
