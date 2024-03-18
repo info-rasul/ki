@@ -41,7 +41,7 @@ const Contacts: FunctionComponent = () => {
                                         className="text-white leading-[145%] max-sm:text-[18px] cursor-pointer"
                                         itemProp="telephone"
                                     >
-                                        +7 495 248-37-37
+                                        495 248-37-37
                                     </span>
                                 </div>
                                 <div className="flex flex-col gap-[5px] max-md:mt-[15px]">
