@@ -31,7 +31,7 @@ const Footer: FunctionComponent = () => {
 
   setTimeout(() => {
     metrics();
-  }, 1000);
+  }, 3000);
 
     return (
   <Fragment>
