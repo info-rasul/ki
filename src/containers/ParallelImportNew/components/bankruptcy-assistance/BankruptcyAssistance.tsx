@@ -10,11 +10,11 @@ interface BankruptcyAssistanceProps {
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
-            <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 29px)' }} className="leading-[45px] max-lg:leading-[35px] tracking-[-0.1px] mt-20 mb-10 max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+            <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-lg:leading-[35px] tracking-[-0.1px] mt-20 mb-10 max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Организуем импорт брендированной продукции, высокотехнологического оборудования и компонентов,
                 в том числе чувствительных товаров из стран Европы, США, Канады, Австралии и Японии в Россию
             </h2>
-            <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 29px)' }} className="leading-[45px] max-lg:leading-[35px] tracking-[-0.1px] mt-[47px] mb-[37px] max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+            <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-lg:leading-[35px] tracking-[-0.1px] mt-[47px] mb-[37px] max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Параллельный импорт в Россию. Успешно обходим санкционное правило No Russia
             </h2>
             <div className="numbered-list">
@@ -59,7 +59,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </p>
             </div>
             <div className="flex flex-col gap-[27px] mt-[83px]">
-                <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 30px)' }} className="leading-[43.5px] max-md:leading-[35px] mb-[10px] tracking-[-0.1px] max-sm:text-[20px] max-sm:tracking-normal">
+                <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-md:leading-[35px] mb-[10px] tracking-[-0.1px] max-sm:text-[20px] max-sm:tracking-normal">
                     Краткий экскурс в проблематику параллельного импорта <br className="max-lg:hidden"/> для тех, кто в танке
                 </h2>
                 <p className="leading-[27.2px] max-sm:text-[15px]">
