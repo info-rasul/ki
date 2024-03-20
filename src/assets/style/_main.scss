@@ -247,6 +247,29 @@ body .contacts .header__menu_btn_line {
   object-fit: cover;
 }
 
+#aboutUsMyVideo {
+  position: absolute;
+  transform: rotate(180deg);
+  right: 0;
+  top: 100px;
+  height: 714px;
+  width: 797px;
+  object-fit: cover;
+}
+
+@media all and (max-width: 1280px) {
+  #aboutUsMyVideo {
+    top: 120px;
+    height: 400px;
+  }
+}
+
+@media all and (max-width: 1070px) {
+  #aboutUsMyVideo {
+    width: 500px;
+  }
+}
+
 
 .video-back {
   position: relative;
