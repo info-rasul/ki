@@ -240,6 +240,12 @@ body .contacts .header__menu_btn_line {
   }
 }
 
+@media all and (min-width: 640px) {
+  .h-screen {
+    min-height: -webkit-fill-available;
+  }
+}
+
 #myVideo2 {
   position: absolute;
   height: 306px;
