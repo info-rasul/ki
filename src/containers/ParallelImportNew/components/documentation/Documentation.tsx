@@ -12,9 +12,9 @@ const Documentation = () => {
                     <div className="w-[24px] h-[24px] flex items-center justify-center max-sm:max-w-[32px] max-sm:w-full max-sm:h-[32px]">
                         <img className="max-sm:max-w-[20.46px] max-sm:h-[24.66px]" src={DocumentsCardImg} alt="Иконка"/>
                     </div>
-                    <p className="text-[20px] leading-[29px] max-sm:text-[16px]">
+                    <a href="/file.pdf" download className="text-[20px] leading-[29px] max-sm:text-[16px]">
                         Приказ Минпромторга России № 2701 от 21 июля 2023 года
-                    </p>
+                    </a>
                 </div>
             </div>
         </div>

@@ -7,16 +7,6 @@ import ButtonSocialIconRed from "../../../../assets/img/button-social-red.svg";
 const EscortSidebar: React.FC = () => {
     const [scrollY, setScrollY] = useState(0);
 
-    const downloadPdf = () => {
-        const url = '../../../../file.pdf';
-        const link = document.createElement('a');
-        link.href = url;
-        link.setAttribute('download', 'Приказ_Минпромторга_№_2710_от_21_07_2023');
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-
     const handleScroll = () => {
         setScrollY(window.scrollY);
     }
@@ -54,7 +44,7 @@ const EscortSidebar: React.FC = () => {
                 <p className="text-start text-[15px] tracking-[.1px] text-white leading-[25.5px] pr-[15px]">
                     Приказ Минпромторга России № 2701 от 21 июля 2023 года
                 </p>
-                <a onClick={downloadPdf}
+                <a href="/file.pdf" target="_blank" download
                    className="button-social cursor-pointer flex items-center justify-center text-[#EA3C3D] gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] whitespace-nowrap rounded-full text-[15px] font-medium leading-[150%] bg-white shadow-boxShadowBtn max-md:w-full max-md:py-[14px] hover:text-white">
                     Скачать приказ
                     <img
