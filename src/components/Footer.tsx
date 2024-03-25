@@ -1,20 +1,22 @@
 // @ts-nocheck
 import type { FunctionComponent } from "react";
-import React, {Fragment, useState} from "react";
+import React, {Fragment} from "react";
 import Logo from "../assets/img/logo.svg";
 import FooterIcon from "../assets/img/footer-icon.png";
 import DownButton from "../assets/img/down-button.svg";
 import PhoneIcon from "../assets/img/footer-phone.svg";
 import GmailIcon from "../assets/img/footer-gmail.svg";
 
-const Footer: FunctionComponent = () => {
+interface FooterProps {
+  data?: boolean;
+}
+const Footer: React.FC<FooterProps> = ({data}) => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
   };
-
   const metrics = () => {
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
       m[i].l=1*new Date();
@@ -34,6 +36,8 @@ const Footer: FunctionComponent = () => {
   setTimeout(() => {
     metrics();
   }, 3000);
+
+
 
     return (
   <Fragment>
@@ -90,10 +94,10 @@ const Footer: FunctionComponent = () => {
                 @ 2024 Комитет Информации
               </p>
               <div className="flex">
-                <p className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50">
+                <a className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50" href="/privacy-policy">
                   Политика конфиденциальности
-                </p>
-                <button onClick={scrollToTop}>
+                </a>
+                <button style={{display: data ? "block" : "none"}} onClick={scrollToTop}>
                   <img className="down-button max-sm:w-[42px] max-sm:h-[42px] absolute right-[20px] mt-[-70px] transform rotate-180	" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
                 </button>
               </div>
@@ -103,7 +107,7 @@ const Footer: FunctionComponent = () => {
       </div>
     </footer>
 
-    <footer className="footer lg:hidden flex flex-col items-start bg-custom-gradient max-sm:pt-10 px-4">
+    <footer className="footer pb-10 lg:hidden flex flex-col items-start bg-custom-gradient max-sm:pt-10 px-4">
       <a href="/">
         <img
             className="h-[65px] max-sm:h-[40px] w-[155px]"
@@ -163,12 +167,12 @@ const Footer: FunctionComponent = () => {
         <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
           @ 2024 Комитет Информации
         </p>
-        <p className="text-white leading-[170%] tracking-[.1px] text-[13px]">
+        <a className="text-white leading-[170%] tracking-[.1px] text-[13px]" href="/privacy-policy">
           Политика конфиденциальности
-        </p>
+        </a>
       </div>
       <div>
-        <button onClick={scrollToTop}>
+        <button style={{display: data ? "block" : "none"}} onClick={scrollToTop}>
           <img className="down-button max-sm:w-[42px] max-sm:h-[42px] absolute right-[30px] mt-[-60px] transform rotate-180	" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
         </button>
       </div>

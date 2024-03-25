@@ -33,8 +33,8 @@ const AboutUs: FunctionComponent = () => {
               </p>
           </div>
         </div>
-        <div className="container max-[1080px]:px-[16px] relative bg-white">
-          <div>
+        <div className=" max-[1080px]:px-[16px] relative bg-white">
+          <div className="container">
             <div className="w-full flex justify-between pt-20 max-sm:pt-10 max-xl:flex-col max-xl:gap-[36px]">
                 <div className="flex flex-col gap-[36px] w-[845px] max-xl:w-full">
                     <p className="text-[20px] leading-[34px] max-sm:text-[18px] max-sm:leading-[30px]">

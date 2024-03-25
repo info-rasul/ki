@@ -12,6 +12,7 @@ import {
   ComprehensiveProtection,
 } from "../containers";
 import { meta } from "./meta.config";
+import PrivacyPolicy from "../containers/PrivacyPolicy/PrivacyPolicy";
 
 export type MetaInfoProps = Partial<
   Readonly<{
@@ -50,6 +51,12 @@ export const routes: Route[] = [
     name: "Services",
     Component: Services,
     metaInfo: meta["Services"],
+  },
+  {
+    path: "/privacy-policy",
+    name: "PrivacyPolicy",
+    Component: PrivacyPolicy,
+    metaInfo: meta["PrivacyPolicy"],
   },
   {
     path: "/kontakty",

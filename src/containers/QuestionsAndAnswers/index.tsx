@@ -10,11 +10,7 @@ const QuestionsAndAnswers: FunctionComponent = () => {
     const { isDarkMenu } = getRouteMetaInfo("QuestionsAndAnswers");
     const darkMenu = !!isDarkMenu;
 
-    const [first, setFirst] = useState(false)
-    const [second, setSecond] = useState(false)
-    const [third, setThird] = useState(false)
-    const [fourth, setFourth] = useState(false)
-    const [fifth, setFifth] = useState(false)
+    const [active, setActive] = useState(0)
 
     return(
         /*удалил класс - container*/
@@ -26,13 +22,16 @@ const QuestionsAndAnswers: FunctionComponent = () => {
                     <Navigation namePage={namePage}/>
                     <div className="mt-[71px] flex flex-col gap-[24px]">
                         <div className="w-full bg-[#F2F2F2] px-[30px] py-[25px] flex flex-col gap-5">
-                            <div onClick={() => setFirst(!first)} className="w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start">
+                            <div
+                                onClick={() => active === 1 ? setActive(0) : setActive(1)}
+                                className="questionsAndAnswers w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start"
+                            >
                                 <p className="text-[20px] leading-[28px]">
                                     Что такое Комитет информации?
                                 </p>
-                                <img style={{transform: first ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
+                                <img style={{transform: active === 1 ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
                             </div>
-                            <div style={{display: first ? 'block' : 'none'}}>
+                            <div style={{display: active === 1 ? 'block' : 'none'}}>
                                 <p className="leading-[27.2px]">
                                     Это концептуальный консалтинговый бренд, объединяющий экспертов с многолетним
                                     опытом работы в правоохранительных и надзорных органах, а также в органах
@@ -49,13 +48,16 @@ const QuestionsAndAnswers: FunctionComponent = () => {
                         </div>
 
                         <div className="w-full bg-[#F2F2F2] px-[30px] py-[25px] flex flex-col gap-5">
-                            <div onClick={() => setSecond(!second)} className="w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start">
+                            <div
+                                onClick={() => active === 2 ? setActive(0) : setActive(2)}
+                                className="questionsAndAnswers w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start"
+                            >
                                 <p className="text-[20px] leading-[28px]">
                                     Что выделяет Комитет информации среди других организаций, оказывающих подобные услуги?
                                 </p>
-                                <img style={{transform: second ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
+                                <img style={{transform: active === 2 ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
                             </div>
-                            <div style={{display: second ? 'block' : 'none'}}>
+                            <div style={{display: active === 2 ? 'block' : 'none'}}>
                                 <p className="leading-[27.2px]">
                                     Подход. Наша команда всецело погружается в ваше дело, по крупицам разбирая
                                     имеющуюся информацию, чтобы найти точку опоры, благодаря которой все
@@ -73,13 +75,16 @@ const QuestionsAndAnswers: FunctionComponent = () => {
                         </div>
 
                         <div className="w-full bg-[#F2F2F2] px-[30px] py-[25px] flex flex-col gap-5">
-                            <div onClick={() => setThird(!third)} className="w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start">
+                            <div
+                                onClick={() => active === 3 ? setActive(0) : setActive(3)}
+                                className="questionsAndAnswers w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start"
+                            >
                                 <p className="text-[20px] leading-[28px]">
                                     Мы хотим с вами сотрудничать, какая последовательность действий?
                                 </p>
-                                <img style={{transform: third ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
+                                <img style={{transform: active === 3 ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
                             </div>
-                            <div style={{display: third ? 'block' : 'none'}}>
+                            <div style={{display: active === 3 ? 'block' : 'none'}}>
                                 <p className="leading-[27.2px]">Основные этапы взаимодействия с нашей командой:</p>
                                 <div className="numbered-list mt-5">
                                     <ol className="flex flex-col gap-[10px]">
@@ -114,13 +119,16 @@ const QuestionsAndAnswers: FunctionComponent = () => {
                         </div>
 
                         <div className="w-full bg-[#F2F2F2] px-[30px] py-[25px] flex flex-col gap-5">
-                            <div onClick={() => setFourth(!fourth)} className="w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start">
+                            <div
+                                onClick={() => active === 4 ? setActive(0) : setActive(4)}
+                                className="questionsAndAnswers w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start"
+                            >
                                 <p className="text-[20px] leading-[28px]">
                                     Какие вы даете гарантии?
                                 </p>
-                                <img style={{transform: fourth ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
+                                <img style={{transform: active === 4 ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
                             </div>
-                            <div style={{display: fourth ? 'block' : 'none'}}>
+                            <div style={{display: active === 4 ? 'block' : 'none'}}>
                                 <p className="leading-[27.2px]">
                                     Нас интересуют сложные многозадачные проекты, в которых мы готовы разобраться.
                                     Мы не берем предоплату за анализ дела. Наша команда не практикует форматы
@@ -139,13 +147,16 @@ const QuestionsAndAnswers: FunctionComponent = () => {
                         </div>
 
                         <div className="w-full bg-[#F2F2F2] px-[30px] py-[25px] flex flex-col gap-5">
-                            <div onClick={() => setFifth(!fifth)} className="w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start">
+                            <div
+                                onClick={() => active === 5 ? setActive(0) : setActive(5)}
+                                className="questionsAndAnswers w-full flex justify-between items-center cursor-pointer max-[1040px]:items-start"
+                            >
                                 <p className="text-[20px] leading-[28px]">
                                     Работа с вами подразумевает конфиденциальность?
                                 </p>
-                                <img style={{transform: fifth ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
+                                <img style={{transform: active === 5 ? 'rotate(180deg)' : 'rotate(0deg)'}} src={ArrowIcon} alt="Arrow"/>
                             </div>
-                            <div style={{display: fifth ? 'block' : 'none'}}>
+                            <div style={{display: active === 5 ? 'block' : 'none'}}>
                                 <p className="leading-[27.2px]">
                                     Да. Мы предлагаем вам не только конфиденциальность и соглашение о неразглашении,
                                     но и абсолютную анонимность:
