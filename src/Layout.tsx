@@ -37,7 +37,7 @@ const Layout: FunctionComponent<PropsWithChildren> = ({ children }) => {
 
   return (
     <Fragment>
-      <div className={classCss}>
+      <div className={classCss} itemScope itemType="http://schema.org/Organization">
         {children}
         <Footer data={isScrolledToBottom}/>
       </div>

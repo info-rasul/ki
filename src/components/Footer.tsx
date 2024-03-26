@@ -41,73 +41,74 @@ const Footer: React.FC<FooterProps> = ({data}) => {
 
     return (
   <Fragment>
-    <footer className="footer flex flex-col pt-20 pb-10 bg-custom-gradient max-[1080px]:px-4 max-lg:hidden">
-      <div className="container">
-        <div className="">
-          <div className="flex justify-between">
-            <a href="/">
-              <img className="h-[66px]" src={Logo} alt="Логотип" />
-            </a>
-            <div className="flex gap-[50px] max-w-[436px] mb-[3px] w-full" itemScope itemType="http://schema.org/Organization">
-              <ul className="flex flex-col gap-[1.15em]">
-                <li>
-                  <a className="text-white leading-[145%]" href="/o-nas">О нас</a>
-                </li>
-                <li>
-                  <a className="text-white leading-[145%]" href="/uslugi">Услуги</a>
-                </li>
-                <li className="w-[140px]">
-                  <a className="text-white leading-[145%]" href="/vopros-otvet">Вопросы и ответы</a>
-                </li>
-                <li>
-                  <a className="text-white leading-[145%]" href="/news">Блог</a>
-                </li>
-                <li>
-                  <a className="text-white leading-[145%]" href="/kontakty">Контакты</a>
-                </li>
-              </ul>
-              <div className="flex flex-col gap-[1.15em]">
-                <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-                  <span className="text-white leading-[145%] [word-spacing:0.2px]">ММДЦ “Москва-Сити” <br /> Башня Федерация, </span>
-                  <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="addressLocality">г. Москва</span>,
-                  <span className="text-white leading-[145%] [word-spacing:0.2px] block w-[247px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
-                </div>
-                <div className="flex items-center gap-[10px]">
-                  <img src={PhoneIcon} alt="tel"/>
-                  <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="telephone">
-                  495 248-37-37
-                  </span>
-                </div>
-                <div className="flex items-center gap-[10px]">
-                  <img src={GmailIcon} alt="gmail"/>
-                  <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="email">
-                    info@ki112.ru
-                  </span>
+      <footer className="footer flex flex-col pt-20 pb-10 bg-custom-gradient max-[1080px]:px-4 max-lg:hidden">
+        <div className="container">
+          <div className="">
+            <div className="flex justify-between">
+              <a href="/">
+                <img className="h-[66px]" src={Logo} alt="Логотип" />
+              </a>
+              <div className="flex gap-[50px] max-w-[436px] mb-[3px] w-full">
+                <ul className="flex flex-col gap-[1.15em]">
+                  <li>
+                    <a className="text-white leading-[145%]" href="/o-nas">О нас</a>
+                  </li>
+                  <li>
+                    <a className="text-white leading-[145%]" href="/uslugi">Услуги</a>
+                  </li>
+                  <li className="w-[140px]">
+                    <a className="text-white leading-[145%]" href="/vopros-otvet">Вопросы и ответы</a>
+                  </li>
+                  <li>
+                    <a className="text-white leading-[145%]" href="/news">Блог</a>
+                  </li>
+                  <li>
+                    <a className="text-white leading-[145%]" href="/kontakty">Контакты</a>
+                  </li>
+                </ul>
+                <div>
+                  <div className="flex flex-col gap-[1.15em]">
+                    <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
+                      <span className="text-white leading-[145%] [word-spacing:0.2px]">ММДЦ “Москва-Сити” <br /> Башня Федерация, </span>
+                      <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="addressLocality">г. Москва</span>,
+                      <span className="text-white leading-[145%] [word-spacing:0.2px] block w-[247px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+                    </div>
+                    <div className="flex items-center gap-[10px]">
+                      <img src={PhoneIcon} alt="tel"/>
+                      <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="telephone">
+                      495 248-37-37
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-[10px]">
+                      <img src={GmailIcon} alt="gmail"/>
+                      <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="email">
+                        info@ki112.ru
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div>
-            <div className="h-px bg-[#242D3E] mt-[75px]"></div>
-            <div className="footer__link flex justify-between mt-10">
-              <p className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50">
-                @ 2024 Комитет Информации
-              </p>
-              <div className="flex">
-                <a className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50" href="/privacy-policy">
-                  Политика конфиденциальности
-                </a>
-                <button style={{display: data ? "block" : "none"}} onClick={scrollToTop}>
-                  <img className="down-button max-sm:w-[42px] max-sm:h-[42px] absolute right-[20px] mt-[-70px] transform rotate-180	" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
-                </button>
+            <div>
+              <div className="h-px bg-[#242D3E] mt-[75px]"></div>
+              <div className="footer__link flex justify-between mt-10">
+                <p className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50">
+                  @ 2024 <span itemProp="name">Комитет Информации</span>
+                </p>
+                <div className="flex">
+                  <a className="text-white leading-[170%] [word-spacing:-1.85px] opacity-50" href="/privacy-policy">
+                    Политика конфиденциальности
+                  </a>
+                  <button style={{display: data ? "block" : "none"}} onClick={scrollToTop}>
+                    <img className="down-button max-sm:w-[42px] max-sm:h-[42px] absolute right-[20px] mt-[-70px] transform rotate-180	" src={DownButton} alt="Кнопка для прокрутки страницы вниз"/>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
-
-    <footer className="footer pb-10 lg:hidden flex flex-col items-start bg-custom-gradient max-sm:pt-10 px-4">
+      </footer>
+      <footer className="footer pb-10 lg:hidden flex flex-col items-start bg-custom-gradient max-sm:pt-10 px-4">
       <a href="/">
         <img
             className="h-[65px] max-sm:h-[40px] w-[155px]"
@@ -141,25 +142,27 @@ const Footer: React.FC<FooterProps> = ({data}) => {
         </li>
       </ul>
       <div className="h-px bg-[#242D3E] mt-[32px] w-full"></div>
-      <div className="flex flex-col gap-[25px]">
-        <div className="mt-[36px]" itemScope itemType="http://schema.org/Organization">
-          <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-            <span className="text-white leading-[150%] text-[15px]" >ММДЦ “Москва-Сити” Башня Федерация,</span>
-            <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"><br/> г. Москва</span>,
-            <span className="text-white leading-[150%] text-[15px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+      <div>
+        <div className="flex flex-col gap-[25px]">
+          <div className="mt-[36px]" itemProp="address">
+            <div itemScope itemType="http://schema.org/PostalAddress">
+              <span className="text-white leading-[150%] text-[15px]" >ММДЦ “Москва-Сити” Башня Федерация,</span>
+              <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"><br/> г. Москва</span>,
+              <span className="text-white leading-[150%] text-[15px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-[10px]">
-          <img src={PhoneIcon} alt="tel"/>
-          <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="telephone">
-            495 248-37-37
-          </span>
-        </div>
-        <div className="flex items-center gap-[10px]">
-          <img src={GmailIcon} alt="gmail"/>
-          <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="email">
-            info@ki112.ru
-          </span>
+          <div className="flex items-center gap-[10px]">
+            <img src={PhoneIcon} alt="tel"/>
+            <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="telephone">
+              495 248-37-37
+            </span>
+          </div>
+          <div className="flex items-center gap-[10px]">
+            <img src={GmailIcon} alt="gmail"/>
+            <span className="text-white text-[16px] leading-[145%] cursor-pointer" itemProp="email">
+              info@ki112.ru
+            </span>
+          </div>
         </div>
       </div>
       <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>
@@ -177,7 +180,7 @@ const Footer: React.FC<FooterProps> = ({data}) => {
         </button>
       </div>
     </footer>
-    <noscript><div><img src="https://mc.yandex.ru/watch/96484145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+      <noscript><div><img src="https://mc.yandex.ru/watch/96484145" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   </Fragment>
 )};
 

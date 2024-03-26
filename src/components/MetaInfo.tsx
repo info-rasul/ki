@@ -21,7 +21,7 @@ const MetaInfo: FunctionComponent<MetaInfoProps> = ({
   locale = DEFAULT_LOCALE,
   description = DEFAULT_DESCRIPTION,
 }) => {
-  const url = window?.location.href || "unknown";
+  const url = "https://ki112.ru/";
 
   return (
     <Helmet
