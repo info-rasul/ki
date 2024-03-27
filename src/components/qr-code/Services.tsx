@@ -20,7 +20,7 @@ const QRCodeServices: FunctionComponent = () => (
       src={QrCode}
       alt="QR-код"
     />
-      <a href="https://t.me/co_info" target="_blank" rel="noopener noreferrer"
+      <a href="https://t.me/co_info" target="_blank" rel="noopener noreferrer nofollow"
          className="button-social cursor-pointer flex items-center justify-center z-10 gap-[75px] py-[10px] pb-[9px] pl-[25px] pr-[9px] whitespace-nowrap rounded-full text-white text-[15px] font-medium leading-[150%] bg-white bg-opacity-[0.16] shadow-boxShadowBtn max-md:w-full max-md:py-[14px]">
           Telegram-канал
           <img
