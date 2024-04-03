@@ -66,7 +66,7 @@ const MetaInfo: FunctionComponent<MetaInfoProps> = ({
         },
         {
           property: "og:image",
-          content: `${BASE_URL}logo192.png`,
+          content: `${BASE_URL}/favicon/android-chrome-192x192.png`,
         },
         {
           name: "author",
