@@ -59,8 +59,7 @@ const HomeAdvantage: FunctionComponent = () => {
                     Наше ключевое преимущество
                 </div>
                 <p className="text-center text-white leading-[170%] mt-[20px] mb-[38px] opacity-80 max-sm:opacity-60 max-sm:text-left max-sm:mt-[16px] max-sm:mb-[30px] max-sm:leading-[150%] max-sm:text-[15px]">
-                    Обладаем уникальными возможностями сбора, формирования <br className="max-md:hidden" />
-                    и легализации доказательств и информации (в том числе из закрытых источников)
+                    Обладаем уникальными возможностями сбора, формирования&nbsp;<br className="max-md:hidden" />и легализации доказательств и информации (в том числе из закрытых источников)
                 </p>
                 <ButtonsK />
             </div>

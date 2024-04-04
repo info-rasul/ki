@@ -28,8 +28,7 @@ const AboutUs: FunctionComponent = () => {
           <div className="container max-[1080px]:px-[16px] relative z-[1]">
               <Navigation namePage={namePage} />
               <p className="leading-[27.2px] mt-5 text-white">
-                  Решение проблемных ситуаций защита малого и среднего <br className="max-[475px]:hidden"/>
-                  бизнеса от недобросовестных кредиторов и конкурентов
+                  Решение проблемных ситуаций защита малого и среднего&nbsp;<br className="max-[475px]:hidden"/>бизнеса от недобросовестных кредиторов и конкурентов
               </p>
           </div>
         </div>
@@ -50,8 +49,8 @@ const AboutUs: FunctionComponent = () => {
                     </p>
                     <div style={{borderLeft: '4px solid var(--700, #086C80)'}}>
                         <p className="leading-[27.2px] pl-[15px]">
-                            Мы не мыслим шаблонно! Находим не рискованные, а юридически <br className="max-[570px]:hidden"/> законные способы сохранить
-                            Ваш бизнес в период турбулентности <br className="max-[570px]:hidden"/> надвигающего кризиса на внутренних и внешних рынках.
+                            Мы не мыслим шаблонно! Находим не рискованные, а юридически&nbsp;<br className="max-[570px]:hidden"/>законные способы сохранить
+                            Ваш бизнес в период турбулентности&nbsp;<br className="max-[570px]:hidden"/>надвигающего кризиса на внутренних и внешних рынках.
                         </p>
                     </div>
                 </div>

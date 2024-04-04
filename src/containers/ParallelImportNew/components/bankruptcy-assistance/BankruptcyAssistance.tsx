@@ -60,7 +60,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
             </div>
             <div className="flex flex-col gap-[27px] mt-[83px]">
                 <div style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-md:leading-[35px] mb-[10px] tracking-[-0.1px] max-sm:text-[20px] max-sm:tracking-normal">
-                    Краткий экскурс в проблематику параллельного импорта <br className="max-lg:hidden"/> для тех, кто в танке
+                    Краткий экскурс в проблематику параллельного импорта&nbsp;<br className="max-lg:hidden"/>для тех, кто в танке
                 </div>
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     Наша страна столкнулась с беспрецедентным уровнем санкций после начала СВО на территории Украины.

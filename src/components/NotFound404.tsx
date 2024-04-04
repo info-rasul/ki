@@ -11,7 +11,7 @@ const NotFound404: FunctionComponent = () => {
                     ОШИБКА 404
                 </p>
                 <p className="text-black text-center text-[18px]">
-                    К сожелению, ничего не найдено. <br className="sm:hidden"/> Попробуйте <a className="text-[#004cd6]" href="/"> перейти на главную.</a>
+                    К сожелению, ничего не найдено.&nbsp;<br className="sm:hidden"/>Попробуйте <a className="text-[#004cd6]" href="/"> перейти на главную.</a>
                 </p>
             </div>
         </div>

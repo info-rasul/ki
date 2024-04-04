@@ -41,13 +41,13 @@ const HomeBanner: FunctionComponent = () => {
                     <div className="container max-[1080px]:px-4 max-sm:mb-[30px]">
                         <div className="border-b-[1px] border-[#FFFFFF] border-opacity-20 pb-[37px] mb-[40px] max-sm:mb-[25px] max-sm:pb-[25px]">
                             <h1 className="text-white text-homeBanner leading-[140%] max-sm:text-[28px] max-sm:leading-[136%]">
-                                трансформируем <br/> информацию в <br className="sm:hidden"/> возможности
+                                трансформируем <br/> информацию в&nbsp;<br className="sm:hidden"/>возможности
                             </h1>
                         </div>
                         <div>
                             <p className="text-white leading-[170%] max-sm:text-[14px] max-sm:leading-[150%]">
-                                Иногда в массе данных нет никакого <br className="sm:hidden"/> смысла, <br
-                                className="max-sm:hidden"/> а иногда единственный факт<br className="sm:hidden"/> бесценен
+                                Иногда в массе данных нет никакого&nbsp;<br className="sm:hidden"/>смысла, <br
+                                className="max-sm:hidden"/>а иногда единственный факт<br className="sm:hidden"/>бесценен
                             </p>
                         </div>
                         <div className="flex justify-between mt-[20px] h-[50px] max-sm:mt-[25px] max-sm:h-[42px]">

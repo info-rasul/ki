@@ -14,8 +14,7 @@ const AboutUsAdvantage = () => {
                     Наше ключевое преимущество
                 </div>
                 <p className="text-white leading-[170%] mt-[20px] mb-[38px] opacity-80 max-sm:opacity-60 max-sm:text-left max-sm:mt-[16px] max-sm:mb-[30px] max-sm:leading-[150%] max-sm:text-[15px]">
-                    Обладаем уникальными возможностями сбора, формирования <br className="max-md:hidden" />
-                    и легализации доказательств и информации (в том числе из закрытых источников)
+                    Обладаем уникальными возможностями сбора, формирования&nbsp;<br className="max-md:hidden" />и легализации доказательств и информации (в том числе из закрытых источников)
                 </p>
                 <div className="buttons flex gap-[12px] items-center max-[770px]:w-full max-[550px]:flex-col max-[550px]:w-full max-[550px]:gap-2.5">
                     <a href="/news" className="buttons-news cursor-pointer relative pl-[25px] pr-[27px] pt-[16px] pb-[14px] tracking-[0.17px] bg-white rounded-full text-[#000000] text-[15px] font-medium leading-[134%] max-md:w-full max-md:text-center">

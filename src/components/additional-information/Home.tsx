@@ -6,8 +6,8 @@ import ButtonsK from "../../components/ButtonsK";
 const AdditionalInformationHome: FunctionComponent = () => (
   <div className="flex flex-col justify-between bg-[#097990] p-[45px] gap-[20px] relative max-[1439px]:w-full max-lg:gap-[39px] max-sm:mt-[65px] max-sm:px-[25px] max-sm:pb-[23px] max-sm:pt-[20px]">
     <div style={{ fontSize: 'clamp(20px, 2.1vw, 30px)' }} className="text-white leading-[145%] max-sm:text-[20px] max-sm:leading-[135%]">
-      Хотите знать больше? <br/> Читайте новости или <br className="sm:hidden"/> подписывайтесь
-      <br className="max-sm:hidden" /> на наш <br className="sm:hidden"/> телеграм-канал
+      Хотите знать больше? <br/> Читайте новости или&nbsp;<br className="sm:hidden"/>подписывайтесь
+     &nbsp;<br className="max-sm:hidden" />на наш&nbsp;<br className="sm:hidden"/>телеграм-канал
     </div>
       <div className="flex justify-start max-[1439px]:w-full">
           <ButtonsK />

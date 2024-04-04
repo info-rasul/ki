@@ -23,7 +23,7 @@ const Contacts: FunctionComponent = () => {
                                 <div className="flex flex-col gap-2.5 max-md:gap-[5px]" itemScope itemType="http://schema.org/PostalAddress">
                                     <p className="text-white text-[25px] leading-[145%] max-sm:text-[15px] opacity-60">Адрес:</p>
                                     <a style={{ fontSize: 'clamp(18px, 1.8vw, 25px)' }} className="text-white leading-[145%] max-sm:text-[18px]">
-                                        <span>ММДЦ “Москва-Сити” Башня <br className="lg:hidden"/> Федерация,<br className="max-lg:hidden"/></span>
+                                        <span>ММДЦ “Москва-Сити” Башня&nbsp;<br className="lg:hidden"/>Федерация,<br className="max-lg:hidden"/></span>
                                         <span itemProp="addressLocality">Москва </span>
                                         <span itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
                                     </a>

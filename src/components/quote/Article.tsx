@@ -13,9 +13,9 @@ const QuoteArticle: FunctionComponent = () => (
         alt="Изображение"
       />
       <p className="text-center text-[25px] mt-[6px] max-md:text-[18px] leading-[150%] max-sm:mt-[8px]">
-        Об устойчивости ценового давления свидетельствует динамика{" "}
-        <br className="max-lg:hidden" /> базовой инфляции. Этот показатель
-        четыре месяца подряд растет <br className="max-lg:hidden" /> темпами
+        Об устойчивости ценового давления свидетельствует динамика
+       &nbsp;<br className="max-lg:hidden" /> базовой инфляции. Этот показатель
+        четыре месяца подряд растет&nbsp;<br className="max-lg:hidden" /> темпами
         выше 10 процентов в пересчете на год
       </p>
       <div className="flex flex-col gap-[13px] mt-[3px] max-sm:mt-0 max-sm:gap-[9px]">

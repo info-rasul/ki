@@ -45,7 +45,7 @@ const BankruptcyConcept: React.FC<BankruptcyConceptProps> = ({ styles }) => {
             </p>
             <div className="flex flex-col justify-between bg-[#097990] p-[40px] gap-10 mt-20 relative max-sm:p-[25px] max-sm:pt-[20px] max-sm:mt-[60px]">
                 <span style={{ fontSize: 'clamp(20px, 1.8vw, 25px)' }} className="text-white leading-[145%] max-sm:text-[20px] max-sm:leading-[135%]">
-                  Хотите знать больше? <br className="sm:hidden"/> Читайте новости <br className="max-sm:hidden"/> или подписывайтесь на наш
+                  Хотите знать больше?&nbsp;<br className="sm:hidden"/>Читайте новости&nbsp;<br className="max-sm:hidden"/>или подписывайтесь на наш
                   телеграм-канал
                 </span>
                 <div className="flex justify-start max-sm:mt-[-1px]">

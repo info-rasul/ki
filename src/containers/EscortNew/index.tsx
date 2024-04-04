@@ -61,7 +61,7 @@ const Escort: FunctionComponent = () => {
                 <Header isDarMenu={darkMenu} />
                 <div className="container max-[1080px]:px-4 pt-[56px] pb-20 max-lg:pb-[30px] max-[1030px]:pt-[105px]  max-sm:flex-col max-sm:items-start">
                     <h1 style={{ fontSize: 'clamp(24px, 2.8vw, 40px)' }} className="text-white leading-[140%] max-lg:text-[24px] max-sm:mb-[25px] max-sm:leading-[150%]">
-                        Сопровождение на всех <br className="max-sm:hidden"/> стадиях банкротства
+                        Сопровождение на всех&nbsp;<br className="max-sm:hidden"/>стадиях банкротства
                     </h1>
                     <p className="text-white opacity-60 leading-[27.2px] max-w-[900px] mt-[38px] tracking-[0.06px]">
                         Комплексное сопровождение Вашей компании на всех стадиях банкротства с целью полного

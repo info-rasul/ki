@@ -45,12 +45,12 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                     <div className="flex justify-between gap-[20px] mt-[28px] max-lg:flex-col max-lg:mt-0 max-lg:gap-[30px]">
                         <div className="gradient-border-left w-[412px] max-lg:w-full">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                                При проведении предварительного <br className="max-lg:hidden"/> расследования
+                                При проведении предварительного&nbsp;<br className="max-lg:hidden"/>расследования
                             </p>
                         </div>
                         <div className="gradient-border-left w-[412px] max-lg:w-full">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
-                                Осуществления следственных действий, <br className="max-lg:hidden"/> проверок уполномоченными органами <br className="max-lg:hidden"/> и осуществлении
+                                Осуществления следственных действий,&nbsp;<br className="max-lg:hidden"/>проверок уполномоченными органами&nbsp;<br className="max-lg:hidden"/>и осуществлении
                                 иных оперативно-розыскных мероприятий
                             </p>
                         </div>
@@ -65,18 +65,18 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
             </div>
             <div className="flex flex-col mt-10">
                 <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
-                    Наши специалисты отличаются своим подходом к информации: ее сбору, поиску, анализу <br className="max-md:hidden"/> и использованию.
+                    Наши специалисты отличаются своим подходом к информации: ее сбору, поиску, анализу&nbsp;<br className="max-md:hidden"/>и использованию.
                 </div>
                 <p className="leading-[27.2px] mt-[20px] max-sm:text-[15px]">
                     Высококвалифицированная команда готова немедленно приступить к изучению необходимого массива данных.
-                    <br className="max-md:hidden"/> Мы не только занимаемся глубоким анализом уже известной информации,
+                   &nbsp;<br className="max-md:hidden"/>Мы не только занимаемся глубоким анализом уже известной информации,
                     но и получаем ее из дополнительных источников, проводим личные расследования,
                     инициируем переговоры и применяем альтернативные способы разрешения ситуации.
                 </p>
                 <div className="flex flex-col gap-[4px] mt-10">
                     <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">
                         <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
-                            Наше сопровождение уголовных дел безгранично <br className="max-md:hidden"/>
+                            Наше сопровождение уголовных дел безгранично&nbsp;<br className="max-md:hidden"/>
                             и не боится трудностей
                         </div>
                         <div className="gradient-border-left">
@@ -100,7 +100,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                     </div>
                     <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">
                         <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
-                            Специалисты компании не боятся разрешения резонансных <br className="max-md:hidden"/>
+                            Специалисты компании не боятся разрешения резонансных&nbsp;<br className="max-md:hidden"/>
                             дел и событий с участием:
                         </div>
                         <div className="gradient-border-left">
@@ -121,7 +121,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                     </div>
                     <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">
                         <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
-                            Наша команда способна курировать вопросы пребывания <br className="max-md:hidden"/>
+                            Наша команда способна курировать вопросы пребывания&nbsp;<br className="max-md:hidden"/>
                             осужденных в исправительных учреждениях, а именно
                         </div>
                         <div className="gradient-border-left">
@@ -142,7 +142,7 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                         <div className="gradient-border-left">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
                                 Доведения критически важной информации до администрации пенитенциарного учреждения
-                                <br className="max-md:hidden"/> или законных представителей, лица, отбывающего наказание
+                               &nbsp;<br className="max-md:hidden"/>или законных представителей, лица, отбывающего наказание
                             </p>
                         </div>
                     </div>

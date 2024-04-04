@@ -30,9 +30,9 @@ const HomeArticle: FunctionComponent = () => {
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
                 <div>
                     <div className="text-homeArticle leading-[152%] tracking-[-0.2px] max-sm:text-[24px] max-sm:tracking-normal">
-                        Решение проблемных <br className="sm:hidden"/> ситуаций <br className="max-xl:hidden"/> защита малого <br className="sm:hidden" />
-                        и среднего бизнеса <br className="max-xl:hidden" /> от <br className="sm:hidden"/> недобросовестных
-                        <br className="sm:hidden" /> кредиторов <br className="max-xl:hidden" /> и конкурентов
+                        Решение проблемных&nbsp;<br className="sm:hidden"/>ситуаций&nbsp;<br className="max-xl:hidden"/>защита малого&nbsp;<br className="sm:hidden" />
+                        и среднего бизнеса&nbsp;<br className="max-xl:hidden" />от&nbsp;<br className="sm:hidden"/>недобросовестных
+                       &nbsp;<br className="sm:hidden" />кредиторов&nbsp;<br className="max-xl:hidden" />и конкурентов
                     </div>
 
                 </div>
