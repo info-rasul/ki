@@ -14,9 +14,9 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 Организуем импорт брендированной продукции, высокотехнологического оборудования и компонентов,
                 в том числе чувствительных товаров из стран Европы, США, Канады, Австралии и Японии в Россию
             </div>
-            <div style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-lg:leading-[35px] tracking-[-0.1px] mt-[47px] mb-[37px] max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+            <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-lg:leading-[35px] tracking-[-0.1px] mt-[47px] mb-[37px] max-sm:text-[20px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Параллельный импорт в Россию. Успешно обходим санкционное правило No Russia
-            </div>
+            </h2>
             <div className="numbered-list">
                 <ol className="flex flex-col gap-[9px]">
                     <li className="leading-[170%] ml-[45px] max-sm:text-[15px] max-sm:leading-[160%]">
@@ -59,9 +59,9 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </p>
             </div>
             <div className="flex flex-col gap-[27px] mt-[83px]">
-                <div style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-md:leading-[35px] mb-[10px] tracking-[-0.1px] max-sm:text-[20px] max-sm:tracking-normal">
+                <h2 style={{ fontSize: 'clamp(20px, 2.1vw, 25px)' }} className="leading-[37.5px] max-md:leading-[35px] mb-[10px] tracking-[-0.1px] max-sm:text-[20px] max-sm:tracking-normal">
                     Краткий экскурс в проблематику параллельного импорта&nbsp;<br className="max-lg:hidden"/>для тех, кто в танке
-                </div>
+                </h2>
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     Наша страна столкнулась с беспрецедентным уровнем санкций после начала СВО на территории Украины.
                     Россия по состоянию на март 2024 года возглавила антирейтинг стран по числу введенных санкций,

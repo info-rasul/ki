@@ -46,8 +46,8 @@ const HomeBanner: FunctionComponent = () => {
                         </div>
                         <div>
                             <p className="text-white leading-[170%] max-sm:text-[14px] max-sm:leading-[150%]">
-                                Иногда в массе данных нет никакого&nbsp;<br className="sm:hidden"/>смысла, <br
-                                className="max-sm:hidden"/>а иногда единственный факт<br className="sm:hidden"/>бесценен
+                                Иногда в массе данных нет никакого <br className="sm:hidden"/> смысла, <br
+                                className="max-sm:hidden"/> а иногда единственный факт<br className="sm:hidden"/> бесценен
                             </p>
                         </div>
                         <div className="flex justify-between mt-[20px] h-[50px] max-sm:mt-[25px] max-sm:h-[42px]">

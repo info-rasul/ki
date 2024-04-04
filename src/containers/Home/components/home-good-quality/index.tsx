@@ -33,7 +33,7 @@ const HomeGoodQuality: FunctionComponent = () => {
         <Fragment>
             <div className="flex flex-col mt-[81px] gap-10 max-sm:mt-[61px] max-sm:w-full max-sm:gap-[35px]">
                 <div className="sm:hidden flex justify-between items-center">
-                    <div className="text-[24px] leading-[140%]">Наши ценности</div>
+                    <h2 className="text-[24px] leading-[140%]">Наши ценности</h2>
                     <SliderNavigation scrollPercentage={scrollPercentage} />
                 </div>
                 <div style={{ fontSize: 'clamp(24px, 2.1vw, 30px)' }} className="max-sm:hidden leading-[140%] tracking-[-0.3px]">Наши ценности</div>
