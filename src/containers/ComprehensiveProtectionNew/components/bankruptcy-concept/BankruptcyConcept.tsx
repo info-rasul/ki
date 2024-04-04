@@ -9,9 +9,9 @@ interface BankruptcyConceptProps {
 const BankruptcyConcept: React.FC<BankruptcyConceptProps> = ({ styles }) => {
     return (
         <div>
-            <h2 style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-normal">
+            <div style={{ fontSize: 'clamp(24px, 2.2vw, 30px)' }} className="leading-[150%] tracking-[-0.3px] mt-20 mb-10 max-sm:text-[20px] max-sm:leading-[140%] max-sm:mb-[30px] max-sm:tracking-normal">
                 Понятие банкротства
-            </h2>
+            </div>
             <div className="flex flex-col gap-5 max-sm:gap-[25px]">
                 <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
                     Банкротством называется неплатежеспособность должника, подтвержденная официально и законно.

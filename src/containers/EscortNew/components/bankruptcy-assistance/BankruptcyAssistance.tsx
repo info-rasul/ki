@@ -6,9 +6,9 @@ interface BankruptcyAssistanceProps {
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
-            {/*<h2 className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+            {/*<div className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Текущие реалии
-            </h2>*/}
+            </div>*/}
             <div className="flex flex-col gap-5 mt-20 max-sm:gap-[25px]">
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     В период сложностей в финансовом секторе российского бизнеса, обилия санкций и общей политике
@@ -18,10 +18,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </p>
             </div>
             <div className="flex flex-col gap-[30px] p-[28px] bg-[#F8F8F8] mt-10">
-                <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                     Несостоятельность (банкротство) - признанная арбитражным судом неспособность должника в
                     полном объеме удовлетворить требования кредиторов по денежным обязательствам.
-                </h2>
+                </div>
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     Наша команда оказывает комплексную услугу по сопровождению на всех стадиях банкротства
                     независимо от вашего статуса в деле: должник или конкурсный кредитор.
@@ -54,10 +54,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </p>
             </div>
             <div className="flex flex-col gap-[30px] p-[28px] bg-[#F8F8F8] mt-10">
-                <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                     Мы обращаем внимание на то, что остается незамеченным для других,
                     и всегда способны изменить положение на чаше весов в пользу клиента.
-                </h2>
+                </div>
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     Наши специалисты:
                 </p>

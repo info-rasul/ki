@@ -10,10 +10,10 @@ const AboutUsQuote: FunctionComponent = () => (
           src={QuoteImg}
           alt="Иконка"
       />
-      <h2 style={{ fontSize: 'clamp(18px, 1.8vw, 25px)' }} className="text-center leading-[37.5px] max-sm:leading-[150%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:w-[343px]">
-          «Иногда в массе данных нет никакого смысла,<br className="max-lg:hidden" />
+      <div style={{ fontSize: 'clamp(18px, 1.8vw, 25px)' }} className="text-center leading-[37.5px] max-sm:leading-[150%] max-sm:text-[18px] max-sm:tracking-[-0.18px] max-sm:w-[343px]">
+          «Иногда в массе данных нет никакого смысла,<br className="max-lg:hidden" />&nbsp;
           а иногда единственный факт бесценен»
-      </h2>
+      </div>
         <div className="flex py-[9px] pl-[9px] pr-[20px] items-center gap-[15px] rounded-[40px] bg-[#F8F8F8] border-[1px] border-[#FFFFFF]/[.20] max-sm:py-[5px] max-sm:pl-[5px]">
             <img className="w-[32px] rounded-full max-sm:w-[28px] max-sm:h-[28px]" src={PersonCardImg} alt="Изображение для карточки пользователя" />
             <p className="text-[15px] leading-[20px] whitespace-nowrap max-sm:text-[13px]">Н.Н. Талеб</p>

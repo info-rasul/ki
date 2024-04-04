@@ -55,9 +55,9 @@ const HomeAdvantage: FunctionComponent = () => {
                 <source src={videoBack} type="video/mp4" />
             </video>
             <div className="relative z-10">
-                <h2 className="text-center text-white relative text-homeAdvantage leading-[145%] tracking-[-0.3px] max-sm:text-left max-sm:text-[22px] max-sm:leading-[135%]">
+                <div className="text-center text-white relative text-homeAdvantage leading-[145%] tracking-[-0.3px] max-sm:text-left max-sm:text-[22px] max-sm:leading-[135%]">
                     Наше ключевое преимущество
-                </h2>
+                </div>
                 <p className="text-center text-white leading-[170%] mt-[20px] mb-[38px] opacity-80 max-sm:opacity-60 max-sm:text-left max-sm:mt-[16px] max-sm:mb-[30px] max-sm:leading-[150%] max-sm:text-[15px]">
                     Обладаем уникальными возможностями сбора, формирования <br className="max-md:hidden" />
                     и легализации доказательств и информации (в том числе из закрытых источников)

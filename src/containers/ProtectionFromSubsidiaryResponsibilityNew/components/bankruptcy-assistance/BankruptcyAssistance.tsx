@@ -9,10 +9,10 @@ interface BankruptcyAssistanceProps {
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
-            <h2 className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+            <div className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Одним из способов правового регулирования экономической
                 деятельности является субсидиарная ответственность.
-            </h2>
+            </div>
             <div className="flex flex-col gap-5 mt-5 max-sm:gap-[25px]">
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     Институт привлечения к субсидиарной ответственности активно развивается и набирает обороты,
@@ -40,10 +40,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                         </li>
                     </ol>
                 </div>
-                <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] mt-10 max-sm:tracking-normal">
+                <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] mt-10 max-sm:tracking-normal">
                     Субсидиарная ответственность больше не страшная сказка, а реальность,
                     с которой придется побороться и мы вам в этом поможем.
-                </h2>
+                </div>
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     Наши специалисты оказывают комплекс услуг по защите от субсидиарной ответственности,
                     включающий в себя полный и всесторонний анализ финансово-хозяйственной деятельности,
@@ -52,9 +52,9 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
             </div>
             <div>
                 <div className="flex flex-col p-[28px] bg-[#F8F8F8] mt-10">
-                    <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                    <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                         К субсидиарной ответственности могут привлечь:
-                    </h2>
+                    </div>
                     <div className="mt-[28px] flex flex-col gap-5">
                         <p className="gradient-border-left leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
                             Собственника бизнеса;
@@ -78,10 +78,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
             <div className="flex flex-col mt-10">
                 <div>
                     <div className="flex flex-col gap-[30px] p-[28px] bg-[#F8F8F8] mt-10">
-                        <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                        <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                             Опыт наших специалистов в области обработки больших массивов данных и сопоставлении всех
                             фактов позволяет найти самую важную деталь, которая может изменить исход всей ситуации.
-                        </h2>
+                        </div>
                         <p className="leading-[27.2px] max-sm:text-[15px]">
                             Для выбора оптимального подхода к защите от субсидиарной ответственности
                             наша команда использует широкий инструментарий:

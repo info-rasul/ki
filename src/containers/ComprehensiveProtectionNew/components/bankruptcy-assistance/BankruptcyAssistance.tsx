@@ -9,9 +9,9 @@ interface BankruptcyAssistanceProps {
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
-           {/* <h2 className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+           {/* <div className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Суровая реальность
-            </h2>*/}
+            </div>*/}
 
             <div className="flex flex-col mt-20 gap-5  max-sm:gap-[25px]">
                 <p className="leading-[27.2px] max-sm:text-[15px]">
@@ -29,9 +29,9 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </p>
             </div>
             <div className="flex flex-col p-[28px] bg-[#F8F8F8] mt-10">
-                <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                     Долг — это не только финансовая обязанность, но состояние перманентного стресса.
-                </h2>
+                </div>
                 <div className="flex flex-col gap-5 mt-5 max-sm:gap-[25px]">
                     <p className="leading-[27.2px] max-sm:text-[15px]">
                         Наша команда поможет вам выбраться из критической ситуации без ощутимого урона,
@@ -58,11 +58,11 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
             </div>
             <div>
                 <div className="flex flex-col gap-[30px] p-[28px] bg-[#F8F8F8] mt-10">
-                    <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                    <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                         Наши специалисты применяют не только нормы права, но и проводят переговоры с использованием
                         альтернативной медиации для сохранения ваших активов, сокращения материальной нагрузки,
                         распределения платежей и снижения долговой массы.
-                    </h2>
+                    </div>
                     <div className="flex flex-col gap-5">
                         <p className="gradient-border-left leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
                             сопровождаем Должников на досудебном этапе разрешения спорных ситуаций для достижения

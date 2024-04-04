@@ -29,11 +29,11 @@ const HomeArticle: FunctionComponent = () => {
         <div onMouseOver={() => setStart(true)} onMouseOut={() => setStart(false)}  className="grid grid-cols-2 gap-48 pb-[160px] max-xl:gap-[30px] max-xl:pb-[80px] max-[1080px]:flex max-[1080px]:flex-col">
             <div className="flex flex-col justify-between max-xl:w-full max-xl:max-w-full">
                 <div>
-                    <h2 className="text-homeArticle leading-[152%] tracking-[-0.2px] max-sm:text-[24px] max-sm:tracking-normal">
+                    <div className="text-homeArticle leading-[152%] tracking-[-0.2px] max-sm:text-[24px] max-sm:tracking-normal">
                         Решение проблемных <br className="sm:hidden"/> ситуаций <br className="max-xl:hidden"/> защита малого <br className="sm:hidden" />
                         и среднего бизнеса <br className="max-xl:hidden" /> от <br className="sm:hidden"/> недобросовестных
                         <br className="sm:hidden" /> кредиторов <br className="max-xl:hidden" /> и конкурентов
-                    </h2>
+                    </div>
 
                 </div>
                 <div className="w-[100px] max-[1080px]:hidden">

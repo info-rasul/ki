@@ -8,11 +8,11 @@ interface BankruptcyAssistanceProps {
 const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) => {
     return (
         <div>
-            <h2 className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
+            <div className="leading-[37.5px] tracking-[-0.1px] mt-20 mb-10 text-[25px] max-sm:mt-[40px] max-sm:mb-[30px] max-sm:tracking-normal">
                 Экономическая преступность — это сложная совокупность нескольких десятков составов преступлений,
                 предусмотренных уголовным законом. Сложность данного рода преступлений связана, как с расследованием,
                 так и с защитой законных прав и интересов.
-            </h2>
+            </div>
             <div className="flex flex-col gap-5 mt-5 max-sm:gap-[25px]">
                 <p className="leading-[27.2px] max-sm:text-[15px]">
                     Согласно данным официальной статистики экономические преступления в современной России занимают
@@ -37,11 +37,11 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
             </div>
             <div>
                 <div className="flex flex-col gap-[30px] p-[28px] bg-[#F8F8F8] mt-10">
-                    <h2 className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
+                    <div className="leading-[37.5px] tracking-[-0.1px] text-[25px] max-sm:tracking-normal">
                         Наша высококвалифицированная команда профессионалов предоставляет индивидуальное,
                         комплексное и всестороннее сопровождение  уголовных дел,
                         как на этапе проверки сообщения о преступлении, так и после возбуждения уголовного дела.
-                    </h2>
+                    </div>
                     <div className="flex justify-between gap-[20px] mt-[28px] max-lg:flex-col max-lg:mt-0 max-lg:gap-[30px]">
                         <div className="gradient-border-left w-[412px] max-lg:w-full">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
@@ -64,9 +64,9 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </div>
             </div>
             <div className="flex flex-col mt-10">
-                <h3 className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
+                <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
                     Наши специалисты отличаются своим подходом к информации: ее сбору, поиску, анализу <br className="max-md:hidden"/> и использованию.
-                </h3>
+                </div>
                 <p className="leading-[27.2px] mt-[20px] max-sm:text-[15px]">
                     Высококвалифицированная команда готова немедленно приступить к изучению необходимого массива данных.
                     <br className="max-md:hidden"/> Мы не только занимаемся глубоким анализом уже известной информации,
@@ -75,10 +75,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                 </p>
                 <div className="flex flex-col gap-[4px] mt-10">
                     <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">
-                        <h3 className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
+                        <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
                             Наше сопровождение уголовных дел безгранично <br className="max-md:hidden"/>
                             и не боится трудностей
-                        </h3>
+                        </div>
                         <div className="gradient-border-left">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
                                 При наличии отягчающих обстоятельств, в том числе связанных с деятельностью
@@ -99,10 +99,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                         </div>
                     </div>
                     <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">
-                        <h3 className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
+                        <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
                             Специалисты компании не боятся разрешения резонансных <br className="max-md:hidden"/>
                             дел и событий с участием:
-                        </h3>
+                        </div>
                         <div className="gradient-border-left">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
                                 Лиц, имеющих публичный статус
@@ -120,10 +120,10 @@ const BankruptcyAssistance: React.FC<BankruptcyAssistanceProps> = ({ styles }) =
                         </div>
                     </div>
                     <div className="flex flex-col gap-[20px] p-[28px] bg-[#F8F8F8]">
-                        <h3 className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
+                        <div className="leading-[30px] tracking-[-0.1px] text-[20px] max-sm:tracking-normal">
                             Наша команда способна курировать вопросы пребывания <br className="max-md:hidden"/>
                             осужденных в исправительных учреждениях, а именно
-                        </h3>
+                        </div>
                         <div className="gradient-border-left">
                             <p className="leading-[27.2px] max-xl:mt-0 tracking-[0.1px] max-sm:text-[15px] pl-[15px]">
                                 Соблюдение условий пребывания

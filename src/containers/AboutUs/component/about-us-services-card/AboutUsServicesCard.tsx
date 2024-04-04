@@ -60,9 +60,9 @@ const AboutUsServicesCard: React.FC<AboutUsServicesCardProps> = ({title, desc, a
                 <LottieAnimation  />
             </div>
             <div className="card-animation-block-desc flex flex-col items-start gap-[20px] max-lg:gap-[15px]">
-                <h3 className="text-[25px] leading-[140%] max-sm:text-[18px] max-sm:leading-[150%] max-sm:tracking-[-0.18px]">
+                <div className="text-[25px] leading-[140%] max-sm:text-[18px] max-sm:leading-[150%] max-sm:tracking-[-0.18px]">
                     {title}
-                </h3>
+                </div>
                 <p className="leading-[170%] max-sm:text-[15px] max-sm:leading-[160%]">
                     {desc}
                 </p>
