@@ -15,8 +15,8 @@ const Footer: FunctionComponent = () => (
             <li className="text-white leading-[145%]">Контакты</li>
           </ul>
           <p className="text-white leading-[145%] tracking-[0.38px]">
-            ММДЦ “Москва-Сити” <br />
-            Башня Федерация, г. Москва <br />
+            ММДЦ “Москва-Сити”&nbsp;<br />
+            Башня Федерация, г. Москва&nbsp;<br />
             Пресненская наб. д. 12, офис 85
           </p>
         </div>
@@ -58,8 +58,8 @@ const Footer: FunctionComponent = () => (
       </ul>
       <div className="h-px bg-[#242D3E] mt-[35px] w-full"></div>
       <p className="text-white leading-[150%] tracking-[0.38px] mt-[35px] text-[15px]">
-        ММДЦ “Москва-Сити” <br />
-        Башня Федерация, г. Москва <br />
+        ММДЦ “Москва-Сити”&nbsp;<br />
+        Башня Федерация, г. Москва&nbsp;<br />
         Пресненская наб. д. 12, офис
       </p>
       <div className="h-px bg-[#242D3E] mt-[36px] w-full"></div>

@@ -16,12 +16,12 @@ const EscortCardData = [
         path: '/parallelnyy-import-oborudovaniya'
     },
     {
-        desc: "Комплексная защита <br/> должников от кредиторов",
+        desc: "Комплексная защита&nbsp;<br /> должников от кредиторов",
         animation: animation1,
         path: '/zashchita-dolzhnikov-ot-kreditorov'
     },
     {
-        desc: "Защита от субсидиарной <br/> ответственности",
+        desc: "Защита от субсидиарной&nbsp;<br /> ответственности",
         animation: animation2,
         path: '/zashchita-ot-subsidiarnoy-otvetstvennosti'
     },

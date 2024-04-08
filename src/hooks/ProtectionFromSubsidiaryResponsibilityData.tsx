@@ -16,12 +16,12 @@ const ProtectionFromSubsidiaryResponsibilityData = [
         path: '/parallelnyy-import-oborudovaniya'
     },
     {
-        desc: "Комплексная защита <br/> должников от кредиторов",
+        desc: "Комплексная защита&nbsp;<br /> должников от кредиторов",
         animation: animation1,
         path: '/zashchita-dolzhnikov-ot-kreditorov'
     },
     {
-        desc: "Сопровождение на всех <br/> стадиях банкротства в <br/> интересах должника",
+        desc: "Сопровождение на всех&nbsp;<br /> стадиях банкротства в&nbsp;<br /> интересах должника",
         animation: animation3,
         path: '/yuridicheskoe-soprovozhdenie-bankrotstva'
     },

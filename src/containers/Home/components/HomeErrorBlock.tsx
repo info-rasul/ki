@@ -11,8 +11,8 @@ const HomeErrorBlock: FunctionComponent = () => (
       <div className="flex flex-col lg:gap-[60px] max-lg:gap-[42px]  max-sm:items-center  max-sm:justify-center">
         <div className="flex flex-col gap-5 max-sm:gap-[15px]">
           <div className="text-white text-homeErrorBlock leading-[147%] max-lg:text-[20px] max-lg:leading-[135%]">
-            ТОП-5 критических ошибок,&nbsp;<br className="min-[500px]:hidden"/>из-за которых <br/>предпринимателей&nbsp;<br className="min-[500px]:hidden"/>
-            привлекают к уголовной <br/> ответственности
+            ТОП-5 критических ошибок,&nbsp;<br className="min-[500px]:hidden"/>из-за которых&nbsp;<br />предпринимателей&nbsp;<br className="min-[500px]:hidden"/>
+            привлекают к уголовной&nbsp;<br /> ответственности
           </div>
           <p className="text-white leading-[172%] opacity-60 max-sm:leading-[150%] max-sm:text-[14px]">
             Подпишись на наш Telegram-кaнaл и получи практический чек-лист,

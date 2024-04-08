@@ -28,7 +28,7 @@ const EscortSidebar: React.FC = () => {
                 <p className="text-start text-[15px] tracking-[.1px] text-[#086C80] leading-[170%] mt-[15px]">
                     «Мы обязаны помнить об исконных российских традициях справедливости
                     и законности, помнить о том, что диктатура закона — это единственная
-                    разновидность диктатуры, которой мы обязаны <br/> подчиняться».
+                    разновидность диктатуры, которой мы обязаны&nbsp;<br /> подчиняться».
                 </p>
                 <div className="mainArticle__user flex items-center	gap-[15px] rounded-full py-[9px] pl-[9px] pr-[20px] bg-[#F8F8F8] mt-[25px]">
                     <img className="w-[32px]" src={PersonCardImg} alt="Ellipse10" />

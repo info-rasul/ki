@@ -69,7 +69,7 @@ const Footer: React.FC<FooterProps> = ({data}) => {
                 <div>
                   <div className="flex flex-col gap-[1.15em]">
                     <div itemProp="address" itemScope itemType="http://schema.org/PostalAddress">
-                      <span className="text-white leading-[145%] [word-spacing:0.2px]">ММДЦ “Москва-Сити” <br /> Башня Федерация, </span>
+                      <span className="text-white leading-[145%] [word-spacing:0.2px]">ММДЦ “Москва-Сити”&nbsp;<br /> Башня Федерация, </span>
                       <span className="text-white leading-[145%] [word-spacing:0.2px]" itemProp="addressLocality">г. Москва</span>,
                       <span className="text-white leading-[145%] [word-spacing:0.2px] block w-[247px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
                     </div>
@@ -147,7 +147,7 @@ const Footer: React.FC<FooterProps> = ({data}) => {
           <div className="mt-[36px]" itemProp="address">
             <div itemScope itemType="http://schema.org/PostalAddress">
               <span className="text-white leading-[150%] text-[15px]" >ММДЦ “Москва-Сити” Башня Федерация,</span>
-              <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"><br/> г. Москва</span>,
+              <span className="text-white leading-[150%] text-[15px]" itemProp="addressLocality"><br /> г. Москва</span>,
               <span className="text-white leading-[150%] text-[15px]" itemProp="streetAddress">Пресненская наб. д. 12, офис 85</span>
             </div>
           </div>

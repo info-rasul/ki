@@ -11,7 +11,7 @@ const QRCodeServices: FunctionComponent = () => (
         Наш телеграм-канал
       </p>
       <p className="text-[15px] leading-[140%] text-[#CFF4FC]">
-        Наведите камеру телефона на QR код, чтобы перейти в наш <br/> телеграм
+        Наведите камеру телефона на QR код, чтобы перейти в наш&nbsp;<br /> телеграм
       </p>
     </div>
     <img className="absolute top-0 right-0" src={oneSvg} alt="Фон"/>

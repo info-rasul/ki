@@ -9,8 +9,8 @@ const EscortArticle: FunctionComponent = () => (
       <img className="w-[24px] h-[18px]" src={oneSvg} alt="Изображение" />
       <p className="text-start text-[15px] text-[#086C80] leading-[170%] tracking-[.2px]">
         «Мы обязаны помнить об исконных российских традициях справедливости
-        <br />и законности, помнить о том, что диктатура закона — это
-        единственная <br />
+       &nbsp;<br />и законности, помнить о том, что диктатура закона — это
+        единственная&nbsp;<br />
         разновидность диктатуры, которой мы обязаны подчиняться»
       </p>
       <div className="mainArticle__user flex items-center	gap-4 rounded-full py-[9px] pl-[9px] pr-[20px] bg-[#F8F8F8]">

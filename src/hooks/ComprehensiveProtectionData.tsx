@@ -16,12 +16,12 @@ const ComprehensiveProtectionData = [
         path: '/parallelnyy-import-oborudovaniya'
     },
     {
-        desc: "Сопровождение на всех <br/> стадиях банкротства в <br/> интересах должника",
+        desc: "Сопровождение на всех&nbsp;<br /> стадиях банкротства в&nbsp;<br /> интересах должника",
         animation: animation3,
         path: '/yuridicheskoe-soprovozhdenie-bankrotstva'
     },
     {
-        desc: "Защита от субсидиарной <br/> ответственности",
+        desc: "Защита от субсидиарной&nbsp;<br /> ответственности",
         animation: animation2,
         path: '/zashchita-ot-subsidiarnoy-otvetstvennosti'
     },

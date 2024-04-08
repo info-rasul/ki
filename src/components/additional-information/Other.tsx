@@ -6,7 +6,7 @@ import ButtonsK from "../../components/ButtonsK";
 const AdditionalInformationOther: FunctionComponent = () => (
   <div className="flex flex-col justify-between bg-[#097990] p-[40px] gap-10 mb-20 relative">
     <span className="text-white	text-[25px] leading-[145%]">
-      Хотите знать больше? Читайте новости <br /> или подписывайтесь на наш
+      Хотите знать больше? Читайте новости&nbsp;<br /> или подписывайтесь на наш
       телеграм-канал
     </span>
     <ButtonsK />
