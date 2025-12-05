@@ -1,0 +1,11 @@
+export { default as Home } from "./Home";
+export { default as AboutUs } from "./AboutUs";
+export { default as Services } from "./Services";
+export { default as Contacts } from "./Contacts";
+export { default as QuestionsAndAnswers } from "./QuestionsAndAnswers";
+export { default as SupportOfCriminalCases } from "./SupportOfCriminalCases";
+export { default as Citizenship } from "./Citizenship";
+export { default as ParallelImport } from "./ParallelImportNew";
+export { default as ComprehensiveProtection } from "./ComprehensiveProtectionNew";
+export { default as Escort } from "./EscortNew";
+export { default as ProtectionFromSubsidiaryResponsibility } from "./ProtectionFromSubsidiaryResponsibilityNew";

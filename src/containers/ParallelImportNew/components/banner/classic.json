@@ -1,0 +1,446 @@
+{
+    "blocks": [
+        {
+            "@type": "@builder.io/sdk:Element",
+            "tagName": "link",
+            "properties": {
+                "rel": "stylesheet",
+                "href": "https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+            }
+        },
+        {
+            "@type": "@builder.io/sdk:Element",
+            "tagName": "link",
+            "properties": {
+                "href": "https://fonts.googleapis.com/css2?family=Helvetica+Neue:wght@400;700&display=swap",
+                "rel": "stylesheet"
+            }
+        },
+        {
+            "@type": "@builder.io/sdk:Element",
+            "tagName": "div",
+            "properties": {},
+            "responsiveStyles": {
+                "large": {
+                    "maxWidth": "none",
+                    "marginLeft": "auto",
+                    "marginRight": "auto",
+                    "display": "flex",
+                    "width": "343px",
+                    "paddingBottom": "32px",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "background": "#071221",
+                    "height": "252px",
+                    "position": "relative"
+                },
+                "medium": {
+                    "maxWidth": "500px",
+                    "width": "100%",
+                    "padding": "16px"
+                },
+                "small": {
+                    "maxWidth": "343px",
+                    "width": "100%",
+                    "padding": "8px"
+                }
+            },
+            "children": [
+                {
+                    "@type": "@builder.io/sdk:Element",
+                    "tagName": "div",
+                    "properties": {
+                        "layer-name": "2"
+                    },
+                    "responsiveStyles": {
+                        "large": {
+                            "width": "343px",
+                            "height": "220px",
+                            "background": "#111825",
+                            "position": "relative",
+                            "overflow": "hidden"
+                        },
+                        "medium": {
+                            "width": "100%",
+                            "height": "auto",
+                            "minHeight": "200px"
+                        },
+                        "small": {
+                            "width": "100%",
+                            "minHeight": "180px"
+                        }
+                    },
+                    "children": [
+                        {
+                            "@type": "@builder.io/sdk:Element",
+                            "component": {
+                                "name": "Custom Code",
+                                "options": {
+                                    "code": "<svg id=\"115:528\" layer-name=\"#105\" data-component-name=\"#105\" width=\"343\" height=\"220\" viewBox=\"0 0 343 220\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"background-pattern\" style=\"display: flex; width: 424px; height: 425px; position: absolute; right: -81px; top: -205px; opacity: 0.05\">\n<g opacity=\"0.05\">\n<path d=\"M9.27374 -197.053C8.83538 -197.492 8.12466 -197.492 7.68627 -197.053L0.54272 -189.91C0.104366 -189.471 0.104366 -188.761 0.54272 -188.322C0.981105 -187.884 1.69183 -187.884 2.13018 -188.322L8.48001 -194.672L14.8298 -188.322C15.2682 -187.884 15.9789 -187.884 16.4173 -188.322C16.8556 -188.761 16.8556 -189.471 16.4173 -189.91L9.27374 -197.053ZM92.2884 -197.053C91.8501 -197.492 91.1394 -197.492 90.701 -197.053L83.5575 -189.91C83.1191 -189.471 83.1191 -188.761 83.5575 -188.322C83.9958 -187.884 84.7065 -187.884 85.1449 -188.322L91.4947 -194.672L97.8445 -188.322C98.2829 -187.884 98.9936 -187.884 99.432 -188.322C99.8704 -188.761 99.8704 -189.471 99.432 -189.91L92.2884 -197.053ZM174.411 -197.053C173.972 -197.492 173.261 -197.492 172.823 -197.053L165.68 -189.91C165.241 -189.471 165.241 -188.761 165.68 -188.322C166.118 -187.884 166.829 -187.884 167.267 -188.322L173.617 -194.672L179.967 -188.322C180.405 -187.884 181.116 -187.884 181.554 -188.322C181.993 -188.761 181.993 -189.471 181.554 -189.91L174.411 -197.053ZM258.318 -197.053C257.88 -197.492 257.169 -197.492 256.73 -197.053L249.587 -189.91C249.149 -189.471 249.149 -188.761 249.587 -188.322C250.025 -187.884 250.736 -187.884 251.174 -188.322L257.524 -194.672L263.874 -188.322C264.312 -187.884 265.023 -187.884 265.461 -188.322C265.9 -188.761 265.9 -189.471 265.461 -189.91L258.318 -197.053ZM340.44 -197.053C340.002 -197.492 339.291 -197.492 338.853 -197.053L331.709 -189.91C331.271 -189.471 331.271 -188.761 331.709 -188.322C332.147 -187.884 332.858 -187.884 333.296 -188.322L339.646 -194.672L345.996 -188.322C346.434 -187.884 347.145 -187.884 347.584 -188.322C348.022 -188.761 348.022 -189.471 347.584 -189.91L340.44 -197.053ZM415.52 211.5L415.52 210.378C191.34 210.378 9.60252 28.3217 9.6025 -196.26L8.48001 -196.26L7.35751 -196.26C7.3575 29.5579 190.096 212.623 415.52 212.623L415.52 211.5ZM415.52 128.339L415.52 127.216C237.188 127.216 92.6172 -17.6071 92.6172 -196.26L91.4947 -196.26L90.3722 -196.26C90.3722 -16.371 235.944 129.461 415.52 129.461L415.52 128.339ZM415.52 46.0712L415.52 44.9487C282.542 44.9487 174.739 -63.042 174.739 -196.26L173.617 -196.26L172.494 -196.26C172.494 -61.8059 281.299 47.1937 415.52 47.1937L415.52 46.0712ZM415.52 -37.9845L415.52 -39.107C328.883 -39.107 258.647 -109.465 258.647 -196.26L257.524 -196.26L256.402 -196.26C256.402 -108.229 327.64 -36.862 415.52 -36.862L415.52 -37.9845ZM415.52 -120.252L415.52 -121.374C374.238 -121.374 340.769 -154.9 340.769 -196.26L339.646 -196.26L338.524 -196.26C338.524 -153.664 372.994 -119.129 415.52 -119.129L415.52 -120.252Z\" fill=\"url(#paint0_linear_115_528)\"></path>\n</g>\n<defs>\n<linearGradient id=\"paint0_linear_115_528\" x1=\"8.48006\" y1=\"294.8\" x2=\"405.636\" y2=\"-201.538\" gradientUnits=\"userSpaceOnUse\">\n<stop stop-color=\"white\" stop-opacity=\"0\"></stop>\n<stop offset=\"1\" stop-color=\"white\"></stop>\n</linearGradient>\n</defs>\n</svg>"
+                                }
+                            }
+                        },
+                        {
+                            "@type": "@builder.io/sdk:Element",
+                            "tagName": "div",
+                            "properties": {},
+                            "responsiveStyles": {
+                                "large": {
+                                    "display": "flex",
+                                    "width": "295px",
+                                    "flexDirection": "column",
+                                    "alignItems": "flex-start",
+                                    "gap": "24px",
+                                    "position": "absolute",
+                                    "left": "24px",
+                                    "top": "24px",
+                                    "height": "172px"
+                                },
+                                "medium": {
+                                    "width": "calc(100% - 48px)",
+                                    "position": "relative",
+                                    "left": "24px",
+                                    "top": "24px",
+                                    "height": "auto",
+                                    "paddingBottom": "60px"
+                                },
+                                "small": {
+                                    "width": "calc(100% - 32px)",
+                                    "left": "16px",
+                                    "top": "16px",
+                                    "gap": "16px",
+                                    "paddingBottom": "50px"
+                                }
+                            },
+                            "children": [
+                                {
+                                    "@type": "@builder.io/sdk:Element",
+                                    "tagName": "div",
+                                    "component": {
+                                        "name": "Text",
+                                        "options": {
+                                            "text": "Внешнеэкономическая деятель��ость на выгодных условиях"
+                                        }
+                                    },
+                                    "responsiveStyles": {
+                                        "large": {
+                                            "color": "#FCB71D",
+                                            "fontFamily": "'Helvetica Neue',sans-serif",
+                                            "fontSize": "16px",
+                                            "fontStyle": "italic",
+                                            "fontWeight": "400",
+                                            "lineHeight": "140%",
+                                            "letterSpacing": "0.32px",
+                                            "textTransform": "uppercase"
+                                        },
+                                        "medium": {
+                                            "fontSize": "15px",
+                                            "lineHeight": "130%"
+                                        },
+                                        "small": {
+                                            "fontSize": "14px",
+                                            "lineHeight": "125%",
+                                            "letterSpacing": "0.28px"
+                                        }
+                                    },
+                                    "properties": {
+                                        "layer-name": "Внешнеэкономическая  деятельность  на выгодных условиях"
+                                    },
+                                    "layerName": "Внешнеэкономическая  деятельность  на выгодных условиях"
+                                },
+                                {
+                                    "@type": "@builder.io/sdk:Element",
+                                    "tagName": "div",
+                                    "properties": {},
+                                    "responsiveStyles": {
+                                        "large": {
+                                            "display": "flex",
+                                            "flexDirection": "column",
+                                            "alignItems": "flex-start",
+                                            "gap": "8px",
+                                            "alignSelf": "stretch"
+                                        },
+                                        "medium": {},
+                                        "small": {
+                                            "gap": "6px"
+                                        }
+                                    },
+                                    "children": [
+                                        {
+                                            "@type": "@builder.io/sdk:Element",
+                                            "tagName": "div",
+                                            "properties": {},
+                                            "responsiveStyles": {
+                                                "large": {
+                                                    "display": "flex",
+                                                    "alignItems": "flex-start",
+                                                    "gap": "5px",
+                                                    "alignSelf": "stretch"
+                                                },
+                                                "medium": {},
+                                                "small": {}
+                                            },
+                                            "children": [
+                                                {
+                                                    "@type": "@builder.io/sdk:Element",
+                                                    "tagName": "div",
+                                                    "properties": {},
+                                                    "responsiveStyles": {
+                                                        "large": {
+                                                            "display": "flex",
+                                                            "padding": "5px 4px 6px 3px",
+                                                            "justifyContent": "center",
+                                                            "alignItems": "center"
+                                                        },
+                                                        "medium": {},
+                                                        "small": {}
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "@type": "@builder.io/sdk:Element",
+                                                            "tagName": "div",
+                                                            "component": {
+                                                                "name": "Text",
+                                                                "options": {
+                                                                    "text": "—"
+                                                                }
+                                                            },
+                                                            "responsiveStyles": {
+                                                                "large": {
+                                                                    "color": "#FCB71D",
+                                                                    "fontFamily": "'Helvetica Neue',sans-serif",
+                                                                    "fontSize": "13px",
+                                                                    "fontWeight": "700",
+                                                                    "lineHeight": "150%"
+                                                                },
+                                                                "medium": {},
+                                                                "small": {
+                                                                    "fontSize": "12px"
+                                                                }
+                                                            },
+                                                            "properties": {
+                                                                "layer-name": "—"
+                                                            },
+                                                            "layerName": "—"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "@type": "@builder.io/sdk:Element",
+                                                    "tagName": "div",
+                                                    "component": {
+                                                        "name": "Text",
+                                                        "options": {
+                                                            "text": "Параллельный импорт"
+                                                        }
+                                                    },
+                                                    "responsiveStyles": {
+                                                        "large": {
+                                                            "color": "#FFF",
+                                                            "fontFamily": "'Helvetica Neue',sans-serif",
+                                                            "fontSize": "12px",
+                                                            "fontWeight": "400",
+                                                            "lineHeight": "150%"
+                                                        },
+                                                        "medium": {},
+                                                        "small": {
+                                                            "fontSize": "11px",
+                                                            "lineHeight": "140%"
+                                                        }
+                                                    },
+                                                    "properties": {
+                                                        "layer-name": "Параллельный импорт"
+                                                    },
+                                                    "layerName": "Параллельный импорт"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "@type": "@builder.io/sdk:Element",
+                                            "tagName": "div",
+                                            "properties": {},
+                                            "responsiveStyles": {
+                                                "large": {
+                                                    "display": "flex",
+                                                    "alignItems": "flex-start",
+                                                    "gap": "5px",
+                                                    "alignSelf": "stretch"
+                                                },
+                                                "medium": {},
+                                                "small": {}
+                                            },
+                                            "children": [
+                                                {
+                                                    "@type": "@builder.io/sdk:Element",
+                                                    "tagName": "div",
+                                                    "properties": {},
+                                                    "responsiveStyles": {
+                                                        "large": {
+                                                            "display": "flex",
+                                                            "padding": "5px 4px 6px 3px",
+                                                            "justifyContent": "center",
+                                                            "alignItems": "center"
+                                                        },
+                                                        "medium": {},
+                                                        "small": {}
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "@type": "@builder.io/sdk:Element",
+                                                            "tagName": "div",
+                                                            "component": {
+                                                                "name": "Text",
+                                                                "options": {
+                                                                    "text": "—"
+                                                                }
+                                                            },
+                                                            "responsiveStyles": {
+                                                                "large": {
+                                                                    "color": "#FCB71D",
+                                                                    "fontFamily": "'Helvetica Neue',sans-serif",
+                                                                    "fontSize": "13px",
+                                                                    "fontWeight": "700",
+                                                                    "lineHeight": "150%"
+                                                                },
+                                                                "medium": {},
+                                                                "small": {
+                                                                    "fontSize": "12px"
+                                                                }
+                                                            },
+                                                            "properties": {
+                                                                "layer-name": "—"
+                                                            },
+                                                            "layerName": "—"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "@type": "@builder.io/sdk:Element",
+                                                    "tagName": "div",
+                                                    "properties": {},
+                                                    "responsiveStyles": {
+                                                        "large": {
+                                                            "display": "flex",
+                                                            "justifyContent": "center",
+                                                            "alignItems": "center",
+                                                            "gap": "8px",
+                                                            "flex": "1 0 0"
+                                                        },
+                                                        "medium": {},
+                                                        "small": {}
+                                                    },
+                                                    "children": [
+                                                        {
+                                                            "@type": "@builder.io/sdk:Element",
+                                                            "tagName": "div",
+                                                            "component": {
+                                                                "name": "Text",
+                                                                "options": {
+                                                                    "text": "Решаем любые задачи по импорту из Европы и США, таможенное оформление, сертификация."
+                                                                }
+                                                            },
+                                                            "responsiveStyles": {
+                                                                "large": {
+                                                                    "color": "#FFF",
+                                                                    "fontFamily": "'Helvetica Neue',sans-serif",
+                                                                    "fontSize": "12px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "150%"
+                                                                },
+                                                                "medium": {},
+                                                                "small": {
+                                                                    "fontSize": "11px",
+                                                                    "lineHeight": "140%"
+                                                                }
+                                                            },
+                                                            "properties": {
+                                                                "layer-name": "Решаем любые задачи по импорту  из Европы и США, таможенное  оформление, сертификация."
+                                                            },
+                                                            "layerName": "Решаем любые задачи по импорту  из Европы и США, таможенное  оформление, сертификация."
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "@type": "@builder.io/sdk:Element",
+                            "component": {
+                                "name": "Raw:Img",
+                                "options": {
+                                    "image": "https://api.builder.io/api/v1/image/assets/TEMP/5845b5b0281491b29ae04cb131ac64e13f901aeb?width=314",
+                                    "altText": ""
+                                }
+                            },
+                            "responsiveStyles": {
+                                "large": {
+                                    "width": "157px",
+                                    "height": "154px",
+                                    "position": "absolute",
+                                    "left": "250px",
+                                    "top": "-32px"
+                                },
+                                "medium": {
+                                    "width": "120px",
+                                    "height": "118px",
+                                    "right": "20px",
+                                    "left": "auto",
+                                    "top": "20px"
+                                },
+                                "small": {
+                                    "width": "100px",
+                                    "height": "98px",
+                                    "right": "16px",
+                                    "top": "16px"
+                                }
+                            },
+                            "layerName": "image 1"
+                        },
+                        {
+                            "@type": "@builder.io/sdk:Element",
+                            "tagName": "div",
+                            "properties": {},
+                            "responsiveStyles": {
+                                "large": {
+                                    "width": "32px",
+                                    "height": "32px",
+                                    "position": "absolute",
+                                    "left": "287px",
+                                    "top": "164px"
+                                },
+                                "medium": {
+                                    "right": "20px",
+                                    "left": "auto",
+                                    "bottom": "20px",
+                                    "top": "auto"
+                                },
+                                "small": {
+                                    "width": "28px",
+                                    "height": "28px",
+                                    "right": "16px",
+                                    "bottom": "16px"
+                                }
+                            },
+                            "children": [
+                                {
+                                    "@type": "@builder.io/sdk:Element",
+                                    "component": {
+                                        "name": "Custom Code",
+                                        "options": {
+                                            "code": "<svg id=\"115:543\" layer-name=\"Subtract\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" class=\"arrow-icon\" style=\"width: 32px; height: 32px; fill: #FFF\">\n<path d=\"M16 0C24.8366 0 32 7.16344 32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0ZM17.0703 11.5537L21.0156 15.499H9.27832V16.499H21.0156L17.0703 20.4443L17.7773 21.1514L22.9297 15.999L17.7773 10.8467L17.0703 11.5537Z\" fill=\"white\"></path>\n</svg>"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "layerName": "2"
+                }
+            ]
+        }
+    ],
+    "vcpImportId": "vcp-630c2b08cf564096a6a6b1b9f076a6fc"
+}
